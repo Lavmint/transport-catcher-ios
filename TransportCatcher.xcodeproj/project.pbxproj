@@ -123,7 +123,6 @@
 		89F656FC773CA31F95E053EE /* Pods-GeoSMRIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMRIntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMRIntegrationTests/Pods-GeoSMRIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
-		C723B9021F3A5EDB00949C76 /* shim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = shim.h; path = ToSMR/CommonCrypto/shim.h; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C74685251EFFA9E700D6021E /* TransportCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74685281EFFA9E700D6021E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -231,7 +230,6 @@
 		C746851C1EFFA9E700D6021E = {
 			isa = PBXGroup;
 			children = (
-				C723B9021F3A5EDB00949C76 /* shim.h */,
 				C74685271EFFA9E700D6021E /* TransportCatcher */,
 				C74685401EFFAA2F00D6021E /* GeoSMR */,
 				C746854D1EFFAA2F00D6021E /* GeoSMRTests */,
