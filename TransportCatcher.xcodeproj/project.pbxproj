@@ -32,6 +32,8 @@
 		C79709B91F3A2F1600824E7E /* ToSMRIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709B81F3A2F1600824E7E /* ToSMRIntegrationTests.swift */; };
 		C79709BB1F3A2F1600824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
 		C79709C21F3A2FF700824E7E /* ToSamaraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709C11F3A2FF700824E7E /* ToSamaraService.swift */; };
+		C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CDF1F3B30040089ECD6 /* Arrival.swift */; };
+		C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CE31F3B36B20089ECD6 /* Transport.swift */; };
 		D3C59E4544E8A6AF2A48F176 /* Pods_GeoSMRIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */; };
 		EC059BDEE9015FBAB4A83B33 /* Pods_GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2584F5F9AD1414FEACD1D830 /* Pods_GeoSMR.framework */; };
 /* End PBXBuildFile section */
@@ -152,6 +154,8 @@
 		C79709B81F3A2F1600824E7E /* ToSMRIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSMRIntegrationTests.swift; sourceTree = "<group>"; };
 		C79709BA1F3A2F1600824E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C79709C11F3A2FF700824E7E /* ToSamaraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToSamaraService.swift; sourceTree = "<group>"; };
+		C7C99CDF1F3B30040089ECD6 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
+		C7C99CE31F3B36B20089ECD6 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -342,10 +346,20 @@
 		C79709C31F3A2FFE00824E7E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C79709C11F3A2FF700824E7E /* ToSamaraService.swift */,
+				C7C99CDE1F3B2F9F0089ECD6 /* Model */,
 				C723B9041F3A5FCD00949C76 /* Extension */,
+				C79709C11F3A2FF700824E7E /* ToSamaraService.swift */,
 			);
 			name = Sources;
+			sourceTree = "<group>";
+		};
+		C7C99CDE1F3B2F9F0089ECD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7C99CDF1F3B30040089ECD6 /* Arrival.swift */,
+				C7C99CE31F3B36B20089ECD6 /* Transport.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		E57536A87FA63AE1C3273E8F /* Pods */ = {
@@ -865,6 +879,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */,
+				C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */,
 				C723B9061F3A5FE200949C76 /* String.swift in Sources */,
 				C79709C21F3A2FF700824E7E /* ToSamaraService.swift in Sources */,
 			);

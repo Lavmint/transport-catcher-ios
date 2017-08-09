@@ -10,6 +10,12 @@ import Foundation
 
 public struct ToSamaraService {
     
+    public struct CompletionBox<T> {
+        var data: T?
+        var response: URLResponse?
+        var error: Error?
+    }
+    
     fileprivate struct Parameter {
         var key: String
         var value: Any?
@@ -104,7 +110,7 @@ extension ToSamaraService {
     /// - Parameters:
     ///   - ksId: классификаторный номер остановки
     ///   - count: количество ближайших прибывающих маршрутов (необязательный параметр)
-    public static func approximateArrivale(toStop ksId: Int, limitation count: Int? = nil) {
+    public static func approximateArrivale(toStop ksId: Int, limitation count: Int? = nil, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
     
         let parameters: [Parameter] = [
             Parameter(key: "KS_ID", value: ksId, isSignatureComponent: true),
@@ -116,12 +122,15 @@ extension ToSamaraService {
         }
         
         let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            
+            DispatchQueue.main.async {
+                let box = CompletionBox<[Arrival]>(data: nil, response: response, error: error)
+                completion(box)
+            }
         }
         dataTask.resume()
     }
     
-    public static func approximateArrivale(ofRoute krId: Int, toStop ksId: Int) {
+    public static func approximateArrivale(ofRoute krId: Int, toStop ksId: Int, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
         
     }
 }
