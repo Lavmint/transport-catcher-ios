@@ -25,13 +25,14 @@
 		C746857C1EFFD91600D6021E /* GeoSMRIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746857B1EFFD91600D6021E /* GeoSMRIntegrationTests.swift */; };
 		C746857E1EFFD91600D6021E /* GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746853F1EFFAA2F00D6021E /* GeoSMR.framework */; };
 		C797099E1F3A2EE400824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
-		C79709A51F3A2EE400824E7E /* ToSMRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709A41F3A2EE400824E7E /* ToSMRTests.swift */; };
+		C79709A51F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */; };
 		C79709A71F3A2EE400824E7E /* ToSMR.h in Headers */ = {isa = PBXBuildFile; fileRef = C79709971F3A2EE400824E7E /* ToSMR.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79709AA1F3A2EE400824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
 		C79709AB1F3A2EE400824E7E /* ToSMR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C79709B91F3A2F1600824E7E /* ToSMRIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709B81F3A2F1600824E7E /* ToSMRIntegrationTests.swift */; };
+		C79709B91F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */; };
 		C79709BB1F3A2F1600824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
-		C79709C21F3A2FF700824E7E /* ToSamaraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709C11F3A2FF700824E7E /* ToSamaraService.swift */; };
+		C79709C21F3A2FF700824E7E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709C11F3A2FF700824E7E /* Service.swift */; };
+		C79F55681F3E1BB000BC13C5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F55671F3E1BB000BC13C5 /* Request.swift */; };
 		C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CDF1F3B30040089ECD6 /* Arrival.swift */; };
 		C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CE31F3B36B20089ECD6 /* Transport.swift */; };
 		D3C59E4544E8A6AF2A48F176 /* Pods_GeoSMRIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */; };
@@ -148,12 +149,13 @@
 		C79709971F3A2EE400824E7E /* ToSMR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToSMR.h; sourceTree = "<group>"; };
 		C79709981F3A2EE400824E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C797099D1F3A2EE400824E7E /* ToSMRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToSMRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C79709A41F3A2EE400824E7E /* ToSMRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSMRTests.swift; sourceTree = "<group>"; };
+		C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFirstArrivalToStopTest.swift; sourceTree = "<group>"; };
 		C79709A61F3A2EE400824E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C79709B61F3A2F1600824E7E /* ToSMRIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToSMRIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C79709B81F3A2F1600824E7E /* ToSMRIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSMRIntegrationTests.swift; sourceTree = "<group>"; };
+		C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFirstArrivalToStopTest.swift; sourceTree = "<group>"; };
 		C79709BA1F3A2F1600824E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C79709C11F3A2FF700824E7E /* ToSamaraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToSamaraService.swift; sourceTree = "<group>"; };
+		C79709C11F3A2FF700824E7E /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C79F55671F3E1BB000BC13C5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		C7C99CDF1F3B30040089ECD6 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		C7C99CE31F3B36B20089ECD6 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -328,7 +330,7 @@
 		C79709A31F3A2EE400824E7E /* ToSMRTests */ = {
 			isa = PBXGroup;
 			children = (
-				C79709A41F3A2EE400824E7E /* ToSMRTests.swift */,
+				C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */,
 				C79709A61F3A2EE400824E7E /* Info.plist */,
 			);
 			path = ToSMRTests;
@@ -337,7 +339,7 @@
 		C79709B71F3A2F1600824E7E /* ToSMRIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				C79709B81F3A2F1600824E7E /* ToSMRIntegrationTests.swift */,
+				C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */,
 				C79709BA1F3A2F1600824E7E /* Info.plist */,
 			);
 			path = ToSMRIntegrationTests;
@@ -348,7 +350,8 @@
 			children = (
 				C7C99CDE1F3B2F9F0089ECD6 /* Model */,
 				C723B9041F3A5FCD00949C76 /* Extension */,
-				C79709C11F3A2FF700824E7E /* ToSamaraService.swift */,
+				C79F55671F3E1BB000BC13C5 /* Request.swift */,
+				C79709C11F3A2FF700824E7E /* Service.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -880,9 +883,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */,
+				C79F55681F3E1BB000BC13C5 /* Request.swift in Sources */,
 				C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */,
 				C723B9061F3A5FE200949C76 /* String.swift in Sources */,
-				C79709C21F3A2FF700824E7E /* ToSamaraService.swift in Sources */,
+				C79709C21F3A2FF700824E7E /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,7 +894,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C79709A51F3A2EE400824E7E /* ToSMRTests.swift in Sources */,
+				C79709A51F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,7 +902,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C79709B91F3A2F1600824E7E /* ToSMRIntegrationTests.swift in Sources */,
+				C79709B91F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1008,6 +1012,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/CommonCrypto";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1053,6 +1058,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/CommonCrypto";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -1249,6 +1255,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8245AS67CL;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ToSMRTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alexey.averkin.ToSMRTests;
@@ -1262,6 +1269,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8245AS67CL;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ToSMRTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alexey.averkin.ToSMRTests;
