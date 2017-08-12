@@ -34,6 +34,8 @@
 		C79709C21F3A2FF700824E7E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709C11F3A2FF700824E7E /* Service.swift */; };
 		C79F55681F3E1BB000BC13C5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F55671F3E1BB000BC13C5 /* Request.swift */; };
 		C7B00E2D1F3F07990022D6F2 /* ServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */; };
+		C7B00E2F1F3F11F60022D6F2 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */; };
+		C7B00E311F3F18FF0022D6F2 /* ClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */; };
 		C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CDF1F3B30040089ECD6 /* Arrival.swift */; };
 		C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CE31F3B36B20089ECD6 /* Transport.swift */; };
 		D3C59E4544E8A6AF2A48F176 /* Pods_GeoSMRIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */; };
@@ -158,6 +160,8 @@
 		C79709C11F3A2FF700824E7E /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C79F55671F3E1BB000BC13C5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceMock.swift; sourceTree = "<group>"; };
+		C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientStub.swift; sourceTree = "<group>"; };
 		C7C99CDF1F3B30040089ECD6 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		C7C99CE31F3B36B20089ECD6 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				C723B9051F3A5FE200949C76 /* String.swift */,
+				C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 		C79709A31F3A2EE400824E7E /* ToSMRTests */ = {
 			isa = PBXGroup;
 			children = (
+				C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */,
 				C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */,
 				C79709A61F3A2EE400824E7E /* Info.plist */,
 			);
@@ -885,6 +891,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B00E2F1F3F11F60022D6F2 /* HTTPResponse.swift in Sources */,
 				C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */,
 				C79F55681F3E1BB000BC13C5 /* Request.swift in Sources */,
 				C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */,
@@ -897,6 +904,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B00E311F3F18FF0022D6F2 /* ClientStub.swift in Sources */,
 				C79709A51F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

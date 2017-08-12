@@ -8,9 +8,9 @@
 
 import CommonCrypto
 
-extension String {
+internal extension String {
     
-    var sha1: String {
+    internal var sha1: String {
         let data = self.data(using: String.Encoding.utf8)!
         var digest = [UInt8](repeating: 0, count:Int(CC_SHA1_DIGEST_LENGTH))
         data.withUnsafeBytes {
