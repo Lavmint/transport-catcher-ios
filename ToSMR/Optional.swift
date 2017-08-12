@@ -8,13 +8,13 @@
 
 import Foundation
 
-enum OptionalError: Error {
+internal enum OptionalError: Error {
     case valueRequired
 }
 
-extension Optional {
+internal extension Optional {
     
-    func required() throws -> Wrapped {
+    internal func required() throws -> Wrapped {
         guard let val = self else {
             throw OptionalError.valueRequired
         }

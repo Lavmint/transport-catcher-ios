@@ -8,21 +8,17 @@
 
 import Foundation
 
-public class JSONSerializer: Serializer {
+final internal class JSONSerializer: Serializer {
     
-    public init() {
-        
-    }
-    
-    public func data<T>(from object: T?) -> Data? {
+    internal func data<T>(from object: T?) -> Data? {
         return nil
     }
 }
 
 // MARK: Deserialization
-extension JSONSerializer {
+internal extension JSONSerializer {
  
-    public func object<T>(from data: Data?) -> T? {
+    internal func object<T>(from data: Data?) -> T? {
         
         guard let data = data else {
             return nil

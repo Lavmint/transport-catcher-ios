@@ -17,6 +17,6 @@ internal final class ServiceMock {
         guard let clientId = infoDictionary["clientId"] as? String, let secret = infoDictionary["secret"] as? String else {
             return nil
         }
-        return Service(clientId: clientId, secret: secret, serializer: JSONSerializer())
+        return Service(clientId: clientId, secret: secret)
     }()
 }

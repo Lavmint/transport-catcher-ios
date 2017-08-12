@@ -68,7 +68,7 @@ public final class Service {
     public let secret: String
     public let serializer: Serializer
     
-    public init(clientId: String, secret: String, serializer: Serializer) {
+    public init(clientId: String, secret: String, serializer: Serializer = JSONSerializer()) {
         self.clientId = clientId
         self.secret = secret
         self.serializer = serializer
