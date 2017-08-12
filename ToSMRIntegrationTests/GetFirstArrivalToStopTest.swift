@@ -49,7 +49,7 @@ class GetFirstArrivalToStopTest: XCTestCase {
     
     func testFailedWithUnregisteredClient() {
         
-        let service = Service(clientId: "peace", secret: "doorball")
+        let service = Service(clientId: "peace", secret: "doorball", serializer: JSONSerializer())
         
         let expectedCase = expectation(description: "requestArrivalsWithStopOnly")
         service.approximateArrivale(toStop: 9) { (box) in

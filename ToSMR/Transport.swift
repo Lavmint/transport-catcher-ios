@@ -6,11 +6,9 @@
 //  Copyright © 2017 Alexey Averkin. All rights reserved.
 //
 
-public enum TransportType {
-    case busCommercial
-    case busMunicipal
-    case tramway
-    case trolleybus
+public enum TransportType: String {
+    case bus = "Автобус"
+    case trolleybus = "Троллейбус"
 }
 
 public struct Transport {
@@ -31,7 +29,7 @@ public struct Transport {
     public let stateNumber: String
     
     /// modelTitle — название модели транспорта;
-    public let model: String
+    public let model: String?
     
     /// forInvalid — флаг доступности для людей с ограниченными возможностями;
     public let isInvalidFriendly: Bool

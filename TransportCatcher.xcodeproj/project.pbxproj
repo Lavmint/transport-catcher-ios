@@ -36,6 +36,13 @@
 		C7B00E2D1F3F07990022D6F2 /* ServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */; };
 		C7B00E2F1F3F11F60022D6F2 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */; };
 		C7B00E311F3F18FF0022D6F2 /* ClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */; };
+		C7B00E361F3F324F0022D6F2 /* Serializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E351F3F324F0022D6F2 /* Serializator.swift */; };
+		C7B00E381F3F3A9C0022D6F2 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E371F3F3A9C0022D6F2 /* Dictionary.swift */; };
+		C7B00E3A1F3F3BE40022D6F2 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E391F3F3BE40022D6F2 /* JSONSerializer.swift */; };
+		C7B00E461F3F4E4E0022D6F2 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E451F3F4E4E0022D6F2 /* Optional.swift */; };
+		C7B00E511F3F59B60022D6F2 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E501F3F59B60022D6F2 /* Parsable.swift */; };
+		C7B00E591F3F62980022D6F2 /* getFirstArrivalToStop.json in Resources */ = {isa = PBXBuildFile; fileRef = C7B00E581F3F62980022D6F2 /* getFirstArrivalToStop.json */; };
+		C7B00E5C1F3F63390022D6F2 /* JSONSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */; };
 		C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CDF1F3B30040089ECD6 /* Arrival.swift */; };
 		C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CE31F3B36B20089ECD6 /* Transport.swift */; };
 		D3C59E4544E8A6AF2A48F176 /* Pods_GeoSMRIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */; };
@@ -162,6 +169,13 @@
 		C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceMock.swift; sourceTree = "<group>"; };
 		C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
 		C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientStub.swift; sourceTree = "<group>"; };
+		C7B00E351F3F324F0022D6F2 /* Serializator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializator.swift; sourceTree = "<group>"; };
+		C7B00E371F3F3A9C0022D6F2 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		C7B00E391F3F3BE40022D6F2 /* JSONSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
+		C7B00E451F3F4E4E0022D6F2 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		C7B00E501F3F59B60022D6F2 /* Parsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		C7B00E581F3F62980022D6F2 /* getFirstArrivalToStop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getFirstArrivalToStop.json; sourceTree = "<group>"; };
+		C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializerTest.swift; sourceTree = "<group>"; };
 		C7C99CDF1F3B30040089ECD6 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		C7C99CE31F3B36B20089ECD6 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,8 +248,8 @@
 		C723B9041F3A5FCD00949C76 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C723B9051F3A5FE200949C76 /* String.swift */,
-				C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */,
+				C7B00E4D1F3F509C0022D6F2 /* Swift */,
+				C7B00E4E1F3F50B00022D6F2 /* Foundation */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -337,8 +351,8 @@
 		C79709A31F3A2EE400824E7E /* ToSMRTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */,
-				C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */,
+				C7B00E531F3F623C0022D6F2 /* Resources */,
+				C7B00E521F3F62310022D6F2 /* Sources */,
 				C79709A61F3A2EE400824E7E /* Info.plist */,
 			);
 			path = ToSMRTests;
@@ -347,8 +361,7 @@
 		C79709B71F3A2F1600824E7E /* ToSMRIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */,
-				C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */,
+				C7B00E541F3F624F0022D6F2 /* Sources */,
 				C79709BA1F3A2F1600824E7E /* Info.plist */,
 			);
 			path = ToSMRIntegrationTests;
@@ -358,11 +371,91 @@
 			isa = PBXGroup;
 			children = (
 				C7C99CDE1F3B2F9F0089ECD6 /* Model */,
+				C7B00E341F3F32410022D6F2 /* Serialization */,
 				C723B9041F3A5FCD00949C76 /* Extension */,
 				C79F55671F3E1BB000BC13C5 /* Request.swift */,
 				C79709C11F3A2FF700824E7E /* Service.swift */,
 			);
 			name = Sources;
+			sourceTree = "<group>";
+		};
+		C7B00E341F3F32410022D6F2 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E501F3F59B60022D6F2 /* Parsable.swift */,
+				C7B00E351F3F324F0022D6F2 /* Serializator.swift */,
+				C7B00E391F3F3BE40022D6F2 /* JSONSerializer.swift */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		C7B00E4D1F3F509C0022D6F2 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E371F3F3A9C0022D6F2 /* Dictionary.swift */,
+				C7B00E451F3F4E4E0022D6F2 /* Optional.swift */,
+				C723B9051F3A5FE200949C76 /* String.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		C7B00E4E1F3F50B00022D6F2 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		C7B00E521F3F62310022D6F2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E571F3F62680022D6F2 /* Stubs */,
+				C7B00E5A1F3F63100022D6F2 /* Serialization */,
+				C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		C7B00E531F3F623C0022D6F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E581F3F62980022D6F2 /* getFirstArrivalToStop.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C7B00E541F3F624F0022D6F2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E561F3F62600022D6F2 /* Mocks */,
+				C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		C7B00E561F3F62600022D6F2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		C7B00E571F3F62680022D6F2 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
+		C7B00E5A1F3F63100022D6F2 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */,
+			);
+			name = Serialization;
 			sourceTree = "<group>";
 		};
 		C7C99CDE1F3B2F9F0089ECD6 /* Model */ = {
@@ -505,6 +598,7 @@
 				C79709911F3A2EE400824E7E /* Frameworks */,
 				C79709921F3A2EE400824E7E /* Headers */,
 				C79709931F3A2EE400824E7E /* Resources */,
+				C7B00E4F1F3F54500022D6F2 /* [WR] SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -674,6 +768,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B00E591F3F62980022D6F2 /* getFirstArrivalToStop.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +902,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransportCatcher/Pods-TransportCatcher-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C7B00E4F1F3F54500022D6F2 /* [WR] SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[WR] SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    #swiftlint\n    echo \"swiftlint disabled\"\nelse\n    echo \"warning: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		C967143786E17085B7F15E27 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -892,10 +1001,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B00E2F1F3F11F60022D6F2 /* HTTPResponse.swift in Sources */,
+				C7B00E461F3F4E4E0022D6F2 /* Optional.swift in Sources */,
+				C7B00E3A1F3F3BE40022D6F2 /* JSONSerializer.swift in Sources */,
+				C7B00E381F3F3A9C0022D6F2 /* Dictionary.swift in Sources */,
 				C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */,
 				C79F55681F3E1BB000BC13C5 /* Request.swift in Sources */,
 				C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */,
 				C723B9061F3A5FE200949C76 /* String.swift in Sources */,
+				C7B00E511F3F59B60022D6F2 /* Parsable.swift in Sources */,
+				C7B00E361F3F324F0022D6F2 /* Serializator.swift in Sources */,
 				C79709C21F3A2FF700824E7E /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -906,6 +1020,7 @@
 			files = (
 				C7B00E311F3F18FF0022D6F2 /* ClientStub.swift in Sources */,
 				C79709A51F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift in Sources */,
+				C7B00E5C1F3F63390022D6F2 /* JSONSerializerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

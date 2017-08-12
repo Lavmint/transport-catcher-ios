@@ -19,4 +19,9 @@ internal extension String {
         let hexBytes = digest.map { String(format: "%02hhx", $0) }
         return hexBytes.joined()
     }
+    
+    internal var isNullOrEmpty: Bool {
+        let nullifiers = ["null", "nil"]
+        return self.isEmpty || nullifiers.contains(self.lowercased())
+    }
 }

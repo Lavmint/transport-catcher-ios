@@ -8,27 +8,27 @@
 
 import Foundation
 
-public enum Error {
-    case client(error: Swift.Error)
-    case server(error: (Int, String))
-    case unexpected
-    
-    public var localizedDescription: String {
-        switch self {
-        case .client(error: let error):
-            return error.localizedDescription
-        case .server(error: (_, let msg)):
-            return msg
-        case .unexpected:
-            let bundle = Bundle(for: Service.self)
-            return "Unexpected error occured in module: \(bundle.bundleIdentifier ?? "")"
-        }
-    }
-}
-
 public enum Result<T> {
     case succeed(T?)
     case error(Error)
+    
+    public enum Error {
+        case client(error: Swift.Error)
+        case server(error: (Int, String))
+        case unexpected
+        
+        public var localizedDescription: String {
+            switch self {
+            case .client(error: let error):
+                return error.localizedDescription
+            case .server(error: (_, let msg)):
+                return msg
+            case .unexpected:
+                let bundle = Bundle(for: Service.self)
+                return "Unexpected error occured in module: \(bundle.bundleIdentifier ?? "")"
+            }
+        }
+    }
 }
 
 public struct CompletionBox<T> {
@@ -47,11 +47,11 @@ public struct CompletionBox<T> {
         }
         
         if let error = self.response?.error {
-            result = Result.error(Error.server(error: (error.code, error.message)))
+            result = Result.error(Result.Error.server(error: (error.code, error.message)))
         } else if let error = foundationError {
-            result = Result.error(Error.client(error: error))
+            result = Result.error(Result.Error.client(error: error))
         } else {
-            result = Result.error(Error.unexpected)
+            result = Result.error(Result.Error.unexpected)
         }
     }
 }
@@ -66,10 +66,12 @@ public final class Service {
 
     public let clientId: String
     public let secret: String
+    public let serializer: Serializer
     
-    public init(clientId: String, secret: String) {
+    public init(clientId: String, secret: String, serializer: Serializer) {
         self.clientId = clientId
         self.secret = secret
+        self.serializer = serializer
     }
     
     /// Метод получения прогнозов прибытия транспорта на выбранную остановку. Возможен запрос на несколько остановок сразу, в таком случае результаты упорядочиваются по времени прибытия.
@@ -88,9 +90,10 @@ public final class Service {
             return
         }
         
-        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
+            let object: [Arrival]? = self?.serializer.object(from: data)
             DispatchQueue.main.async {
-                let box = CompletionBox<[Arrival]>(request: request, data: nil, response: response, error: error)
+                let box = CompletionBox<[Arrival]>(request: request, data: object, response: response, error: error)
                 completion(box)
             }
         }
