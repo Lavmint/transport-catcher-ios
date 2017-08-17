@@ -37,27 +37,28 @@ internal extension JSONSerializer {
         
         let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
         let dictionary: [String: Any] = try (jsonObject as? [String: Any]).required()
-        let rawArrivals: [[String: Any]] = try dictionary.castable(requiredField: "arrival")
+        let rawArrivals: [[String: Any]] = try dictionary.castable(required: "arrival")
         
         var arrivals: [Arrival] = []
         for rawArrival in rawArrivals {
             let transport = Transport(
-                type: try rawArrival.enumeration(requiredField: "type"),
-                number: try rawArrival.castable(requiredField: "number"),
-                route: try rawArrival.parsable(requiredField: "KR_ID"),
-                hullNumber: try rawArrival.parsable(requiredField: "hullNo"),
-                stateNumber: try rawArrival.castable(requiredField: "stateNumber"),
-                model: try rawArrival.castable(optionalField: "modelTitle"),
-                isInvalidFriendly: try rawArrival.parsable(requiredField: "forInvalid")
+                type: try rawArrival.enumeration(required: "type"),
+                number: try rawArrival.castable(required: "number"),
+                route: try rawArrival.parsable(required: "KR_ID"),
+                hullNumber: try rawArrival.parsable(required: "hullNo"),
+                stateNumber: try rawArrival.castable(required: "stateNumber"),
+                model: try rawArrival.castable(optional: "modelTitle"),
+                isInvalidFriendly: try rawArrival.parsable(required: "forInvalid")
             )
             let arrival = Arrival(
                 transport: transport,
-                time: try rawArrival.parsable(requiredField: "time"),
-                timeInSeconds: try rawArrival.parsable(requiredField: "timeInSeconds"),
-                nextStopName: try rawArrival.castable(requiredField: "nextStopName"),
-                remainingLength: try rawArrival.parsable(requiredField: "remainingLength"),
-                spanLength: try rawArrival.parsable(requiredField: "spanLength"),
-                requestedStopId: try rawArrival.parsable(requiredField: "requestedStopId")
+                time: try rawArrival.parsable(required: "time"),
+                timeInSeconds: try rawArrival.parsable(required: "timeInSeconds"),
+                nextStopName: try rawArrival.castable(required: "nextStopName"),
+                nextStopId: try rawArrival.parsable(required: "nextStopId"),
+                remainingLength: try rawArrival.parsable(required: "remainingLength"),
+                spanLength: try rawArrival.parsable(required: "spanLength"),
+                requestedStopId: try rawArrival.parsable(required: "requestedStopId")
             )
             arrivals.append(arrival)
         }

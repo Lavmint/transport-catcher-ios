@@ -19,10 +19,10 @@ class GetFirstArrivalToStopTest: XCTestCase {
         ServiceMock.shared?.approximateArrivale(toStop: 9, limitation: 10) { (box) in
 
             switch box.result {
+            case .succeed(let arrivals):
+                XCTAssertNotNil(arrivals)
             case .error(let error):
                 XCTFail(error.localizedDescription)
-            default:
-                break
             }
             expectedCase.fulfill()
         }
@@ -37,10 +37,10 @@ class GetFirstArrivalToStopTest: XCTestCase {
         ServiceMock.shared?.approximateArrivale(toStop: 9) { (box) in
             
             switch box.result {
+            case .succeed(let arrivals):
+                XCTAssertNotNil(arrivals)
             case .error(let error):
                 XCTFail(error.localizedDescription)
-            default:
-                break
             }
             expectedCase.fulfill()
         }

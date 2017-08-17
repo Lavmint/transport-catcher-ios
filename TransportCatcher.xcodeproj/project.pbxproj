@@ -24,6 +24,7 @@
 		C74685651EFFD8A600D6021E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74685641EFFD8A600D6021E /* MapKit.framework */; };
 		C746857C1EFFD91600D6021E /* GeoSMRIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746857B1EFFD91600D6021E /* GeoSMRIntegrationTests.swift */; };
 		C746857E1EFFD91600D6021E /* GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746853F1EFFAA2F00D6021E /* GeoSMR.framework */; };
+		C768A5091F4604CF00A72B6C /* DataStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768A5081F4604CF00A72B6C /* DataStub.swift */; };
 		C797099E1F3A2EE400824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
 		C79709A51F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */; };
 		C79709A71F3A2EE400824E7E /* ToSMR.h in Headers */ = {isa = PBXBuildFile; fileRef = C79709971F3A2EE400824E7E /* ToSMR.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -155,6 +156,7 @@
 		C74685791EFFD91600D6021E /* GeoSMRIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoSMRIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C746857B1EFFD91600D6021E /* GeoSMRIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSMRIntegrationTests.swift; sourceTree = "<group>"; };
 		C746857D1EFFD91600D6021E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C768A5081F4604CF00A72B6C /* DataStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStub.swift; sourceTree = "<group>"; };
 		C79709951F3A2EE400824E7E /* ToSMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToSMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79709971F3A2EE400824E7E /* ToSMR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToSMR.h; sourceTree = "<group>"; };
 		C79709981F3A2EE400824E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -338,6 +340,21 @@
 			path = GeoSMRIntegrationTests;
 			sourceTree = "<group>";
 		};
+		C768A5061F46049300A72B6C /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		C768A50A1F46054000A72B6C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
 		C79709961F3A2EE400824E7E /* ToSMR */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,9 +427,10 @@
 		C7B00E521F3F62310022D6F2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C768A50A1F46054000A72B6C /* Mocks */,
 				C7B00E571F3F62680022D6F2 /* Stubs */,
+				C768A5061F46049300A72B6C /* Requests */,
 				C7B00E5A1F3F63100022D6F2 /* Serialization */,
-				C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -445,6 +463,7 @@
 		C7B00E571F3F62680022D6F2 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				C768A5081F4604CF00A72B6C /* DataStub.swift */,
 				C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */,
 			);
 			name = Stubs;
@@ -1021,6 +1040,7 @@
 				C7B00E311F3F18FF0022D6F2 /* ClientStub.swift in Sources */,
 				C79709A51F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift in Sources */,
 				C7B00E5C1F3F63390022D6F2 /* JSONSerializerTest.swift in Sources */,
+				C768A5091F4604CF00A72B6C /* DataStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,11 +19,14 @@ public struct Arrival {
     /// nextStopName — название следующей остановки;
     public let nextStopName: String
     
-    /// remainingLength — оставшаяся часть пути (в метрах);
-    public let remainingLength: Double
+    /// nextStopId - классификаторный номер остановки
+    public let nextStopId: Int
     
     /// remainingLength — оставшаяся часть пути (в метрах);
-    public let spanLength: Double
+    public let remainingLength: Float
+    
+    /// remainingLength — оставшаяся часть пути (в метрах);
+    public let spanLength: Float
     
     /// requestedStopId — классификаторный номер остановки, для которой запрошен прогноз (помогает разобраться при запросе на несколько остановок сразу);
     public let requestedStopId: Int

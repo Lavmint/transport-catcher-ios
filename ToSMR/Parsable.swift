@@ -27,6 +27,13 @@ extension Double: Parsable {
     }
 }
 
+extension Float: Parsable {
+    
+    static func parse(string: String) -> Float? {
+        return Float(string)
+    }
+}
+
 extension Bool: Parsable {
     
     static func parse(string: String) -> Bool? {

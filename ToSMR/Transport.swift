@@ -16,7 +16,7 @@ public struct Transport {
     /// type — тип транспорта;
     public let type: TransportType
     
-    /// number — классификаторный номер маршрута;
+    
     public let number: String
     
     /// классификаторный номер маршрута.
