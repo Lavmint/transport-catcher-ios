@@ -9,6 +9,7 @@
 public enum TransportType: String {
     case bus = "Автобус"
     case trolleybus = "Троллейбус"
+    case tramway = "Трамвай"
 }
 
 public struct Transport {
@@ -16,7 +17,7 @@ public struct Transport {
     /// type — тип транспорта;
     public let type: TransportType
     
-    
+    /// номер маршрута, например 21к
     public let number: String
     
     /// классификаторный номер маршрута.

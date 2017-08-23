@@ -1,0 +1,17 @@
+{
+  "transports": [
+    {
+      "direction": "316.1384462",
+      "number": "21",
+      "KR_ID": "13",
+      "modelTitle": "ЛИАЗ 529370",
+      "hullNo": "947772",
+      "nextStopId": "381",
+      "stateNumber": "У617ТР 163",
+      "forInvalid": "true",
+      "longitude": "50.23153755394451",
+      "latitude": "53.25505451580764",
+      "type": "Автобус"
+    }
+  ]
+}
