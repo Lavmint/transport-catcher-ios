@@ -49,8 +49,33 @@ class JSONSerializerTest: XCTestCase {
         XCTAssertEqual(arrivals[3].transport.type, .bus)
         XCTAssertEqual(arrivals[3].spanLength, 645.6)
         XCTAssertEqual(arrivals[3].remainingLength, 633.0)
+    }
+    
+    func testGetRouteArrivalToStopDeserialization() {
         
+        guard let arrivals: [Arrival] = serializator.object(from: DataStub.getRouteArrivalToStop) else {
+            XCTFail()
+            return
+        }
         
-
+        guard arrivals.count == 4 else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssertEqual(arrivals[2].transport.number, "247")
+        XCTAssertEqual(arrivals[2].transport.route, 193)
+        XCTAssertEqual(arrivals[2].transport.model, "HYUNDAI County")
+        XCTAssertEqual(arrivals[2].transport.hullNumber, 950170)
+        XCTAssertEqual(arrivals[2].nextStopId, 36)
+        XCTAssertEqual(arrivals[2].timeInSeconds, 2166.99)
+        XCTAssertEqual(arrivals[2].transport.stateNumber, "С759АС 163")
+        XCTAssertEqual(arrivals[2].transport.isInvalidFriendly, false)
+        XCTAssertEqual(arrivals[2].nextStopName, "Площадь им. Кирова")
+        XCTAssertEqual(arrivals[2].requestedStopId, 9)
+        XCTAssertEqual(arrivals[2].time, 36)
+        XCTAssertEqual(arrivals[2].transport.type, .bus)
+        XCTAssertEqual(arrivals[2].spanLength, 245.6)
+        XCTAssertEqual(arrivals[2].remainingLength, 36.0)
     }
 }

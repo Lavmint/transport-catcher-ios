@@ -13,4 +13,8 @@ final class DataStub {
     static var getFirstArrivalToStop: Data {
         return try! Data(contentsOf: Bundle(for: DataStub.self).url(forResource: "getFirstArrivalToStop", withExtension: "json")!)
     }
+    
+    static var getRouteArrivalToStop: Data {
+        return try! Data(contentsOf: Bundle(for: DataStub.self).url(forResource: "getRouteArrivalToStop", withExtension: "json")!)
+    }
 }

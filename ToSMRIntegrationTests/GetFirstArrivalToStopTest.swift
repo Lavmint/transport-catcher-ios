@@ -51,7 +51,7 @@ class GetFirstArrivalToStopTest: XCTestCase {
         
         let service = Service(clientId: "peace", secret: "doorball")
         
-        let expectedCase = expectation(description: "requestArrivalsWithStopOnly")
+        let expectedCase = expectation(description: "requestArrivalsWithUnregisteredClient")
         service.approximateArrivale(toStop: 9) { (box) in
             
             switch box.result {

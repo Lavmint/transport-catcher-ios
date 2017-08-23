@@ -100,7 +100,29 @@ public final class Service {
         dataTask.resume()
     }
     
+    /// Метод получения информации о прибытии транспортных средств выбранного маршрута на выбранную остановку.
+    ///
+    /// - Parameters:
+    ///   - krId: классификаторный номер маршрута.
+    ///   - ksId: классификаторный номер остановки;
     public func approximateArrivale(ofRoute krId: Int, toStop ksId: Int, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
         
+        let parameters: [Parameter] = [
+            Parameter(key: "KR_ID", value: krId, isSignatureComponent: true),
+            Parameter(key: "KS_ID", value: ksId, isSignatureComponent: true)
+        ]
+        
+        guard let request = URLRequest.toSamaraRequest(method: "getRouteArrivalToStop", parameters: parameters, clientId: clientId, secret: secret) else {
+            return
+        }
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
+            let object: [Arrival]? = self?.serializer.object(from: data)
+            DispatchQueue.main.async {
+                let box = CompletionBox<[Arrival]>(request: request, data: object, response: response, error: error)
+                completion(box)
+            }
+        }
+        dataTask.resume()
     }
 }

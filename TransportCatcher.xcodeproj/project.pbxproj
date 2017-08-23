@@ -24,6 +24,8 @@
 		C74685651EFFD8A600D6021E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74685641EFFD8A600D6021E /* MapKit.framework */; };
 		C746857C1EFFD91600D6021E /* GeoSMRIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746857B1EFFD91600D6021E /* GeoSMRIntegrationTests.swift */; };
 		C746857E1EFFD91600D6021E /* GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746853F1EFFAA2F00D6021E /* GeoSMR.framework */; };
+		C75E858D1F4DD9880074D272 /* getRouteArrivalToStop.json in Resources */ = {isa = PBXBuildFile; fileRef = C75E858C1F4DD9880074D272 /* getRouteArrivalToStop.json */; };
+		C75E858F1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75E858E1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift */; };
 		C768A5091F4604CF00A72B6C /* DataStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768A5081F4604CF00A72B6C /* DataStub.swift */; };
 		C797099E1F3A2EE400824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
 		C79709A51F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */; };
@@ -156,6 +158,8 @@
 		C74685791EFFD91600D6021E /* GeoSMRIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoSMRIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C746857B1EFFD91600D6021E /* GeoSMRIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSMRIntegrationTests.swift; sourceTree = "<group>"; };
 		C746857D1EFFD91600D6021E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75E858C1F4DD9880074D272 /* getRouteArrivalToStop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getRouteArrivalToStop.json; sourceTree = "<group>"; };
+		C75E858E1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRouteArrivalToStopTest.swift; sourceTree = "<group>"; };
 		C768A5081F4604CF00A72B6C /* DataStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStub.swift; sourceTree = "<group>"; };
 		C79709951F3A2EE400824E7E /* ToSMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToSMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79709971F3A2EE400824E7E /* ToSMR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToSMR.h; sourceTree = "<group>"; };
@@ -439,6 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				C7B00E581F3F62980022D6F2 /* getFirstArrivalToStop.json */,
+				C75E858C1F4DD9880074D272 /* getRouteArrivalToStop.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 			children = (
 				C7B00E561F3F62600022D6F2 /* Mocks */,
 				C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */,
+				C75E858E1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -788,6 +794,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B00E591F3F62980022D6F2 /* getFirstArrivalToStop.json in Resources */,
+				C75E858D1F4DD9880074D272 /* getRouteArrivalToStop.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1048,6 +1055,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75E858F1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift in Sources */,
 				C79709B91F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift in Sources */,
 				C7B00E2D1F3F07990022D6F2 /* ServiceMock.swift in Sources */,
 			);
