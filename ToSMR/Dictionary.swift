@@ -44,7 +44,7 @@ extension Dictionary where Key == String {
     }
     
     internal func parsable<T: Parsable>(optional field: String) throws -> T? {
-        guard let value: String = try castable(optional: field) else {
+        guard let value: String = try castable(optional: field), !value.isEmpty else {
             return nil
         }
         guard !value.isNullOrEmpty, let parsed = T.parse(string: value) else {

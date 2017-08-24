@@ -8,7 +8,7 @@
 
 import Foundation
 
-final internal class JSONSerializer: Serializer {
+internal final class JSONSerializer: Serializer {
     
     internal func data<T>(from object: T?) -> Data? {
         return nil
@@ -20,10 +20,8 @@ internal extension JSONSerializer {
  
     internal func object<T>(from data: Data?) -> T? {
         
-        guard let data = data else {
-            return nil
-        }
-        
+        guard let data = data else { return nil }
+
         do {
             if T.self == [Arrival].self { return try arrivals(from: data) as! T? }
             if T.self == [Transport].self { return try transports(from: data) as! T? }

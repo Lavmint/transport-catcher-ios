@@ -52,6 +52,7 @@
 		C7B00E5C1F3F63390022D6F2 /* JSONSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */; };
 		C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CDF1F3B30040089ECD6 /* Arrival.swift */; };
 		C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CE31F3B36B20089ECD6 /* Transport.swift */; };
+		C7D7F4BA1F4F832B00717D9F /* TransportStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7F4B91F4F832B00717D9F /* TransportStop.swift */; };
 		C7E73BAA1F4F37BD005ED5B6 /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */; };
 		C7E73BB31F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BAD1F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml */; };
 		C7E73BB41F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BAE1F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml */; };
@@ -61,6 +62,9 @@
 		C7E73BB81F4F39D6005ED5B6 /* stopsFullDB.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */; };
 		C7E73BBC1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */; };
 		C7E73BBE1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */; };
+		C7EC4F571F4F7071009A020A /* XMLSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F561F4F7071009A020A /* XMLSerializer.swift */; };
+		C7EC4F591F4F719F009A020A /* XMLSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */; };
+		C7EC4F5D1F4F7931009A020A /* XMLParserDictionaryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */; };
 		D3C59E4544E8A6AF2A48F176 /* Pods_GeoSMRIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */; };
 		EC059BDEE9015FBAB4A83B33 /* Pods_GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2584F5F9AD1414FEACD1D830 /* Pods_GeoSMR.framework */; };
 /* End PBXBuildFile section */
@@ -201,6 +205,7 @@
 		C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializerTest.swift; sourceTree = "<group>"; };
 		C7C99CDF1F3B30040089ECD6 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		C7C99CE31F3B36B20089ECD6 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		C7D7F4B91F4F832B00717D9F /* TransportStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportStop.swift; sourceTree = "<group>"; };
 		C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportType.swift; sourceTree = "<group>"; };
 		C7E73BAD1F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GeoportalRoutesCorrespondence.xml; sourceTree = "<group>"; };
 		C7E73BAE1F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GeoportalStopsCorrespondence.xml; sourceTree = "<group>"; };
@@ -210,6 +215,9 @@
 		C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = stopsFullDB.xml; sourceTree = "<group>"; };
 		C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTransportsOnRouteTest.swift; sourceTree = "<group>"; };
 		C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSurroundingTransportTest.swift; sourceTree = "<group>"; };
+		C7EC4F561F4F7071009A020A /* XMLSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializer.swift; sourceTree = "<group>"; };
+		C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializerTest.swift; sourceTree = "<group>"; };
+		C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserDictionaryAdapter.swift; sourceTree = "<group>"; };
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -429,9 +437,10 @@
 		C7B00E341F3F32410022D6F2 /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
+				C7EC4F5B1F4F790F009A020A /* JSON */,
+				C7EC4F5A1F4F7909009A020A /* XML */,
 				C7B00E501F3F59B60022D6F2 /* Parsable.swift */,
 				C7B00E351F3F324F0022D6F2 /* Serializator.swift */,
-				C7B00E391F3F3BE40022D6F2 /* JSONSerializer.swift */,
 			);
 			name = Serialization;
 			sourceTree = "<group>";
@@ -507,6 +516,7 @@
 			isa = PBXGroup;
 			children = (
 				C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */,
+				C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */,
 			);
 			name = Serialization;
 			sourceTree = "<group>";
@@ -517,6 +527,7 @@
 				C7C99CDF1F3B30040089ECD6 /* Arrival.swift */,
 				C7C99CE31F3B36B20089ECD6 /* Transport.swift */,
 				C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */,
+				C7D7F4B91F4F832B00717D9F /* TransportStop.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -545,6 +556,23 @@
 				C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */,
 			);
 			name = Classifier;
+			sourceTree = "<group>";
+		};
+		C7EC4F5A1F4F7909009A020A /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */,
+				C7EC4F561F4F7071009A020A /* XMLSerializer.swift */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
+		C7EC4F5B1F4F790F009A020A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E391F3F3BE40022D6F2 /* JSONSerializer.swift */,
+			);
+			name = JSON;
 			sourceTree = "<group>";
 		};
 		E57536A87FA63AE1C3273E8F /* Pods */ = {
@@ -1092,12 +1120,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B00E2F1F3F11F60022D6F2 /* HTTPResponse.swift in Sources */,
+				C7EC4F571F4F7071009A020A /* XMLSerializer.swift in Sources */,
 				C7B00E461F3F4E4E0022D6F2 /* Optional.swift in Sources */,
 				C7B00E3A1F3F3BE40022D6F2 /* JSONSerializer.swift in Sources */,
 				C7B00E381F3F3A9C0022D6F2 /* Dictionary.swift in Sources */,
+				C7EC4F5D1F4F7931009A020A /* XMLParserDictionaryAdapter.swift in Sources */,
 				C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */,
 				C79F55681F3E1BB000BC13C5 /* Request.swift in Sources */,
 				C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */,
+				C7D7F4BA1F4F832B00717D9F /* TransportStop.swift in Sources */,
 				C723B9061F3A5FE200949C76 /* String.swift in Sources */,
 				C7B00E511F3F59B60022D6F2 /* Parsable.swift in Sources */,
 				C7E73BAA1F4F37BD005ED5B6 /* TransportType.swift in Sources */,
@@ -1113,6 +1144,7 @@
 				C7B00E311F3F18FF0022D6F2 /* ClientStub.swift in Sources */,
 				C79709A51F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift in Sources */,
 				C7B00E5C1F3F63390022D6F2 /* JSONSerializerTest.swift in Sources */,
+				C7EC4F591F4F719F009A020A /* XMLSerializerTest.swift in Sources */,
 				C768A5091F4604CF00A72B6C /* DataStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

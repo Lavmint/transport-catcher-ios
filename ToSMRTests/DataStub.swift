@@ -25,4 +25,8 @@ final class DataStub {
     static var getSurroundingTransports: Data {
         return try! Data(contentsOf: Bundle(for: DataStub.self).url(forResource: "getSurroundingTransports", withExtension: "json")!)
     }
+    
+    static var stopsFullDBXML: Data {
+        return try! Data(contentsOf: Bundle(for: DataStub.self).url(forResource: "stopsFullDB", withExtension: "xml")!)
+    }
 }
