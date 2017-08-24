@@ -52,6 +52,15 @@
 		C7B00E5C1F3F63390022D6F2 /* JSONSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */; };
 		C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CDF1F3B30040089ECD6 /* Arrival.swift */; };
 		C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CE31F3B36B20089ECD6 /* Transport.swift */; };
+		C7E73BAA1F4F37BD005ED5B6 /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */; };
+		C7E73BB31F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BAD1F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml */; };
+		C7E73BB41F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BAE1F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml */; };
+		C7E73BB51F4F39D6005ED5B6 /* routes.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BAF1F4F39D6005ED5B6 /* routes.xml */; };
+		C7E73BB61F4F39D6005ED5B6 /* routesAndStopsCorrespondence.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BB01F4F39D6005ED5B6 /* routesAndStopsCorrespondence.xml */; };
+		C7E73BB71F4F39D6005ED5B6 /* stops.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BB11F4F39D6005ED5B6 /* stops.xml */; };
+		C7E73BB81F4F39D6005ED5B6 /* stopsFullDB.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */; };
+		C7E73BBC1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */; };
+		C7E73BBE1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */; };
 		D3C59E4544E8A6AF2A48F176 /* Pods_GeoSMRIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */; };
 		EC059BDEE9015FBAB4A83B33 /* Pods_GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2584F5F9AD1414FEACD1D830 /* Pods_GeoSMR.framework */; };
 /* End PBXBuildFile section */
@@ -192,6 +201,15 @@
 		C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializerTest.swift; sourceTree = "<group>"; };
 		C7C99CDF1F3B30040089ECD6 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		C7C99CE31F3B36B20089ECD6 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportType.swift; sourceTree = "<group>"; };
+		C7E73BAD1F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GeoportalRoutesCorrespondence.xml; sourceTree = "<group>"; };
+		C7E73BAE1F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GeoportalStopsCorrespondence.xml; sourceTree = "<group>"; };
+		C7E73BAF1F4F39D6005ED5B6 /* routes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = routes.xml; sourceTree = "<group>"; };
+		C7E73BB01F4F39D6005ED5B6 /* routesAndStopsCorrespondence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = routesAndStopsCorrespondence.xml; sourceTree = "<group>"; };
+		C7E73BB11F4F39D6005ED5B6 /* stops.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = stops.xml; sourceTree = "<group>"; };
+		C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = stopsFullDB.xml; sourceTree = "<group>"; };
+		C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTransportsOnRouteTest.swift; sourceTree = "<group>"; };
+		C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSurroundingTransportTest.swift; sourceTree = "<group>"; };
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -450,12 +468,8 @@
 		C7B00E531F3F623C0022D6F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C7B00E581F3F62980022D6F2 /* getFirstArrivalToStop.json */,
-				C75E858C1F4DD9880074D272 /* getRouteArrivalToStop.json */,
-				C75E85981F4DE6F70074D272 /* getTransportPosition.json */,
-				C75E859C1F4DEC0E0074D272 /* getSurroundingTransports.json */,
-				C75E859E1F4DED560074D272 /* getTransportsOnRoute.json */,
-				C75E85A01F4DED970074D272 /* getRouteSchedule.json */,
+				C7E73BAB1F4F39AE005ED5B6 /* Method */,
+				C7E73BAC1F4F39C4005ED5B6 /* Classifier */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -466,6 +480,8 @@
 				C7B00E561F3F62600022D6F2 /* Mocks */,
 				C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */,
 				C75E858E1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift */,
+				C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */,
+				C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -500,8 +516,35 @@
 			children = (
 				C7C99CDF1F3B30040089ECD6 /* Arrival.swift */,
 				C7C99CE31F3B36B20089ECD6 /* Transport.swift */,
+				C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		C7E73BAB1F4F39AE005ED5B6 /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E581F3F62980022D6F2 /* getFirstArrivalToStop.json */,
+				C75E858C1F4DD9880074D272 /* getRouteArrivalToStop.json */,
+				C75E85981F4DE6F70074D272 /* getTransportPosition.json */,
+				C75E859C1F4DEC0E0074D272 /* getSurroundingTransports.json */,
+				C75E859E1F4DED560074D272 /* getTransportsOnRoute.json */,
+				C75E85A01F4DED970074D272 /* getRouteSchedule.json */,
+			);
+			name = Method;
+			sourceTree = "<group>";
+		};
+		C7E73BAC1F4F39C4005ED5B6 /* Classifier */ = {
+			isa = PBXGroup;
+			children = (
+				C7E73BAD1F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml */,
+				C7E73BAE1F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml */,
+				C7E73BAF1F4F39D6005ED5B6 /* routes.xml */,
+				C7E73BB01F4F39D6005ED5B6 /* routesAndStopsCorrespondence.xml */,
+				C7E73BB11F4F39D6005ED5B6 /* stops.xml */,
+				C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */,
+			);
+			name = Classifier;
 			sourceTree = "<group>";
 		};
 		E57536A87FA63AE1C3273E8F /* Pods */ = {
@@ -805,12 +848,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E73BB81F4F39D6005ED5B6 /* stopsFullDB.xml in Resources */,
+				C7E73BB71F4F39D6005ED5B6 /* stops.xml in Resources */,
 				C7B00E591F3F62980022D6F2 /* getFirstArrivalToStop.json in Resources */,
 				C75E85A11F4DED970074D272 /* getRouteSchedule.json in Resources */,
 				C75E859D1F4DEC0E0074D272 /* getSurroundingTransports.json in Resources */,
 				C75E85991F4DE6F70074D272 /* getTransportPosition.json in Resources */,
 				C75E859F1F4DED560074D272 /* getTransportsOnRoute.json in Resources */,
 				C75E858D1F4DD9880074D272 /* getRouteArrivalToStop.json in Resources */,
+				C7E73BB61F4F39D6005ED5B6 /* routesAndStopsCorrespondence.xml in Resources */,
+				C7E73BB41F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml in Resources */,
+				C7E73BB51F4F39D6005ED5B6 /* routes.xml in Resources */,
+				C7E73BB31F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1051,6 +1100,7 @@
 				C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */,
 				C723B9061F3A5FE200949C76 /* String.swift in Sources */,
 				C7B00E511F3F59B60022D6F2 /* Parsable.swift in Sources */,
+				C7E73BAA1F4F37BD005ED5B6 /* TransportType.swift in Sources */,
 				C7B00E361F3F324F0022D6F2 /* Serializator.swift in Sources */,
 				C79709C21F3A2FF700824E7E /* Service.swift in Sources */,
 			);
@@ -1072,6 +1122,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C75E858F1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift in Sources */,
+				C7E73BBE1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift in Sources */,
+				C7E73BBC1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift in Sources */,
 				C79709B91F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift in Sources */,
 				C7B00E2D1F3F07990022D6F2 /* ServiceMock.swift in Sources */,
 			);

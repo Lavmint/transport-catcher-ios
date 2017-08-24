@@ -17,4 +17,12 @@ final class DataStub {
     static var getRouteArrivalToStop: Data {
         return try! Data(contentsOf: Bundle(for: DataStub.self).url(forResource: "getRouteArrivalToStop", withExtension: "json")!)
     }
+    
+    static var getTransportsOnRoute: Data {
+        return try! Data(contentsOf: Bundle(for: DataStub.self).url(forResource: "getTransportsOnRoute", withExtension: "json")!)
+    }
+    
+    static var getSurroundingTransports: Data {
+        return try! Data(contentsOf: Bundle(for: DataStub.self).url(forResource: "getSurroundingTransports", withExtension: "json")!)
+    }
 }

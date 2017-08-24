@@ -26,6 +26,7 @@ internal extension JSONSerializer {
         
         do {
             if T.self == [Arrival].self { return try arrivals(from: data) as! T? }
+            if T.self == [Transport].self { return try transports(from: data) as! T? }
         } catch {
             print(error)
         }
@@ -41,28 +42,52 @@ internal extension JSONSerializer {
         
         var arrivals: [Arrival] = []
         for rawArrival in rawArrivals {
-            let transport = Transport(
+            let arrival = Arrival(
+                route: try rawArrival.parsable(required: "KR_ID"),
                 type: try rawArrival.enumeration(required: "type"),
                 number: try rawArrival.castable(required: "number"),
-                route: try rawArrival.parsable(required: "KR_ID"),
-                hullNumber: try rawArrival.parsable(required: "hullNo"),
-                stateNumber: try rawArrival.castable(required: "stateNumber"),
                 model: try rawArrival.castable(optional: "modelTitle"),
-                isInvalidFriendly: try rawArrival.parsable(required: "forInvalid")
-            )
-            let arrival = Arrival(
-                transport: transport,
+                stateNumber: try rawArrival.castable(required: "stateNumber"),
+                hullNumber: try rawArrival.parsable(required: "hullNo"),
+                isInvalidFriendly: try rawArrival.parsable(required: "forInvalid"),
+                requestedStopId: try rawArrival.parsable(required: "requestedStopId"),
+                nextStopId: try rawArrival.parsable(required: "nextStopId"),
+                nextStopName: try rawArrival.castable(required: "nextStopName"),
                 time: try rawArrival.parsable(required: "time"),
                 timeInSeconds: try rawArrival.parsable(required: "timeInSeconds"),
-                nextStopName: try rawArrival.castable(required: "nextStopName"),
-                nextStopId: try rawArrival.parsable(required: "nextStopId"),
                 remainingLength: try rawArrival.parsable(required: "remainingLength"),
-                spanLength: try rawArrival.parsable(required: "spanLength"),
-                requestedStopId: try rawArrival.parsable(required: "requestedStopId")
+                spanLength: try rawArrival.parsable(required: "spanLength")
             )
             arrivals.append(arrival)
         }
         
         return arrivals
+    }
+    
+    internal func transports(from data: Data) throws -> [Transport]? {
+        
+        let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
+        let dictionary: [String: Any] = try (jsonObject as? [String: Any]).required()
+        let rawTransports: [[String: Any]] = try dictionary.castable(required: "transports")
+        
+        var transports: [Transport] = []
+        for rawTransport in rawTransports {
+            let transport = Transport(
+                direction: try rawTransport.parsable(required: "direction"),
+                number: try rawTransport.castable(required: "number"),
+                route: try rawTransport.parsable(required: "KR_ID"),
+                model: try rawTransport.castable(optional: "modelTitle"),
+                hullNumber: try rawTransport.parsable(required: "hullNo"),
+                nextStopId: try rawTransport.parsable(required: "nextStopId"),
+                stateNumber: try rawTransport.castable(required: "stateNumber"),
+                isInvalidFriendly: try rawTransport.parsable(required: "forInvalid"),
+                type: try rawTransport.enumeration(required: "type"),
+                latitude: try rawTransport.parsable(required: "latitude"),
+                longitude: try rawTransport.parsable(required: "longitude")
+            )
+            transports.append(transport)
+        }
+        
+        return transports
     }
 }

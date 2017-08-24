@@ -125,4 +125,60 @@ public final class Service {
         }
         dataTask.resume()
     }
+    
+    /// Метод дает информацию о положении транспортов в окрестности пользователя.
+    ///
+    /// - Parameters:
+    ///   - radius: радиус поиска в метрах;
+    ///   - longitude: координата пользователя в WGS 84;
+    ///   - latitude: координата пользователя в WGS 84;
+    ///   - count: максимальное количество возвращаемых результатов.
+    public func transports(inRadius radius: Double, atLongitude longitude: Double, atLatitude latitude: Double, limitation count: Int, completion: @escaping (CompletionBox<[Transport]>) -> Void) {
+        
+        let parameters: [Parameter] = [
+            Parameter(key: "LATITUDE", value: latitude, isSignatureComponent: true),
+            Parameter(key: "LONGITUDE", value: longitude, isSignatureComponent: true),
+            Parameter(key: "RADIUS", value: radius, isSignatureComponent: true),
+            Parameter(key: "COUNT", value: count, isSignatureComponent: true)
+        ]
+        
+        guard let request = URLRequest.toSamaraRequest(method: "getSurroundingTransports", parameters: parameters, clientId: clientId, secret: secret) else {
+            return
+        }
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
+            let object: [Transport]? = self?.serializer.object(from: data)
+            DispatchQueue.main.async {
+                let box = CompletionBox<[Transport]>(request: request, data: object, response: response, error: error)
+                completion(box)
+            }
+        }
+        dataTask.resume()
+    }
+    
+    /// Метод дает информацию о положении транспортов на указанных маршрутах.
+    ///
+    /// - Parameters:
+    ///   - routes: классификаторный номер маршрута (возможно, несколько);
+    ///   - count: максимальное количество возвращаемых результатов.
+    public func transports(onRoutes routes: [Int], limitation count: Int, completion: @escaping (CompletionBox<[Transport]>) -> Void) {
+        
+        let parameters: [Parameter] = [
+            Parameter(key: "KR_ID", value: routes.map({ String($0)}).joined(separator: ","), isSignatureComponent: true),
+            Parameter(key: "COUNT", value: count, isSignatureComponent: true)
+        ]
+        
+        guard let request = URLRequest.toSamaraRequest(method: "getTransportsOnRoute", parameters: parameters, clientId: clientId, secret: secret) else {
+            return
+        }
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
+            let object: [Transport]? = self?.serializer.object(from: data)
+            DispatchQueue.main.async {
+                let box = CompletionBox<[Transport]>(request: request, data: object, response: response, error: error)
+                completion(box)
+            }
+        }
+        dataTask.resume()
+    }
 }
