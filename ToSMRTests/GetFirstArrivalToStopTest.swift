@@ -23,7 +23,7 @@ class GetFirstArrivalToStopTest: XCTestCase {
     
     func testRequestFormedCorrectly() {
         
-        guard let client = ClientStub() else {
+        guard let serviceStub = ServiceStub.shared else {
             XCTFail()
             return
         }
@@ -33,7 +33,7 @@ class GetFirstArrivalToStopTest: XCTestCase {
             Service.Parameter(key: "COUNT", value: 10, isSignatureComponent: true)
         ]
         
-        guard let request = URLRequest.toSamaraRequest(method: "getFirstArrivalToStop", parameters: parameters, clientId: client.clientId, secret: client.secret) else {
+        guard let request = URLRequest.toSamaraJSONRequest(baseURL: serviceStub.baseURL, method: "getFirstArrivalToStop", parameters: parameters, clientId: serviceStub.clientId, secret: serviceStub.secret) else {
                 XCTFail()
                 return
         }
@@ -57,7 +57,7 @@ class GetFirstArrivalToStopTest: XCTestCase {
         XCTAssertEqual(queryItems.filter({ $0.name == "KS_ID"}).first?.value, "9")
         XCTAssertEqual(queryItems.filter({ $0.name == "COUNT"}).first?.value, "10")
         XCTAssertEqual(queryItems.filter({ $0.name == "method"}).first?.value, "getFirstArrivalToStop")
-        XCTAssertEqual(queryItems.filter({ $0.name == "clientid"}).first?.value, client.clientId)
+        XCTAssertEqual(queryItems.filter({ $0.name == "clientid"}).first?.value, serviceStub.clientId)
         XCTAssertEqual(queryItems.filter({ $0.name == "authkey"}).first?.value, "d2d7459e66bbf2af780c9f33d13b61bf354a69d2")
     }
 }

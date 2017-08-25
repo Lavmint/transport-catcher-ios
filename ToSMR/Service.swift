@@ -67,11 +67,16 @@ public final class Service {
     public let clientId: String
     public let secret: String
     public let serializer: Serializer
+    public let baseURL: String
+    
+    private let xmlSerializer: XMLSerializer
     
     public init(clientId: String, secret: String, serializer: Serializer = JSONSerializer()) {
         self.clientId = clientId
         self.secret = secret
         self.serializer = serializer
+        self.xmlSerializer = XMLSerializer()
+        self.baseURL = "http://tosamara.ru/api"
     }
     
     /// Метод получения прогнозов прибытия транспорта на выбранную остановку. Возможен запрос на несколько остановок сразу, в таком случае результаты упорядочиваются по времени прибытия.
@@ -79,14 +84,14 @@ public final class Service {
     /// - Parameters:
     ///   - ksId: классификаторный номер остановки
     ///   - count: количество ближайших прибывающих маршрутов (необязательный параметр)
-    public func approximateArrivale(toStop ksId: Int, limitation count: Int? = nil, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
+    public func approximateArrivals(toStop ksId: Int, limitation count: Int? = nil, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
         
         let parameters: [Parameter] = [
             Parameter(key: "KS_ID", value: ksId, isSignatureComponent: true),
             Parameter(key: "COUNT", value: count, isSignatureComponent: true)
         ]
         
-        guard let request = URLRequest.toSamaraRequest(method: "getFirstArrivalToStop", parameters: parameters, clientId: clientId, secret: secret) else {
+        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getFirstArrivalToStop", parameters: parameters, clientId: clientId, secret: secret) else {
             return
         }
         
@@ -105,14 +110,14 @@ public final class Service {
     /// - Parameters:
     ///   - krId: классификаторный номер маршрута.
     ///   - ksId: классификаторный номер остановки;
-    public func approximateArrivale(ofRoute krId: Int, toStop ksId: Int, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
+    public func approximateArrivals(ofRoute krId: Int, toStop ksId: Int, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
         
         let parameters: [Parameter] = [
             Parameter(key: "KR_ID", value: krId, isSignatureComponent: true),
             Parameter(key: "KS_ID", value: ksId, isSignatureComponent: true)
         ]
         
-        guard let request = URLRequest.toSamaraRequest(method: "getRouteArrivalToStop", parameters: parameters, clientId: clientId, secret: secret) else {
+        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getRouteArrivalToStop", parameters: parameters, clientId: clientId, secret: secret) else {
             return
         }
         
@@ -142,7 +147,7 @@ public final class Service {
             Parameter(key: "COUNT", value: count, isSignatureComponent: true)
         ]
         
-        guard let request = URLRequest.toSamaraRequest(method: "getSurroundingTransports", parameters: parameters, clientId: clientId, secret: secret) else {
+        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getSurroundingTransports", parameters: parameters, clientId: clientId, secret: secret) else {
             return
         }
         
@@ -168,7 +173,7 @@ public final class Service {
             Parameter(key: "COUNT", value: count, isSignatureComponent: true)
         ]
         
-        guard let request = URLRequest.toSamaraRequest(method: "getTransportsOnRoute", parameters: parameters, clientId: clientId, secret: secret) else {
+        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getTransportsOnRoute", parameters: parameters, clientId: clientId, secret: secret) else {
             return
         }
         
@@ -176,6 +181,23 @@ public final class Service {
             let object: [Transport]? = self?.serializer.object(from: data)
             DispatchQueue.main.async {
                 let box = CompletionBox<[Transport]>(request: request, data: object, response: response, error: error)
+                completion(box)
+            }
+        }
+        dataTask.resume()
+    }
+    
+    /**
+     Классификатор остановок с координатами
+     Расширенная версия классификатора остановок, включающая географические координаты и перечисления проходящих маршрутов. Именно она используется в «Прибывалках». Хранится в документе формата XML по адресу tosamara.ru/api/classifiers/stopsFullDB.xml и имеет следующую структуру:
+     */
+    public func stops(completion: @escaping (CompletionBox<[TransportStop]>) -> Void) {
+        guard let url = URL(string: baseURL + "/classifiers/stopsFullDB.xml") else { return }
+        let request = URLRequest(url: url)
+        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
+            let object: [TransportStop]? = self?.xmlSerializer.object(from: data)
+            DispatchQueue.main.async {
+                let box = CompletionBox<[TransportStop]>(request: request, data: object, response: response, error: error)
                 completion(box)
             }
         }

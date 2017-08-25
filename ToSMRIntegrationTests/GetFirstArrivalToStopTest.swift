@@ -16,7 +16,7 @@ class GetFirstArrivalToStopTest: XCTestCase {
         XCTAssertNotNil(ServiceMock.shared)
         
         let expectedCase = expectation(description: "requestArrivalsWithStopAndCount")
-        ServiceMock.shared?.approximateArrivale(toStop: 9, limitation: 10) { (box) in
+        ServiceMock.shared?.approximateArrivals(toStop: 9, limitation: 10) { (box) in
 
             switch box.result {
             case .succeed(let arrivals):
@@ -34,7 +34,7 @@ class GetFirstArrivalToStopTest: XCTestCase {
         XCTAssertNotNil(ServiceMock.shared)
         
         let expectedCase = expectation(description: "requestArrivalsWithStopOnly")
-        ServiceMock.shared?.approximateArrivale(toStop: 9) { (box) in
+        ServiceMock.shared?.approximateArrivals(toStop: 9) { (box) in
             
             switch box.result {
             case .succeed(let arrivals):
@@ -52,7 +52,7 @@ class GetFirstArrivalToStopTest: XCTestCase {
         let service = Service(clientId: "peace", secret: "doorball")
         
         let expectedCase = expectation(description: "requestArrivalsWithUnregisteredClient")
-        service.approximateArrivale(toStop: 9) { (box) in
+        service.approximateArrivals(toStop: 9) { (box) in
             
             switch box.result {
             case .succeed(_):

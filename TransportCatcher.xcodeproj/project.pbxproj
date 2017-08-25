@@ -10,6 +10,7 @@
 		098CBE74E9ED5C6C8C181470 /* Pods_TransportCatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2587CAFEA5179E53EC91B720 /* Pods_TransportCatcher.framework */; };
 		3A5DF595B8BCE42E32C21674 /* Pods_GeoSMRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
+		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
 		C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74685281EFFA9E700D6021E /* AppDelegate.swift */; };
 		C746852B1EFFA9E700D6021E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746852A1EFFA9E700D6021E /* ViewController.swift */; };
 		C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C746852C1EFFA9E700D6021E /* Main.storyboard */; };
@@ -42,7 +43,7 @@
 		C79F55681F3E1BB000BC13C5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F55671F3E1BB000BC13C5 /* Request.swift */; };
 		C7B00E2D1F3F07990022D6F2 /* ServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */; };
 		C7B00E2F1F3F11F60022D6F2 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */; };
-		C7B00E311F3F18FF0022D6F2 /* ClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */; };
+		C7B00E311F3F18FF0022D6F2 /* ServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E301F3F18FF0022D6F2 /* ServiceStub.swift */; };
 		C7B00E361F3F324F0022D6F2 /* Serializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E351F3F324F0022D6F2 /* Serializator.swift */; };
 		C7B00E381F3F3A9C0022D6F2 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E371F3F3A9C0022D6F2 /* Dictionary.swift */; };
 		C7B00E3A1F3F3BE40022D6F2 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E391F3F3BE40022D6F2 /* JSONSerializer.swift */; };
@@ -157,6 +158,7 @@
 		C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStopsFullDBTest.swift; sourceTree = "<group>"; };
 		C74685251EFFA9E700D6021E /* TransportCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74685281EFFA9E700D6021E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C746852A1EFFA9E700D6021E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -195,7 +197,7 @@
 		C79F55671F3E1BB000BC13C5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceMock.swift; sourceTree = "<group>"; };
 		C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
-		C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientStub.swift; sourceTree = "<group>"; };
+		C7B00E301F3F18FF0022D6F2 /* ServiceStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceStub.swift; sourceTree = "<group>"; };
 		C7B00E351F3F324F0022D6F2 /* Serializator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializator.swift; sourceTree = "<group>"; };
 		C7B00E371F3F3A9C0022D6F2 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		C7B00E391F3F3BE40022D6F2 /* JSONSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
@@ -491,6 +493,7 @@
 				C75E858E1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift */,
 				C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */,
 				C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */,
+				C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -507,7 +510,7 @@
 			isa = PBXGroup;
 			children = (
 				C768A5081F4604CF00A72B6C /* DataStub.swift */,
-				C7B00E301F3F18FF0022D6F2 /* ClientStub.swift */,
+				C7B00E301F3F18FF0022D6F2 /* ServiceStub.swift */,
 			);
 			name = Stubs;
 			sourceTree = "<group>";
@@ -1141,7 +1144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B00E311F3F18FF0022D6F2 /* ClientStub.swift in Sources */,
+				C7B00E311F3F18FF0022D6F2 /* ServiceStub.swift in Sources */,
 				C79709A51F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift in Sources */,
 				C7B00E5C1F3F63390022D6F2 /* JSONSerializerTest.swift in Sources */,
 				C7EC4F591F4F719F009A020A /* XMLSerializerTest.swift in Sources */,
@@ -1154,6 +1157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C75E858F1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift in Sources */,
+				C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */,
 				C7E73BBE1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift in Sources */,
 				C7E73BBC1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift in Sources */,
 				C79709B91F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift in Sources */,

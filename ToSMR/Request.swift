@@ -10,13 +10,10 @@ import Foundation
 
 internal extension URLRequest {
  
-    internal static func toSamaraRequest(method: String, parameters: [Service.Parameter], clientId: String, secret: String) -> URLRequest? {
+    internal static func toSamaraJSONRequest(baseURL: String, method: String, parameters: [Service.Parameter], clientId: String, secret: String) -> URLRequest? {
         
         func makeURL(query: String) -> URL? {
-            let scheme = "http"
-            let host = "tosamara.ru"
-            let path = "/api/json"
-            var rawUrl = scheme + "://" + host + path
+            var rawUrl = baseURL + "/json"
             rawUrl += query.characters.count > 0 ? "?" + query : ""
             guard let url = URL(string: rawUrl) else {
                 return nil

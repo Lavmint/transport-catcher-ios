@@ -6,20 +6,18 @@
 //  Copyright © 2017 Alexey Averkin. All rights reserved.
 //
 
-import Foundation
+import ToSMR
 
-final class ClientStub {
-    let clientId: String
-    let secret: String
+final class ServiceStub {
     
-    init?() {
-        guard let infoDictionary = Bundle(for: ClientStub.self).infoDictionary else {
+    static let shared: Service! = {
+        guard let infoDictionary = Bundle(for: ServiceStub.self).infoDictionary else {
             return nil
         }
         guard let clientId = infoDictionary["clientId"] as? String, let secret = infoDictionary["secret"] as? String else {
             return nil
         }
-        self.clientId = clientId
-        self.secret = secret
-    }
+        return Service(clientId: clientId, secret: secret)
+    }()
+    
 }
