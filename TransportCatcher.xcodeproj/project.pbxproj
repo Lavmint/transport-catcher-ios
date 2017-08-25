@@ -11,6 +11,15 @@
 		3A5DF595B8BCE42E32C21674 /* Pods_GeoSMRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
 		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
+		C73AEB371F50C26200463045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB361F50C26200463045 /* AppDelegate.swift */; };
+		C73AEB391F50C26200463045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB381F50C26200463045 /* ViewController.swift */; };
+		C73AEB3C1F50C26200463045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73AEB3A1F50C26200463045 /* Main.storyboard */; };
+		C73AEB3E1F50C26200463045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73AEB3D1F50C26200463045 /* Assets.xcassets */; };
+		C73AEB411F50C26200463045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73AEB3F1F50C26200463045 /* LaunchScreen.storyboard */; };
+		C73AEB461F50C26C00463045 /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
+		C73AEB471F50C26C00463045 /* ToSMR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C73AEB4F1F50C2DF00463045 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74685641EFFD8A600D6021E /* MapKit.framework */; };
+		C73AEB521F50C35200463045 /* ToSMRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB511F50C35200463045 /* ToSMRService.swift */; };
 		C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74685281EFFA9E700D6021E /* AppDelegate.swift */; };
 		C746852B1EFFA9E700D6021E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746852A1EFFA9E700D6021E /* ViewController.swift */; };
 		C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C746852C1EFFA9E700D6021E /* Main.storyboard */; };
@@ -71,6 +80,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C73AEB481F50C26C00463045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C746851D1EFFA9E700D6021E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C79709941F3A2EE400824E7E;
+			remoteInfo = ToSMR;
+		};
 		C74685491EFFAA2F00D6021E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C746851D1EFFA9E700D6021E /* Project object */;
@@ -130,6 +146,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		C73AEB4A1F50C26C00463045 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C73AEB471F50C26C00463045 /* ToSMR.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C74685591EFFAA2F00D6021E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +186,14 @@
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStopsFullDBTest.swift; sourceTree = "<group>"; };
+		C73AEB341F50C26200463045 /* ToSMRExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToSMRExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73AEB361F50C26200463045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C73AEB381F50C26200463045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C73AEB3B1F50C26200463045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C73AEB3D1F50C26200463045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C73AEB401F50C26200463045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C73AEB421F50C26200463045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73AEB511F50C35200463045 /* ToSMRService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToSMRService.swift; sourceTree = "<group>"; };
 		C74685251EFFA9E700D6021E /* TransportCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74685281EFFA9E700D6021E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C746852A1EFFA9E700D6021E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +259,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C73AEB311F50C26200463045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73AEB4F1F50C2DF00463045 /* MapKit.framework in Frameworks */,
+				C73AEB461F50C26C00463045 /* ToSMR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C74685221EFFA9E700D6021E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +340,60 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
+		C73AEB351F50C26200463045 /* ToSMRExample */ = {
+			isa = PBXGroup;
+			children = (
+				C73AEB4B1F50C28400463045 /* Resources */,
+				C73AEB4D1F50C2A300463045 /* Sources */,
+				C73AEB421F50C26200463045 /* Info.plist */,
+			);
+			path = ToSMRExample;
+			sourceTree = "<group>";
+		};
+		C73AEB4B1F50C28400463045 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C73AEB4C1F50C29400463045 /* Storyboard */,
+				C73AEB3D1F50C26200463045 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C73AEB4C1F50C29400463045 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C73AEB3F1F50C26200463045 /* LaunchScreen.storyboard */,
+				C73AEB3A1F50C26200463045 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		C73AEB4D1F50C2A300463045 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C73AEB501F50C33E00463045 /* Services */,
+				C73AEB4E1F50C2AD00463045 /* Controllers */,
+				C73AEB361F50C26200463045 /* AppDelegate.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		C73AEB4E1F50C2AD00463045 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C73AEB381F50C26200463045 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C73AEB501F50C33E00463045 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C73AEB511F50C35200463045 /* ToSMRService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		C746851C1EFFA9E700D6021E = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +401,7 @@
 				C74685401EFFAA2F00D6021E /* GeoSMR */,
 				C746854D1EFFAA2F00D6021E /* GeoSMRTests */,
 				C746857A1EFFD91600D6021E /* GeoSMRIntegrationTests */,
+				C73AEB351F50C26200463045 /* ToSMRExample */,
 				C79709961F3A2EE400824E7E /* ToSMR */,
 				C79709A31F3A2EE400824E7E /* ToSMRTests */,
 				C79709B71F3A2F1600824E7E /* ToSMRIntegrationTests */,
@@ -323,6 +422,7 @@
 				C79709951F3A2EE400824E7E /* ToSMR.framework */,
 				C797099D1F3A2EE400824E7E /* ToSMRTests.xctest */,
 				C79709B61F3A2F1600824E7E /* ToSMRIntegrationTests.xctest */,
+				C73AEB341F50C26200463045 /* ToSMRExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -615,6 +715,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C73AEB331F50C26200463045 /* ToSMRExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73AEB431F50C26200463045 /* Build configuration list for PBXNativeTarget "ToSMRExample" */;
+			buildPhases = (
+				C73AEB301F50C26200463045 /* Sources */,
+				C73AEB311F50C26200463045 /* Frameworks */,
+				C73AEB321F50C26200463045 /* Resources */,
+				C73AEB4A1F50C26C00463045 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C73AEB491F50C26C00463045 /* PBXTargetDependency */,
+			);
+			name = ToSMRExample;
+			productName = ToSMRExample;
+			productReference = C73AEB341F50C26200463045 /* ToSMRExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C74685241EFFA9E700D6021E /* TransportCatcher */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C74685371EFFA9E700D6021E /* Build configuration list for PBXNativeTarget "TransportCatcher" */;
@@ -767,6 +886,16 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Alexey Averkin";
 				TargetAttributes = {
+					C73AEB331F50C26200463045 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = MGB98L2Y6W;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					C74685241EFFA9E700D6021E = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8245AS67CL;
@@ -795,7 +924,7 @@
 					};
 					C79709941F3A2EE400824E7E = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8245AS67CL;
+						DevelopmentTeam = MGB98L2Y6W;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -828,6 +957,7 @@
 				C746853E1EFFAA2F00D6021E /* GeoSMR */,
 				C74685461EFFAA2F00D6021E /* GeoSMRTests */,
 				C74685781EFFD91600D6021E /* GeoSMRIntegrationTests */,
+				C73AEB331F50C26200463045 /* ToSMRExample */,
 				C79709941F3A2EE400824E7E /* ToSMR */,
 				C797099C1F3A2EE400824E7E /* ToSMRTests */,
 				C79709B51F3A2F1600824E7E /* ToSMRIntegrationTests */,
@@ -836,6 +966,16 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C73AEB321F50C26200463045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73AEB411F50C26200463045 /* LaunchScreen.storyboard in Resources */,
+				C73AEB3E1F50C26200463045 /* Assets.xcassets in Resources */,
+				C73AEB3C1F50C26200463045 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C74685231EFFA9E700D6021E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1086,6 +1226,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C73AEB301F50C26200463045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73AEB391F50C26200463045 /* ViewController.swift in Sources */,
+				C73AEB521F50C35200463045 /* ToSMRService.swift in Sources */,
+				C73AEB371F50C26200463045 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C74685211EFFA9E700D6021E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1168,6 +1318,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C73AEB491F50C26C00463045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C79709941F3A2EE400824E7E /* ToSMR */;
+			targetProxy = C73AEB481F50C26C00463045 /* PBXContainerItemProxy */;
+		};
 		C746854A1EFFAA2F00D6021E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C746853E1EFFAA2F00D6021E /* GeoSMR */;
@@ -1211,6 +1366,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C73AEB3A1F50C26200463045 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C73AEB3B1F50C26200463045 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C73AEB3F1F50C26200463045 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C73AEB401F50C26200463045 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		C746852C1EFFA9E700D6021E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1230,6 +1401,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C73AEB441F50C26200463045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MGB98L2Y6W;
+				INFOPLIST_FILE = ToSMRExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alexey.averkin.ToSMRExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C73AEB451F50C26200463045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MGB98L2Y6W;
+				INFOPLIST_FILE = ToSMRExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alexey.averkin.ToSMRExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		C74685351EFFA9E700D6021E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1466,7 +1665,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8245AS67CL;
+				DEVELOPMENT_TEAM = MGB98L2Y6W;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1492,7 +1691,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8245AS67CL;
+				DEVELOPMENT_TEAM = MGB98L2Y6W;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1566,6 +1765,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C73AEB431F50C26200463045 /* Build configuration list for PBXNativeTarget "ToSMRExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73AEB441F50C26200463045 /* Debug */,
+				C73AEB451F50C26200463045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C74685201EFFA9E700D6021E /* Build configuration list for PBXProject "TransportCatcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
