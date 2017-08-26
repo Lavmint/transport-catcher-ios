@@ -21,7 +21,7 @@
 		C73AEB4F1F50C2DF00463045 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74685641EFFD8A600D6021E /* MapKit.framework */; };
 		C73AEB521F50C35200463045 /* ToSMRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB511F50C35200463045 /* ToSMRService.swift */; };
 		C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74685281EFFA9E700D6021E /* AppDelegate.swift */; };
-		C746852B1EFFA9E700D6021E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746852A1EFFA9E700D6021E /* ViewController.swift */; };
+		C746852B1EFFA9E700D6021E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746852A1EFFA9E700D6021E /* MapViewController.swift */; };
 		C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C746852C1EFFA9E700D6021E /* Main.storyboard */; };
 		C74685301EFFA9E700D6021E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C746852F1EFFA9E700D6021E /* Assets.xcassets */; };
 		C74685331EFFA9E700D6021E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */; };
@@ -72,6 +72,7 @@
 		C7E73BB81F4F39D6005ED5B6 /* stopsFullDB.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */; };
 		C7E73BBC1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */; };
 		C7E73BBE1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */; };
+		C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E81B511F51EF4700EFCDC0 /* DGSTileOverlay.swift */; };
 		C7EC4F571F4F7071009A020A /* XMLSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F561F4F7071009A020A /* XMLSerializer.swift */; };
 		C7EC4F591F4F719F009A020A /* XMLSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */; };
 		C7EC4F5D1F4F7931009A020A /* XMLParserDictionaryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */; };
@@ -196,7 +197,7 @@
 		C73AEB511F50C35200463045 /* ToSMRService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToSMRService.swift; sourceTree = "<group>"; };
 		C74685251EFFA9E700D6021E /* TransportCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74685281EFFA9E700D6021E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C746852A1EFFA9E700D6021E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C746852A1EFFA9E700D6021E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C746852D1EFFA9E700D6021E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C746852F1EFFA9E700D6021E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C74685321EFFA9E700D6021E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -252,6 +253,7 @@
 		C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = stopsFullDB.xml; sourceTree = "<group>"; };
 		C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTransportsOnRouteTest.swift; sourceTree = "<group>"; };
 		C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSurroundingTransportTest.swift; sourceTree = "<group>"; };
+		C7E81B511F51EF4700EFCDC0 /* DGSTileOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGSTileOverlay.swift; sourceTree = "<group>"; };
 		C7EC4F561F4F7071009A020A /* XMLSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializer.swift; sourceTree = "<group>"; };
 		C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializerTest.swift; sourceTree = "<group>"; };
 		C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserDictionaryAdapter.swift; sourceTree = "<group>"; };
@@ -430,11 +432,8 @@
 		C74685271EFFA9E700D6021E /* TransportCatcher */ = {
 			isa = PBXGroup;
 			children = (
-				C74685281EFFA9E700D6021E /* AppDelegate.swift */,
-				C746852A1EFFA9E700D6021E /* ViewController.swift */,
-				C746852C1EFFA9E700D6021E /* Main.storyboard */,
-				C746852F1EFFA9E700D6021E /* Assets.xcassets */,
-				C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */,
+				C7678CED1F51EDEB00783339 /* Resources */,
+				C7678CEF1F51EE0600783339 /* Sources */,
 				C74685341EFFA9E700D6021E /* Info.plist */,
 			);
 			path = TransportCatcher;
@@ -478,6 +477,41 @@
 				C746857D1EFFD91600D6021E /* Info.plist */,
 			);
 			path = GeoSMRIntegrationTests;
+			sourceTree = "<group>";
+		};
+		C7678CED1F51EDEB00783339 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C746852F1EFFA9E700D6021E /* Assets.xcassets */,
+				C7678CEE1F51EDF500783339 /* Storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C7678CEE1F51EDF500783339 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */,
+				C746852C1EFFA9E700D6021E /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		C7678CEF1F51EE0600783339 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C7678CF01F51EE1900783339 /* ViewControllers */,
+				C74685281EFFA9E700D6021E /* AppDelegate.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		C7678CF01F51EE1900783339 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7E81B531F51EF5000EFCDC0 /* MapViewController */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C768A5061F46049300A72B6C /* Requests */ = {
@@ -659,6 +693,15 @@
 				C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */,
 			);
 			name = Classifier;
+			sourceTree = "<group>";
+		};
+		C7E81B531F51EF5000EFCDC0 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7E81B511F51EF4700EFCDC0 /* DGSTileOverlay.swift */,
+				C746852A1EFFA9E700D6021E /* MapViewController.swift */,
+			);
+			name = MapViewController;
 			sourceTree = "<group>";
 		};
 		C7EC4F5A1F4F7909009A020A /* XML */ = {
@@ -1240,7 +1283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C746852B1EFFA9E700D6021E /* ViewController.swift in Sources */,
+				C746852B1EFFA9E700D6021E /* MapViewController.swift in Sources */,
+				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1772,6 +1816,7 @@
 				C73AEB451F50C26200463045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C74685201EFFA9E700D6021E /* Build configuration list for PBXProject "TransportCatcher" */ = {
 			isa = XCConfigurationList;

@@ -1,26 +1,105 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1zH-uG-SI1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Map View Controller-->
+        <scene sceneID="MdY-tN-xEC">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1zH-uG-SI1" customClass="MapViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="3fg-FT-on6"/>
+                        <viewControllerLayoutGuide type="bottom" id="tML-gu-MPQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="oL6-Iv-Doo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ynR-wO-Mrh">
+                                <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mh9-Ik-AQ1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="424.5"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ynR-wO-Mrh" firstAttribute="top" secondItem="mh9-Ik-AQ1" secondAttribute="bottom" id="EQx-4e-FgQ"/>
+                            <constraint firstItem="ynR-wO-Mrh" firstAttribute="width" secondItem="oL6-Iv-Doo" secondAttribute="width" multiplier="1/3" id="F8R-sv-Q6s"/>
+                            <constraint firstItem="ynR-wO-Mrh" firstAttribute="top" secondItem="3fg-FT-on6" secondAttribute="bottom" id="MV4-cA-wtd"/>
+                            <constraint firstItem="ynR-wO-Mrh" firstAttribute="top" secondItem="oL6-Iv-Doo" secondAttribute="top" id="NwV-rg-YmY"/>
+                            <constraint firstItem="mh9-Ik-AQ1" firstAttribute="top" secondItem="3fg-FT-on6" secondAttribute="bottom" id="Of8-Ym-aQF"/>
+                            <constraint firstItem="ynR-wO-Mrh" firstAttribute="leading" secondItem="mh9-Ik-AQ1" secondAttribute="trailing" id="Qy6-15-ISw"/>
+                            <constraint firstAttribute="trailing" secondItem="mh9-Ik-AQ1" secondAttribute="trailing" id="S9h-zw-Bpt"/>
+                            <constraint firstItem="ynR-wO-Mrh" firstAttribute="leading" secondItem="oL6-Iv-Doo" secondAttribute="leading" id="UIy-Qc-BNl"/>
+                            <constraint firstItem="ynR-wO-Mrh" firstAttribute="width" secondItem="oL6-Iv-Doo" secondAttribute="width" multiplier="1/3" id="XA3-0K-fWa"/>
+                            <constraint firstItem="ynR-wO-Mrh" firstAttribute="leading" secondItem="mh9-Ik-AQ1" secondAttribute="trailing" id="aCI-rF-ILJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ynR-wO-Mrh" secondAttribute="trailing" id="bHu-ob-CBy"/>
+                            <constraint firstItem="tML-gu-MPQ" firstAttribute="top" secondItem="mh9-Ik-AQ1" secondAttribute="bottom" id="cig-hN-cta"/>
+                            <constraint firstItem="mh9-Ik-AQ1" firstAttribute="top" secondItem="3fg-FT-on6" secondAttribute="bottom" id="dSp-lI-tKd"/>
+                            <constraint firstItem="mh9-Ik-AQ1" firstAttribute="leading" secondItem="oL6-Iv-Doo" secondAttribute="leading" id="ibS-Zc-wLc"/>
+                            <constraint firstItem="ynR-wO-Mrh" firstAttribute="height" secondItem="oL6-Iv-Doo" secondAttribute="height" multiplier="1/3" id="nEm-lq-Vgf"/>
+                            <constraint firstItem="tML-gu-MPQ" firstAttribute="top" secondItem="mh9-Ik-AQ1" secondAttribute="bottom" id="xlT-Lb-s84"/>
+                            <constraint firstItem="tML-gu-MPQ" firstAttribute="top" secondItem="ynR-wO-Mrh" secondAttribute="bottom" id="yeB-OZ-v5L"/>
+                            <constraint firstItem="ynR-wO-Mrh" firstAttribute="top" secondItem="3fg-FT-on6" secondAttribute="bottom" id="z6k-e8-Cda"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dSp-lI-tKd"/>
+                                <exclude reference="XA3-0K-fWa"/>
+                                <exclude reference="z6k-e8-Cda"/>
+                                <exclude reference="aCI-rF-ILJ"/>
+                                <exclude reference="MV4-cA-wtd"/>
+                                <exclude reference="F8R-sv-Q6s"/>
+                                <exclude reference="Qy6-15-ISw"/>
+                                <exclude reference="NwV-rg-YmY"/>
+                                <exclude reference="xlT-Lb-s84"/>
+                                <exclude reference="cig-hN-cta"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="dSp-lI-tKd"/>
+                                <exclude reference="S9h-zw-Bpt"/>
+                                <exclude reference="nEm-lq-Vgf"/>
+                                <include reference="MV4-cA-wtd"/>
+                                <include reference="F8R-sv-Q6s"/>
+                                <exclude reference="UIy-Qc-BNl"/>
+                                <include reference="Qy6-15-ISw"/>
+                                <exclude reference="NwV-rg-YmY"/>
+                                <exclude reference="EQx-4e-FgQ"/>
+                                <include reference="cig-hN-cta"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="S9h-zw-Bpt"/>
+                                <include reference="XA3-0K-fWa"/>
+                                <include reference="z6k-e8-Cda"/>
+                                <include reference="aCI-rF-ILJ"/>
+                                <exclude reference="nEm-lq-Vgf"/>
+                                <exclude reference="UIy-Qc-BNl"/>
+                                <exclude reference="EQx-4e-FgQ"/>
+                                <include reference="xlT-Lb-s84"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="mh9-Ik-AQ1" id="jyz-1h-Ygn"/>
+                        <outlet property="tableView" destination="ynR-wO-Mrh" id="bAW-mH-CSu"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xzb-Ty-knt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2212" y="-941"/>
         </scene>
     </scenes>
 </document>
