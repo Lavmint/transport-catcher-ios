@@ -1,3 +1,11 @@
+//
+//  DGSTileOverlay.swift
+//  iOS-SDKs-for-tiles https://github.com/2gis/iOS-SDKs-for-tiles
+//
+//  Created by kriogen https://github.com/kriogen on 25/06/2017.
+//  Copyright © 2017 kriogen. All rights reserved.
+//
+
 import MapKit
 
 public class DGSTileOverlay: MKTileOverlay {
@@ -7,21 +15,18 @@ public class DGSTileOverlay: MKTileOverlay {
 	private let urlSession = URLSession(configuration: URLSessionConfiguration.default)
 
 	override public func url(forTilePath path: MKTileOverlayPath) -> URL {
-		if self.isRetina {
-			return URL(string: String(format: "https://rtile2.maps.2gis.com/tiles?x=%d&y=%d&z=%d&v=1", path.x, path.y, path.z))!
-		} else {
-			return URL(string: String(format: "https://tile2.maps.2gis.com/tiles?x=%d&y=%d&z=%d&v=1", path.x, path.y, path.z))!
-		}
+        let format = isRetina ? "https://rtile2.maps.2gis.com/tiles?x=%d&y=%d&z=%d&v=1" : "https://tile2.maps.2gis.com/tiles?x=%d&y=%d&z=%d&v=1"
+        guard let url = URL(string: String(format: format, path.x, path.y, path.z)) else {
+            assertionFailure()
+            return super.url(forTilePath: path)
+        }
+        return url
 	}
 
 	internal init(isRetina: Bool = true) {
 		self.isRetina = isRetina
 		super.init(urlTemplate: nil)
-		if isRetina {
-			self.tileSize = CGSize(width: 512, height: 512)
-		} else {
-			self.tileSize = CGSize(width: 256, height: 256)
-		}
+        self.tileSize = isRetina ? CGSize(width: 512, height: 512) : CGSize(width: 256, height: 256)
 		self.canReplaceMapContent = true
 		self.maximumZ = 18
 	}
@@ -32,9 +37,8 @@ public class DGSTileOverlay: MKTileOverlay {
 			result(cachedData, nil)
 		} else {
 			let task = self.urlSession.dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
-				if let data = data {
-					self?.cache.setObject(data as NSData, forKey: url as NSURL)
-				}
+                guard let data = data else { return }
+                self?.cache.setObject(data as NSData, forKey: url as NSURL)
 				result(data, error)
 			})
 			task.resume()
