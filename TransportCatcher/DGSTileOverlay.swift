@@ -8,7 +8,7 @@
 
 import MapKit
 
-public class DGSTileOverlay: MKTileOverlay {
+internal class DGSTileOverlay: MKTileOverlay {
 
 	private let isRetina: Bool
 	private let cache = NSCache<NSURL, NSData>()
