@@ -11,14 +11,11 @@ import ToSMR
 
 internal class StopMapViewController: UIViewController {
     
-    private(set) var stopMapView: StopMapView!
-    private(set) var stopMapViewTableViewDataSource: StopMapTableViewDataSource!
-    private(set) var stopMapViewMapViewDelegate: StopMapViewMKMapViewDelegate!
+    @IBOutlet var stopMapView: StopMapView!
     
-    override func loadView() {
-        stopMapView = StopMapView.loadFromNib()
-        view = stopMapView
-    }
+    var stopMapViewDelegate: StopMapViewDelegate!
+    
+    private(set) var stopArrivalTableController: ArrivalTableViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +25,10 @@ internal class StopMapViewController: UIViewController {
     
     func reloadData() {
         
-        stopMapViewMapViewDelegate = StopMapViewMKMapViewDelegate()
-        stopMapView.mapView.delegate = stopMapViewMapViewDelegate
+        stopMapViewDelegate = StopMapViewDelegate()
+        stopMapViewDelegate.didSelectStop = onSelectedStopChanged
+        stopMapView.delegate = stopMapViewDelegate
         stopMapView.configure()
-        
-        stopMapViewTableViewDataSource = StopMapTableViewDataSource()
-        stopMapView.tableView.dataSource = stopMapViewTableViewDataSource
         
         Service.shared.stops { [weak self] (box) in
             guard let wself = self else { return }
@@ -41,11 +36,21 @@ internal class StopMapViewController: UIViewController {
             case .succeed(let stops):
                 guard let unwrappedStops = stops else { return }
                 let annotations: [TransportStopAnnotation] = unwrappedStops.map({ TransportStopAnnotation(stop: $0) })
-                wself.stopMapView.mapView.addAnnotations(annotations)
+                wself.stopMapView.addAnnotations(annotations)
             case .error(let error):
                 let alert = UIAlertController(title: "", message: error.localizedDescription, preferredStyle: .alert)
                 wself.present(alert, animated: true, completion: nil)
             }
+        }
+    }
+    
+    private func onSelectedStopChanged(stopId: Int) {
+        stopArrivalTableController.configure(withStopId: stopId)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let arrivalController = segue.destination as? ArrivalTableViewController {
+            self.stopArrivalTableController = arrivalController
         }
     }
 }

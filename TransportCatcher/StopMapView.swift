@@ -9,28 +9,30 @@
 import UIKit
 import MapKit
 
-internal class StopMapView: UIView, NibLoadableView {
-    
-    @IBOutlet var mapView: MKMapView!
-    @IBOutlet var tableView: UITableView!
+internal class StopMapView: MKMapView {
     
     var mapViewOverlay: MKTileOverlay!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        configure()
+    }
+    
     func configure() {
         
-        mapView.showsCompass = false
-        mapView.showsCompass = true
-        mapView.showsUserLocation = true
-        mapView.mapType = .standard
-        mapView.showsPointsOfInterest = false
-        mapView.showsBuildings = false
-        mapView.showsTraffic = false
+        self.showsCompass = false
+        self.showsCompass = true
+        self.showsUserLocation = true
+        self.mapType = .standard
+        self.showsPointsOfInterest = false
+        self.showsBuildings = false
+        self.showsTraffic = false
         
-        mapViewOverlay = DGSTileOverlay()
-        mapView.insert(mapViewOverlay, at: 0, level: .aboveLabels)
+        self.mapViewOverlay = DGSTileOverlay()
+        self.insert(mapViewOverlay, at: 0, level: .aboveLabels)
         
         let center = CLLocationCoordinate2D(latitude: 53.220841596277012, longitude: 50.170634245448952)
         let span = MKCoordinateSpan(latitudeDelta: 0.11244419438441611, longitudeDelta: 0.16504663881798365)
-        mapView.setRegion(MKCoordinateRegion(center: center, span: span), animated: true)
+        self.setRegion(MKCoordinateRegion(center: center, span: span), animated: true)
     }
 }

@@ -7,9 +7,12 @@
 //
 
 import MapKit
+import ToSMR
 
-internal class StopMapViewMKMapViewDelegate: NSObject, MKMapViewDelegate {
+internal class StopMapViewDelegate: NSObject, MKMapViewDelegate {
     
+    var didSelectStop: ((Int) -> Void)?
+
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         return MKTileOverlayRenderer(overlay: overlay)
     }
@@ -26,16 +29,22 @@ internal class StopMapViewMKMapViewDelegate: NSObject, MKMapViewDelegate {
     func view(forTransportAnnotation annotation: TransportStopAnnotation, mapView: MKMapView) -> MKAnnotationView {
         
         let identifier = String(annotation.stop.id)
-        var view: MKPinAnnotationView
+        var view: MKAnnotationView
         
         if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView {
             dequeuedView.annotation = annotation
             view = dequeuedView
         } else {
-            view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
+            view.image = #imageLiteral(resourceName: "ic_stop")
         }
         return view
+    }
+
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard let transportAnnotation = view.annotation as? TransportStopAnnotation else { return }
+        didSelectStop?(transportAnnotation.stop.id)
     }
 }

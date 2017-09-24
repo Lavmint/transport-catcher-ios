@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gbI-q9-Oe4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aDL-3k-Vfd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Настройки-->
+        <scene sceneID="wE0-4k-77g">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="aDL-3k-Vfd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Настройки" id="EQk-gg-FJk"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="plE-VD-Fa3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gbI-q9-Oe4" kind="relationship" relationship="rootViewController" id="tTB-NN-90b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1b-eE-ney" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3313" y="-194"/>
+        </scene>
         <!--Settings Table View Controller-->
         <scene sceneID="JHa-VN-Qev">
             <objects>
@@ -22,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ehb-tM-z6T" id="lrV-YM-M3i">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -32,6 +50,7 @@
                             <outlet property="delegate" destination="gbI-q9-Oe4" id="E8p-a2-nbs"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="LJG-qN-fyI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyr-SH-ATb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

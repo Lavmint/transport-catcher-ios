@@ -22,7 +22,7 @@ final class TransportStopAnnotation: NSObject, MKAnnotation {
     }
     
     public var subtitle: String? {
-        return nil
+        return [stop.adjacentStreet, stop.direction].joined(separator: " ")
     }
     
     public var coordinate: CLLocationCoordinate2D {
