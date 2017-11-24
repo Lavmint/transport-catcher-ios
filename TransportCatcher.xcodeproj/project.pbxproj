@@ -17,6 +17,7 @@
 		C70CA1BA1F6DDA7000A30DC8 /* StopMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* StopMap.storyboard */; };
 		C70CA1BD1F6DDC3500A30DC8 /* TransportStopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
+		C73894BA1FC82B4E00F65DE3 /* ArrivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73894B91FC82B4E00F65DE3 /* ArrivalTableViewCell.swift */; };
 		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
 		C73AEB371F50C26200463045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB361F50C26200463045 /* AppDelegate.swift */; };
 		C73AEB391F50C26200463045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB381F50C26200463045 /* ViewController.swift */; };
@@ -187,16 +188,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1053783A2D3A1C09582E1710 /* Pods-TransportCatcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportCatcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransportCatcher/Pods-TransportCatcher.release.xcconfig"; sourceTree = "<group>"; };
-		1FAEFFF4447D5716FA8AD313 /* Pods-GeoSMR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMR.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMR/Pods-GeoSMR.release.xcconfig"; sourceTree = "<group>"; };
+		1053783A2D3A1C09582E1710 /* Pods-TransportCatcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TransportCatcher.release.xcconfig"; sourceTree = "<group>"; };
+		1FAEFFF4447D5716FA8AD313 /* Pods-GeoSMR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSMR.release.xcconfig"; sourceTree = "<group>"; };
 		2584F5F9AD1414FEACD1D830 /* Pods_GeoSMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2587CAFEA5179E53EC91B720 /* Pods_TransportCatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportCatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		40C19C7C949406D7F0E20194 /* Pods-TransportCatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportCatcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransportCatcher/Pods-TransportCatcher.debug.xcconfig"; sourceTree = "<group>"; };
-		462E90C209379499022DB92A /* Pods-GeoSMRIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMRIntegrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMRIntegrationTests/Pods-GeoSMRIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
-		57B60E246BF99F82D2512B00 /* Pods-GeoSMR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMR/Pods-GeoSMR.debug.xcconfig"; sourceTree = "<group>"; };
-		6A088F84F2429E3C8D294850 /* Pods-GeoSMRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMRTests/Pods-GeoSMRTests.release.xcconfig"; sourceTree = "<group>"; };
-		87B14CCE3F9BD47BBA6132E0 /* Pods-GeoSMRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMRTests/Pods-GeoSMRTests.debug.xcconfig"; sourceTree = "<group>"; };
-		89F656FC773CA31F95E053EE /* Pods-GeoSMRIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMRIntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMRIntegrationTests/Pods-GeoSMRIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		40C19C7C949406D7F0E20194 /* Pods-TransportCatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TransportCatcher.debug.xcconfig"; sourceTree = "<group>"; };
+		462E90C209379499022DB92A /* Pods-GeoSMRIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSMRIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		57B60E246BF99F82D2512B00 /* Pods-GeoSMR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSMR.debug.xcconfig"; sourceTree = "<group>"; };
+		6A088F84F2429E3C8D294850 /* Pods-GeoSMRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSMRTests.release.xcconfig"; sourceTree = "<group>"; };
+		87B14CCE3F9BD47BBA6132E0 /* Pods-GeoSMRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSMRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		89F656FC773CA31F95E053EE /* Pods-GeoSMRIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoSMRIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportCatcherConfiguration.swift; sourceTree = "<group>"; };
 		C70CA1B11F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewDataSource.swift; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 		C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportStopAnnotation.swift; sourceTree = "<group>"; };
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C73894B91FC82B4E00F65DE3 /* ArrivalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewCell.swift; sourceTree = "<group>"; };
 		C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStopsFullDBTest.swift; sourceTree = "<group>"; };
 		C73AEB341F50C26200463045 /* ToSMRExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToSMRExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73AEB361F50C26200463045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -367,7 +369,7 @@
 				C70CA1BB1F6DDC1900A30DC8 /* StopMap */,
 				C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C70CA1AA1F6DCC9000A30DC8 /* View */ = {
@@ -377,7 +379,7 @@
 				C7678CEE1F51EDF500783339 /* Storyboard */,
 				C70CA1AF1F6DCCEB00A30DC8 /* StopMap */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		C70CA1AB1F6DCC9400A30DC8 /* Controller */ = {
@@ -387,7 +389,7 @@
 				C70CA1B01F6DCF6700A30DC8 /* StopMap */,
 				C79123111F6DC3F80014AC4C /* SettingsTableViewController.swift */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		C70CA1AF1F6DCCEB00A30DC8 /* StopMap */ = {
@@ -396,7 +398,7 @@
 				C7C3690E1F6DB6240032F49E /* StopMapView.swift */,
 				C7E81B511F51EF4700EFCDC0 /* DGSTileOverlay.swift */,
 			);
-			name = StopMap;
+			path = StopMap;
 			sourceTree = "<group>";
 		};
 		C70CA1B01F6DCF6700A30DC8 /* StopMap */ = {
@@ -405,7 +407,7 @@
 				C746852A1EFFA9E700D6021E /* StopMapViewController.swift */,
 				C70CA1B31F6DD14400A30DC8 /* StopMapViewDelegate.swift */,
 			);
-			name = StopMap;
+			path = StopMap;
 			sourceTree = "<group>";
 		};
 		C70CA1BB1F6DDC1900A30DC8 /* StopMap */ = {
@@ -413,7 +415,7 @@
 			children = (
 				C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */,
 			);
-			name = StopMap;
+			path = StopMap;
 			sourceTree = "<group>";
 		};
 		C723B9041F3A5FCD00949C76 /* Extension */ = {
@@ -422,7 +424,46 @@
 				C7B00E4D1F3F509C0022D6F2 /* Swift */,
 				C7B00E4E1F3F50B00022D6F2 /* Foundation */,
 			);
-			name = Extension;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C73894B31FC827DE00F65DE3 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		C73894B41FC827E400F65DE3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C73894B61FC8286600F65DE3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C73894B71FC82B1800F65DE3 /* ArrivalTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C73894B81FC82B2B00F65DE3 /* Cells */,
+				C70CA1B11F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift */,
+				C7BBEED31F78383900EF3C42 /* ArrivalTableViewController.swift */,
+			);
+			path = ArrivalTableViewController;
+			sourceTree = "<group>";
+		};
+		C73894B81FC82B2B00F65DE3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C73894B91FC82B4E00F65DE3 /* ArrivalTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C73AEB351F50C26200463045 /* ToSMRExample */ = {
@@ -441,7 +482,7 @@
 				C73AEB4C1F50C29400463045 /* Storyboard */,
 				C73AEB3D1F50C26200463045 /* Assets.xcassets */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		C73AEB4C1F50C29400463045 /* Storyboard */ = {
@@ -450,7 +491,7 @@
 				C73AEB3F1F50C26200463045 /* LaunchScreen.storyboard */,
 				C73AEB3A1F50C26200463045 /* Main.storyboard */,
 			);
-			name = Storyboard;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		C73AEB4D1F50C2A300463045 /* Sources */ = {
@@ -460,7 +501,7 @@
 				C73AEB4E1F50C2AD00463045 /* Controllers */,
 				C73AEB361F50C26200463045 /* AppDelegate.swift */,
 			);
-			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		C73AEB4E1F50C2AD00463045 /* Controllers */ = {
@@ -468,7 +509,7 @@
 			children = (
 				C73AEB381F50C26200463045 /* ViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C73AEB501F50C33E00463045 /* Services */ = {
@@ -476,7 +517,7 @@
 			children = (
 				C73AEB511F50C35200463045 /* ToSMRService.swift */,
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C746851C1EFFA9E700D6021E = {
@@ -509,7 +550,7 @@
 				C79709B61F3A2F1600824E7E /* ToSMRIntegrationTests.xctest */,
 				C73AEB341F50C26200463045 /* ToSMRExample.app */,
 			);
-			name = Products;
+			path = Products;
 			sourceTree = "<group>";
 		};
 		C74685271EFFA9E700D6021E /* TransportCatcher */ = {
@@ -551,7 +592,7 @@
 				E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */,
 				2587CAFEA5179E53EC91B720 /* Pods_TransportCatcher.framework */,
 			);
-			name = Frameworks;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		C746857A1EFFD91600D6021E /* GeoSMRIntegrationTests */ = {
@@ -568,7 +609,7 @@
 			children = (
 				C746852F1EFFA9E700D6021E /* Images.xcassets */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		C7678CEE1F51EDF500783339 /* Storyboard */ = {
@@ -580,7 +621,7 @@
 				C70CA1B71F6DD98E00A30DC8 /* StopList.storyboard */,
 				C70CA1B51F6DD97F00A30DC8 /* Settings.storyboard */,
 			);
-			name = Storyboard;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		C7678CEF1F51EE0600783339 /* Sources */ = {
@@ -589,13 +630,13 @@
 				C70CA1A91F6DCC6D00A30DC8 /* Model */,
 				C70CA1AA1F6DCC9000A30DC8 /* View */,
 				C70CA1AB1F6DCC9400A30DC8 /* Controller */,
-				C791231C1F6DCA460014AC4C /* Storage */,
+				C73894B31FC827DE00F65DE3 /* Storage */,
 				C79123191F6DC9BA0014AC4C /* Service */,
-				C791231B1F6DCA150014AC4C /* Helper */,
-				C79123181F6DC9AE0014AC4C /* Extension */,
+				C73894B61FC8286600F65DE3 /* Extension */,
+				C73894B41FC827E400F65DE3 /* Helper */,
 				C74685281EFFA9E700D6021E /* AppDelegate.swift */,
 			);
-			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		C768A5061F46049300A72B6C /* Requests */ = {
@@ -603,14 +644,14 @@
 			children = (
 				C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */,
 			);
-			name = Requests;
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		C768A50A1F46054000A72B6C /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Mocks;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		C79123171F6DC4C10014AC4C /* Protocol */ = {
@@ -618,14 +659,7 @@
 			children = (
 				C7C369121F6DB6890032F49E /* NibLoadableView.swift */,
 			);
-			name = Protocol;
-			sourceTree = "<group>";
-		};
-		C79123181F6DC9AE0014AC4C /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Extension;
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		C79123191F6DC9BA0014AC4C /* Service */ = {
@@ -633,21 +667,7 @@
 			children = (
 				C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */,
 			);
-			name = Service;
-			sourceTree = "<group>";
-		};
-		C791231B1F6DCA150014AC4C /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Helper;
-			sourceTree = "<group>";
-		};
-		C791231C1F6DCA460014AC4C /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Storage;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		C79709961F3A2EE400824E7E /* ToSMR */ = {
@@ -688,7 +708,7 @@
 				C79F55671F3E1BB000BC13C5 /* Request.swift */,
 				C79709C11F3A2FF700824E7E /* Service.swift */,
 			);
-			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		C7B00E341F3F32410022D6F2 /* Serialization */ = {
@@ -699,7 +719,7 @@
 				C7B00E501F3F59B60022D6F2 /* Parsable.swift */,
 				C7B00E351F3F324F0022D6F2 /* Serializator.swift */,
 			);
-			name = Serialization;
+			path = Serialization;
 			sourceTree = "<group>";
 		};
 		C7B00E4D1F3F509C0022D6F2 /* Swift */ = {
@@ -709,7 +729,7 @@
 				C7B00E451F3F4E4E0022D6F2 /* Optional.swift */,
 				C723B9051F3A5FE200949C76 /* String.swift */,
 			);
-			name = Swift;
+			path = Swift;
 			sourceTree = "<group>";
 		};
 		C7B00E4E1F3F50B00022D6F2 /* Foundation */ = {
@@ -717,7 +737,7 @@
 			children = (
 				C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */,
 			);
-			name = Foundation;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		C7B00E521F3F62310022D6F2 /* Sources */ = {
@@ -728,7 +748,7 @@
 				C768A5061F46049300A72B6C /* Requests */,
 				C7B00E5A1F3F63100022D6F2 /* Serialization */,
 			);
-			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		C7B00E531F3F623C0022D6F2 /* Resources */ = {
@@ -737,7 +757,7 @@
 				C7E73BAB1F4F39AE005ED5B6 /* Method */,
 				C7E73BAC1F4F39C4005ED5B6 /* Classifier */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		C7B00E541F3F624F0022D6F2 /* Sources */ = {
@@ -750,7 +770,7 @@
 				C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */,
 				C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */,
 			);
-			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		C7B00E561F3F62600022D6F2 /* Mocks */ = {
@@ -758,7 +778,7 @@
 			children = (
 				C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */,
 			);
-			name = Mocks;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		C7B00E571F3F62680022D6F2 /* Stubs */ = {
@@ -767,7 +787,7 @@
 				C768A5081F4604CF00A72B6C /* DataStub.swift */,
 				C7B00E301F3F18FF0022D6F2 /* ServiceStub.swift */,
 			);
-			name = Stubs;
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		C7B00E5A1F3F63100022D6F2 /* Serialization */ = {
@@ -776,17 +796,16 @@
 				C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */,
 				C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */,
 			);
-			name = Serialization;
+			path = Serialization;
 			sourceTree = "<group>";
 		};
 		C7BBEED21F78382000EF3C42 /* StopList */ = {
 			isa = PBXGroup;
 			children = (
+				C73894B71FC82B1800F65DE3 /* ArrivalTableViewController */,
 				C791230D1F6DC3710014AC4C /* StopTableViewController.swift */,
-				C7BBEED31F78383900EF3C42 /* ArrivalTableViewController.swift */,
-				C70CA1B11F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift */,
 			);
-			name = StopList;
+			path = StopList;
 			sourceTree = "<group>";
 		};
 		C7C99CDE1F3B2F9F0089ECD6 /* Model */ = {
@@ -797,7 +816,7 @@
 				C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */,
 				C7D7F4B91F4F832B00717D9F /* TransportStop.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C7E73BAB1F4F39AE005ED5B6 /* Method */ = {
@@ -810,7 +829,7 @@
 				C75E859E1F4DED560074D272 /* getTransportsOnRoute.json */,
 				C75E85A01F4DED970074D272 /* getRouteSchedule.json */,
 			);
-			name = Method;
+			path = Method;
 			sourceTree = "<group>";
 		};
 		C7E73BAC1F4F39C4005ED5B6 /* Classifier */ = {
@@ -823,7 +842,7 @@
 				C7E73BB11F4F39D6005ED5B6 /* stops.xml */,
 				C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */,
 			);
-			name = Classifier;
+			path = Classifier;
 			sourceTree = "<group>";
 		};
 		C7EC4F5A1F4F7909009A020A /* XML */ = {
@@ -832,7 +851,7 @@
 				C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */,
 				C7EC4F561F4F7071009A020A /* XMLSerializer.swift */,
 			);
-			name = XML;
+			path = XML;
 			sourceTree = "<group>";
 		};
 		C7EC4F5B1F4F790F009A020A /* JSON */ = {
@@ -840,7 +859,7 @@
 			children = (
 				C7B00E391F3F3BE40022D6F2 /* JSONSerializer.swift */,
 			);
-			name = JSON;
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		E57536A87FA63AE1C3273E8F /* Pods */ = {
@@ -855,7 +874,7 @@
 				40C19C7C949406D7F0E20194 /* Pods-TransportCatcher.debug.xcconfig */,
 				1053783A2D3A1C09582E1710 /* Pods-TransportCatcher.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1429,6 +1448,7 @@
 				C7C369131F6DB6890032F49E /* NibLoadableView.swift in Sources */,
 				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
 				C7BBEED41F78383900EF3C42 /* ArrivalTableViewController.swift in Sources */,
+				C73894BA1FC82B4E00F65DE3 /* ArrivalTableViewCell.swift in Sources */,
 				C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,
 				C7C3690F1F6DB6240032F49E /* StopMapView.swift in Sources */,
@@ -1567,6 +1587,7 @@
 				C73AEB3B1F50C26200463045 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		C73AEB3F1F50C26200463045 /* LaunchScreen.storyboard */ = {
@@ -1575,6 +1596,7 @@
 				C73AEB401F50C26200463045 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		C746852C1EFFA9E700D6021E /* Main.storyboard */ = {
@@ -1583,6 +1605,7 @@
 				C746852D1EFFA9E700D6021E /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */ = {
@@ -1591,6 +1614,7 @@
 				C74685321EFFA9E700D6021E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
