@@ -11,18 +11,20 @@ import ToSMR
 
 internal class ArrivalTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
     
-    private let arrivalCellIdentifier: String
+    let arrivalCellIdentifier: String
     var arrivals: [Arrival]
     
     override init() {
-        self.arrivalCellIdentifier = String.init(describing: ArrivalTableViewCell.self)
+        self.arrivalCellIdentifier = "ArrivalTableViewCell"
         self.arrivals = []
         super.init()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: arrivalCellIdentifier, for: indexPath)
-//        let arrival = arrivals[indexPath.row]
+        let arrival = arrivals[indexPath.row]
+        cell.textLabel?.text = arrival.number
+        cell.detailTextLabel?.text = String(arrival.time)
         return cell
     }
     

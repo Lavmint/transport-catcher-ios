@@ -14,7 +14,7 @@ internal extension URLRequest {
         
         func makeURL(query: String) -> URL? {
             var rawUrl = baseURL + "/json"
-            rawUrl += query.count > 0 ? "?" + query : ""
+            rawUrl += query.characters.count > 0 ? "?" + query : ""
             guard let url = URL(string: rawUrl) else {
                 return nil
             }
