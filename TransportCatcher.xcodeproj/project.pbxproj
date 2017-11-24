@@ -13,7 +13,6 @@
 		C70CA1B21F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1B11F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift */; };
 		C70CA1B41F6DD14400A30DC8 /* StopMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1B31F6DD14400A30DC8 /* StopMapViewDelegate.swift */; };
 		C70CA1B61F6DD97F00A30DC8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B51F6DD97F00A30DC8 /* Settings.storyboard */; };
-		C70CA1B81F6DD98E00A30DC8 /* StopList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B71F6DD98E00A30DC8 /* StopList.storyboard */; };
 		C70CA1BA1F6DDA7000A30DC8 /* StopMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* StopMap.storyboard */; };
 		C70CA1BD1F6DDC3500A30DC8 /* TransportStopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
@@ -92,6 +91,8 @@
 		C7EC4F5D1F4F7931009A020A /* XMLParserDictionaryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */; };
 		D3C59E4544E8A6AF2A48F176 /* Pods_GeoSMRIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */; };
 		EC059BDEE9015FBAB4A83B33 /* Pods_GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2584F5F9AD1414FEACD1D830 /* Pods_GeoSMR.framework */; };
+		FAAB5E8F1FC8654700778334 /* StopList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAB5E8E1FC8654700778334 /* StopList.storyboard */; };
+		FAAB5EA31FC8673000778334 /* ArrivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EA21FC8673000778334 /* ArrivalTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,7 +203,6 @@
 		C70CA1B11F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewDataSource.swift; sourceTree = "<group>"; };
 		C70CA1B31F6DD14400A30DC8 /* StopMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopMapViewDelegate.swift; sourceTree = "<group>"; };
 		C70CA1B51F6DD97F00A30DC8 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		C70CA1B71F6DD98E00A30DC8 /* StopList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StopList.storyboard; sourceTree = "<group>"; };
 		C70CA1B91F6DDA7000A30DC8 /* StopMap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StopMap.storyboard; sourceTree = "<group>"; };
 		C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportStopAnnotation.swift; sourceTree = "<group>"; };
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
@@ -286,6 +286,8 @@
 		C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializerTest.swift; sourceTree = "<group>"; };
 		C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserDictionaryAdapter.swift; sourceTree = "<group>"; };
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAB5E8E1FC8654700778334 /* StopList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StopList.storyboard; sourceTree = "<group>"; };
+		FAAB5EA21FC8673000778334 /* ArrivalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,84 +366,54 @@
 		C70CA1A91F6DCC6D00A30DC8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C70CA1BB1F6DDC1900A30DC8 /* StopMap */,
+				FAAB5E961FC865FE00778334 /* StopMap */,
 				C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */,
 			);
 			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C70CA1AA1F6DCC9000A30DC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C79123171F6DC4C10014AC4C /* Protocol */,
-				C7678CEE1F51EDF500783339 /* Storyboard */,
-				C70CA1AF1F6DCCEB00A30DC8 /* StopMap */,
+				FAAB5E9E1FC866A700778334 /* Protocol */,
+				FAAB5E9F1FC866B200778334 /* Storyboard */,
+				FAAB5EA11FC866E900778334 /* StopMapView */,
 			);
 			name = View;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C70CA1AB1F6DCC9400A30DC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C7BBEED21F78382000EF3C42 /* StopList */,
-				C70CA1B01F6DCF6700A30DC8 /* StopMap */,
-				C79123111F6DC3F80014AC4C /* SettingsTableViewController.swift */,
+				FAAB5E991FC8665800778334 /* ArrivalTableViewController */,
+				FAAB5E9B1FC8666E00778334 /* StopMapViewController */,
+				FAAB5E971FC8660C00778334 /* StopTableViewController */,
+				FAAB5E9C1FC8668600778334 /* SettingsTableViewController */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		C70CA1AF1F6DCCEB00A30DC8 /* StopMap */ = {
-			isa = PBXGroup;
-			children = (
-				C7C3690E1F6DB6240032F49E /* StopMapView.swift */,
-				C7E81B511F51EF4700EFCDC0 /* DGSTileOverlay.swift */,
-			);
-			name = StopMap;
-			sourceTree = "<group>";
-		};
-		C70CA1B01F6DCF6700A30DC8 /* StopMap */ = {
-			isa = PBXGroup;
-			children = (
-				C746852A1EFFA9E700D6021E /* StopMapViewController.swift */,
-				C70CA1B31F6DD14400A30DC8 /* StopMapViewDelegate.swift */,
-			);
-			name = StopMap;
-			sourceTree = "<group>";
-		};
-		C70CA1BB1F6DDC1900A30DC8 /* StopMap */ = {
-			isa = PBXGroup;
-			children = (
-				C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */,
-			);
-			name = StopMap;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C723B9041F3A5FCD00949C76 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C7B00E4D1F3F509C0022D6F2 /* Swift */,
-				C7B00E4E1F3F50B00022D6F2 /* Foundation */,
+				FAAB5EAD1FC868B600778334 /* Swift */,
+				FAAB5EAE1FC868BF00778334 /* Foundation */,
 			);
 			name = Extension;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C73AEB351F50C26200463045 /* ToSMRExample */ = {
 			isa = PBXGroup;
 			children = (
-				C73AEB4B1F50C28400463045 /* Resources */,
-				C73AEB4D1F50C2A300463045 /* Sources */,
+				FAAB5EA51FC8685000778334 /* Resources */,
+				FAAB5EA61FC8686100778334 /* Sources */,
 				C73AEB421F50C26200463045 /* Info.plist */,
 			);
 			path = ToSMRExample;
-			sourceTree = "<group>";
-		};
-		C73AEB4B1F50C28400463045 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C73AEB4C1F50C29400463045 /* Storyboard */,
-				C73AEB3D1F50C26200463045 /* Assets.xcassets */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		C73AEB4C1F50C29400463045 /* Storyboard */ = {
@@ -451,16 +423,7 @@
 				C73AEB3A1F50C26200463045 /* Main.storyboard */,
 			);
 			name = Storyboard;
-			sourceTree = "<group>";
-		};
-		C73AEB4D1F50C2A300463045 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C73AEB501F50C33E00463045 /* Services */,
-				C73AEB4E1F50C2AD00463045 /* Controllers */,
-				C73AEB361F50C26200463045 /* AppDelegate.swift */,
-			);
-			name = Sources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C73AEB4E1F50C2AD00463045 /* Controllers */ = {
@@ -469,6 +432,7 @@
 				C73AEB381F50C26200463045 /* ViewController.swift */,
 			);
 			name = Controllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C73AEB501F50C33E00463045 /* Services */ = {
@@ -477,6 +441,7 @@
 				C73AEB511F50C35200463045 /* ToSMRService.swift */,
 			);
 			name = Services;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C746851C1EFFA9E700D6021E = {
@@ -515,8 +480,8 @@
 		C74685271EFFA9E700D6021E /* TransportCatcher */ = {
 			isa = PBXGroup;
 			children = (
-				C7678CED1F51EDEB00783339 /* Resources */,
-				C7678CEF1F51EE0600783339 /* Sources */,
+				FAAB5E901FC865A900778334 /* Resources */,
+				FAAB5E911FC865C000778334 /* Sources */,
 				C74685341EFFA9E700D6021E /* Info.plist */,
 				C791231F1F6DCAC60014AC4C /* TransportCatcher-Info.plist */,
 			);
@@ -563,47 +528,13 @@
 			path = GeoSMRIntegrationTests;
 			sourceTree = "<group>";
 		};
-		C7678CED1F51EDEB00783339 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C746852F1EFFA9E700D6021E /* Images.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C7678CEE1F51EDF500783339 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */,
-				C746852C1EFFA9E700D6021E /* Main.storyboard */,
-				C70CA1B91F6DDA7000A30DC8 /* StopMap.storyboard */,
-				C70CA1B71F6DD98E00A30DC8 /* StopList.storyboard */,
-				C70CA1B51F6DD97F00A30DC8 /* Settings.storyboard */,
-			);
-			name = Storyboard;
-			sourceTree = "<group>";
-		};
-		C7678CEF1F51EE0600783339 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C70CA1A91F6DCC6D00A30DC8 /* Model */,
-				C70CA1AA1F6DCC9000A30DC8 /* View */,
-				C70CA1AB1F6DCC9400A30DC8 /* Controller */,
-				C791231C1F6DCA460014AC4C /* Storage */,
-				C79123191F6DC9BA0014AC4C /* Service */,
-				C791231B1F6DCA150014AC4C /* Helper */,
-				C79123181F6DC9AE0014AC4C /* Extension */,
-				C74685281EFFA9E700D6021E /* AppDelegate.swift */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
 		C768A5061F46049300A72B6C /* Requests */ = {
 			isa = PBXGroup;
 			children = (
 				C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */,
 			);
 			name = Requests;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C768A50A1F46054000A72B6C /* Mocks */ = {
@@ -611,14 +542,7 @@
 			children = (
 			);
 			name = Mocks;
-			sourceTree = "<group>";
-		};
-		C79123171F6DC4C10014AC4C /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				C7C369121F6DB6890032F49E /* NibLoadableView.swift */,
-			);
-			name = Protocol;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C79123181F6DC9AE0014AC4C /* Extension */ = {
@@ -626,6 +550,7 @@
 			children = (
 			);
 			name = Extension;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C79123191F6DC9BA0014AC4C /* Service */ = {
@@ -634,6 +559,7 @@
 				C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */,
 			);
 			name = Service;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C791231B1F6DCA150014AC4C /* Helper */ = {
@@ -641,6 +567,7 @@
 			children = (
 			);
 			name = Helper;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C791231C1F6DCA460014AC4C /* Storage */ = {
@@ -648,12 +575,13 @@
 			children = (
 			);
 			name = Storage;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C79709961F3A2EE400824E7E /* ToSMR */ = {
 			isa = PBXGroup;
 			children = (
-				C79709C31F3A2FFE00824E7E /* Sources */,
+				FAAB5EA81FC8687800778334 /* ToSMR */,
 				C79709971F3A2EE400824E7E /* ToSMR.h */,
 				C79709981F3A2EE400824E7E /* Info.plist */,
 			);
@@ -663,8 +591,8 @@
 		C79709A31F3A2EE400824E7E /* ToSMRTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7B00E531F3F623C0022D6F2 /* Resources */,
-				C7B00E521F3F62310022D6F2 /* Sources */,
+				FAAB5EB21FC868F700778334 /* Resources */,
+				FAAB5EB31FC8690700778334 /* Sources */,
 				C79709A61F3A2EE400824E7E /* Info.plist */,
 			);
 			path = ToSMRTests;
@@ -673,84 +601,22 @@
 		C79709B71F3A2F1600824E7E /* ToSMRIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7B00E541F3F624F0022D6F2 /* Sources */,
+				FAAB5EB01FC868E200778334 /* Sources */,
 				C79709BA1F3A2F1600824E7E /* Info.plist */,
 			);
 			path = ToSMRIntegrationTests;
 			sourceTree = "<group>";
 		};
-		C79709C31F3A2FFE00824E7E /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C7C99CDE1F3B2F9F0089ECD6 /* Model */,
-				C7B00E341F3F32410022D6F2 /* Serialization */,
-				C723B9041F3A5FCD00949C76 /* Extension */,
-				C79F55671F3E1BB000BC13C5 /* Request.swift */,
-				C79709C11F3A2FF700824E7E /* Service.swift */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
 		C7B00E341F3F32410022D6F2 /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
-				C7EC4F5B1F4F790F009A020A /* JSON */,
-				C7EC4F5A1F4F7909009A020A /* XML */,
+				FAAB5EAA1FC8689100778334 /* JSON */,
+				FAAB5EAB1FC8689B00778334 /* XML */,
 				C7B00E501F3F59B60022D6F2 /* Parsable.swift */,
 				C7B00E351F3F324F0022D6F2 /* Serializator.swift */,
 			);
 			name = Serialization;
-			sourceTree = "<group>";
-		};
-		C7B00E4D1F3F509C0022D6F2 /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				C7B00E371F3F3A9C0022D6F2 /* Dictionary.swift */,
-				C7B00E451F3F4E4E0022D6F2 /* Optional.swift */,
-				C723B9051F3A5FE200949C76 /* String.swift */,
-			);
-			name = Swift;
-			sourceTree = "<group>";
-		};
-		C7B00E4E1F3F50B00022D6F2 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */,
-			);
-			name = Foundation;
-			sourceTree = "<group>";
-		};
-		C7B00E521F3F62310022D6F2 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C768A50A1F46054000A72B6C /* Mocks */,
-				C7B00E571F3F62680022D6F2 /* Stubs */,
-				C768A5061F46049300A72B6C /* Requests */,
-				C7B00E5A1F3F63100022D6F2 /* Serialization */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		C7B00E531F3F623C0022D6F2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C7E73BAB1F4F39AE005ED5B6 /* Method */,
-				C7E73BAC1F4F39C4005ED5B6 /* Classifier */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C7B00E541F3F624F0022D6F2 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C7B00E561F3F62600022D6F2 /* Mocks */,
-				C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */,
-				C75E858E1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift */,
-				C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */,
-				C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */,
-				C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */,
-			);
-			name = Sources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C7B00E561F3F62600022D6F2 /* Mocks */ = {
@@ -759,6 +625,7 @@
 				C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */,
 			);
 			name = Mocks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C7B00E571F3F62680022D6F2 /* Stubs */ = {
@@ -768,6 +635,7 @@
 				C7B00E301F3F18FF0022D6F2 /* ServiceStub.swift */,
 			);
 			name = Stubs;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C7B00E5A1F3F63100022D6F2 /* Serialization */ = {
@@ -777,16 +645,7 @@
 				C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */,
 			);
 			name = Serialization;
-			sourceTree = "<group>";
-		};
-		C7BBEED21F78382000EF3C42 /* StopList */ = {
-			isa = PBXGroup;
-			children = (
-				C791230D1F6DC3710014AC4C /* StopTableViewController.swift */,
-				C7BBEED31F78383900EF3C42 /* ArrivalTableViewController.swift */,
-				C70CA1B11F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift */,
-			);
-			name = StopList;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C7C99CDE1F3B2F9F0089ECD6 /* Model */ = {
@@ -798,6 +657,7 @@
 				C7D7F4B91F4F832B00717D9F /* TransportStop.swift */,
 			);
 			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C7E73BAB1F4F39AE005ED5B6 /* Method */ = {
@@ -811,6 +671,7 @@
 				C75E85A01F4DED970074D272 /* getRouteSchedule.json */,
 			);
 			name = Method;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C7E73BAC1F4F39C4005ED5B6 /* Classifier */ = {
@@ -824,23 +685,7 @@
 				C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */,
 			);
 			name = Classifier;
-			sourceTree = "<group>";
-		};
-		C7EC4F5A1F4F7909009A020A /* XML */ = {
-			isa = PBXGroup;
-			children = (
-				C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */,
-				C7EC4F561F4F7071009A020A /* XMLSerializer.swift */,
-			);
-			name = XML;
-			sourceTree = "<group>";
-		};
-		C7EC4F5B1F4F790F009A020A /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				C7B00E391F3F3BE40022D6F2 /* JSONSerializer.swift */,
-			);
-			name = JSON;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		E57536A87FA63AE1C3273E8F /* Pods */ = {
@@ -856,6 +701,209 @@
 				1053783A2D3A1C09582E1710 /* Pods-TransportCatcher.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAAB5E901FC865A900778334 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C746852F1EFFA9E700D6021E /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAAB5E911FC865C000778334 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C70CA1A91F6DCC6D00A30DC8 /* Model */,
+				C70CA1AA1F6DCC9000A30DC8 /* View */,
+				C70CA1AB1F6DCC9400A30DC8 /* Controller */,
+				C791231C1F6DCA460014AC4C /* Storage */,
+				C79123191F6DC9BA0014AC4C /* Service */,
+				C791231B1F6DCA150014AC4C /* Helper */,
+				C79123181F6DC9AE0014AC4C /* Extension */,
+				C74685281EFFA9E700D6021E /* AppDelegate.swift */,
+			);
+			name = Sources;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		FAAB5E961FC865FE00778334 /* StopMap */ = {
+			isa = PBXGroup;
+			children = (
+				C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */,
+			);
+			path = StopMap;
+			sourceTree = "<group>";
+		};
+		FAAB5E971FC8660C00778334 /* StopTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C791230D1F6DC3710014AC4C /* StopTableViewController.swift */,
+			);
+			path = StopTableViewController;
+			sourceTree = "<group>";
+		};
+		FAAB5E991FC8665800778334 /* ArrivalTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB5E9A1FC8666400778334 /* Cells */,
+				C7BBEED31F78383900EF3C42 /* ArrivalTableViewController.swift */,
+				C70CA1B11F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift */,
+			);
+			path = ArrivalTableViewController;
+			sourceTree = "<group>";
+		};
+		FAAB5E9A1FC8666400778334 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB5EA21FC8673000778334 /* ArrivalTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAAB5E9B1FC8666E00778334 /* StopMapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C746852A1EFFA9E700D6021E /* StopMapViewController.swift */,
+				C70CA1B31F6DD14400A30DC8 /* StopMapViewDelegate.swift */,
+			);
+			path = StopMapViewController;
+			sourceTree = "<group>";
+		};
+		FAAB5E9C1FC8668600778334 /* SettingsTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C79123111F6DC3F80014AC4C /* SettingsTableViewController.swift */,
+			);
+			path = SettingsTableViewController;
+			sourceTree = "<group>";
+		};
+		FAAB5E9E1FC866A700778334 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C7C369121F6DB6890032F49E /* NibLoadableView.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		FAAB5E9F1FC866B200778334 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */,
+				C746852C1EFFA9E700D6021E /* Main.storyboard */,
+				C70CA1B91F6DDA7000A30DC8 /* StopMap.storyboard */,
+				FAAB5E8E1FC8654700778334 /* StopList.storyboard */,
+				C70CA1B51F6DD97F00A30DC8 /* Settings.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FAAB5EA11FC866E900778334 /* StopMapView */ = {
+			isa = PBXGroup;
+			children = (
+				C7C3690E1F6DB6240032F49E /* StopMapView.swift */,
+				C7E81B511F51EF4700EFCDC0 /* DGSTileOverlay.swift */,
+			);
+			path = StopMapView;
+			sourceTree = "<group>";
+		};
+		FAAB5EA51FC8685000778334 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C73AEB4C1F50C29400463045 /* Storyboard */,
+				C73AEB3D1F50C26200463045 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAAB5EA61FC8686100778334 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C73AEB501F50C33E00463045 /* Services */,
+				C73AEB4E1F50C2AD00463045 /* Controllers */,
+				C73AEB361F50C26200463045 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FAAB5EA81FC8687800778334 /* ToSMR */ = {
+			isa = PBXGroup;
+			children = (
+				C7C99CDE1F3B2F9F0089ECD6 /* Model */,
+				C7B00E341F3F32410022D6F2 /* Serialization */,
+				C723B9041F3A5FCD00949C76 /* Extension */,
+				C79F55671F3E1BB000BC13C5 /* Request.swift */,
+				C79709C11F3A2FF700824E7E /* Service.swift */,
+			);
+			path = ToSMR;
+			sourceTree = "<group>";
+		};
+		FAAB5EAA1FC8689100778334 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E391F3F3BE40022D6F2 /* JSONSerializer.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		FAAB5EAB1FC8689B00778334 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */,
+				C7EC4F561F4F7071009A020A /* XMLSerializer.swift */,
+			);
+			path = XML;
+			sourceTree = "<group>";
+		};
+		FAAB5EAD1FC868B600778334 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E371F3F3A9C0022D6F2 /* Dictionary.swift */,
+				C7B00E451F3F4E4E0022D6F2 /* Optional.swift */,
+				C723B9051F3A5FE200949C76 /* String.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		FAAB5EAE1FC868BF00778334 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		FAAB5EB01FC868E200778334 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C7B00E561F3F62600022D6F2 /* Mocks */,
+				C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */,
+				C75E858E1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift */,
+				C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */,
+				C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */,
+				C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FAAB5EB21FC868F700778334 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7E73BAB1F4F39AE005ED5B6 /* Method */,
+				C7E73BAC1F4F39C4005ED5B6 /* Classifier */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAAB5EB31FC8690700778334 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C768A50A1F46054000A72B6C /* Mocks */,
+				C7B00E571F3F62680022D6F2 /* Stubs */,
+				C768A5061F46049300A72B6C /* Requests */,
+				C7B00E5A1F3F63100022D6F2 /* Serialization */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1152,7 +1200,7 @@
 				C79123201F6DCAC60014AC4C /* TransportCatcher-Info.plist in Resources */,
 				C70CA1BA1F6DDA7000A30DC8 /* StopMap.storyboard in Resources */,
 				C74685331EFFA9E700D6021E /* LaunchScreen.storyboard in Resources */,
-				C70CA1B81F6DD98E00A30DC8 /* StopList.storyboard in Resources */,
+				FAAB5E8F1FC8654700778334 /* StopList.storyboard in Resources */,
 				C74685301EFFA9E700D6021E /* Images.xcassets in Resources */,
 				C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */,
 				C70CA1B61F6DD97F00A30DC8 /* Settings.storyboard in Resources */,
@@ -1429,6 +1477,7 @@
 				C7C369131F6DB6890032F49E /* NibLoadableView.swift in Sources */,
 				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
 				C7BBEED41F78383900EF3C42 /* ArrivalTableViewController.swift in Sources */,
+				FAAB5EA31FC8673000778334 /* ArrivalTableViewCell.swift in Sources */,
 				C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,
 				C7C3690F1F6DB6240032F49E /* StopMapView.swift in Sources */,

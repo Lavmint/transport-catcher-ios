@@ -15,16 +15,14 @@ internal class ArrivalTableViewDataSource: NSObject, UITableViewDataSource, UITa
     var arrivals: [Arrival]
     
     override init() {
-        self.arrivalCellIdentifier = "ArrivalTableViewCell"
+        self.arrivalCellIdentifier = String(describing: ArrivalTableViewCell.self)
         self.arrivals = []
         super.init()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: arrivalCellIdentifier, for: indexPath)
-        let arrival = arrivals[indexPath.row]
-        cell.textLabel?.text = arrival.number
-        cell.detailTextLabel?.text = String(arrival.time)
+//        let arrival = arrivals[indexPath.row]
         return cell
     }
     
