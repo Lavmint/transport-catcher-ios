@@ -36,8 +36,8 @@ class JSONSerializerTest: XCTestCase {
         }
         
         let arrivalHullNumber930573 = arrivals[3]
-        XCTAssertEqual(arrivalHullNumber930573.number, "37")
-        XCTAssertEqual(arrivalHullNumber930573.route, 38)
+        XCTAssertEqual(arrivalHullNumber930573.route, "37")
+        XCTAssertEqual(arrivalHullNumber930573.routeId, 38)
         XCTAssertEqual(arrivalHullNumber930573.model, nil)
         XCTAssertEqual(arrivalHullNumber930573.hullNumber, 930573)
         XCTAssertEqual(arrivalHullNumber930573.nextStopId, 573)
@@ -65,8 +65,8 @@ class JSONSerializerTest: XCTestCase {
         }
         
         let arrivalHullNumber950170 = arrivals[2]
-        XCTAssertEqual(arrivalHullNumber950170.number, "247")
-        XCTAssertEqual(arrivalHullNumber950170.route, 193)
+        XCTAssertEqual(arrivalHullNumber950170.route, "247")
+        XCTAssertEqual(arrivalHullNumber950170.routeId, 193)
         XCTAssertEqual(arrivalHullNumber950170.model, "HYUNDAI County")
         XCTAssertEqual(arrivalHullNumber950170.hullNumber, 950170)
         XCTAssertEqual(arrivalHullNumber950170.nextStopId, 36)

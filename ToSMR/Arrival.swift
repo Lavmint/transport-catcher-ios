@@ -9,13 +9,13 @@
 public struct Arrival {
     
     /// классификаторный номер маршрута.
-    public let route: Int
+    public let routeId: Int
     
     /// type — тип транспорта;
     public let type: TransportType
     
     /// номер маршрута, например 21к
-    public let number: String
+    public let route: String
     
     /// modelTitle — название модели транспорта;
     public let model: String?

@@ -12,7 +12,7 @@ import ToSMR
 internal class ArrivalTableViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
     
     let arrivalCellIdentifier: String
-    var arrivals: [Arrival]
+    private(set) var arrivals: [Arrival]
     
     override init() {
         self.arrivalCellIdentifier = String(describing: ArrivalTableViewCell.self)
@@ -21,8 +21,8 @@ internal class ArrivalTableViewDataSource: NSObject, UITableViewDataSource, UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: arrivalCellIdentifier, for: indexPath)
-//        let arrival = arrivals[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: arrivalCellIdentifier, for: indexPath) as! ArrivalTableViewCell
+        cell.configure(arrival: arrivals[indexPath.row])
         return cell
     }
     
@@ -32,5 +32,18 @@ internal class ArrivalTableViewDataSource: NSObject, UITableViewDataSource, UITa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrivals.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.01
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.01
+    }
+    
+    func reload(tableView: UITableView, arrivals: [Arrival]) {        
+        self.arrivals = arrivals
+        tableView.reloadData()
     }
 }

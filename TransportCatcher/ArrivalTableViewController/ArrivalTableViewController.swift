@@ -28,8 +28,7 @@ internal class ArrivalTableViewController: UITableViewController {
             guard let wself = self, stopId == wself.stopId else { return }
             switch box.result {
             case .succeed(let arrivals):
-                wself.dataSource.arrivals = arrivals ?? []
-                wself.tableView.reloadData()
+                wself.dataSource.reload(tableView: wself.tableView, arrivals: arrivals ?? [])
             case .error(let error):
                 let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
                 wself.present(alert, animated: true, completion: nil)

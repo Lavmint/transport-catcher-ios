@@ -43,9 +43,9 @@ public extension JSONSerializer {
         var arrivals: [Arrival] = []
         for rawArrival in rawArrivals {
             let arrival = Arrival(
-                route: try rawArrival.parsable(required: "KR_ID"),
+                routeId: try rawArrival.parsable(required: "KR_ID"),
                 type: try rawArrival.enumeration(required: "type"),
-                number: try rawArrival.castable(required: "number"),
+                route: try rawArrival.castable(required: "number"),
                 model: try rawArrival.castable(optional: "modelTitle"),
                 stateNumber: try rawArrival.castable(required: "stateNumber"),
                 hullNumber: try rawArrival.parsable(required: "hullNo"),

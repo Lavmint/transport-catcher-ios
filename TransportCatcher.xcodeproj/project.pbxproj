@@ -93,6 +93,8 @@
 		EC059BDEE9015FBAB4A83B33 /* Pods_GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2584F5F9AD1414FEACD1D830 /* Pods_GeoSMR.framework */; };
 		FAAB5E8F1FC8654700778334 /* StopList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAB5E8E1FC8654700778334 /* StopList.storyboard */; };
 		FAAB5EA31FC8673000778334 /* ArrivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EA21FC8673000778334 /* ArrivalTableViewCell.swift */; };
+		FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB41FC86E3500778334 /* LocalizedString.swift */; };
+		FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB61FC8704000778334 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -288,6 +290,8 @@
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAB5E8E1FC8654700778334 /* StopList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StopList.storyboard; sourceTree = "<group>"; };
 		FAAB5EA21FC8673000778334 /* ArrivalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewCell.swift; sourceTree = "<group>"; };
+		FAAB5EB41FC86E3500778334 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		FAAB5EB61FC8704000778334 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -548,6 +552,7 @@
 		C79123181F6DC9AE0014AC4C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FAAB5EB61FC8704000778334 /* UIColor.swift */,
 			);
 			name = Extension;
 			path = ..;
@@ -565,6 +570,7 @@
 		C791231B1F6DCA150014AC4C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				FAAB5EB41FC86E3500778334 /* LocalizedString.swift */,
 			);
 			name = Helper;
 			path = ..;
@@ -1477,6 +1483,8 @@
 				C7C369131F6DB6890032F49E /* NibLoadableView.swift in Sources */,
 				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
 				C7BBEED41F78383900EF3C42 /* ArrivalTableViewController.swift in Sources */,
+				FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */,
+				FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */,
 				FAAB5EA31FC8673000778334 /* ArrivalTableViewCell.swift in Sources */,
 				C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,

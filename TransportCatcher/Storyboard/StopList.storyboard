@@ -83,7 +83,7 @@
                                                     <rect key="frame" x="8" y="4" width="359" height="242"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-yB-X18" userLabel="6 минут">
-                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="242"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="134.5" height="242"/>
                                                             <color key="backgroundColor" red="0.45426958799362183" green="0.74452334642410278" blue="0.26163733005523682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="6">
@@ -103,7 +103,7 @@ Cg
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
-                                                                <fragment content="минут">
+                                                                <fragment content="минуты">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <font key="NSFont" size="24" name=".SFNSText"/>
@@ -114,28 +114,28 @@ Cg
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xYK-lu-xXs">
-                                                            <rect key="frame" x="98" y="0.0" width="261" height="206.5"/>
+                                                            <rect key="frame" x="142.5" y="8" width="208.5" height="206.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bh-Dc-l0k">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="261" height="60"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="208.5" height="60"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                                                                     <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Автобус МАЗ 206085" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCn-q0-vfE">
-                                                                    <rect key="frame" x="0.0" y="68" width="261" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="68" width="208.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="449.2 м до остановки Телецентр" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqD-U0-NAZ">
-                                                                    <rect key="frame" x="0.0" y="96.5" width="261" height="41"/>
+                                                                    <rect key="frame" x="0.0" y="96.5" width="208.5" height="41"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доступен для людей с ограниченными возможностями" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqP-v9-zKU">
-                                                                    <rect key="frame" x="0.0" y="145.5" width="261" height="61"/>
+                                                                    <rect key="frame" x="0.0" y="145.5" width="208.5" height="61"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" red="0.23921568627450979" green="0.43137254901960786" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -145,9 +145,9 @@ Cg
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="xYK-lu-xXs" secondAttribute="trailing" constant="-8" id="04w-iM-NXL"/>
-                                                        <constraint firstItem="xYK-lu-xXs" firstAttribute="top" secondItem="Yz3-s3-Z82" secondAttribute="topMargin" constant="-8" id="5Xc-QV-JHf"/>
-                                                        <constraint firstItem="Z5K-yB-X18" firstAttribute="width" secondItem="Yz3-s3-Z82" secondAttribute="width" multiplier="2/8" id="8sf-Sd-Rm9"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="xYK-lu-xXs" secondAttribute="trailing" id="04w-iM-NXL"/>
+                                                        <constraint firstItem="xYK-lu-xXs" firstAttribute="top" secondItem="Yz3-s3-Z82" secondAttribute="topMargin" id="5Xc-QV-JHf"/>
+                                                        <constraint firstItem="Z5K-yB-X18" firstAttribute="width" secondItem="Yz3-s3-Z82" secondAttribute="width" multiplier="3/8" id="8sf-Sd-Rm9"/>
                                                         <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="xYK-lu-xXs" secondAttribute="bottom" id="AVF-zT-37G"/>
                                                         <constraint firstItem="Z5K-yB-X18" firstAttribute="leading" secondItem="Yz3-s3-Z82" secondAttribute="leading" id="DyG-jC-mXf"/>
                                                         <constraint firstItem="Z5K-yB-X18" firstAttribute="top" secondItem="Yz3-s3-Z82" secondAttribute="top" id="XWk-ag-ZyM"/>
@@ -174,6 +174,13 @@ Cg
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <outlet property="invalidInfoLabel" destination="gqP-v9-zKU" id="mjU-C5-XKF"/>
+                                    <outlet property="routeLabel" destination="2Bh-Dc-l0k" id="EGK-Dn-Dkk"/>
+                                    <outlet property="timeLabel" destination="Z5K-yB-X18" id="5iW-KF-0Fz"/>
+                                    <outlet property="trackingLabel" destination="dqD-U0-NAZ" id="JDc-L3-ux1"/>
+                                    <outlet property="vehicleInfoLabel" destination="BCn-q0-vfE" id="FIy-ch-6bq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
