@@ -37,7 +37,7 @@ class ArrivalTableViewCell: UITableViewCell {
             string: String(time) + "\n",
             attributes: [
                 NSAttributedStringKey.foregroundColor: UIColor.white,
-                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 36)
+                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28)
             ]
         )
         
@@ -45,7 +45,7 @@ class ArrivalTableViewCell: UITableViewCell {
             string: LocalizedString.Arrival.minutes(minutes: time),
             attributes: [
                 NSAttributedStringKey.foregroundColor: UIColor.white,
-                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28)
+                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20)
             ]
         )
         
