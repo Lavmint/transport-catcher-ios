@@ -31,6 +31,10 @@ internal class TransportStopMapViewController: UIViewController {
                 wself.stopMapView.addAnnotations(annotations)
             case .error(let error):
                 let alert = UIAlertController(title: "", message: error.localizedDescription, preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (_) in
+                    alert.dismiss(animated: true, completion: nil)
+                })
+                alert.addAction(action)
                 wself.present(alert, animated: true, completion: nil)
             }
         }

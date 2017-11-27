@@ -11,6 +11,7 @@ import MapKit
 internal class DGSTileOverlay: MKTileOverlay {
 
 	private let isRetina: Bool
+    private let dgsTileInteractor: DGSTileInteractor
 	private let cache = NSCache<NSURL, NSData>()
 	private let urlSession = URLSession(configuration: URLSessionConfiguration.default)
 
@@ -25,6 +26,7 @@ internal class DGSTileOverlay: MKTileOverlay {
 
 	internal init(isRetina: Bool = true) {
 		self.isRetina = isRetina
+        self.dgsTileInteractor = DGSTileInteractor()
 		super.init(urlTemplate: nil)
         self.tileSize = isRetina ? CGSize(width: 512, height: 512) : CGSize(width: 256, height: 256)
 		self.canReplaceMapContent = true
@@ -36,12 +38,27 @@ internal class DGSTileOverlay: MKTileOverlay {
 		if let cachedData = self.cache.object(forKey: url as NSURL) as Data? {
 			result(cachedData, nil)
 		} else {
-			let task = self.urlSession.dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
-                guard let data = data else { return }
-                self?.cache.setObject(data as NSData, forKey: url as NSURL)
-				result(data, error)
-			})
-			task.resume()
+            do {
+                try dgsTileInteractor.getData(for: url as NSURL, completion: { (data) in
+                    if data == nil {
+                        let task = self.urlSession.dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
+                            guard let data = data else { return }
+                            self?.cache.setObject(data as NSData, forKey: url as NSURL)
+                            do {
+                                try self?.dgsTileInteractor.setData(for: url as NSURL, data: data as NSData)
+                            } catch {
+                                assertionFailure()
+                            }
+                            result(data, error)
+                        })
+                        task.resume()
+                    } else {
+                        result(data! as Data, nil)
+                    }
+                })
+            } catch {
+                result(nil, error)
+            }
 		}
 	}
 }
