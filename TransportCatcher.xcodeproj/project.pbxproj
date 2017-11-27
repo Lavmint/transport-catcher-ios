@@ -10,10 +10,7 @@
 		098CBE74E9ED5C6C8C181470 /* Pods_TransportCatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2587CAFEA5179E53EC91B720 /* Pods_TransportCatcher.framework */; };
 		3A5DF595B8BCE42E32C21674 /* Pods_GeoSMRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */; };
 		C70CA1A81F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */; };
-		C70CA1B21F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1B11F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift */; };
-		C70CA1B41F6DD14400A30DC8 /* StopMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1B31F6DD14400A30DC8 /* StopMapViewDelegate.swift */; };
-		C70CA1B61F6DD97F00A30DC8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B51F6DD97F00A30DC8 /* Settings.storyboard */; };
-		C70CA1BA1F6DDA7000A30DC8 /* StopMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* StopMap.storyboard */; };
+		C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */; };
 		C70CA1BD1F6DDC3500A30DC8 /* TransportStopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
 		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
@@ -26,8 +23,10 @@
 		C73AEB471F50C26C00463045 /* ToSMR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C73AEB4F1F50C2DF00463045 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74685641EFFD8A600D6021E /* MapKit.framework */; };
 		C73AEB521F50C35200463045 /* ToSMRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB511F50C35200463045 /* ToSMRService.swift */; };
+		C73BE8911FCC0C9E009D63E7 /* TransportStopMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73BE8901FCC0C9E009D63E7 /* TransportStopMapView.swift */; };
+		C73BE8941FCC0EE9009D63E7 /* TransportStopMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73BE8921FCC0EE9009D63E7 /* TransportStopMapViewController.swift */; };
+		C73BE8951FCC0EE9009D63E7 /* TransportStopMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73BE8931FCC0EE9009D63E7 /* TransportStopMapViewController.xib */; };
 		C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74685281EFFA9E700D6021E /* AppDelegate.swift */; };
-		C746852B1EFFA9E700D6021E /* StopMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746852A1EFFA9E700D6021E /* StopMapViewController.swift */; };
 		C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C746852C1EFFA9E700D6021E /* Main.storyboard */; };
 		C74685301EFFA9E700D6021E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C746852F1EFFA9E700D6021E /* Images.xcassets */; };
 		C74685331EFFA9E700D6021E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */; };
@@ -47,8 +46,13 @@
 		C75E859F1F4DED560074D272 /* getTransportsOnRoute.json in Resources */ = {isa = PBXBuildFile; fileRef = C75E859E1F4DED560074D272 /* getTransportsOnRoute.json */; };
 		C75E85A11F4DED970074D272 /* getRouteSchedule.json in Resources */ = {isa = PBXBuildFile; fileRef = C75E85A01F4DED970074D272 /* getRouteSchedule.json */; };
 		C768A5091F4604CF00A72B6C /* DataStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768A5081F4604CF00A72B6C /* DataStub.swift */; };
-		C791230E1F6DC3710014AC4C /* StopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C791230D1F6DC3710014AC4C /* StopTableViewController.swift */; };
-		C79123121F6DC3F80014AC4C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79123111F6DC3F80014AC4C /* SettingsTableViewController.swift */; };
+		C7794F5A1FCC10C1002BEFB3 /* TransportStopMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794F591FCC10C1002BEFB3 /* TransportStopMapViewDelegate.swift */; };
+		C7794F621FCC3970002BEFB3 /* ArrivalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794F601FCC3970002BEFB3 /* ArrivalTableViewController.swift */; };
+		C7794F631FCC3970002BEFB3 /* ArrivalTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7794F611FCC3970002BEFB3 /* ArrivalTableViewController.xib */; };
+		C7794F651FCC39BD002BEFB3 /* ArrivalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794F641FCC39BD002BEFB3 /* ArrivalTableView.swift */; };
+		C7794F6C1FCC4614002BEFB3 /* ArrivalToStopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794F6B1FCC4614002BEFB3 /* ArrivalToStopViewController.swift */; };
+		C7794F6F1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794F6D1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift */; };
+		C7794F701FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7794F6E1FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib */; };
 		C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */; };
 		C79123201F6DCAC60014AC4C /* TransportCatcher-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C791231F1F6DCAC60014AC4C /* TransportCatcher-Info.plist */; };
 		C797099E1F3A2EE400824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
@@ -70,9 +74,7 @@
 		C7B00E511F3F59B60022D6F2 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E501F3F59B60022D6F2 /* Parsable.swift */; };
 		C7B00E591F3F62980022D6F2 /* getFirstArrivalToStop.json in Resources */ = {isa = PBXBuildFile; fileRef = C7B00E581F3F62980022D6F2 /* getFirstArrivalToStop.json */; };
 		C7B00E5C1F3F63390022D6F2 /* JSONSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */; };
-		C7BBEED41F78383900EF3C42 /* ArrivalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BBEED31F78383900EF3C42 /* ArrivalTableViewController.swift */; };
-		C7C3690F1F6DB6240032F49E /* StopMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C3690E1F6DB6240032F49E /* StopMapView.swift */; };
-		C7C369131F6DB6890032F49E /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C369121F6DB6890032F49E /* NibLoadableView.swift */; };
+		C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C3690E1F6DB6240032F49E /* DGSMapView.swift */; };
 		C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CDF1F3B30040089ECD6 /* Arrival.swift */; };
 		C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CE31F3B36B20089ECD6 /* Transport.swift */; };
 		C7D7F4BA1F4F832B00717D9F /* TransportStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7F4B91F4F832B00717D9F /* TransportStop.swift */; };
@@ -91,8 +93,6 @@
 		C7EC4F5D1F4F7931009A020A /* XMLParserDictionaryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */; };
 		D3C59E4544E8A6AF2A48F176 /* Pods_GeoSMRIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */; };
 		EC059BDEE9015FBAB4A83B33 /* Pods_GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2584F5F9AD1414FEACD1D830 /* Pods_GeoSMR.framework */; };
-		FAAB5E8F1FC8654700778334 /* StopList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAB5E8E1FC8654700778334 /* StopList.storyboard */; };
-		FAAB5EA31FC8673000778334 /* ArrivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EA21FC8673000778334 /* ArrivalTableViewCell.swift */; };
 		FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB41FC86E3500778334 /* LocalizedString.swift */; };
 		FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB61FC8704000778334 /* UIColor.swift */; };
 /* End PBXBuildFile section */
@@ -202,10 +202,7 @@
 		89F656FC773CA31F95E053EE /* Pods-GeoSMRIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMRIntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMRIntegrationTests/Pods-GeoSMRIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportCatcherConfiguration.swift; sourceTree = "<group>"; };
-		C70CA1B11F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewDataSource.swift; sourceTree = "<group>"; };
-		C70CA1B31F6DD14400A30DC8 /* StopMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopMapViewDelegate.swift; sourceTree = "<group>"; };
-		C70CA1B51F6DD97F00A30DC8 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		C70CA1B91F6DDA7000A30DC8 /* StopMap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StopMap.storyboard; sourceTree = "<group>"; };
+		C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportStopAnnotation.swift; sourceTree = "<group>"; };
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -218,9 +215,11 @@
 		C73AEB401F50C26200463045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C73AEB421F50C26200463045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C73AEB511F50C35200463045 /* ToSMRService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToSMRService.swift; sourceTree = "<group>"; };
+		C73BE8901FCC0C9E009D63E7 /* TransportStopMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStopMapView.swift; sourceTree = "<group>"; };
+		C73BE8921FCC0EE9009D63E7 /* TransportStopMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStopMapViewController.swift; sourceTree = "<group>"; };
+		C73BE8931FCC0EE9009D63E7 /* TransportStopMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransportStopMapViewController.xib; sourceTree = "<group>"; };
 		C74685251EFFA9E700D6021E /* TransportCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74685281EFFA9E700D6021E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C746852A1EFFA9E700D6021E /* StopMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopMapViewController.swift; sourceTree = "<group>"; };
 		C746852D1EFFA9E700D6021E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C746852F1EFFA9E700D6021E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C74685321EFFA9E700D6021E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -243,8 +242,13 @@
 		C75E859E1F4DED560074D272 /* getTransportsOnRoute.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getTransportsOnRoute.json; sourceTree = "<group>"; };
 		C75E85A01F4DED970074D272 /* getRouteSchedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getRouteSchedule.json; sourceTree = "<group>"; };
 		C768A5081F4604CF00A72B6C /* DataStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStub.swift; sourceTree = "<group>"; };
-		C791230D1F6DC3710014AC4C /* StopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTableViewController.swift; sourceTree = "<group>"; };
-		C79123111F6DC3F80014AC4C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		C7794F591FCC10C1002BEFB3 /* TransportStopMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStopMapViewDelegate.swift; sourceTree = "<group>"; };
+		C7794F601FCC3970002BEFB3 /* ArrivalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewController.swift; sourceTree = "<group>"; };
+		C7794F611FCC3970002BEFB3 /* ArrivalTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrivalTableViewController.xib; sourceTree = "<group>"; };
+		C7794F641FCC39BD002BEFB3 /* ArrivalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTableView.swift; sourceTree = "<group>"; };
+		C7794F6B1FCC4614002BEFB3 /* ArrivalToStopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalToStopViewController.swift; sourceTree = "<group>"; };
+		C7794F6D1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewCell.swift; sourceTree = "<group>"; };
+		C7794F6E1FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrivalTableViewCell.xib; sourceTree = "<group>"; };
 		C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToSMRService.swift; sourceTree = "<group>"; };
 		C791231F1F6DCAC60014AC4C /* TransportCatcher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TransportCatcher-Info.plist"; sourceTree = "<group>"; };
 		C79709951F3A2EE400824E7E /* ToSMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToSMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,9 +272,7 @@
 		C7B00E501F3F59B60022D6F2 /* Parsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
 		C7B00E581F3F62980022D6F2 /* getFirstArrivalToStop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getFirstArrivalToStop.json; sourceTree = "<group>"; };
 		C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializerTest.swift; sourceTree = "<group>"; };
-		C7BBEED31F78383900EF3C42 /* ArrivalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewController.swift; sourceTree = "<group>"; };
-		C7C3690E1F6DB6240032F49E /* StopMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopMapView.swift; sourceTree = "<group>"; };
-		C7C369121F6DB6890032F49E /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		C7C3690E1F6DB6240032F49E /* DGSMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGSMapView.swift; sourceTree = "<group>"; };
 		C7C99CDF1F3B30040089ECD6 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		C7C99CE31F3B36B20089ECD6 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		C7D7F4B91F4F832B00717D9F /* TransportStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportStop.swift; sourceTree = "<group>"; };
@@ -288,8 +290,6 @@
 		C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializerTest.swift; sourceTree = "<group>"; };
 		C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserDictionaryAdapter.swift; sourceTree = "<group>"; };
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAAB5E8E1FC8654700778334 /* StopList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StopList.storyboard; sourceTree = "<group>"; };
-		FAAB5EA21FC8673000778334 /* ArrivalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewCell.swift; sourceTree = "<group>"; };
 		FAAB5EB41FC86E3500778334 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		FAAB5EB61FC8704000778334 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -367,22 +367,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C70CA1A91F6DCC6D00A30DC8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FAAB5E961FC865FE00778334 /* StopMap */,
-				C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */,
-			);
-			name = Model;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		C70CA1AA1F6DCC9000A30DC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FAAB5E9E1FC866A700778334 /* Protocol */,
 				FAAB5E9F1FC866B200778334 /* Storyboard */,
-				FAAB5EA11FC866E900778334 /* StopMapView */,
+				FAAB5EA11FC866E900778334 /* DGSMapView */,
 			);
 			name = View;
 			path = ..;
@@ -392,9 +381,8 @@
 			isa = PBXGroup;
 			children = (
 				FAAB5E991FC8665800778334 /* ArrivalTableViewController */,
-				FAAB5E9B1FC8666E00778334 /* StopMapViewController */,
-				FAAB5E971FC8660C00778334 /* StopTableViewController */,
-				FAAB5E9C1FC8668600778334 /* SettingsTableViewController */,
+				FAAB5E9B1FC8666E00778334 /* TransportStopMapViewController */,
+				C7794F6A1FCC4578002BEFB3 /* ArrivalToStopViewController */,
 			);
 			name = Controller;
 			path = ..;
@@ -446,6 +434,17 @@
 			);
 			name = Services;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		C73BE8961FCC0F23009D63E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C73BE8901FCC0C9E009D63E7 /* TransportStopMapView.swift */,
+				C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */,
+				C7794F591FCC10C1002BEFB3 /* TransportStopMapViewDelegate.swift */,
+				C73BE8931FCC0EE9009D63E7 /* TransportStopMapViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C746851C1EFFA9E700D6021E = {
@@ -549,6 +548,44 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		C7794F5B1FCC22DC002BEFB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB5E9A1FC8666400778334 /* Cell */,
+				C7794F641FCC39BD002BEFB3 /* ArrivalTableView.swift */,
+				C7794F611FCC3970002BEFB3 /* ArrivalTableViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7794F6A1FCC4578002BEFB3 /* ArrivalToStopViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7794F6B1FCC4614002BEFB3 /* ArrivalToStopViewController.swift */,
+			);
+			path = ArrivalToStopViewController;
+			sourceTree = "<group>";
+		};
+		C7794F721FCC601F002BEFB3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C768A50A1F46054000A72B6C /* Mocks */,
+				C7B00E571F3F62680022D6F2 /* Stubs */,
+				C768A5061F46049300A72B6C /* Requests */,
+				C7B00E5A1F3F63100022D6F2 /* Serialization */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C7794F731FCC6037002BEFB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7E73BAB1F4F39AE005ED5B6 /* Method */,
+				C7E73BAC1F4F39C4005ED5B6 /* Classifier */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C79123181F6DC9AE0014AC4C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -597,8 +634,8 @@
 		C79709A31F3A2EE400824E7E /* ToSMRTests */ = {
 			isa = PBXGroup;
 			children = (
-				FAAB5EB21FC868F700778334 /* Resources */,
-				FAAB5EB31FC8690700778334 /* Sources */,
+				C7794F731FCC6037002BEFB3 /* Resources */,
+				C7794F721FCC601F002BEFB3 /* Sources */,
 				C79709A61F3A2EE400824E7E /* Info.plist */,
 			);
 			path = ToSMRTests;
@@ -720,7 +757,6 @@
 		FAAB5E911FC865C000778334 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C70CA1A91F6DCC6D00A30DC8 /* Model */,
 				C70CA1AA1F6DCC9000A30DC8 /* View */,
 				C70CA1AB1F6DCC9400A30DC8 /* Controller */,
 				C791231C1F6DCA460014AC4C /* Storage */,
@@ -728,68 +764,37 @@
 				C791231B1F6DCA150014AC4C /* Helper */,
 				C79123181F6DC9AE0014AC4C /* Extension */,
 				C74685281EFFA9E700D6021E /* AppDelegate.swift */,
+				C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */,
 			);
 			name = Sources;
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		FAAB5E961FC865FE00778334 /* StopMap */ = {
-			isa = PBXGroup;
-			children = (
-				C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */,
-			);
-			path = StopMap;
-			sourceTree = "<group>";
-		};
-		FAAB5E971FC8660C00778334 /* StopTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C791230D1F6DC3710014AC4C /* StopTableViewController.swift */,
-			);
-			path = StopTableViewController;
-			sourceTree = "<group>";
-		};
 		FAAB5E991FC8665800778334 /* ArrivalTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FAAB5E9A1FC8666400778334 /* Cells */,
-				C7BBEED31F78383900EF3C42 /* ArrivalTableViewController.swift */,
-				C70CA1B11F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift */,
+				C7794F5B1FCC22DC002BEFB3 /* View */,
+				C7794F601FCC3970002BEFB3 /* ArrivalTableViewController.swift */,
 			);
 			path = ArrivalTableViewController;
 			sourceTree = "<group>";
 		};
-		FAAB5E9A1FC8666400778334 /* Cells */ = {
+		FAAB5E9A1FC8666400778334 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FAAB5EA21FC8673000778334 /* ArrivalTableViewCell.swift */,
+				C7794F6D1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift */,
+				C7794F6E1FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib */,
 			);
-			path = Cells;
+			path = Cell;
 			sourceTree = "<group>";
 		};
-		FAAB5E9B1FC8666E00778334 /* StopMapViewController */ = {
+		FAAB5E9B1FC8666E00778334 /* TransportStopMapViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C746852A1EFFA9E700D6021E /* StopMapViewController.swift */,
-				C70CA1B31F6DD14400A30DC8 /* StopMapViewDelegate.swift */,
+				C73BE8961FCC0F23009D63E7 /* View */,
+				C73BE8921FCC0EE9009D63E7 /* TransportStopMapViewController.swift */,
 			);
-			path = StopMapViewController;
-			sourceTree = "<group>";
-		};
-		FAAB5E9C1FC8668600778334 /* SettingsTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C79123111F6DC3F80014AC4C /* SettingsTableViewController.swift */,
-			);
-			path = SettingsTableViewController;
-			sourceTree = "<group>";
-		};
-		FAAB5E9E1FC866A700778334 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				C7C369121F6DB6890032F49E /* NibLoadableView.swift */,
-			);
-			path = Protocol;
+			path = TransportStopMapViewController;
 			sourceTree = "<group>";
 		};
 		FAAB5E9F1FC866B200778334 /* Storyboard */ = {
@@ -797,20 +802,18 @@
 			children = (
 				C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */,
 				C746852C1EFFA9E700D6021E /* Main.storyboard */,
-				C70CA1B91F6DDA7000A30DC8 /* StopMap.storyboard */,
-				FAAB5E8E1FC8654700778334 /* StopList.storyboard */,
-				C70CA1B51F6DD97F00A30DC8 /* Settings.storyboard */,
+				C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		FAAB5EA11FC866E900778334 /* StopMapView */ = {
+		FAAB5EA11FC866E900778334 /* DGSMapView */ = {
 			isa = PBXGroup;
 			children = (
-				C7C3690E1F6DB6240032F49E /* StopMapView.swift */,
+				C7C3690E1F6DB6240032F49E /* DGSMapView.swift */,
 				C7E81B511F51EF4700EFCDC0 /* DGSTileOverlay.swift */,
 			);
-			path = StopMapView;
+			path = DGSMapView;
 			sourceTree = "<group>";
 		};
 		FAAB5EA51FC8685000778334 /* Resources */ = {
@@ -888,26 +891,6 @@
 				C7E73BBB1F4F4677005ED5B6 /* GetTransportsOnRouteTest.swift */,
 				C7E73BBD1F4F47A2005ED5B6 /* GetSurroundingTransportTest.swift */,
 				C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		FAAB5EB21FC868F700778334 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C7E73BAB1F4F39AE005ED5B6 /* Method */,
-				C7E73BAC1F4F39C4005ED5B6 /* Classifier */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		FAAB5EB31FC8690700778334 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C768A50A1F46054000A72B6C /* Mocks */,
-				C7B00E571F3F62680022D6F2 /* Stubs */,
-				C768A5061F46049300A72B6C /* Requests */,
-				C7B00E5A1F3F63100022D6F2 /* Serialization */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1202,14 +1185,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7794F701FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib in Resources */,
 				C746855E1EFFD84D00D6021E /* .gitignore in Resources */,
 				C79123201F6DCAC60014AC4C /* TransportCatcher-Info.plist in Resources */,
-				C70CA1BA1F6DDA7000A30DC8 /* StopMap.storyboard in Resources */,
+				C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */,
 				C74685331EFFA9E700D6021E /* LaunchScreen.storyboard in Resources */,
-				FAAB5E8F1FC8654700778334 /* StopList.storyboard in Resources */,
 				C74685301EFFA9E700D6021E /* Images.xcassets in Resources */,
+				C7794F631FCC3970002BEFB3 /* ArrivalTableViewController.xib in Resources */,
 				C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */,
-				C70CA1B61F6DD97F00A30DC8 /* Settings.storyboard in Resources */,
+				C73BE8951FCC0EE9009D63E7 /* TransportStopMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1478,22 +1462,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C70CA1B21F6DCF7C00A30DC8 /* ArrivalTableViewDataSource.swift in Sources */,
-				C746852B1EFFA9E700D6021E /* StopMapViewController.swift in Sources */,
-				C7C369131F6DB6890032F49E /* NibLoadableView.swift in Sources */,
 				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
-				C7BBEED41F78383900EF3C42 /* ArrivalTableViewController.swift in Sources */,
+				C73BE8911FCC0C9E009D63E7 /* TransportStopMapView.swift in Sources */,
+				C7794F5A1FCC10C1002BEFB3 /* TransportStopMapViewDelegate.swift in Sources */,
+				C7794F621FCC3970002BEFB3 /* ArrivalTableViewController.swift in Sources */,
 				FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */,
 				FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */,
-				FAAB5EA31FC8673000778334 /* ArrivalTableViewCell.swift in Sources */,
+				C73BE8941FCC0EE9009D63E7 /* TransportStopMapViewController.swift in Sources */,
+				C7794F6F1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift in Sources */,
 				C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */,
+				C7794F651FCC39BD002BEFB3 /* ArrivalTableView.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,
-				C7C3690F1F6DB6240032F49E /* StopMapView.swift in Sources */,
-				C791230E1F6DC3710014AC4C /* StopTableViewController.swift in Sources */,
+				C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */,
 				C70CA1A81F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift in Sources */,
 				C70CA1BD1F6DDC3500A30DC8 /* TransportStopAnnotation.swift in Sources */,
-				C70CA1B41F6DD14400A30DC8 /* StopMapViewDelegate.swift in Sources */,
-				C79123121F6DC3F80014AC4C /* SettingsTableViewController.swift in Sources */,
+				C7794F6C1FCC4614002BEFB3 /* ArrivalToStopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eEj-rh-Tra">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Карта-->
+        <scene sceneID="SRt-io-3O8">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="eEj-rh-Tra" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Карта" id="DYq-fS-Rgy"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ja9-Q4-6qL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sZo-ue-SY9" kind="relationship" relationship="rootViewController" id="2fq-kS-t9i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yoU-WS-AYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3276" y="-394"/>
+        </scene>
+        <!--Arrival To Stop View Controller-->
+        <scene sceneID="rGH-xe-lFx">
+            <objects>
+                <viewController id="sZo-ue-SY9" customClass="ArrivalToStopViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3u3-oq-OxE"/>
+                        <viewControllerLayoutGuide type="bottom" id="wzt-y5-Vap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yop-Hy-7oB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9d-e1-k25" userLabel="StopMapView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="299"/>
+                                <connections>
+                                    <segue destination="7Dc-Cu-Lsk" kind="embed" identifier="map" id="Flz-eD-zsD"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-Fg-LeL" userLabel="ArrivalTable">
+                                <rect key="frame" x="0.0" y="319" width="375" height="299"/>
+                                <connections>
+                                    <segue destination="Glx-eW-bGP" kind="embed" identifier="arrivals" id="Com-IC-GQh"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RdA-Fg-LeL" firstAttribute="top" secondItem="z9d-e1-k25" secondAttribute="bottom" id="8hM-g9-RRS"/>
+                            <constraint firstItem="RdA-Fg-LeL" firstAttribute="width" secondItem="z9d-e1-k25" secondAttribute="width" id="AzP-n4-9bh"/>
+                            <constraint firstAttribute="trailing" secondItem="RdA-Fg-LeL" secondAttribute="trailing" id="ESG-3S-ru1"/>
+                            <constraint firstItem="RdA-Fg-LeL" firstAttribute="leading" secondItem="z9d-e1-k25" secondAttribute="trailing" id="Mr7-IX-rmt"/>
+                            <constraint firstItem="RdA-Fg-LeL" firstAttribute="height" secondItem="z9d-e1-k25" secondAttribute="height" id="Rd4-y7-jcq"/>
+                            <constraint firstItem="RdA-Fg-LeL" firstAttribute="top" secondItem="3u3-oq-OxE" secondAttribute="bottom" id="WZ1-EE-zC5"/>
+                            <constraint firstItem="wzt-y5-Vap" firstAttribute="top" secondItem="z9d-e1-k25" secondAttribute="bottom" id="glG-gu-Hzw"/>
+                            <constraint firstItem="z9d-e1-k25" firstAttribute="leading" secondItem="yop-Hy-7oB" secondAttribute="leading" id="hA6-aQ-Cnc"/>
+                            <constraint firstItem="z9d-e1-k25" firstAttribute="top" secondItem="3u3-oq-OxE" secondAttribute="bottom" id="jBH-PG-SXO"/>
+                            <constraint firstItem="RdA-Fg-LeL" firstAttribute="leading" secondItem="yop-Hy-7oB" secondAttribute="leading" id="oAZ-3c-lY2"/>
+                            <constraint firstItem="wzt-y5-Vap" firstAttribute="top" secondItem="RdA-Fg-LeL" secondAttribute="bottom" id="s5v-FQ-xDx"/>
+                            <constraint firstAttribute="trailing" secondItem="z9d-e1-k25" secondAttribute="trailing" id="uHO-BF-F8l"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="uHO-BF-F8l"/>
+                                <exclude reference="8hM-g9-RRS"/>
+                                <exclude reference="AzP-n4-9bh"/>
+                                <exclude reference="Mr7-IX-rmt"/>
+                                <exclude reference="Rd4-y7-jcq"/>
+                                <exclude reference="WZ1-EE-zC5"/>
+                                <exclude reference="oAZ-3c-lY2"/>
+                                <exclude reference="glG-gu-Hzw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="AzP-n4-9bh"/>
+                                <include reference="Mr7-IX-rmt"/>
+                                <include reference="WZ1-EE-zC5"/>
+                                <include reference="glG-gu-Hzw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="uHO-BF-F8l"/>
+                                <include reference="8hM-g9-RRS"/>
+                                <include reference="Rd4-y7-jcq"/>
+                                <include reference="oAZ-3c-lY2"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="uHO-BF-F8l"/>
+                                <exclude reference="8hM-g9-RRS"/>
+                                <include reference="AzP-n4-9bh"/>
+                                <include reference="Mr7-IX-rmt"/>
+                                <exclude reference="Rd4-y7-jcq"/>
+                                <include reference="WZ1-EE-zC5"/>
+                                <exclude reference="oAZ-3c-lY2"/>
+                                <include reference="glG-gu-Hzw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="M2U-i3-dzX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHe-5t-LVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2440.4296875" y="-396.09375"/>
+        </scene>
+        <!--Arrival Table View Controller-->
+        <scene sceneID="GEL-jP-BjK">
+            <objects>
+                <viewController id="Glx-eW-bGP" customClass="ArrivalTableViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxQ-hp-8Sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2440" y="456"/>
+        </scene>
+        <!--Transport Stop Map View Controller-->
+        <scene sceneID="dGa-3x-QKw">
+            <objects>
+                <viewController restorationIdentifier="TransportStopMapViewController" id="7Dc-Cu-Lsk" customClass="TransportStopMapViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gVg-UU-GTo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVk-qV-Hka" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1560" y="-394"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,18 +1,26 @@
 //
-//  StopMapViewMKMapViewDelegate.swift
+//  StopMapView.swift
 //  TransportCatcher
 //
-//  Created by Alexey Averkin on 17/09/2017.
+//  Created by Alexey Averkin on 27/11/2017.
 //  Copyright © 2017 Alexey Averkin. All rights reserved.
 //
 
+import UIKit
 import MapKit
-import ToSMR
 
-internal class StopMapViewDelegate: NSObject, MKMapViewDelegate {
+class TransportStopMapView: DGSMapView {
     
-    var didSelectStop: ((Int) -> Void)?
+    weak var stopMapViewDelegate: TransportStopMapViewDelegate?
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.delegate = self
+    }
+}
 
+extension TransportStopMapView: MKMapViewDelegate {
+    
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         return MKTileOverlayRenderer(overlay: overlay)
     }
@@ -42,9 +50,9 @@ internal class StopMapViewDelegate: NSObject, MKMapViewDelegate {
         }
         return view
     }
-
+    
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let transportAnnotation = view.annotation as? TransportStopAnnotation else { return }
-        didSelectStop?(transportAnnotation.stop.id)
+        stopMapViewDelegate?.mapView(self, didSelect: transportAnnotation.stop.id)
     }
 }

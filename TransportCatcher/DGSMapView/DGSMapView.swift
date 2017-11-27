@@ -9,9 +9,9 @@
 import UIKit
 import MapKit
 
-internal class StopMapView: MKMapView {
+internal class DGSMapView: MKMapView {
     
-    var mapViewOverlay: MKTileOverlay!
+    private(set) var mapViewOverlay: MKTileOverlay!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

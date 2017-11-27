@@ -2,7 +2,7 @@
 //  ArrivalTableViewCell.swift
 //  TransportCatcher
 //
-//  Created by Alexey Averkin on 24/11/2017.
+//  Created by Alexey Averkin on 27/11/2017.
 //  Copyright © 2017 Alexey Averkin. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import ToSMR
 
 class ArrivalTableViewCell: UITableViewCell {
-
+    
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var routeLabel: UILabel!
     @IBOutlet var vehicleInfoLabel: UILabel!
@@ -54,7 +54,7 @@ class ArrivalTableViewCell: UITableViewCell {
         result.append(minutesAS)
         return result.attributedSubstring(from: NSRange.init(location: 0, length: result.length))
     }
-
+    
     private func getTimeLabelBackgroundColor(vehicle: TransportType) -> UIColor {
         switch vehicle {
         case .bus:
@@ -68,7 +68,7 @@ class ArrivalTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
 }
