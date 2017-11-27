@@ -604,7 +604,7 @@
 		C79709961F3A2EE400824E7E /* ToSMR */ = {
 			isa = PBXGroup;
 			children = (
-				FAAB5EA81FC8687800778334 /* ToSMR */,
+				FAAB5EA81FC8687800778334 /* Sources */,
 				C79709971F3A2EE400824E7E /* ToSMR.h */,
 				C79709981F3A2EE400824E7E /* Info.plist */,
 			);
@@ -807,7 +807,7 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		FAAB5EA81FC8687800778334 /* ToSMR */ = {
+		FAAB5EA81FC8687800778334 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				C7C99CDE1F3B2F9F0089ECD6 /* Model */,
@@ -816,7 +816,7 @@
 				C79F55671F3E1BB000BC13C5 /* Request.swift */,
 				C79709C11F3A2FF700824E7E /* Service.swift */,
 			);
-			path = ToSMR;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		FAAB5EAA1FC8689100778334 /* JSON */ = {
