@@ -373,8 +373,7 @@
 				FAAB5E9F1FC866B200778334 /* Storyboard */,
 				FAAB5EA11FC866E900778334 /* DGSMapView */,
 			);
-			name = View;
-			path = ..;
+			path = View;
 			sourceTree = "<group>";
 		};
 		C70CA1AB1F6DCC9400A30DC8 /* Controller */ = {
@@ -384,8 +383,7 @@
 				FAAB5E9B1FC8666E00778334 /* TransportStopMapViewController */,
 				C7794F6A1FCC4578002BEFB3 /* ArrivalToStopViewController */,
 			);
-			name = Controller;
-			path = ..;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		C723B9041F3A5FCD00949C76 /* Extension */ = {
@@ -394,8 +392,7 @@
 				FAAB5EAD1FC868B600778334 /* Swift */,
 				FAAB5EAE1FC868BF00778334 /* Foundation */,
 			);
-			name = Extension;
-			path = ..;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C73AEB351F50C26200463045 /* ToSMRExample */ = {
@@ -414,8 +411,7 @@
 				C73AEB3F1F50C26200463045 /* LaunchScreen.storyboard */,
 				C73AEB3A1F50C26200463045 /* Main.storyboard */,
 			);
-			name = Storyboard;
-			path = ..;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		C73AEB4E1F50C2AD00463045 /* Controllers */ = {
@@ -423,8 +419,7 @@
 			children = (
 				C73AEB381F50C26200463045 /* ViewController.swift */,
 			);
-			name = Controllers;
-			path = ..;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C73AEB501F50C33E00463045 /* Services */ = {
@@ -432,8 +427,7 @@
 			children = (
 				C73AEB511F50C35200463045 /* ToSMRService.swift */,
 			);
-			name = Services;
-			path = ..;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C73BE8961FCC0F23009D63E7 /* View */ = {
@@ -536,16 +530,7 @@
 			children = (
 				C79709A41F3A2EE400824E7E /* GetFirstArrivalToStopTest.swift */,
 			);
-			name = Requests;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		C768A50A1F46054000A72B6C /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Mocks;
-			path = ..;
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		C7794F5B1FCC22DC002BEFB3 /* View */ = {
@@ -569,7 +554,6 @@
 		C7794F721FCC601F002BEFB3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C768A50A1F46054000A72B6C /* Mocks */,
 				C7B00E571F3F62680022D6F2 /* Stubs */,
 				C768A5061F46049300A72B6C /* Requests */,
 				C7B00E5A1F3F63100022D6F2 /* Serialization */,
@@ -586,13 +570,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C78E675B1FCC61FF00CB4C88 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		C79123181F6DC9AE0014AC4C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				FAAB5EB61FC8704000778334 /* UIColor.swift */,
 			);
-			name = Extension;
-			path = ..;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C79123191F6DC9BA0014AC4C /* Service */ = {
@@ -600,8 +590,7 @@
 			children = (
 				C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */,
 			);
-			name = Service;
-			path = ..;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		C791231B1F6DCA150014AC4C /* Helper */ = {
@@ -609,16 +598,7 @@
 			children = (
 				FAAB5EB41FC86E3500778334 /* LocalizedString.swift */,
 			);
-			name = Helper;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		C791231C1F6DCA460014AC4C /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Storage;
-			path = ..;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		C79709961F3A2EE400824E7E /* ToSMR */ = {
@@ -658,8 +638,7 @@
 				C7B00E501F3F59B60022D6F2 /* Parsable.swift */,
 				C7B00E351F3F324F0022D6F2 /* Serializator.swift */,
 			);
-			name = Serialization;
-			path = ..;
+			path = Serialization;
 			sourceTree = "<group>";
 		};
 		C7B00E561F3F62600022D6F2 /* Mocks */ = {
@@ -667,8 +646,7 @@
 			children = (
 				C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */,
 			);
-			name = Mocks;
-			path = ..;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		C7B00E571F3F62680022D6F2 /* Stubs */ = {
@@ -677,8 +655,7 @@
 				C768A5081F4604CF00A72B6C /* DataStub.swift */,
 				C7B00E301F3F18FF0022D6F2 /* ServiceStub.swift */,
 			);
-			name = Stubs;
-			path = ..;
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		C7B00E5A1F3F63100022D6F2 /* Serialization */ = {
@@ -687,8 +664,7 @@
 				C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */,
 				C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */,
 			);
-			name = Serialization;
-			path = ..;
+			path = Serialization;
 			sourceTree = "<group>";
 		};
 		C7C99CDE1F3B2F9F0089ECD6 /* Model */ = {
@@ -699,8 +675,7 @@
 				C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */,
 				C7D7F4B91F4F832B00717D9F /* TransportStop.swift */,
 			);
-			name = Model;
-			path = ..;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C7E73BAB1F4F39AE005ED5B6 /* Method */ = {
@@ -713,8 +688,7 @@
 				C75E859E1F4DED560074D272 /* getTransportsOnRoute.json */,
 				C75E85A01F4DED970074D272 /* getRouteSchedule.json */,
 			);
-			name = Method;
-			path = ..;
+			path = Method;
 			sourceTree = "<group>";
 		};
 		C7E73BAC1F4F39C4005ED5B6 /* Classifier */ = {
@@ -727,8 +701,7 @@
 				C7E73BB11F4F39D6005ED5B6 /* stops.xml */,
 				C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */,
 			);
-			name = Classifier;
-			path = ..;
+			path = Classifier;
 			sourceTree = "<group>";
 		};
 		E57536A87FA63AE1C3273E8F /* Pods */ = {
@@ -759,15 +732,14 @@
 			children = (
 				C70CA1AA1F6DCC9000A30DC8 /* View */,
 				C70CA1AB1F6DCC9400A30DC8 /* Controller */,
-				C791231C1F6DCA460014AC4C /* Storage */,
+				C78E675B1FCC61FF00CB4C88 /* Storage */,
 				C79123191F6DC9BA0014AC4C /* Service */,
 				C791231B1F6DCA150014AC4C /* Helper */,
 				C79123181F6DC9AE0014AC4C /* Extension */,
 				C74685281EFFA9E700D6021E /* AppDelegate.swift */,
 				C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */,
 			);
-			name = Sources;
-			path = "New Group";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		FAAB5E991FC8665800778334 /* ArrivalTableViewController */ = {
@@ -1607,6 +1579,7 @@
 				C73AEB3B1F50C26200463045 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		C73AEB3F1F50C26200463045 /* LaunchScreen.storyboard */ = {
@@ -1615,6 +1588,7 @@
 				C73AEB401F50C26200463045 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		C746852C1EFFA9E700D6021E /* Main.storyboard */ = {
@@ -1623,6 +1597,7 @@
 				C746852D1EFFA9E700D6021E /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */ = {
@@ -1631,6 +1606,7 @@
 				C74685321EFFA9E700D6021E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
