@@ -8,21 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		098CBE74E9ED5C6C8C181470 /* Pods_TransportCatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2587CAFEA5179E53EC91B720 /* Pods_TransportCatcher.framework */; };
-		3A5DF595B8BCE42E32C21674 /* Pods_GeoSMRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */; };
 		C70CA1A81F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */; };
 		C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */; };
 		C70CA1BD1F6DDC3500A30DC8 /* TransportStopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
 		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
-		C73AEB371F50C26200463045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB361F50C26200463045 /* AppDelegate.swift */; };
-		C73AEB391F50C26200463045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB381F50C26200463045 /* ViewController.swift */; };
-		C73AEB3C1F50C26200463045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73AEB3A1F50C26200463045 /* Main.storyboard */; };
-		C73AEB3E1F50C26200463045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73AEB3D1F50C26200463045 /* Assets.xcassets */; };
-		C73AEB411F50C26200463045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73AEB3F1F50C26200463045 /* LaunchScreen.storyboard */; };
-		C73AEB461F50C26C00463045 /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
-		C73AEB471F50C26C00463045 /* ToSMR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C73AEB4F1F50C2DF00463045 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74685641EFFD8A600D6021E /* MapKit.framework */; };
-		C73AEB521F50C35200463045 /* ToSMRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB511F50C35200463045 /* ToSMRService.swift */; };
 		C73BE8911FCC0C9E009D63E7 /* TransportStopMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73BE8901FCC0C9E009D63E7 /* TransportStopMapView.swift */; };
 		C73BE8941FCC0EE9009D63E7 /* TransportStopMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73BE8921FCC0EE9009D63E7 /* TransportStopMapViewController.swift */; };
 		C73BE8951FCC0EE9009D63E7 /* TransportStopMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73BE8931FCC0EE9009D63E7 /* TransportStopMapViewController.xib */; };
@@ -30,15 +20,8 @@
 		C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C746852C1EFFA9E700D6021E /* Main.storyboard */; };
 		C74685301EFFA9E700D6021E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C746852F1EFFA9E700D6021E /* Assets.xcassets */; };
 		C74685331EFFA9E700D6021E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */; };
-		C74685481EFFAA2F00D6021E /* GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746853F1EFFAA2F00D6021E /* GeoSMR.framework */; };
-		C746854F1EFFAA2F00D6021E /* GeoSMRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746854E1EFFAA2F00D6021E /* GeoSMRTests.swift */; };
-		C74685511EFFAA2F00D6021E /* GeoSMR.h in Headers */ = {isa = PBXBuildFile; fileRef = C74685411EFFAA2F00D6021E /* GeoSMR.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C74685541EFFAA2F00D6021E /* GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746853F1EFFAA2F00D6021E /* GeoSMR.framework */; };
-		C74685551EFFAA2F00D6021E /* GeoSMR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C746853F1EFFAA2F00D6021E /* GeoSMR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C746855E1EFFD84D00D6021E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C746855D1EFFD84D00D6021E /* .gitignore */; };
 		C74685651EFFD8A600D6021E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74685641EFFD8A600D6021E /* MapKit.framework */; };
-		C746857C1EFFD91600D6021E /* GeoSMRIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746857B1EFFD91600D6021E /* GeoSMRIntegrationTests.swift */; };
-		C746857E1EFFD91600D6021E /* GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746853F1EFFAA2F00D6021E /* GeoSMR.framework */; };
 		C75E858D1F4DD9880074D272 /* getRouteArrivalToStop.json in Resources */ = {isa = PBXBuildFile; fileRef = C75E858C1F4DD9880074D272 /* getRouteArrivalToStop.json */; };
 		C75E858F1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75E858E1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift */; };
 		C75E85991F4DE6F70074D272 /* getTransportPosition.json in Resources */ = {isa = PBXBuildFile; fileRef = C75E85981F4DE6F70074D272 /* getTransportPosition.json */; };
@@ -91,48 +74,11 @@
 		C7EC4F571F4F7071009A020A /* XMLSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F561F4F7071009A020A /* XMLSerializer.swift */; };
 		C7EC4F591F4F719F009A020A /* XMLSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */; };
 		C7EC4F5D1F4F7931009A020A /* XMLParserDictionaryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */; };
-		D3C59E4544E8A6AF2A48F176 /* Pods_GeoSMRIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */; };
-		EC059BDEE9015FBAB4A83B33 /* Pods_GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2584F5F9AD1414FEACD1D830 /* Pods_GeoSMR.framework */; };
 		FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB41FC86E3500778334 /* LocalizedString.swift */; };
 		FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB61FC8704000778334 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C73AEB481F50C26C00463045 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C746851D1EFFA9E700D6021E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C79709941F3A2EE400824E7E;
-			remoteInfo = ToSMR;
-		};
-		C74685491EFFAA2F00D6021E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C746851D1EFFA9E700D6021E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C746853E1EFFAA2F00D6021E;
-			remoteInfo = GeoSMR;
-		};
-		C746854B1EFFAA2F00D6021E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C746851D1EFFA9E700D6021E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C74685241EFFA9E700D6021E;
-			remoteInfo = TransportCatcher;
-		};
-		C74685521EFFAA2F00D6021E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C746851D1EFFA9E700D6021E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C746853E1EFFAA2F00D6021E;
-			remoteInfo = GeoSMR;
-		};
-		C746857F1EFFD91600D6021E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C746851D1EFFA9E700D6021E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C746853E1EFFAA2F00D6021E;
-			remoteInfo = GeoSMR;
-		};
 		C797099F1F3A2EE400824E7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C746851D1EFFA9E700D6021E /* Project object */;
@@ -164,17 +110,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C73AEB4A1F50C26C00463045 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C73AEB471F50C26C00463045 /* ToSMR.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C74685591EFFAA2F00D6021E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -182,7 +117,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C79709AB1F3A2EE400824E7E /* ToSMR.framework in Embed Frameworks */,
-				C74685551EFFAA2F00D6021E /* GeoSMR.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,14 +141,6 @@
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStopsFullDBTest.swift; sourceTree = "<group>"; };
-		C73AEB341F50C26200463045 /* ToSMRExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToSMRExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C73AEB361F50C26200463045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C73AEB381F50C26200463045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C73AEB3B1F50C26200463045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C73AEB3D1F50C26200463045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C73AEB401F50C26200463045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C73AEB421F50C26200463045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C73AEB511F50C35200463045 /* ToSMRService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToSMRService.swift; sourceTree = "<group>"; };
 		C73BE8901FCC0C9E009D63E7 /* TransportStopMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStopMapView.swift; sourceTree = "<group>"; };
 		C73BE8921FCC0EE9009D63E7 /* TransportStopMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStopMapViewController.swift; sourceTree = "<group>"; };
 		C73BE8931FCC0EE9009D63E7 /* TransportStopMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransportStopMapViewController.xib; sourceTree = "<group>"; };
@@ -224,17 +150,8 @@
 		C746852F1EFFA9E700D6021E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C74685321EFFA9E700D6021E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C74685341EFFA9E700D6021E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C746853F1EFFAA2F00D6021E /* GeoSMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GeoSMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C74685411EFFAA2F00D6021E /* GeoSMR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoSMR.h; sourceTree = "<group>"; };
-		C74685421EFFAA2F00D6021E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C74685471EFFAA2F00D6021E /* GeoSMRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoSMRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C746854E1EFFAA2F00D6021E /* GeoSMRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSMRTests.swift; sourceTree = "<group>"; };
-		C74685501EFFAA2F00D6021E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C746855D1EFFD84D00D6021E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C74685641EFFD8A600D6021E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		C74685791EFFD91600D6021E /* GeoSMRIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoSMRIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C746857B1EFFD91600D6021E /* GeoSMRIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSMRIntegrationTests.swift; sourceTree = "<group>"; };
-		C746857D1EFFD91600D6021E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C75E858C1F4DD9880074D272 /* getRouteArrivalToStop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getRouteArrivalToStop.json; sourceTree = "<group>"; };
 		C75E858E1F4DE0510074D272 /* GetRouteArrivalToStopTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRouteArrivalToStopTest.swift; sourceTree = "<group>"; };
 		C75E85981F4DE6F70074D272 /* getTransportPosition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getTransportPosition.json; sourceTree = "<group>"; };
@@ -295,49 +212,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C73AEB311F50C26200463045 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C73AEB4F1F50C2DF00463045 /* MapKit.framework in Frameworks */,
-				C73AEB461F50C26C00463045 /* ToSMR.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C74685221EFFA9E700D6021E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C79709AA1F3A2EE400824E7E /* ToSMR.framework in Frameworks */,
 				C74685651EFFD8A600D6021E /* MapKit.framework in Frameworks */,
-				C74685541EFFAA2F00D6021E /* GeoSMR.framework in Frameworks */,
 				098CBE74E9ED5C6C8C181470 /* Pods_TransportCatcher.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C746853B1EFFAA2F00D6021E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EC059BDEE9015FBAB4A83B33 /* Pods_GeoSMR.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74685441EFFAA2F00D6021E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C74685481EFFAA2F00D6021E /* GeoSMR.framework in Frameworks */,
-				3A5DF595B8BCE42E32C21674 /* Pods_GeoSMRTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74685761EFFD91600D6021E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C746857E1EFFD91600D6021E /* GeoSMR.framework in Frameworks */,
-				D3C59E4544E8A6AF2A48F176 /* Pods_GeoSMRIntegrationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,41 +275,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		C73AEB351F50C26200463045 /* ToSMRExample */ = {
-			isa = PBXGroup;
-			children = (
-				FAAB5EA51FC8685000778334 /* Resources */,
-				FAAB5EA61FC8686100778334 /* Sources */,
-				C73AEB421F50C26200463045 /* Info.plist */,
-			);
-			path = ToSMRExample;
-			sourceTree = "<group>";
-		};
-		C73AEB4C1F50C29400463045 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				C73AEB3F1F50C26200463045 /* LaunchScreen.storyboard */,
-				C73AEB3A1F50C26200463045 /* Main.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		C73AEB4E1F50C2AD00463045 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				C73AEB381F50C26200463045 /* ViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		C73AEB501F50C33E00463045 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				C73AEB511F50C35200463045 /* ToSMRService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		C73BE8961FCC0F23009D63E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,10 +290,6 @@
 			isa = PBXGroup;
 			children = (
 				C74685271EFFA9E700D6021E /* TransportCatcher */,
-				C74685401EFFAA2F00D6021E /* GeoSMR */,
-				C746854D1EFFAA2F00D6021E /* GeoSMRTests */,
-				C746857A1EFFD91600D6021E /* GeoSMRIntegrationTests */,
-				C73AEB351F50C26200463045 /* ToSMRExample */,
 				C79709961F3A2EE400824E7E /* ToSMR */,
 				C79709A31F3A2EE400824E7E /* ToSMRTests */,
 				C79709B71F3A2F1600824E7E /* ToSMRIntegrationTests */,
@@ -462,13 +304,9 @@
 			isa = PBXGroup;
 			children = (
 				C74685251EFFA9E700D6021E /* TransportCatcher.app */,
-				C746853F1EFFAA2F00D6021E /* GeoSMR.framework */,
-				C74685471EFFAA2F00D6021E /* GeoSMRTests.xctest */,
-				C74685791EFFD91600D6021E /* GeoSMRIntegrationTests.xctest */,
 				C79709951F3A2EE400824E7E /* ToSMR.framework */,
 				C797099D1F3A2EE400824E7E /* ToSMRTests.xctest */,
 				C79709B61F3A2F1600824E7E /* ToSMRIntegrationTests.xctest */,
-				C73AEB341F50C26200463045 /* ToSMRExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -484,24 +322,6 @@
 			path = TransportCatcher;
 			sourceTree = "<group>";
 		};
-		C74685401EFFAA2F00D6021E /* GeoSMR */ = {
-			isa = PBXGroup;
-			children = (
-				C74685411EFFAA2F00D6021E /* GeoSMR.h */,
-				C74685421EFFAA2F00D6021E /* Info.plist */,
-			);
-			path = GeoSMR;
-			sourceTree = "<group>";
-		};
-		C746854D1EFFAA2F00D6021E /* GeoSMRTests */ = {
-			isa = PBXGroup;
-			children = (
-				C746854E1EFFAA2F00D6021E /* GeoSMRTests.swift */,
-				C74685501EFFAA2F00D6021E /* Info.plist */,
-			);
-			path = GeoSMRTests;
-			sourceTree = "<group>";
-		};
 		C746855F1EFFD88900D6021E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,15 +333,6 @@
 				2587CAFEA5179E53EC91B720 /* Pods_TransportCatcher.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C746857A1EFFD91600D6021E /* GeoSMRIntegrationTests */ = {
-			isa = PBXGroup;
-			children = (
-				C746857B1EFFD91600D6021E /* GeoSMRIntegrationTests.swift */,
-				C746857D1EFFD91600D6021E /* Info.plist */,
-			);
-			path = GeoSMRIntegrationTests;
 			sourceTree = "<group>";
 		};
 		C768A5061F46049300A72B6C /* Requests */ = {
@@ -788,25 +599,6 @@
 			path = DGSMapView;
 			sourceTree = "<group>";
 		};
-		FAAB5EA51FC8685000778334 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C73AEB4C1F50C29400463045 /* Storyboard */,
-				C73AEB3D1F50C26200463045 /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		FAAB5EA61FC8686100778334 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C73AEB501F50C33E00463045 /* Services */,
-				C73AEB4E1F50C2AD00463045 /* Controllers */,
-				C73AEB361F50C26200463045 /* AppDelegate.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
 		FAAB5EA81FC8687800778334 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -870,14 +662,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C746853C1EFFAA2F00D6021E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C74685511EFFAA2F00D6021E /* GeoSMR.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C79709921F3A2EE400824E7E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -889,25 +673,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C73AEB331F50C26200463045 /* ToSMRExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C73AEB431F50C26200463045 /* Build configuration list for PBXNativeTarget "ToSMRExample" */;
-			buildPhases = (
-				C73AEB301F50C26200463045 /* Sources */,
-				C73AEB311F50C26200463045 /* Frameworks */,
-				C73AEB321F50C26200463045 /* Resources */,
-				C73AEB4A1F50C26C00463045 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C73AEB491F50C26C00463045 /* PBXTargetDependency */,
-			);
-			name = ToSMRExample;
-			productName = ToSMRExample;
-			productReference = C73AEB341F50C26200463045 /* ToSMRExample.app */;
-			productType = "com.apple.product-type.application";
-		};
 		C74685241EFFA9E700D6021E /* TransportCatcher */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C74685371EFFA9E700D6021E /* Build configuration list for PBXNativeTarget "TransportCatcher" */;
@@ -923,76 +688,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				C74685531EFFAA2F00D6021E /* PBXTargetDependency */,
 				C79709A91F3A2EE400824E7E /* PBXTargetDependency */,
 			);
 			name = TransportCatcher;
 			productName = TransportCatcher;
 			productReference = C74685251EFFA9E700D6021E /* TransportCatcher.app */;
 			productType = "com.apple.product-type.application";
-		};
-		C746853E1EFFAA2F00D6021E /* GeoSMR */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C74685561EFFAA2F00D6021E /* Build configuration list for PBXNativeTarget "GeoSMR" */;
-			buildPhases = (
-				4C0FAAE4389950ED8BD7F55E /* [CP] Check Pods Manifest.lock */,
-				C746853A1EFFAA2F00D6021E /* Sources */,
-				C746853B1EFFAA2F00D6021E /* Frameworks */,
-				C746853C1EFFAA2F00D6021E /* Headers */,
-				C746853D1EFFAA2F00D6021E /* Resources */,
-				248E9835894119F7BB38A738 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GeoSMR;
-			productName = GeoSMR;
-			productReference = C746853F1EFFAA2F00D6021E /* GeoSMR.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C74685461EFFAA2F00D6021E /* GeoSMRTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C746855A1EFFAA2F00D6021E /* Build configuration list for PBXNativeTarget "GeoSMRTests" */;
-			buildPhases = (
-				7F0AB8F70BAA3F2179023544 /* [CP] Check Pods Manifest.lock */,
-				C74685431EFFAA2F00D6021E /* Sources */,
-				C74685441EFFAA2F00D6021E /* Frameworks */,
-				C74685451EFFAA2F00D6021E /* Resources */,
-				D173EC926DBD1142315C8715 /* [CP] Embed Pods Frameworks */,
-				72340171CE48D92FE4624F24 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C746854A1EFFAA2F00D6021E /* PBXTargetDependency */,
-				C746854C1EFFAA2F00D6021E /* PBXTargetDependency */,
-			);
-			name = GeoSMRTests;
-			productName = GeoSMRTests;
-			productReference = C74685471EFFAA2F00D6021E /* GeoSMRTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C74685781EFFD91600D6021E /* GeoSMRIntegrationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C74685811EFFD91600D6021E /* Build configuration list for PBXNativeTarget "GeoSMRIntegrationTests" */;
-			buildPhases = (
-				DB2E99AAEE4D3338DEBB7EF1 /* [CP] Check Pods Manifest.lock */,
-				C74685751EFFD91600D6021E /* Sources */,
-				C74685761EFFD91600D6021E /* Frameworks */,
-				C74685771EFFD91600D6021E /* Resources */,
-				7807D69B525D51A703AFBE85 /* [CP] Embed Pods Frameworks */,
-				910FC3BB35511C17775B0B59 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C74685801EFFD91600D6021E /* PBXTargetDependency */,
-			);
-			name = GeoSMRIntegrationTests;
-			productName = GeoSMRIntegrationTests;
-			productReference = C74685791EFFD91600D6021E /* GeoSMRIntegrationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		C79709941F3A2EE400824E7E /* ToSMR */ = {
 			isa = PBXNativeTarget;
@@ -1060,16 +761,6 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Alexey Averkin";
 				TargetAttributes = {
-					C73AEB331F50C26200463045 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = MGB98L2Y6W;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.Maps.iOS = {
-								enabled = 1;
-							};
-						};
-					};
 					C74685241EFFA9E700D6021E = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8245AS67CL;
@@ -1080,23 +771,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					C746853E1EFFAA2F00D6021E = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8245AS67CL;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-					};
-					C74685461EFFAA2F00D6021E = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8245AS67CL;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-					};
-					C74685781EFFD91600D6021E = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8245AS67CL;
-						ProvisioningStyle = Automatic;
 					};
 					C79709941F3A2EE400824E7E = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -1131,10 +805,6 @@
 			projectRoot = "";
 			targets = (
 				C74685241EFFA9E700D6021E /* TransportCatcher */,
-				C746853E1EFFAA2F00D6021E /* GeoSMR */,
-				C74685461EFFAA2F00D6021E /* GeoSMRTests */,
-				C74685781EFFD91600D6021E /* GeoSMRIntegrationTests */,
-				C73AEB331F50C26200463045 /* ToSMRExample */,
 				C79709941F3A2EE400824E7E /* ToSMR */,
 				C797099C1F3A2EE400824E7E /* ToSMRTests */,
 				C79709B51F3A2F1600824E7E /* ToSMRIntegrationTests */,
@@ -1143,16 +813,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C73AEB321F50C26200463045 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C73AEB411F50C26200463045 /* LaunchScreen.storyboard in Resources */,
-				C73AEB3E1F50C26200463045 /* Assets.xcassets in Resources */,
-				C73AEB3C1F50C26200463045 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C74685231EFFA9E700D6021E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1166,27 +826,6 @@
 				C7794F631FCC3970002BEFB3 /* ArrivalTableViewController.xib in Resources */,
 				C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */,
 				C73BE8951FCC0EE9009D63E7 /* TransportStopMapViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C746853D1EFFAA2F00D6021E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74685451EFFAA2F00D6021E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74685771EFFD91600D6021E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1226,21 +865,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		248E9835894119F7BB38A738 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoSMR/Pods-GeoSMR-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		39B4C3D047689501ACA1CBF2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1254,87 +878,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransportCatcher/Pods-TransportCatcher-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C0FAAE4389950ED8BD7F55E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GeoSMR-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		72340171CE48D92FE4624F24 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoSMRTests/Pods-GeoSMRTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7807D69B525D51A703AFBE85 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoSMRIntegrationTests/Pods-GeoSMRIntegrationTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F0AB8F70BAA3F2179023544 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GeoSMRTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		910FC3BB35511C17775B0B59 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoSMRIntegrationTests/Pods-GeoSMRIntegrationTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9AA01060237F119F76492B6F /* [CP] Embed Pods Frameworks */ = {
@@ -1384,52 +927,9 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D173EC926DBD1142315C8715 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoSMRTests/Pods-GeoSMRTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB2E99AAEE4D3338DEBB7EF1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GeoSMRIntegrationTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C73AEB301F50C26200463045 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C73AEB391F50C26200463045 /* ViewController.swift in Sources */,
-				C73AEB521F50C35200463045 /* ToSMRService.swift in Sources */,
-				C73AEB371F50C26200463045 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C74685211EFFA9E700D6021E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1449,29 +949,6 @@
 				C70CA1A81F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift in Sources */,
 				C70CA1BD1F6DDC3500A30DC8 /* TransportStopAnnotation.swift in Sources */,
 				C7794F6C1FCC4614002BEFB3 /* ArrivalToStopViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C746853A1EFFAA2F00D6021E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74685431EFFAA2F00D6021E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C746854F1EFFAA2F00D6021E /* GeoSMRTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74685751EFFD91600D6021E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C746857C1EFFD91600D6021E /* GeoSMRIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1525,31 +1002,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C73AEB491F50C26C00463045 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C79709941F3A2EE400824E7E /* ToSMR */;
-			targetProxy = C73AEB481F50C26C00463045 /* PBXContainerItemProxy */;
-		};
-		C746854A1EFFAA2F00D6021E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C746853E1EFFAA2F00D6021E /* GeoSMR */;
-			targetProxy = C74685491EFFAA2F00D6021E /* PBXContainerItemProxy */;
-		};
-		C746854C1EFFAA2F00D6021E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C74685241EFFA9E700D6021E /* TransportCatcher */;
-			targetProxy = C746854B1EFFAA2F00D6021E /* PBXContainerItemProxy */;
-		};
-		C74685531EFFAA2F00D6021E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C746853E1EFFAA2F00D6021E /* GeoSMR */;
-			targetProxy = C74685521EFFAA2F00D6021E /* PBXContainerItemProxy */;
-		};
-		C74685801EFFD91600D6021E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C746853E1EFFAA2F00D6021E /* GeoSMR */;
-			targetProxy = C746857F1EFFD91600D6021E /* PBXContainerItemProxy */;
-		};
 		C79709A01F3A2EE400824E7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C79709941F3A2EE400824E7E /* ToSMR */;
@@ -1573,24 +1025,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C73AEB3A1F50C26200463045 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C73AEB3B1F50C26200463045 /* Base */,
-			);
-			name = Main.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
-		C73AEB3F1F50C26200463045 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C73AEB401F50C26200463045 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
 		C746852C1EFFA9E700D6021E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1612,34 +1046,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C73AEB441F50C26200463045 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MGB98L2Y6W;
-				INFOPLIST_FILE = ToSMRExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tosmr.example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		C73AEB451F50C26200463045 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MGB98L2Y6W;
-				INFOPLIST_FILE = ToSMRExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tosmr.example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 		C74685351EFFA9E700D6021E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1781,111 +1187,6 @@
 			};
 			name = Release;
 		};
-		C74685571EFFAA2F00D6021E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57B60E246BF99F82D2512B00 /* Pods-GeoSMR.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8245AS67CL;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GeoSMR/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.geosmr.framework;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C74685581EFFAA2F00D6021E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FAEFFF4447D5716FA8AD313 /* Pods-GeoSMR.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8245AS67CL;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GeoSMR/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.geosmr.framework;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C746855B1EFFAA2F00D6021E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87B14CCE3F9BD47BBA6132E0 /* Pods-GeoSMRTests.debug.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 8245AS67CL;
-				INFOPLIST_FILE = GeoSMRTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.averkin.GeoSMRTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		C746855C1EFFAA2F00D6021E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A088F84F2429E3C8D294850 /* Pods-GeoSMRTests.release.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 8245AS67CL;
-				INFOPLIST_FILE = GeoSMRTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.averkin.GeoSMRTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		C74685821EFFD91600D6021E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89F656FC773CA31F95E053EE /* Pods-GeoSMRIntegrationTests.debug.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 8245AS67CL;
-				INFOPLIST_FILE = GeoSMRIntegrationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.averkin.GeoSMRIntegrationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		C74685831EFFD91600D6021E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 462E90C209379499022DB92A /* Pods-GeoSMRIntegrationTests.release.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 8245AS67CL;
-				INFOPLIST_FILE = GeoSMRIntegrationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.averkin.GeoSMRIntegrationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 		C79709AC1F3A2EE400824E7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2000,15 +1301,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C73AEB431F50C26200463045 /* Build configuration list for PBXNativeTarget "ToSMRExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C73AEB441F50C26200463045 /* Debug */,
-				C73AEB451F50C26200463045 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		C74685201EFFA9E700D6021E /* Build configuration list for PBXProject "TransportCatcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2023,33 +1315,6 @@
 			buildConfigurations = (
 				C74685381EFFA9E700D6021E /* Debug */,
 				C74685391EFFA9E700D6021E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C74685561EFFAA2F00D6021E /* Build configuration list for PBXNativeTarget "GeoSMR" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C74685571EFFAA2F00D6021E /* Debug */,
-				C74685581EFFAA2F00D6021E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C746855A1EFFAA2F00D6021E /* Build configuration list for PBXNativeTarget "GeoSMRTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C746855B1EFFAA2F00D6021E /* Debug */,
-				C746855C1EFFAA2F00D6021E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C74685811EFFD91600D6021E /* Build configuration list for PBXNativeTarget "GeoSMRIntegrationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C74685821EFFD91600D6021E /* Debug */,
-				C74685831EFFD91600D6021E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
