@@ -28,7 +28,7 @@
 		C73BE8951FCC0EE9009D63E7 /* TransportStopMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73BE8931FCC0EE9009D63E7 /* TransportStopMapViewController.xib */; };
 		C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74685281EFFA9E700D6021E /* AppDelegate.swift */; };
 		C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C746852C1EFFA9E700D6021E /* Main.storyboard */; };
-		C74685301EFFA9E700D6021E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C746852F1EFFA9E700D6021E /* Images.xcassets */; };
+		C74685301EFFA9E700D6021E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C746852F1EFFA9E700D6021E /* Assets.xcassets */; };
 		C74685331EFFA9E700D6021E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */; };
 		C74685481EFFAA2F00D6021E /* GeoSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C746853F1EFFAA2F00D6021E /* GeoSMR.framework */; };
 		C746854F1EFFAA2F00D6021E /* GeoSMRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746854E1EFFAA2F00D6021E /* GeoSMRTests.swift */; };
@@ -221,7 +221,7 @@
 		C74685251EFFA9E700D6021E /* TransportCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74685281EFFA9E700D6021E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C746852D1EFFA9E700D6021E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C746852F1EFFA9E700D6021E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C746852F1EFFA9E700D6021E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C74685321EFFA9E700D6021E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C74685341EFFA9E700D6021E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C746853F1EFFAA2F00D6021E /* GeoSMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GeoSMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -370,7 +370,6 @@
 		C70CA1AA1F6DCC9000A30DC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FAAB5E9F1FC866B200778334 /* Storyboard */,
 				FAAB5EA11FC866E900778334 /* DGSMapView */,
 			);
 			path = View;
@@ -722,7 +721,8 @@
 		FAAB5E901FC865A900778334 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C746852F1EFFA9E700D6021E /* Images.xcassets */,
+				C746852F1EFFA9E700D6021E /* Assets.xcassets */,
+				FAAB5E9F1FC866B200778334 /* Storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1162,7 +1162,7 @@
 				C79123201F6DCAC60014AC4C /* TransportCatcher-Info.plist in Resources */,
 				C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */,
 				C74685331EFFA9E700D6021E /* LaunchScreen.storyboard in Resources */,
-				C74685301EFFA9E700D6021E /* Images.xcassets in Resources */,
+				C74685301EFFA9E700D6021E /* Assets.xcassets in Resources */,
 				C7794F631FCC3970002BEFB3 /* ArrivalTableViewController.xib in Resources */,
 				C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */,
 				C73BE8951FCC0EE9009D63E7 /* TransportStopMapViewController.xib in Resources */,
