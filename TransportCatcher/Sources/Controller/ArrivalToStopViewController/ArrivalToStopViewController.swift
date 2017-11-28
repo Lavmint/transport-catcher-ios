@@ -15,7 +15,7 @@ class ArrivalToStopViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        transportStopMapViewController.stopMapView.stopMapViewDelegate = self
+        transportStopMapViewController.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -31,9 +31,10 @@ class ArrivalToStopViewController: UIViewController {
 }
 
 extension ArrivalToStopViewController: TransportStopMapViewDelegate {
-    
-    func mapView(_ stopMapView: TransportStopMapView, didSelect stopId: Int) {
+
+    func mapView(_ mapView: DGSMapView, didSelect stopId: Int) {
         guard let arrivalController = arrivalTableViewController else { return }
         arrivalController.configure(withStopId: stopId)
     }
 }
+

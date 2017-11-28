@@ -125,12 +125,12 @@
         <!--Transport Stop Map View Controller-->
         <scene sceneID="dGa-3x-QKw">
             <objects>
-                <viewController restorationIdentifier="TransportStopMapViewController" id="7Dc-Cu-Lsk" customClass="TransportStopMapViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Dc-Cu-Lsk" customClass="TransportStopMapViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="gVg-UU-GTo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVk-qV-Hka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1560" y="-394"/>
+            <point key="canvasLocation" x="-1760" y="-398"/>
         </scene>
     </scenes>
 </document>

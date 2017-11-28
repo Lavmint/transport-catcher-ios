@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocationButton: UIButton {
+class DGSUserTrackingButton: UIButton {
  
     override open var isHighlighted: Bool {
         didSet {
@@ -33,6 +33,15 @@ class LocationButton: UIButton {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        initialize()
+    }
+    
+    override init(frame: CGRect = CGRect.zero) {
+        super.init(frame: frame)
+        initialize()
+    }
+    
+    func initialize() {
         self.layer.cornerRadius = 18
         self.layer.masksToBounds = false
         self.layer.shadowOpacity = 0.5
