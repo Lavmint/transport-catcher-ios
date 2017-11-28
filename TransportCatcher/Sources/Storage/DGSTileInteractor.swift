@@ -10,62 +10,78 @@ import CoreData
 
 class DGSTileInteractor {
     
-    let managedObjectContext: NSManagedObjectContext
-    let operationQueue: OperationQueue
+    let backgroundContext: NSManagedObjectContext
+    private(set) var temporaryStorage: [String: Data]
     
-    init(managedObjectContext: NSManagedObjectContext = TransportCatcherPersistenseContainer.shared.viewContext) {
-        self.managedObjectContext = managedObjectContext
-        self.operationQueue = OperationQueue()
-        self.operationQueue.qualityOfService = .userInteractive
+    init() {
+        self.backgroundContext = TransportCatcherPersistenseContainer.shared.newBackgroundContext()
+        self.temporaryStorage = [:]
     }
     
-    func getTile(for url: NSURL, completion: @escaping (DGSTile?) -> Void) throws {
+    func findTile(for url: NSURL) -> DGSTile? {
+        let request: NSFetchRequest<DGSTile> = DGSTile.fetchRequest()
+        request.returnsObjectsAsFaults = false
+        request.predicate = NSPredicate(format: "url = %@", url.absoluteString!)
+        var results: [DGSTile] = []
+        do {
+            results = try backgroundContext.fetch(request)
+        } catch {
+            dprint(error)
+            assertionFailure()
+            return nil
+        }
+        guard results.count <= 1 else { assertionFailure(); return nil }
+        dprint(["returning tile:", url.absoluteString!].joined(separator: " "))
+        return results.first
+    }
+    
+    func setTemporaryData(for url: NSURL, data: NSData) {
+        dprint([#function, url.absoluteString!].joined(separator: " "))
+        temporaryStorage[url.absoluteString!] = data as Data
+        guard temporaryStorage.count >= 10 else { return }
+        saveChanges()
+    }
+    
+    private func saveChanges() {
+        dprint(#function)
+        let rawURLs: [String] = temporaryStorage.keys.map({ $0 })
+        let request: NSFetchRequest<DGSTile> = DGSTile.fetchRequest()
+        request.predicate = NSPredicate(format: "url IN %@", rawURLs)
+        var fetchedTiles: [DGSTile] = []
+        do {
+            fetchedTiles = try backgroundContext.fetch(request)
+        } catch {
+            dprint(error)
+            assertionFailure()
+        }
         
-        var calloutTile: DGSTile?
-        defer {
-            OperationQueue.main.addOperation {
-                completion(calloutTile)
+        //updating existing tiles
+        for (url, data) in temporaryStorage {
+            for tile in fetchedTiles {
+                guard url == tile.url else { continue }
+                tile.data = data
+                tile.timestamp = Date().timeIntervalSince1970
+                temporaryStorage.removeValue(forKey: url)
             }
         }
         
-        let request: NSFetchRequest<DGSTile> = DGSTile.fetchRequest()
-        request.predicate = NSPredicate(format: "url = %@", url.absoluteString!)
-        let results = try managedObjectContext.fetch(request)
-        guard results.count <= 1 else { assertionFailure(); return }
-        calloutTile = results.first
-    }
-    
-    func getData(for url: NSURL, completion: @escaping (NSData?) -> Void) throws {
-    
-        try getTile(for: url, completion: { (tile) in
-            
-            var calloutData: NSData?
-            defer {
-                if calloutData != nil { dprint([#function, url.absoluteString!].joined(separator: " ")) }
-                completion(calloutData)
-            }
-            
-            guard let data = tile?.data else { return }
-            calloutData = data as NSData
-        })
-    }
-    
-    func getOrCreateTile(for url: NSURL, completion: @escaping (DGSTile) -> Void) throws {
-        var calloutTile: DGSTile!
-        let context = self.managedObjectContext
-        try getTile(for: url, completion: { (tile) in
-            calloutTile = tile ?? DGSTile(context: context)
-            calloutTile.url = url.absoluteString
-            calloutTile.timestamp = Date().timeIntervalSince1970
-            completion(calloutTile)
-        })
-    }
-    
-    func setData(for url: NSURL, data: NSData, completion: (() -> Void)? = nil) throws {
-        try getOrCreateTile(for: url) { (tile) in
-            dprint([#function, url.absoluteString!].joined(separator: " "))
-            tile.data = data as Data
-            completion?()
+        //creating new tiles
+        for (url, data) in temporaryStorage {
+            let tile = DGSTile(context: backgroundContext)
+            tile.url = url
+            tile.data = data
+            tile.timestamp = Date().timeIntervalSince1970
+            temporaryStorage.removeValue(forKey: url)
+        }
+        
+        do {
+            guard backgroundContext.hasChanges else { return }
+            try backgroundContext.save()
+        }
+        catch {
+            dprint(error)
+            assertionFailure()
+            return
         }
     }
 }

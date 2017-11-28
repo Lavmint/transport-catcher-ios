@@ -35,30 +35,26 @@ internal class DGSTileOverlay: MKTileOverlay {
 
 	override public func loadTile(at path: MKTileOverlayPath, result: @escaping (Data?, Error?) -> Void) {
 		let url = self.url(forTilePath: path)
-		if let cachedData = self.cache.object(forKey: url as NSURL) as Data? {
-			result(cachedData, nil)
-		} else {
-            do {
-                try dgsTileInteractor.getData(for: url as NSURL, completion: { (data) in
-                    if data == nil {
-                        let task = self.urlSession.dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
-                            guard let data = data else { return }
-                            self?.cache.setObject(data as NSData, forKey: url as NSURL)
-                            do {
-                                try self?.dgsTileInteractor.setData(for: url as NSURL, data: data as NSData)
-                            } catch {
-                                assertionFailure()
-                            }
-                            result(data, error)
-                        })
-                        task.resume()
-                    } else {
-                        result(data! as Data, nil)
-                    }
-                })
-            } catch {
-                result(nil, error)
+        
+        if let cachedData = self.cache.object(forKey: url as NSURL) as Data? {
+            result(cachedData, nil)
+            return
+        }
+        
+        if let data = dgsTileInteractor.findTile(for: url as NSURL)?.data {
+            result(data as Data, nil)
+            return
+        }
+        
+        let task = self.urlSession.dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
+            defer {
+                result(data, error)
             }
-		}
+            guard let wself = self else { return }
+            guard let data = data else { return }
+            wself.cache.setObject(data as NSData, forKey: url as NSURL)
+            wself.dgsTileInteractor.setTemporaryData(for: url as NSURL, data: data as NSData)
+        })
+        task.resume()
 	}
 }
