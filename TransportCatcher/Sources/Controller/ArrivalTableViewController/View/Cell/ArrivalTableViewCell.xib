@@ -28,7 +28,7 @@
                                 <rect key="frame" x="8" y="4" width="432" height="195.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uel-8u-o2S" userLabel="6 минут">
-                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="195.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="129.5" height="195.5"/>
                                         <color key="backgroundColor" red="0.454269588" green="0.74452334639999995" blue="0.26163733010000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <attributedString key="attributedText">
                                             <fragment content="6">
@@ -60,28 +60,28 @@ Cg
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uYE-S0-cZT">
-                                        <rect key="frame" x="116.5" y="8" width="307.5" height="144"/>
+                                        <rect key="frame" x="137.5" y="8" width="286.5" height="144"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xd-R9-sWA">
-                                                <rect key="frame" x="0.0" y="0.0" width="307.5" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="286.5" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Автобус МАЗ 206085" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFG-xL-5TF">
-                                                <rect key="frame" x="0.0" y="56" width="307.5" height="18"/>
+                                                <rect key="frame" x="0.0" y="56" width="286.5" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="449.2 м до остановки Телецентр" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qat-xl-aUK">
-                                                <rect key="frame" x="0.0" y="82" width="307.5" height="18"/>
+                                                <rect key="frame" x="0.0" y="82" width="286.5" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доступен для людей с ограниченными возможностями" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWN-IC-oyB">
-                                                <rect key="frame" x="0.0" y="108" width="307.5" height="36"/>
+                                                <rect key="frame" x="0.0" y="108" width="286.5" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.23921568630000001" green="0.43137254899999999" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -94,7 +94,7 @@ Cg
                                     <constraint firstItem="uYE-S0-cZT" firstAttribute="top" secondItem="1wx-LE-ZIz" secondAttribute="topMargin" id="13E-eL-ZzA"/>
                                     <constraint firstItem="uel-8u-o2S" firstAttribute="leading" secondItem="1wx-LE-ZIz" secondAttribute="leading" id="760-a9-RKu"/>
                                     <constraint firstAttribute="bottom" secondItem="uel-8u-o2S" secondAttribute="bottom" id="HDp-7H-VxZ"/>
-                                    <constraint firstItem="uel-8u-o2S" firstAttribute="width" secondItem="1wx-LE-ZIz" secondAttribute="width" multiplier="2/8" id="deH-MK-Wrl"/>
+                                    <constraint firstItem="uel-8u-o2S" firstAttribute="width" secondItem="1wx-LE-ZIz" secondAttribute="width" multiplier="3/10" id="deH-MK-Wrl"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="uYE-S0-cZT" secondAttribute="trailing" id="gA2-l7-Z67"/>
                                     <constraint firstItem="uel-8u-o2S" firstAttribute="top" secondItem="1wx-LE-ZIz" secondAttribute="top" id="l9d-Yg-97U"/>
                                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="uYE-S0-cZT" secondAttribute="bottom" id="mHG-iB-3E0"/>

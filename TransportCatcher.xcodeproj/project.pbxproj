@@ -60,6 +60,8 @@
 		C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C3690E1F6DB6240032F49E /* DGSMapView.swift */; };
 		C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CDF1F3B30040089ECD6 /* Arrival.swift */; };
 		C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CE31F3B36B20089ECD6 /* Transport.swift */; };
+		C7D4A04A1FCD83360032A7B1 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4A0491FCD83360032A7B1 /* UIAlertController.swift */; };
+		C7D4A04D1FCD9F260032A7B1 /* LocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4A04C1FCD9F260032A7B1 /* LocationButton.swift */; };
 		C7D7F4BA1F4F832B00717D9F /* TransportStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7F4B91F4F832B00717D9F /* TransportStop.swift */; };
 		C7E73BAA1F4F37BD005ED5B6 /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */; };
 		C7E73BB31F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BAD1F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml */; };
@@ -196,6 +198,8 @@
 		C7C3690E1F6DB6240032F49E /* DGSMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGSMapView.swift; sourceTree = "<group>"; };
 		C7C99CDF1F3B30040089ECD6 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		C7C99CE31F3B36B20089ECD6 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		C7D4A0491FCD83360032A7B1 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		C7D4A04C1FCD9F260032A7B1 /* LocationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationButton.swift; sourceTree = "<group>"; };
 		C7D7F4B91F4F832B00717D9F /* TransportStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportStop.swift; sourceTree = "<group>"; };
 		C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportType.swift; sourceTree = "<group>"; };
 		C7E73BAD1F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GeoportalRoutesCorrespondence.xml; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				FAAB5EA11FC866E900778334 /* DGSMapView */,
+				C7D4A04C1FCD9F260032A7B1 /* LocationButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				FAAB5EB61FC8704000778334 /* UIColor.swift */,
+				C7D4A0491FCD83360032A7B1 /* UIAlertController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -490,6 +496,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C7D4A04B1FCD85290032A7B1 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 		C7E73BAB1F4F39AE005ED5B6 /* Method */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,8 +548,8 @@
 		FA29B55E1FCCAA94000D7713 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				C7D4A04B1FCD85290032A7B1 /* Container */,
 				FA29B55F1FCCAAAE000D7713 /* DGSTileInteractor.swift */,
-				FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -950,6 +964,7 @@
 				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
 				FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */,
 				C73BE8911FCC0C9E009D63E7 /* TransportStopMapView.swift in Sources */,
+				C7D4A04A1FCD83360032A7B1 /* UIAlertController.swift in Sources */,
 				FAE23E6B1FCCBDF5003C0E74 /* Global.swift in Sources */,
 				C7794F5A1FCC10C1002BEFB3 /* TransportStopMapViewDelegate.swift in Sources */,
 				C7794F621FCC3970002BEFB3 /* ArrivalTableViewController.swift in Sources */,
@@ -965,6 +980,7 @@
 				C70CA1A81F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift in Sources */,
 				C70CA1BD1F6DDC3500A30DC8 /* TransportStopAnnotation.swift in Sources */,
 				C7794F6C1FCC4614002BEFB3 /* ArrivalToStopViewController.swift in Sources */,
+				C7D4A04D1FCD9F260032A7B1 /* LocationButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

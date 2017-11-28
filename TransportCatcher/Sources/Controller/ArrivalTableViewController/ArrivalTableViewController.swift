@@ -20,7 +20,7 @@ class ArrivalTableViewController: UIViewController {
             case .succeed(let arrivals):
                 wself.arrivalTableView.reload(with: arrivals ?? [])
             case .error(let error):
-                let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
+                let alert = UIAlertController.singleActionAlert(aTitle: "OK", message: error.localizedDescription)
                 wself.present(alert, animated: true, completion: nil)
             }
         }

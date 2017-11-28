@@ -35,6 +35,5 @@ extension ArrivalToStopViewController: TransportStopMapViewDelegate {
     func mapView(_ stopMapView: TransportStopMapView, didSelect stopId: Int) {
         guard let arrivalController = arrivalTableViewController else { return }
         arrivalController.configure(withStopId: stopId)
-//        navigationController?.pushViewController(arrivalController, animated: true)
     }
 }

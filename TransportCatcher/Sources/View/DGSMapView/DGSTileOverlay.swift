@@ -42,6 +42,7 @@ internal class DGSTileOverlay: MKTileOverlay {
         }
         
         if let data = dgsTileInteractor.findTile(for: url as NSURL)?.data {
+            cache.setObject(data as NSData, forKey: url as NSURL)
             result(data as Data, nil)
             return
         }

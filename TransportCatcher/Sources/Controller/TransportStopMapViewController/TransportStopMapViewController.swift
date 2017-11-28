@@ -12,6 +12,7 @@ import ToSMR
 internal class TransportStopMapViewController: UIViewController {
     
     @IBOutlet var stopMapView: TransportStopMapView!
+    @IBOutlet var requestLocationButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +31,13 @@ internal class TransportStopMapViewController: UIViewController {
                 let annotations: [TransportStopAnnotation] = unwrappedStops.map({ TransportStopAnnotation(stop: $0) })
                 wself.stopMapView.addAnnotations(annotations)
             case .error(let error):
-                let alert = UIAlertController(title: "", message: error.localizedDescription, preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (_) in
-                    alert.dismiss(animated: true, completion: nil)
-                })
-                alert.addAction(action)
+                let alert = UIAlertController.singleActionAlert(aTitle: "OK", message: error.localizedDescription)
                 wself.present(alert, animated: true, completion: nil)
             }
         }
+    }
+    
+    @IBAction func onRequestLocationTapped(_ sender: UIButton) {
+        stopMapView.locationManager.requestLocation()
     }
 }

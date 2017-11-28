@@ -12,10 +12,15 @@ import MapKit
 class TransportStopMapView: DGSMapView {
     
     weak var stopMapViewDelegate: TransportStopMapViewDelegate?
+    private(set) var locationManager: CLLocationManager
     
     required init?(coder aDecoder: NSCoder) {
+        locationManager = CLLocationManager()
         super.init(coder: aDecoder)
         self.delegate = self
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        setRegion(location: locationManager.location)
     }
 }
 
@@ -54,5 +59,23 @@ extension TransportStopMapView: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let transportAnnotation = view.annotation as? TransportStopAnnotation else { return }
         stopMapViewDelegate?.mapView(self, didSelect: transportAnnotation.stop.id)
+    }
+}
+
+extension TransportStopMapView: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        setRegion(location: locations.first)
+    }
+    
+    func setRegion(location: CLLocation?) {
+        guard let location = location else { return }
+        let region = MKCoordinateRegionMakeWithDistance(location.coordinate, 1000, 1000)
+        let adjustedRegion = self.regionThatFits(region)
+        self.setRegion(adjustedRegion, animated: true)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        dprint(error)
     }
 }

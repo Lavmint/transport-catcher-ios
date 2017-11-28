@@ -20,7 +20,6 @@ class DGSTileInteractor {
     
     func findTile(for url: NSURL) -> DGSTile? {
         let request: NSFetchRequest<DGSTile> = DGSTile.fetchRequest()
-        request.returnsObjectsAsFaults = false
         request.predicate = NSPredicate(format: "url = %@", url.absoluteString!)
         var results: [DGSTile] = []
         do {

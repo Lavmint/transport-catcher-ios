@@ -32,7 +32,8 @@ internal class DGSMapView: MKMapView {
         self.insert(mapViewOverlay, at: 0, level: .aboveLabels)
         
         let center = CLLocationCoordinate2D(latitude: 53.220841596277012, longitude: 50.170634245448952)
-        let span = MKCoordinateSpan(latitudeDelta: 0.11244419438441611, longitudeDelta: 0.16504663881798365)
-        self.setRegion(MKCoordinateRegion(center: center, span: span), animated: true)
+        let region = MKCoordinateRegionMakeWithDistance(center, 5000, 5000)
+        let adjustedRegion = self.regionThatFits(region)
+        self.setRegion(adjustedRegion, animated: true)
     }
 }
