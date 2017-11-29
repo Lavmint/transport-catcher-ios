@@ -24,7 +24,7 @@ internal class DGSMapView: MKMapView {
         self.mapViewOverlay = DGSTileOverlay()
     }
     
-    func reloadDGSLayer() {
+    func loadDGSLayer() {
         self.insert(mapViewOverlay, at: 0, level: .aboveLabels)
         //Samara
         let center = CLLocationCoordinate2D(latitude: 53.220841596277012, longitude: 50.170634245448952)

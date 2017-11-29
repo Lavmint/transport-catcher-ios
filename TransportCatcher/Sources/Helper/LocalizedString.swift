@@ -33,4 +33,10 @@ enum LocalizedString {
             return "Доступен для людей с ограниченными возможностями"
         }
     }
+    
+    enum Alert {
+        static var OK: String {
+            return "OK"
+        }
+    }
 }

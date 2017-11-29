@@ -16,7 +16,6 @@ class TrackingMapView: DGSMapView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.delegate = self
-        self.reloadDGSLayer()
     }
 }
 

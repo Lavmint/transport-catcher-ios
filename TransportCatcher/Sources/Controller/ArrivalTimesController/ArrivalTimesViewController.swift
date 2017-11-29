@@ -24,7 +24,7 @@ class ArrivalTimesViewController: UIViewController, GenericView {
             case .succeed(let arrivals):
                 wself.genericView.arrivalsTableView.reload(with: arrivals ?? [])
             case .error(let error):
-                let alert = UIAlertController.singleActionAlert(aTitle: "OK", message: error.localizedDescription)
+                let alert = UIAlertController.singleActionAlert(aTitle: LocalizedString.Alert.OK, message: error.localizedDescription)
                 wself.present(alert, animated: true, completion: nil)
             }
         }

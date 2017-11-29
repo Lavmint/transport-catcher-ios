@@ -21,11 +21,11 @@ class TrackingViewController: UIViewController, GenericView {
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        genericView.mapView.loadDGSLayer()
         reload()
     }
     
     func reload() {
-        genericView.mapView.reloadDGSLayer()
         Service.shared.stops { [weak self] (box) in
             guard let wself = self else { return }
             switch box.result {
@@ -34,7 +34,7 @@ class TrackingViewController: UIViewController, GenericView {
                 let annotations: [StopAnnotation] = unwrappedStops.map({ StopAnnotation(stop: $0) })
                 wself.genericView.mapView.addAnnotations(annotations)
             case .error(let error):
-                let alert = UIAlertController.singleActionAlert(aTitle: "OK", message: error.localizedDescription)
+                let alert = UIAlertController.singleActionAlert(aTitle: LocalizedString.Alert.OK, message: error.localizedDescription)
                 wself.present(alert, animated: true, completion: nil)
             }
         }
@@ -55,6 +55,15 @@ extension TrackingViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         dprint(error)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .authorizedWhenInUse:
+            genericView.userTrackingButton.isHidden = false
+        default:
+            genericView.userTrackingButton.isHidden = true
+        }
     }
 }
 

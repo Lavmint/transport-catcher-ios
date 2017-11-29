@@ -10,4 +10,5 @@ import UIKit
 
 class TrackingView: UIView {
     @IBOutlet var mapView: TrackingMapView!
+    @IBOutlet var userTrackingButton: UserTrackingButton!
 }
