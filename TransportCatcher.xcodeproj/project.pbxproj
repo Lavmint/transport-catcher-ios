@@ -163,7 +163,7 @@
 		C75E859C1F4DEC0E0074D272 /* getSurroundingTransports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getSurroundingTransports.json; sourceTree = "<group>"; };
 		C75E859E1F4DED560074D272 /* getTransportsOnRoute.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getTransportsOnRoute.json; sourceTree = "<group>"; };
 		C75E85A01F4DED970074D272 /* getRouteSchedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getRouteSchedule.json; sourceTree = "<group>"; };
-		C760F64D1FCF08B700F81C8B /* StopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StopAnnotation.swift; path = StopAnnotation.swift; sourceTree = "<group>"; };
+		C760F64D1FCF08B700F81C8B /* StopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopAnnotation.swift; sourceTree = "<group>"; };
 		C762C2131FCEF0E3001822CC /* ArrivalTimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimesViewController.swift; sourceTree = "<group>"; };
 		C762C2141FCEF0E3001822CC /* ArrivalTimesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrivalTimesView.xib; sourceTree = "<group>"; };
 		C762C2191FCEF10A001822CC /* ArrivalTimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimesView.swift; sourceTree = "<group>"; };
@@ -348,7 +348,6 @@
 			children = (
 				C760F6501FCF08F800F81C8B /* Annotation */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -1249,7 +1248,7 @@
 				DEVELOPMENT_TEAM = 8245AS67CL;
 				INFOPLIST_FILE = TransportCatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.transportcatcher.app;
+				PRODUCT_BUNDLE_IDENTIFIER = org.transport.samara.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -1265,7 +1264,7 @@
 				DEVELOPMENT_TEAM = 8245AS67CL;
 				INFOPLIST_FILE = TransportCatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.transportcatcher.app;
+				PRODUCT_BUNDLE_IDENTIFIER = org.transport.samara.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
