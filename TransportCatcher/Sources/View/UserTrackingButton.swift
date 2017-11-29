@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DGSUserTrackingButton: UIButton {
+class UserTrackingButton: UIButton {
  
     override open var isHighlighted: Bool {
         didSet {

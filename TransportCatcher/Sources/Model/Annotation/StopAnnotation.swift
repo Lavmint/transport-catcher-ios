@@ -9,7 +9,7 @@
 import ToSMR
 import MapKit
 
-final class TransportStopAnnotation: NSObject, MKAnnotation {
+final class StopAnnotation: NSObject, MKAnnotation {
     
     let stop: TransportStop
     

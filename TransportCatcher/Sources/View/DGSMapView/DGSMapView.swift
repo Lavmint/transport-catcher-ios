@@ -15,24 +15,24 @@ internal class DGSMapView: MKMapView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        configure()
-    }
-    
-    func configure() {
-        
         self.showsCompass = false
-        self.showsCompass = true
         self.showsUserLocation = true
         self.mapType = .standard
         self.showsPointsOfInterest = false
         self.showsBuildings = false
         self.showsTraffic = false
-        
         self.mapViewOverlay = DGSTileOverlay()
+    }
+    
+    func reloadDGSLayer() {
         self.insert(mapViewOverlay, at: 0, level: .aboveLabels)
-        
+        //Samara
         let center = CLLocationCoordinate2D(latitude: 53.220841596277012, longitude: 50.170634245448952)
-        let region = MKCoordinateRegionMakeWithDistance(center, 5000, 5000)
+        setAdjustedRegion(center: center)
+    }
+    
+    func setAdjustedRegion(center: CLLocationCoordinate2D) {
+        let region = MKCoordinateRegionMakeWithDistance(center, 1000, 1000)
         let adjustedRegion = self.regionThatFits(region)
         self.setRegion(adjustedRegion, animated: true)
     }

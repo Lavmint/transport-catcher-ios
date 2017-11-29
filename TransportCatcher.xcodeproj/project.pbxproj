@@ -10,10 +10,8 @@
 		098CBE74E9ED5C6C8C181470 /* Pods_TransportCatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2587CAFEA5179E53EC91B720 /* Pods_TransportCatcher.framework */; };
 		C70CA1A81F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */; };
 		C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */; };
-		C70CA1BD1F6DDC3500A30DC8 /* TransportStopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
 		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
-		C73BE8941FCC0EE9009D63E7 /* TransportStopMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73BE8921FCC0EE9009D63E7 /* TransportStopMapViewController.swift */; };
 		C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74685281EFFA9E700D6021E /* AppDelegate.swift */; };
 		C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C746852C1EFFA9E700D6021E /* Main.storyboard */; };
 		C74685301EFFA9E700D6021E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C746852F1EFFA9E700D6021E /* Assets.xcassets */; };
@@ -26,13 +24,19 @@
 		C75E859D1F4DEC0E0074D272 /* getSurroundingTransports.json in Resources */ = {isa = PBXBuildFile; fileRef = C75E859C1F4DEC0E0074D272 /* getSurroundingTransports.json */; };
 		C75E859F1F4DED560074D272 /* getTransportsOnRoute.json in Resources */ = {isa = PBXBuildFile; fileRef = C75E859E1F4DED560074D272 /* getTransportsOnRoute.json */; };
 		C75E85A11F4DED970074D272 /* getRouteSchedule.json in Resources */ = {isa = PBXBuildFile; fileRef = C75E85A01F4DED970074D272 /* getRouteSchedule.json */; };
+		C760F64E1FCF08B800F81C8B /* StopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C760F64D1FCF08B700F81C8B /* StopAnnotation.swift */; };
+		C762C2151FCEF0E3001822CC /* ArrivalTimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C2131FCEF0E3001822CC /* ArrivalTimesViewController.swift */; };
+		C762C2161FCEF0E3001822CC /* ArrivalTimesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C762C2141FCEF0E3001822CC /* ArrivalTimesView.xib */; };
+		C762C21A1FCEF10A001822CC /* ArrivalTimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C2191FCEF10A001822CC /* ArrivalTimesView.swift */; };
+		C762C21F1FCEFD73001822CC /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C21E1FCEFD73001822CC /* GenericView.swift */; };
 		C768A5091F4604CF00A72B6C /* DataStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768A5081F4604CF00A72B6C /* DataStub.swift */; };
-		C7794F621FCC3970002BEFB3 /* ArrivalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794F601FCC3970002BEFB3 /* ArrivalTableViewController.swift */; };
-		C7794F631FCC3970002BEFB3 /* ArrivalTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7794F611FCC3970002BEFB3 /* ArrivalTableViewController.xib */; };
 		C7794F651FCC39BD002BEFB3 /* ArrivalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794F641FCC39BD002BEFB3 /* ArrivalTableView.swift */; };
-		C7794F6C1FCC4614002BEFB3 /* ArrivalToStopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794F6B1FCC4614002BEFB3 /* ArrivalToStopViewController.swift */; };
+		C7794F6C1FCC4614002BEFB3 /* ArrivalTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794F6B1FCC4614002BEFB3 /* ArrivalTrackingViewController.swift */; };
 		C7794F6F1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7794F6D1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift */; };
 		C7794F701FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7794F6E1FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib */; };
+		C77B41061FCF039500810EE0 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77B41041FCF039500810EE0 /* TrackingViewController.swift */; };
+		C77B41071FCF039500810EE0 /* TrackingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77B41051FCF039500810EE0 /* TrackingView.xib */; };
+		C77B41091FCF03A300810EE0 /* TrackingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77B41081FCF03A300810EE0 /* TrackingMapView.swift */; };
 		C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */; };
 		C79123201F6DCAC60014AC4C /* TransportCatcher-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C791231F1F6DCAC60014AC4C /* TransportCatcher-Info.plist */; };
 		C797099E1F3A2EE400824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
@@ -58,8 +62,10 @@
 		C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CDF1F3B30040089ECD6 /* Arrival.swift */; };
 		C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CE31F3B36B20089ECD6 /* Transport.swift */; };
 		C7D4A04A1FCD83360032A7B1 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4A0491FCD83360032A7B1 /* UIAlertController.swift */; };
-		C7D4A04D1FCD9F260032A7B1 /* DGSUserTrackingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4A04C1FCD9F260032A7B1 /* DGSUserTrackingButton.swift */; };
+		C7D4A04D1FCD9F260032A7B1 /* UserTrackingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4A04C1FCD9F260032A7B1 /* UserTrackingButton.swift */; };
 		C7D7F4BA1F4F832B00717D9F /* TransportStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7F4B91F4F832B00717D9F /* TransportStop.swift */; };
+		C7E0EE171FCF0606004DEC13 /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E0EE161FCF0606004DEC13 /* TrackingView.swift */; };
+		C7E0EE1C1FCF068E004DEC13 /* TrackingMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E0EE1B1FCF068E004DEC13 /* TrackingMapViewDelegate.swift */; };
 		C7E73BAA1F4F37BD005ED5B6 /* TransportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */; };
 		C7E73BB31F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BAD1F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml */; };
 		C7E73BB41F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E73BAE1F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml */; };
@@ -76,9 +82,6 @@
 		FA29B55D1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA29B55B1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld */; };
 		FA29B5601FCCAAAE000D7713 /* DGSTileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29B55F1FCCAAAE000D7713 /* DGSTileInteractor.swift */; };
 		FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */; };
-		FA5E9DF31FCE1AF7000E07CC /* TransportStopMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E9DF21FCE1AF7000E07CC /* TransportStopMapViewDelegate.swift */; };
-		FA9A8CD31FCE136500184C06 /* DGSMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9A8CD11FCE136500184C06 /* DGSMapViewController.swift */; };
-		FA9A8CD41FCE136500184C06 /* DGSMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9A8CD21FCE136500184C06 /* DGSMapViewController.xib */; };
 		FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB41FC86E3500778334 /* LocalizedString.swift */; };
 		FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB61FC8704000778334 /* UIColor.swift */; };
 		FAE23E6B1FCCBDF5003C0E74 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE23E6A1FCCBDF5003C0E74 /* Global.swift */; };
@@ -143,11 +146,9 @@
 		C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportCatcherConfiguration.swift; sourceTree = "<group>"; };
 		C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
-		C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportStopAnnotation.swift; sourceTree = "<group>"; };
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStopsFullDBTest.swift; sourceTree = "<group>"; };
-		C73BE8921FCC0EE9009D63E7 /* TransportStopMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStopMapViewController.swift; sourceTree = "<group>"; };
 		C74685251EFFA9E700D6021E /* TransportCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74685281EFFA9E700D6021E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C746852D1EFFA9E700D6021E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -162,13 +163,19 @@
 		C75E859C1F4DEC0E0074D272 /* getSurroundingTransports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getSurroundingTransports.json; sourceTree = "<group>"; };
 		C75E859E1F4DED560074D272 /* getTransportsOnRoute.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getTransportsOnRoute.json; sourceTree = "<group>"; };
 		C75E85A01F4DED970074D272 /* getRouteSchedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getRouteSchedule.json; sourceTree = "<group>"; };
+		C760F64D1FCF08B700F81C8B /* StopAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StopAnnotation.swift; path = StopAnnotation.swift; sourceTree = "<group>"; };
+		C762C2131FCEF0E3001822CC /* ArrivalTimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimesViewController.swift; sourceTree = "<group>"; };
+		C762C2141FCEF0E3001822CC /* ArrivalTimesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrivalTimesView.xib; sourceTree = "<group>"; };
+		C762C2191FCEF10A001822CC /* ArrivalTimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimesView.swift; sourceTree = "<group>"; };
+		C762C21E1FCEFD73001822CC /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
 		C768A5081F4604CF00A72B6C /* DataStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStub.swift; sourceTree = "<group>"; };
-		C7794F601FCC3970002BEFB3 /* ArrivalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewController.swift; sourceTree = "<group>"; };
-		C7794F611FCC3970002BEFB3 /* ArrivalTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrivalTableViewController.xib; sourceTree = "<group>"; };
 		C7794F641FCC39BD002BEFB3 /* ArrivalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTableView.swift; sourceTree = "<group>"; };
-		C7794F6B1FCC4614002BEFB3 /* ArrivalToStopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalToStopViewController.swift; sourceTree = "<group>"; };
+		C7794F6B1FCC4614002BEFB3 /* ArrivalTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTrackingViewController.swift; sourceTree = "<group>"; };
 		C7794F6D1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewCell.swift; sourceTree = "<group>"; };
 		C7794F6E1FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrivalTableViewCell.xib; sourceTree = "<group>"; };
+		C77B41041FCF039500810EE0 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		C77B41051FCF039500810EE0 /* TrackingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackingView.xib; sourceTree = "<group>"; };
+		C77B41081FCF03A300810EE0 /* TrackingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingMapView.swift; sourceTree = "<group>"; };
 		C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToSMRService.swift; sourceTree = "<group>"; };
 		C791231F1F6DCAC60014AC4C /* TransportCatcher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TransportCatcher-Info.plist"; sourceTree = "<group>"; };
 		C79709951F3A2EE400824E7E /* ToSMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToSMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,8 +203,10 @@
 		C7C99CDF1F3B30040089ECD6 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		C7C99CE31F3B36B20089ECD6 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
 		C7D4A0491FCD83360032A7B1 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
-		C7D4A04C1FCD9F260032A7B1 /* DGSUserTrackingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSUserTrackingButton.swift; sourceTree = "<group>"; };
+		C7D4A04C1FCD9F260032A7B1 /* UserTrackingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTrackingButton.swift; sourceTree = "<group>"; };
 		C7D7F4B91F4F832B00717D9F /* TransportStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportStop.swift; sourceTree = "<group>"; };
+		C7E0EE161FCF0606004DEC13 /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
+		C7E0EE1B1FCF068E004DEC13 /* TrackingMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingMapViewDelegate.swift; sourceTree = "<group>"; };
 		C7E73BA91F4F37BD005ED5B6 /* TransportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportType.swift; sourceTree = "<group>"; };
 		C7E73BAD1F4F39D6005ED5B6 /* GeoportalRoutesCorrespondence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GeoportalRoutesCorrespondence.xml; sourceTree = "<group>"; };
 		C7E73BAE1F4F39D6005ED5B6 /* GeoportalStopsCorrespondence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GeoportalStopsCorrespondence.xml; sourceTree = "<group>"; };
@@ -215,9 +224,6 @@
 		FA29B55C1FCCAA32000D7713 /* TransportCatcher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransportCatcher.xcdatamodel; sourceTree = "<group>"; };
 		FA29B55F1FCCAAAE000D7713 /* DGSTileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSTileInteractor.swift; sourceTree = "<group>"; };
 		FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportCatcherPersistenseContainer.swift; sourceTree = "<group>"; };
-		FA5E9DF21FCE1AF7000E07CC /* TransportStopMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStopMapViewDelegate.swift; sourceTree = "<group>"; };
-		FA9A8CD11FCE136500184C06 /* DGSMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSMapViewController.swift; sourceTree = "<group>"; };
-		FA9A8CD21FCE136500184C06 /* DGSMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGSMapViewController.xib; sourceTree = "<group>"; };
 		FAAB5EB41FC86E3500778334 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		FAAB5EB61FC8704000778334 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		FAE23E6A1FCCBDF5003C0E74 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -263,6 +269,8 @@
 		C70CA1AA1F6DCC9000A30DC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C762C2221FCEFF57001822CC /* DGSMapView */,
+				C7D4A04C1FCD9F260032A7B1 /* UserTrackingButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,10 +278,9 @@
 		C70CA1AB1F6DCC9400A30DC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FAAB5EA11FC866E900778334 /* DGSMapViewController */,
-				FAAB5E991FC8665800778334 /* ArrivalTableViewController */,
-				FAAB5E9B1FC8666E00778334 /* TransportStopMapViewController */,
-				C7794F6A1FCC4578002BEFB3 /* ArrivalToStopViewController */,
+				C77B41031FCF035900810EE0 /* TrackingViewController */,
+				C762C20E1FCEF09C001822CC /* ArrivalTimesController */,
+				C7794F6A1FCC4578002BEFB3 /* ArrivalTrackingViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,14 +292,6 @@
 				FAAB5EAE1FC868BF00778334 /* Foundation */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		C73BE8961FCC0F23009D63E7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C70CA1BC1F6DDC3500A30DC8 /* TransportStopAnnotation.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		C746851C1EFFA9E700D6021E = {
@@ -344,6 +343,77 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C760F64F1FCF08C900F81C8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C760F6501FCF08F800F81C8B /* Annotation */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C760F6501FCF08F800F81C8B /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				C760F64D1FCF08B700F81C8B /* StopAnnotation.swift */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		C762C20E1FCEF09C001822CC /* ArrivalTimesController */ = {
+			isa = PBXGroup;
+			children = (
+				C762C21B1FCEFBD9001822CC /* View */,
+				C762C2141FCEF0E3001822CC /* ArrivalTimesView.xib */,
+				C762C2191FCEF10A001822CC /* ArrivalTimesView.swift */,
+				C762C2131FCEF0E3001822CC /* ArrivalTimesViewController.swift */,
+			);
+			path = ArrivalTimesController;
+			sourceTree = "<group>";
+		};
+		C762C21B1FCEFBD9001822CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C762C2211FCEFF25001822CC /* ArrivalTableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C762C21D1FCEFD56001822CC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C762C2201FCEFD76001822CC /* Controller */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C762C2201FCEFD76001822CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C762C21E1FCEFD73001822CC /* GenericView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C762C2211FCEFF25001822CC /* ArrivalTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C7794F641FCC39BD002BEFB3 /* ArrivalTableView.swift */,
+				C7794F6D1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift */,
+				C7794F6E1FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib */,
+			);
+			path = ArrivalTableView;
+			sourceTree = "<group>";
+		};
+		C762C2221FCEFF57001822CC /* DGSMapView */ = {
+			isa = PBXGroup;
+			children = (
+				C7E81B511F51EF4700EFCDC0 /* DGSTileOverlay.swift */,
+				C7C3690E1F6DB6240032F49E /* DGSMapView.swift */,
+			);
+			path = DGSMapView;
+			sourceTree = "<group>";
+		};
 		C768A5061F46049300A72B6C /* Requests */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,22 +422,12 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
-		C7794F5B1FCC22DC002BEFB3 /* View */ = {
+		C7794F6A1FCC4578002BEFB3 /* ArrivalTrackingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FAAB5E9A1FC8666400778334 /* Cell */,
-				C7794F641FCC39BD002BEFB3 /* ArrivalTableView.swift */,
-				C7794F611FCC3970002BEFB3 /* ArrivalTableViewController.xib */,
+				C7794F6B1FCC4614002BEFB3 /* ArrivalTrackingViewController.swift */,
 			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C7794F6A1FCC4578002BEFB3 /* ArrivalToStopViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C7794F6B1FCC4614002BEFB3 /* ArrivalToStopViewController.swift */,
-			);
-			path = ArrivalToStopViewController;
+			path = ArrivalTrackingViewController;
 			sourceTree = "<group>";
 		};
 		C7794F721FCC601F002BEFB3 /* Sources */ = {
@@ -387,6 +447,17 @@
 				C7E73BAC1F4F39C4005ED5B6 /* Classifier */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C77B41031FCF035900810EE0 /* TrackingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7E0EE191FCF0648004DEC13 /* View */,
+				C77B41051FCF039500810EE0 /* TrackingView.xib */,
+				C7E0EE161FCF0606004DEC13 /* TrackingView.swift */,
+				C77B41041FCF039500810EE0 /* TrackingViewController.swift */,
+			);
+			path = TrackingViewController;
 			sourceTree = "<group>";
 		};
 		C79123181F6DC9AE0014AC4C /* Extension */ = {
@@ -500,6 +571,23 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
+		C7E0EE181FCF0639004DEC13 /* TrackingMapView */ = {
+			isa = PBXGroup;
+			children = (
+				C77B41081FCF03A300810EE0 /* TrackingMapView.swift */,
+				C7E0EE1B1FCF068E004DEC13 /* TrackingMapViewDelegate.swift */,
+			);
+			path = TrackingMapView;
+			sourceTree = "<group>";
+		};
+		C7E0EE191FCF0648004DEC13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7E0EE181FCF0639004DEC13 /* TrackingMapView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C7E73BAB1F4F39AE005ED5B6 /* Method */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,16 +638,6 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
-		FA9A8CD51FCE13B300184C06 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C7E81B511F51EF4700EFCDC0 /* DGSTileOverlay.swift */,
-				C7C3690E1F6DB6240032F49E /* DGSMapView.swift */,
-				C7D4A04C1FCD9F260032A7B1 /* DGSUserTrackingButton.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		FAAB5E901FC865A900778334 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +651,8 @@
 		FAAB5E911FC865C000778334 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C762C21D1FCEFD56001822CC /* Protocol */,
+				C760F64F1FCF08C900F81C8B /* Model */,
 				C70CA1AA1F6DCC9000A30DC8 /* View */,
 				C70CA1AB1F6DCC9400A30DC8 /* Controller */,
 				FA29B55E1FCCAA94000D7713 /* Storage */,
@@ -585,34 +665,6 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		FAAB5E991FC8665800778334 /* ArrivalTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C7794F5B1FCC22DC002BEFB3 /* View */,
-				C7794F601FCC3970002BEFB3 /* ArrivalTableViewController.swift */,
-			);
-			path = ArrivalTableViewController;
-			sourceTree = "<group>";
-		};
-		FAAB5E9A1FC8666400778334 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				C7794F6D1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift */,
-				C7794F6E1FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		FAAB5E9B1FC8666E00778334 /* TransportStopMapViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C73BE8961FCC0F23009D63E7 /* View */,
-				C73BE8921FCC0EE9009D63E7 /* TransportStopMapViewController.swift */,
-				FA5E9DF21FCE1AF7000E07CC /* TransportStopMapViewDelegate.swift */,
-			);
-			path = TransportStopMapViewController;
-			sourceTree = "<group>";
-		};
 		FAAB5E9F1FC866B200778334 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -621,16 +673,6 @@
 				C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		FAAB5EA11FC866E900778334 /* DGSMapViewController */ = {
-			isa = PBXGroup;
-			children = (
-				FA9A8CD51FCE13B300184C06 /* View */,
-				FA9A8CD11FCE136500184C06 /* DGSMapViewController.swift */,
-				FA9A8CD21FCE136500184C06 /* DGSMapViewController.xib */,
-			);
-			path = DGSMapViewController;
 			sourceTree = "<group>";
 		};
 		FAAB5EA81FC8687800778334 /* Sources */ = {
@@ -855,10 +897,10 @@
 				C746855E1EFFD84D00D6021E /* .gitignore in Resources */,
 				C79123201F6DCAC60014AC4C /* TransportCatcher-Info.plist in Resources */,
 				C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */,
+				C77B41071FCF039500810EE0 /* TrackingView.xib in Resources */,
 				C74685331EFFA9E700D6021E /* LaunchScreen.storyboard in Resources */,
+				C762C2161FCEF0E3001822CC /* ArrivalTimesView.xib in Resources */,
 				C74685301EFFA9E700D6021E /* Assets.xcassets in Resources */,
-				FA9A8CD41FCE136500184C06 /* DGSMapViewController.xib in Resources */,
-				C7794F631FCC3970002BEFB3 /* ArrivalTableViewController.xib in Resources */,
 				C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -970,25 +1012,28 @@
 			files = (
 				FA29B5601FCCAAAE000D7713 /* DGSTileInteractor.swift in Sources */,
 				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
+				C762C2151FCEF0E3001822CC /* ArrivalTimesViewController.swift in Sources */,
 				FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */,
-				FA9A8CD31FCE136500184C06 /* DGSMapViewController.swift in Sources */,
 				C7D4A04A1FCD83360032A7B1 /* UIAlertController.swift in Sources */,
 				FAE23E6B1FCCBDF5003C0E74 /* Global.swift in Sources */,
-				C7794F621FCC3970002BEFB3 /* ArrivalTableViewController.swift in Sources */,
 				FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */,
+				C7E0EE171FCF0606004DEC13 /* TrackingView.swift in Sources */,
 				FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */,
-				C73BE8941FCC0EE9009D63E7 /* TransportStopMapViewController.swift in Sources */,
+				C762C21A1FCEF10A001822CC /* ArrivalTimesView.swift in Sources */,
+				C760F64E1FCF08B800F81C8B /* StopAnnotation.swift in Sources */,
 				C7794F6F1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift in Sources */,
 				C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */,
-				FA5E9DF31FCE1AF7000E07CC /* TransportStopMapViewDelegate.swift in Sources */,
 				C7794F651FCC39BD002BEFB3 /* ArrivalTableView.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,
 				C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */,
+				C7E0EE1C1FCF068E004DEC13 /* TrackingMapViewDelegate.swift in Sources */,
+				C762C21F1FCEFD73001822CC /* GenericView.swift in Sources */,
+				C77B41061FCF039500810EE0 /* TrackingViewController.swift in Sources */,
 				FA29B55D1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld in Sources */,
 				C70CA1A81F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift in Sources */,
-				C70CA1BD1F6DDC3500A30DC8 /* TransportStopAnnotation.swift in Sources */,
-				C7794F6C1FCC4614002BEFB3 /* ArrivalToStopViewController.swift in Sources */,
-				C7D4A04D1FCD9F260032A7B1 /* DGSUserTrackingButton.swift in Sources */,
+				C7794F6C1FCC4614002BEFB3 /* ArrivalTrackingViewController.swift in Sources */,
+				C7D4A04D1FCD9F260032A7B1 /* UserTrackingButton.swift in Sources */,
+				C77B41091FCF03A300810EE0 /* TrackingMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

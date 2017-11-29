@@ -1,29 +1,32 @@
 //
-//  ArrivalListViewController.swift
+//  ArrivalTimesViewController.swift
 //  TransportCatcher
 //
-//  Created by Alexey Averkin on 27/11/2017.
+//  Created by Alexey Averkin on 29/11/2017.
 //  Copyright © 2017 Alexey Averkin. All rights reserved.
 //
 
 import UIKit
 import ToSMR
 
-class ArrivalTableViewController: UIViewController {
+class ArrivalTimesViewController: UIViewController, GenericView {
 
-    @IBOutlet var arrivalTableView: ArrivalTableView!
+    typealias View = ArrivalTimesView
     
-    func configure(withStopId stopId: Int) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    func reload(withStopId stopId: Int) {
         Service.shared.approximateArrivals(toStop: stopId) { [weak self] (box) in
             guard let wself = self, stopId == stopId else { return }
             switch box.result {
             case .succeed(let arrivals):
-                wself.arrivalTableView.reload(with: arrivals ?? [])
+                wself.genericView.arrivalsTableView.reload(with: arrivals ?? [])
             case .error(let error):
                 let alert = UIAlertController.singleActionAlert(aTitle: "OK", message: error.localizedDescription)
                 wself.present(alert, animated: true, completion: nil)
             }
         }
     }
-
 }

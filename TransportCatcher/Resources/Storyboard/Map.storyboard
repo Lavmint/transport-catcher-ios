@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="-3276" y="-394"/>
         </scene>
-        <!--Arrival To Stop View Controller-->
+        <!--Arrival Tracking View Controller-->
         <scene sceneID="rGH-xe-lFx">
             <objects>
-                <viewController id="sZo-ue-SY9" customClass="ArrivalToStopViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sZo-ue-SY9" customClass="ArrivalTrackingViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3u3-oq-OxE"/>
                         <viewControllerLayoutGuide type="bottom" id="wzt-y5-Vap"/>
@@ -114,18 +114,18 @@
             </objects>
             <point key="canvasLocation" x="-2440.4296875" y="-396.09375"/>
         </scene>
-        <!--Arrival Table View Controller-->
+        <!--Arrival Times View Controller-->
         <scene sceneID="GEL-jP-BjK">
             <objects>
-                <viewController id="Glx-eW-bGP" customClass="ArrivalTableViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="Glx-eW-bGP" customClass="ArrivalTimesViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxQ-hp-8Sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2440" y="456"/>
         </scene>
-        <!--Transport Stop Map View Controller-->
+        <!--Tracking View Controller-->
         <scene sceneID="dGa-3x-QKw">
             <objects>
-                <viewController id="7Dc-Cu-Lsk" customClass="TransportStopMapViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Dc-Cu-Lsk" customClass="TrackingViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="gVg-UU-GTo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVk-qV-Hka" userLabel="First Responder" sceneMemberID="firstResponder"/>
