@@ -15,7 +15,7 @@ class ArrivalTrackingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        trackingViewController.genericView.mapView.trackingMapViewDelegate = self
+        trackingViewController.genericView.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,9 +30,9 @@ class ArrivalTrackingViewController: UIViewController {
     }
 }
 
-extension ArrivalTrackingViewController: TrackingMapViewDelegate {
+extension ArrivalTrackingViewController: TrackingViewDelegate {
 
-    func trackingMapView(_ trackingMapView: TrackingMapView, didSelect stopId: Int) {
+    func trackingView(_ trackingView: TrackingView, didSelect stopId: Int) {
         arrivalTimesViewController.reload(withStopId: stopId)
     }
 }

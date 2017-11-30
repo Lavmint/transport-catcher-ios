@@ -7,36 +7,33 @@
 //
 
 import UIKit
-import ToSMR
+import MapKit
 import CoreLocation
 
 class TrackingViewController: UIViewController, GenericView {
 
     typealias View = TrackingView
     private(set) var locationManager: CLLocationManager!
+    private(set) var presenter: TrackingPresenter!
+    private(set) var interactor: TrackingInteractor!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        interactor = TrackingInteractor()
+        presenter = TrackingPresenter(interactor: interactor)
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        genericView.mapView.delegate = self
         genericView.mapView.loadDGSLayer()
         reload()
     }
     
     func reload() {
-        Service.shared.stops { [weak self] (box) in
+        interactor.fetchStops { [weak self] in
             guard let wself = self else { return }
-            switch box.result {
-            case .succeed(let stops):
-                guard let unwrappedStops = stops else { return }
-                let annotations: [StopAnnotation] = unwrappedStops.map({ StopAnnotation(stop: $0) })
-                wself.genericView.mapView.addAnnotations(annotations)
-            case .error(let error):
-                let alert = UIAlertController.singleActionAlert(aTitle: LocalizedString.Alert.OK, message: error.localizedDescription)
-                wself.present(alert, animated: true, completion: nil)
-            }
+            wself.genericView.mapView.addAnnotations(wself.presenter.stopAnnotations)
         }
     }
     
@@ -67,3 +64,40 @@ extension TrackingViewController: CLLocationManagerDelegate {
     }
 }
 
+extension TrackingViewController: MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        return MKTileOverlayRenderer(overlay: overlay)
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        switch annotation {
+        case is StopAnnotation:
+            return view(forTransportAnnotation: annotation as! StopAnnotation, mapView: mapView)
+        default:
+            return nil
+        }
+    }
+    
+    func view(forTransportAnnotation annotation: StopAnnotation, mapView: MKMapView) -> MKAnnotationView {
+        
+        let identifier = String(annotation.stop.id)
+        var view: MKAnnotationView
+        
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView {
+            dequeuedView.annotation = annotation
+            view = dequeuedView
+        } else {
+            view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view.canShowCallout = true
+            view.calloutOffset = CGPoint(x: -5, y: 5)
+            view.image = #imageLiteral(resourceName: "ic_stop")
+        }
+        return view
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard let transportAnnotation = view.annotation as? StopAnnotation else { return }
+        genericView.delegate?.trackingView(genericView, didSelect: transportAnnotation.stop.id)
+    }
+}

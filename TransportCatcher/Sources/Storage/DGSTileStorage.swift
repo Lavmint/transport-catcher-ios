@@ -8,7 +8,7 @@
 
 import CoreData
 
-class DGSTileInteractor {
+class DGSTileStorage {
     
     let backgroundContext: NSManagedObjectContext
     private(set) var temporaryStorage: [String: Data]

@@ -9,5 +9,14 @@
 import UIKit
 
 class ArrivalTimesView: UIView {
-    @IBOutlet var arrivalsTableView: ArrivalTableView!
+    
+    enum Cell {
+        static let arrival = String(describing: ArrivalTableViewCell.self)
+    }
+    
+    @IBOutlet var tableView: UITableView!
+    
+    func configure() {
+        tableView.register(UINib.init(nibName: Cell.arrival, bundle: nil), forCellReuseIdentifier: Cell.arrival)
+    }
 }

@@ -11,7 +11,7 @@ import MapKit
 internal class DGSTileOverlay: MKTileOverlay {
 
 	private let isRetina: Bool
-    private let dgsTileInteractor: DGSTileInteractor
+    private let dgsTileInteractor: DGSTileStorage
 	private let cache = NSCache<NSURL, NSData>()
 	private let urlSession = URLSession(configuration: URLSessionConfiguration.default)
 
@@ -26,7 +26,7 @@ internal class DGSTileOverlay: MKTileOverlay {
 
 	internal init(isRetina: Bool = true) {
 		self.isRetina = isRetina
-        self.dgsTileInteractor = DGSTileInteractor()
+        self.dgsTileInteractor = DGSTileStorage()
 		super.init(urlTemplate: nil)
         self.tileSize = isRetina ? CGSize(width: 512, height: 512) : CGSize(width: 256, height: 256)
 		self.canReplaceMapContent = true
