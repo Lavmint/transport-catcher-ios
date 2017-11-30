@@ -86,6 +86,7 @@
 		FAE2C08D1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C08C1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift */; };
 		FAE2C08F1FCFF6BF009B6BBA /* TrackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C08E1FCFF6BF009B6BBA /* TrackingInteractor.swift */; };
 		FAE2C0911FCFF723009B6BBA /* TrackingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C0901FCFF723009B6BBA /* TrackingPresenter.swift */; };
+		FAF2650E1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2650D1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +230,7 @@
 		FAE2C08C1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimesInteractor.swift; sourceTree = "<group>"; };
 		FAE2C08E1FCFF6BF009B6BBA /* TrackingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteractor.swift; sourceTree = "<group>"; };
 		FAE2C0901FCFF723009B6BBA /* TrackingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingPresenter.swift; sourceTree = "<group>"; };
+		FAF2650D1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimesPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +370,7 @@
 				C762C2141FCEF0E3001822CC /* ArrivalTimesView.xib */,
 				C762C2191FCEF10A001822CC /* ArrivalTimesView.swift */,
 				C762C2131FCEF0E3001822CC /* ArrivalTimesViewController.swift */,
+				FAF2650D1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift */,
 				FAE2C08C1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift */,
 			);
 			path = ArrivalTimesController;
@@ -1011,6 +1014,7 @@
 				C762C21A1FCEF10A001822CC /* ArrivalTimesView.swift in Sources */,
 				C760F64E1FCF08B800F81C8B /* StopAnnotation.swift in Sources */,
 				C7794F6F1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift in Sources */,
+				FAF2650E1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift in Sources */,
 				C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,
 				C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */,
