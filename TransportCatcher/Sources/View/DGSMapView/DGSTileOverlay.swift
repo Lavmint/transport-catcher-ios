@@ -11,7 +11,7 @@ import MapKit
 internal class DGSTileOverlay: MKTileOverlay {
 
 	private let isRetina: Bool
-    private let dgsTileInteractor: DGSTileStorage
+    private let tileStorage: DGSTileStorage
 	private let cache = NSCache<NSURL, NSData>()
 	private let urlSession = URLSession(configuration: URLSessionConfiguration.default)
 
@@ -26,7 +26,7 @@ internal class DGSTileOverlay: MKTileOverlay {
 
 	internal init(isRetina: Bool = true) {
 		self.isRetina = isRetina
-        self.dgsTileInteractor = DGSTileStorage()
+        self.tileStorage = DGSTileStorage()
 		super.init(urlTemplate: nil)
         self.tileSize = isRetina ? CGSize(width: 512, height: 512) : CGSize(width: 256, height: 256)
 		self.canReplaceMapContent = true
@@ -35,15 +35,16 @@ internal class DGSTileOverlay: MKTileOverlay {
 
 	override public func loadTile(at path: MKTileOverlayPath, result: @escaping (Data?, Error?) -> Void) {
 		let url = self.url(forTilePath: path)
+        let nsURL = url as NSURL
         
-        if let cachedData = self.cache.object(forKey: url as NSURL) as Data? {
+        if let cachedData = self.cache.object(forKey: nsURL) as Data? {
             result(cachedData, nil)
             return
         }
         
-        if let data = dgsTileInteractor.findTile(for: url as NSURL)?.data {
+        if let data = tileStorage.find(key: nsURL.absoluteString!, context: tileStorage.backgroundContext)?.data {
             cache.setObject(data as NSData, forKey: url as NSURL)
-            result(data as Data, nil)
+            result(data, nil)
             return
         }
         
@@ -53,8 +54,9 @@ internal class DGSTileOverlay: MKTileOverlay {
             }
             guard let wself = self else { return }
             guard let data = data else { return }
-            wself.cache.setObject(data as NSData, forKey: url as NSURL)
-            wself.dgsTileInteractor.setTemporaryData(for: url as NSURL, data: data as NSData)
+            let nsData = data as NSData
+            wself.cache.setObject(nsData, forKey: nsURL)
+            wself.tileStorage.setTemporaryData(for: nsURL, data: nsData)
         })
         task.resume()
 	}

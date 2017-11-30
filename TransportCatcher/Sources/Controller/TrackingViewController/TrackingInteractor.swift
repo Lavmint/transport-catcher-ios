@@ -10,7 +10,7 @@ import ToSMR
 
 class TrackingInteractor {
     
-    private(set) var stops: [TransportStop]
+    private(set) var stops: [ToSMR.TransportStop]
     
     init() {
         stops = []

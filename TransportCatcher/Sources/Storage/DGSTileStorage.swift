@@ -8,7 +8,13 @@
 
 import CoreData
 
-class DGSTileStorage {
+class DGSTileStorage: Storage {
+    
+    typealias PrimaryKey = String
+    typealias Object = DGSTile
+    var primaryKeyName: String {
+        return "url"
+    }
     
     let backgroundContext: NSManagedObjectContext
     private(set) var temporaryStorage: [String: Data]
@@ -16,22 +22,6 @@ class DGSTileStorage {
     init() {
         self.backgroundContext = TransportCatcherPersistenseContainer.shared.newBackgroundContext()
         self.temporaryStorage = [:]
-    }
-    
-    func findTile(for url: NSURL) -> DGSTile? {
-        let request: NSFetchRequest<DGSTile> = DGSTile.fetchRequest()
-        request.predicate = NSPredicate(format: "url = %@", url.absoluteString!)
-        var results: [DGSTile] = []
-        do {
-            results = try backgroundContext.fetch(request)
-        } catch {
-            dprint(error)
-            assertionFailure()
-            return nil
-        }
-        guard results.count <= 1 else { assertionFailure(); return nil }
-        dprint(["returning tile:", url.absoluteString!].joined(separator: " "))
-        return results.first
     }
     
     func setTemporaryData(for url: NSURL, data: NSData) {

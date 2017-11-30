@@ -11,9 +11,9 @@ import MapKit
 
 final class StopAnnotation: NSObject, MKAnnotation {
     
-    let stop: TransportStop
+    let stop: ToSMR.TransportStop
     
-    init(stop: TransportStop) {
+    init(stop: ToSMR.TransportStop) {
         self.stop = stop
     }
     

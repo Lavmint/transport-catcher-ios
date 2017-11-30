@@ -87,6 +87,10 @@
 		FAE2C08F1FCFF6BF009B6BBA /* TrackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C08E1FCFF6BF009B6BBA /* TrackingInteractor.swift */; };
 		FAE2C0911FCFF723009B6BBA /* TrackingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C0901FCFF723009B6BBA /* TrackingPresenter.swift */; };
 		FAF2650E1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2650D1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift */; };
+		FAF265121FD0069600E735A7 /* TransportStopStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF265111FD0069600E735A7 /* TransportStopStorage.swift */; };
+		FAF265151FD00A3300E735A7 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF265141FD00A3300E735A7 /* Storage.swift */; };
+		FAF2651A1FD012EF00E735A7 /* Classifier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAF265181FD012EF00E735A7 /* Classifier.xcdatamodeld */; };
+		FAF2651C1FD0138300E735A7 /* ClassfiersPersistenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2651B1FD0138200E735A7 /* ClassfiersPersistenseContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +235,10 @@
 		FAE2C08E1FCFF6BF009B6BBA /* TrackingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteractor.swift; sourceTree = "<group>"; };
 		FAE2C0901FCFF723009B6BBA /* TrackingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingPresenter.swift; sourceTree = "<group>"; };
 		FAF2650D1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimesPresenter.swift; sourceTree = "<group>"; };
+		FAF265111FD0069600E735A7 /* TransportStopStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStopStorage.swift; sourceTree = "<group>"; };
+		FAF265141FD00A3300E735A7 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		FAF265191FD012EF00E735A7 /* Classifiers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Classifiers.xcdatamodel; sourceTree = "<group>"; };
+		FAF2651B1FD0138200E735A7 /* ClassfiersPersistenseContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassfiersPersistenseContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -572,6 +580,7 @@
 		C7D4A04B1FCD85290032A7B1 /* Container */ = {
 			isa = PBXGroup;
 			children = (
+				FAF2651B1FD0138200E735A7 /* ClassfiersPersistenseContainer.swift */,
 				FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */,
 			);
 			path = Container;
@@ -621,8 +630,10 @@
 		FA29B55E1FCCAA94000D7713 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				FAF265131FD00A2600E735A7 /* Protocol */,
 				C7D4A04B1FCD85290032A7B1 /* Container */,
 				FA29B55F1FCCAAAE000D7713 /* DGSTileStorage.swift */,
+				FAF265111FD0069600E735A7 /* TransportStopStorage.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -633,6 +644,7 @@
 				C746852F1EFFA9E700D6021E /* Assets.xcassets */,
 				FAAB5E9F1FC866B200778334 /* Storyboard */,
 				FA29B55B1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld */,
+				FAF265181FD012EF00E735A7 /* Classifier.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -722,6 +734,14 @@
 				C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		FAF265131FD00A2600E735A7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FAF265141FD00A3300E735A7 /* Storage.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1000,18 +1020,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA29B5601FCCAAAE000D7713 /* DGSTileStorage.swift in Sources */,
+				FAF265151FD00A3300E735A7 /* Storage.swift in Sources */,
 				FAE2C08F1FCFF6BF009B6BBA /* TrackingInteractor.swift in Sources */,
 				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
 				C762C2151FCEF0E3001822CC /* ArrivalTimesViewController.swift in Sources */,
+				FAF2651C1FD0138300E735A7 /* ClassfiersPersistenseContainer.swift in Sources */,
 				FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */,
 				C7D4A04A1FCD83360032A7B1 /* UIAlertController.swift in Sources */,
 				FAE23E6B1FCCBDF5003C0E74 /* Global.swift in Sources */,
 				FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */,
 				FAE2C0911FCFF723009B6BBA /* TrackingPresenter.swift in Sources */,
+				FAF265121FD0069600E735A7 /* TransportStopStorage.swift in Sources */,
 				C7E0EE171FCF0606004DEC13 /* TrackingView.swift in Sources */,
 				FAE2C08D1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift in Sources */,
 				FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */,
 				C762C21A1FCEF10A001822CC /* ArrivalTimesView.swift in Sources */,
+				FAF2651A1FD012EF00E735A7 /* Classifier.xcdatamodeld in Sources */,
 				C760F64E1FCF08B800F81C8B /* StopAnnotation.swift in Sources */,
 				C7794F6F1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift in Sources */,
 				FAF2650E1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift in Sources */,
@@ -1432,6 +1456,16 @@
 			);
 			currentVersion = FA29B55C1FCCAA32000D7713 /* TransportCatcher.xcdatamodel */;
 			path = TransportCatcher.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		FAF265181FD012EF00E735A7 /* Classifier.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAF265191FD012EF00E735A7 /* Classifiers.xcdatamodel */,
+			);
+			currentVersion = FAF265191FD012EF00E735A7 /* Classifiers.xcdatamodel */;
+			path = Classifier.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
