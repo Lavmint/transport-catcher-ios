@@ -12,12 +12,12 @@ public enum Result<T> {
     case succeed(T?)
     case error(Error)
     
-    public enum Error {
+    public enum Error: Swift.Error, LocalizedError {
         case client(error: Swift.Error)
         case server(error: (Int, String))
         case unexpected
         
-        public var localizedDescription: String {
+        public var errorDescription: String? {
             switch self {
             case .client(error: let error):
                 return error.localizedDescription

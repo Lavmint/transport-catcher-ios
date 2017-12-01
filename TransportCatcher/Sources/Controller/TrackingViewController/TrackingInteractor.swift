@@ -16,16 +16,16 @@ class TrackingInteractor {
         stops = []
     }
     
-    func fetchStops(completion: @escaping () -> Void) {
+    func fetchStops(completion: @escaping (() throws -> Void) -> Void) {
         Service.shared.stops { [weak self] (box) in
             guard let wself = self else { return }
             switch box.result {
             case .succeed(let stops):
                 wself.stops = stops ?? []
+                completion { return }
             case .error(let error):
-                dprint(error.localizedDescription)
+                completion { throw error }
             }
-            completion()
         }
     }
 }

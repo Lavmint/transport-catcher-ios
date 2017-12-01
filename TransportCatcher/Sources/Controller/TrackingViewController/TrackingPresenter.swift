@@ -20,4 +20,10 @@ class TrackingPresenter {
     var stopAnnotations: [StopAnnotation] {
         return interactor.stops.map({ StopAnnotation(stop: $0) })
     }
+    
+    func imageForStopAnnotationView(transportStop: ToSMR.TransportStop) -> UIImage? {
+        guard transportStop.tramways.isEmpty else { return #imageLiteral(resourceName: "ic_stop_tram") }
+        guard transportStop.trolleybuses.isEmpty else { return #imageLiteral(resourceName: "ic_stop_trolleybus") }
+        return #imageLiteral(resourceName: "ic_stop_bus")
+    }
 }

@@ -23,8 +23,15 @@ class ArrivalTimesViewController: UIViewController, GenericView {
     }
     
     func reload(withStopId stopId: Int) {
-        intercator.fetchArrivals(toStopId: stopId) { [weak self] in
-            self?.genericView.tableView.reloadData()
+        intercator.fetchArrivals(toStopId: stopId) { [weak self] (throwError) in
+            guard let wself = self else { return }
+            do {
+                try throwError()
+            } catch {
+                AlertHelper.presentInfoAlert(.OK, message: error.localizedDescription, on: wself)
+                return
+            }
+            wself.genericView.tableView.reloadData()
         }
     }
 }
@@ -32,7 +39,7 @@ class ArrivalTimesViewController: UIViewController, GenericView {
 extension ArrivalTimesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ArrivalTimesView.Cell.arrival, for: indexPath) as! ArrivalTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ArrivalTableViewCell.stringClass, for: indexPath) as! ArrivalTableViewCell
         let arrival = intercator.arrivals[indexPath.row]
         cell.timeLabel.attributedText = presenter.timeAttributedString(for: arrival)
         cell.timeLabel.backgroundColor = presenter.timeBackgroundColor(for: arrival)

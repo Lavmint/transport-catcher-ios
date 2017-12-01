@@ -16,16 +16,17 @@ class ArrivalTimesInteractor {
         arrivals = []
     }
     
-    func fetchArrivals(toStopId stopId: Int, completion: @escaping () -> Void) {
+    func fetchArrivals(toStopId stopId: Int, completion: @escaping (() throws -> Void) -> Void) {
         Service.shared.approximateArrivals(toStop: stopId) { [weak self] (box) in
             guard let wself = self, stopId == stopId else { return }
             switch box.result {
             case .succeed(let arrivals):
                 wself.arrivals = arrivals ?? []
+                completion { return }
             case .error(let error):
                 dprint(error.localizedDescription)
+                completion { throw error }
             }
-            completion()
         }
     }
 }

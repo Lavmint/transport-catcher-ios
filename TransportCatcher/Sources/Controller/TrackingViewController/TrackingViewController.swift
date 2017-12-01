@@ -31,8 +31,14 @@ class TrackingViewController: UIViewController, GenericView {
     }
     
     func reload() {
-        interactor.fetchStops { [weak self] in
+        interactor.fetchStops { [weak self] (throwError) in
             guard let wself = self else { return }
+            do {
+                try throwError()
+            } catch {
+                AlertHelper.presentInfoAlert(.OK, message: error.localizedDescription, on: wself)
+                return
+            }
             wself.genericView.mapView.addAnnotations(wself.presenter.stopAnnotations)
         }
     }
@@ -51,7 +57,7 @@ extension TrackingViewController: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        dprint(error)
+        AlertHelper.presentInfoAlert(.OK, message: error.localizedDescription, on: self)
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -79,25 +85,24 @@ extension TrackingViewController: MKMapViewDelegate {
         }
     }
     
-    func view(forTransportAnnotation annotation: StopAnnotation, mapView: MKMapView) -> MKAnnotationView {
-        
-        let identifier = String(annotation.stop.id)
-        var view: MKAnnotationView
-        
-        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView {
+    func view(forTransportAnnotation annotation: StopAnnotation, mapView: MKMapView) -> TransportStopAnnotationView {
+        var view: TransportStopAnnotationView
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: TransportStopAnnotationView.stringClass) as? TransportStopAnnotationView {
             dequeuedView.annotation = annotation
             view = dequeuedView
         } else {
-            view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            view.canShowCallout = true
-            view.calloutOffset = CGPoint(x: -5, y: 5)
-            view.image = #imageLiteral(resourceName: "ic_stop")
+            view = TransportStopAnnotationView(annotation: annotation, reuseIdentifier: TransportStopAnnotationView.stringClass)
         }
+        view.image = presenter.imageForStopAnnotationView(transportStop: annotation.stop)
         return view
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let transportAnnotation = view.annotation as? StopAnnotation else { return }
         genericView.delegate?.trackingView(genericView, didSelect: transportAnnotation.stop.id)
+    }
+    
+    func mapViewDidFailLoadingMap(_ mapView: MKMapView, withError error: Error) {
+        AlertHelper.presentInfoAlert(.OK, message: error.localizedDescription, on: self)
     }
 }
