@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		098CBE74E9ED5C6C8C181470 /* Pods_TransportCatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2587CAFEA5179E53EC91B720 /* Pods_TransportCatcher.framework */; };
-		C70CA1A81F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */; };
 		C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
-		C72676AD1FD1582F00B0E4F0 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72676AC1FD1582E00B0E4F0 /* AlertHelper.swift */; };
-		C72676B01FD15BCD00B0E4F0 /* TransportStopAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72676AF1FD15BCD00B0E4F0 /* TransportStopAnnotationView.swift */; };
-		C72676B21FD1665700B0E4F0 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72676B11FD1665700B0E4F0 /* NSObject.swift */; };
 		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
 		C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74685281EFFA9E700D6021E /* AppDelegate.swift */; };
 		C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C746852C1EFFA9E700D6021E /* Main.storyboard */; };
@@ -82,9 +78,16 @@
 		FA29B55D1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA29B55B1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld */; };
 		FA29B5601FCCAAAE000D7713 /* DGSTileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29B55F1FCCAAAE000D7713 /* DGSTileStorage.swift */; };
 		FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */; };
+		FA39CAD61FD420F400D6E22F /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39CAD51FD420F400D6E22F /* NSObject.swift */; };
+		FA39CAD91FD4210D00D6E22F /* TransportStopAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39CAD81FD4210D00D6E22F /* TransportStopAnnotationView.swift */; };
 		FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB41FC86E3500778334 /* LocalizedString.swift */; };
 		FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB61FC8704000778334 /* UIColor.swift */; };
-		FAE23E6B1FCCBDF5003C0E74 /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE23E6A1FCCBDF5003C0E74 /* GlobalHelper.swift */; };
+		FACAC0381FD40C730081385B /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC0371FD40C730081385B /* Bundle.swift */; };
+		FACAC03A1FD4105D0081385B /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC0391FD4105D0081385B /* UserStorage.swift */; };
+		FACAC03C1FD412810081385B /* ClassifierFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC03B1FD412810081385B /* ClassifierFetcher.swift */; };
+		FACAC03F1FD413910081385B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC03E1FD413910081385B /* Date.swift */; };
+		FACAC0421FD41D2C0081385B /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC0401FD41D2C0081385B /* GlobalHelper.swift */; };
+		FACAC0431FD41D2C0081385B /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC0411FD41D2C0081385B /* AlertHelper.swift */; };
 		FAE2C08D1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C08C1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift */; };
 		FAE2C08F1FCFF6BF009B6BBA /* TrackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C08E1FCFF6BF009B6BBA /* TrackingInteractor.swift */; };
 		FAE2C0911FCFF723009B6BBA /* TrackingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C0901FCFF723009B6BBA /* TrackingPresenter.swift */; };
@@ -152,13 +155,9 @@
 		87B14CCE3F9BD47BBA6132E0 /* Pods-GeoSMRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMRTests/Pods-GeoSMRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		89F656FC773CA31F95E053EE /* Pods-GeoSMRIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMRIntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMRIntegrationTests/Pods-GeoSMRIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportCatcherConfiguration.swift; sourceTree = "<group>"; };
 		C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		C72676AC1FD1582E00B0E4F0 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
-		C72676AF1FD15BCD00B0E4F0 /* TransportStopAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStopAnnotationView.swift; sourceTree = "<group>"; };
-		C72676B11FD1665700B0E4F0 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStopsFullDBTest.swift; sourceTree = "<group>"; };
 		C74685251EFFA9E700D6021E /* TransportCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74685281EFFA9E700D6021E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -232,9 +231,16 @@
 		FA29B55C1FCCAA32000D7713 /* TransportCatcher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransportCatcher.xcdatamodel; sourceTree = "<group>"; };
 		FA29B55F1FCCAAAE000D7713 /* DGSTileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSTileStorage.swift; sourceTree = "<group>"; };
 		FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportCatcherPersistenseContainer.swift; sourceTree = "<group>"; };
+		FA39CAD51FD420F400D6E22F /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		FA39CAD81FD4210D00D6E22F /* TransportStopAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportStopAnnotationView.swift; sourceTree = "<group>"; };
 		FAAB5EB41FC86E3500778334 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		FAAB5EB61FC8704000778334 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		FAE23E6A1FCCBDF5003C0E74 /* GlobalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
+		FACAC0371FD40C730081385B /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		FACAC0391FD4105D0081385B /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		FACAC03B1FD412810081385B /* ClassifierFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierFetcher.swift; sourceTree = "<group>"; };
+		FACAC03E1FD413910081385B /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		FACAC0401FD41D2C0081385B /* GlobalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
+		FACAC0411FD41D2C0081385B /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		FAE2C08C1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimesInteractor.swift; sourceTree = "<group>"; };
 		FAE2C08E1FCFF6BF009B6BBA /* TrackingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteractor.swift; sourceTree = "<group>"; };
 		FAE2C0901FCFF723009B6BBA /* TrackingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingPresenter.swift; sourceTree = "<group>"; };
@@ -285,7 +291,7 @@
 		C70CA1AA1F6DCC9000A30DC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C72676AE1FD15BB900B0E4F0 /* Annotation */,
+				FA39CAD71FD4210D00D6E22F /* Annotation */,
 				C762C2221FCEFF57001822CC /* DGSMapView */,
 				C7D4A04C1FCD9F260032A7B1 /* UserTrackingButton.swift */,
 			);
@@ -309,14 +315,6 @@
 				FAAB5EAE1FC868BF00778334 /* Foundation */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		C72676AE1FD15BB900B0E4F0 /* Annotation */ = {
-			isa = PBXGroup;
-			children = (
-				C72676AF1FD15BCD00B0E4F0 /* TransportStopAnnotationView.swift */,
-			);
-			path = Annotation;
 			sourceTree = "<group>";
 		};
 		C746851C1EFFA9E700D6021E = {
@@ -490,8 +488,10 @@
 		C79123181F6DC9AE0014AC4C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FA39CAD51FD420F400D6E22F /* NSObject.swift */,
+				FACAC0371FD40C730081385B /* Bundle.swift */,
 				FAAB5EB61FC8704000778334 /* UIColor.swift */,
-				C72676B11FD1665700B0E4F0 /* NSObject.swift */,
+				FACAC03E1FD413910081385B /* Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -499,7 +499,7 @@
 		C79123191F6DC9BA0014AC4C /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */,
+				FACAC03D1FD412900081385B /* ToSMRService */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -507,8 +507,8 @@
 		C791231B1F6DCA150014AC4C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				C72676AC1FD1582E00B0E4F0 /* AlertHelper.swift */,
-				FAE23E6A1FCCBDF5003C0E74 /* GlobalHelper.swift */,
+				FACAC0411FD41D2C0081385B /* AlertHelper.swift */,
+				FACAC0401FD41D2C0081385B /* GlobalHelper.swift */,
 				FAAB5EB41FC86E3500778334 /* LocalizedString.swift */,
 			);
 			path = Helper;
@@ -594,8 +594,8 @@
 		C7D4A04B1FCD85290032A7B1 /* Container */ = {
 			isa = PBXGroup;
 			children = (
-				FAF2651B1FD0138200E735A7 /* ClassfiersPersistenseContainer.swift */,
-				FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */,
+				FA39CADC1FD4267200D6E22F /* Classifiers */,
+				FA39CADB1FD4266500D6E22F /* TransportCatcher */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -646,8 +646,49 @@
 			children = (
 				FAF265131FD00A2600E735A7 /* Protocol */,
 				C7D4A04B1FCD85290032A7B1 /* Container */,
-				FA29B55F1FCCAAAE000D7713 /* DGSTileStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		FA39CAD71FD4210D00D6E22F /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				FA39CAD81FD4210D00D6E22F /* TransportStopAnnotationView.swift */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		FA39CADB1FD4266500D6E22F /* TransportCatcher */ = {
+			isa = PBXGroup;
+			children = (
+				FA39CADE1FD4268C00D6E22F /* Storage */,
+				FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */,
+			);
+			path = TransportCatcher;
+			sourceTree = "<group>";
+		};
+		FA39CADC1FD4267200D6E22F /* Classifiers */ = {
+			isa = PBXGroup;
+			children = (
+				FA39CADD1FD4268200D6E22F /* Storage */,
+				FAF2651B1FD0138200E735A7 /* ClassfiersPersistenseContainer.swift */,
+			);
+			path = Classifiers;
+			sourceTree = "<group>";
+		};
+		FA39CADD1FD4268200D6E22F /* Storage */ = {
+			isa = PBXGroup;
+			children = (
 				FAF265111FD0069600E735A7 /* TransportStopStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		FA39CADE1FD4268C00D6E22F /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				FA29B55F1FCCAAAE000D7713 /* DGSTileStorage.swift */,
+				FACAC0391FD4105D0081385B /* UserStorage.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -675,7 +716,6 @@
 				C791231B1F6DCA150014AC4C /* Helper */,
 				C79123181F6DC9AE0014AC4C /* Extension */,
 				C74685281EFFA9E700D6021E /* AppDelegate.swift */,
-				C70CA1A71F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -748,6 +788,15 @@
 				C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		FACAC03D1FD412900081385B /* ToSMRService */ = {
+			isa = PBXGroup;
+			children = (
+				FACAC03B1FD412810081385B /* ClassifierFetcher.swift */,
+				C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */,
+			);
+			path = ToSMRService;
 			sourceTree = "<group>";
 		};
 		FAF265131FD00A2600E735A7 /* Protocol */ = {
@@ -1034,35 +1083,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA29B5601FCCAAAE000D7713 /* DGSTileStorage.swift in Sources */,
-				C72676B21FD1665700B0E4F0 /* NSObject.swift in Sources */,
 				FAF265151FD00A3300E735A7 /* Storage.swift in Sources */,
 				FAE2C08F1FCFF6BF009B6BBA /* TrackingInteractor.swift in Sources */,
 				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
+				FACAC0381FD40C730081385B /* Bundle.swift in Sources */,
 				C762C2151FCEF0E3001822CC /* ArrivalTimesViewController.swift in Sources */,
 				FAF2651C1FD0138300E735A7 /* ClassfiersPersistenseContainer.swift in Sources */,
 				FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */,
-				FAE23E6B1FCCBDF5003C0E74 /* GlobalHelper.swift in Sources */,
 				FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */,
 				FAE2C0911FCFF723009B6BBA /* TrackingPresenter.swift in Sources */,
-				C72676AD1FD1582F00B0E4F0 /* AlertHelper.swift in Sources */,
 				FAF265121FD0069600E735A7 /* TransportStopStorage.swift in Sources */,
 				C7E0EE171FCF0606004DEC13 /* TrackingView.swift in Sources */,
 				FAE2C08D1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift in Sources */,
 				FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */,
 				C762C21A1FCEF10A001822CC /* ArrivalTimesView.swift in Sources */,
 				FAF2651A1FD012EF00E735A7 /* Classifier.xcdatamodeld in Sources */,
+				FACAC0431FD41D2C0081385B /* AlertHelper.swift in Sources */,
 				C760F64E1FCF08B800F81C8B /* StopAnnotation.swift in Sources */,
-				C72676B01FD15BCD00B0E4F0 /* TransportStopAnnotationView.swift in Sources */,
+				FACAC03F1FD413910081385B /* Date.swift in Sources */,
 				C7794F6F1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift in Sources */,
 				FAF2650E1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift in Sources */,
 				C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,
+				FA39CAD61FD420F400D6E22F /* NSObject.swift in Sources */,
+				FACAC03A1FD4105D0081385B /* UserStorage.swift in Sources */,
+				FACAC03C1FD412810081385B /* ClassifierFetcher.swift in Sources */,
 				C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */,
 				C7E0EE1C1FCF068E004DEC13 /* TrackingViewDelegate.swift in Sources */,
+				FACAC0421FD41D2C0081385B /* GlobalHelper.swift in Sources */,
 				C762C21F1FCEFD73001822CC /* GenericView.swift in Sources */,
 				C77B41061FCF039500810EE0 /* TrackingViewController.swift in Sources */,
 				FA29B55D1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld in Sources */,
-				C70CA1A81F6DCBC200A30DC8 /* TransportCatcherConfiguration.swift in Sources */,
+				FA39CAD91FD4210D00D6E22F /* TransportStopAnnotationView.swift in Sources */,
 				C7794F6C1FCC4614002BEFB3 /* ArrivalTrackingViewController.swift in Sources */,
 				C7D4A04D1FCD9F260032A7B1 /* UserTrackingButton.swift in Sources */,
 			);

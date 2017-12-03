@@ -99,7 +99,7 @@ extension TrackingViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let transportAnnotation = view.annotation as? StopAnnotation else { return }
-        genericView.delegate?.trackingView(genericView, didSelect: transportAnnotation.stop.id)
+        genericView.delegate?.trackingView(genericView, didSelect: Int(transportAnnotation.stop.id))
     }
     
     func mapViewDidFailLoadingMap(_ mapView: MKMapView, withError error: Error) {

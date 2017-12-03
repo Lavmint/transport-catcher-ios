@@ -16,11 +16,11 @@ class DGSTileStorage: Storage {
         return "url"
     }
     
-    let backgroundContext: NSManagedObjectContext
+    let context: NSManagedObjectContext
     private(set) var temporaryStorage: [String: Data]
     
-    init() {
-        self.backgroundContext = TransportCatcherPersistenseContainer.shared.newBackgroundContext()
+    init(context: NSManagedObjectContext) {
+        self.context = context
         self.temporaryStorage = [:]
     }
     
@@ -38,7 +38,7 @@ class DGSTileStorage: Storage {
         request.predicate = NSPredicate(format: "url IN %@", rawURLs)
         var fetchedTiles: [DGSTile] = []
         do {
-            fetchedTiles = try backgroundContext.fetch(request)
+            fetchedTiles = try context.fetch(request)
         } catch {
             dprint(error)
             assertionFailure()
@@ -56,7 +56,7 @@ class DGSTileStorage: Storage {
         
         //creating new tiles
         for (url, data) in temporaryStorage {
-            let tile = DGSTile(context: backgroundContext)
+            let tile = DGSTile(context: context)
             tile.url = url
             tile.data = data
             tile.timestamp = Date().timeIntervalSince1970
@@ -64,8 +64,8 @@ class DGSTileStorage: Storage {
         }
         
         do {
-            guard backgroundContext.hasChanges else { return }
-            try backgroundContext.save()
+            guard context.hasChanges else { return }
+            try context.save()
         }
         catch {
             dprint(error)

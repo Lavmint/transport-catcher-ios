@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ToSMR
 
 class TrackingPresenter {
     
@@ -21,9 +20,9 @@ class TrackingPresenter {
         return interactor.stops.map({ StopAnnotation(stop: $0) })
     }
     
-    func imageForStopAnnotationView(transportStop: ToSMR.TransportStop) -> UIImage? {
-        guard transportStop.tramways.isEmpty else { return #imageLiteral(resourceName: "ic_stop_tram") }
-        guard transportStop.trolleybuses.isEmpty else { return #imageLiteral(resourceName: "ic_stop_trolleybus") }
+    func imageForStopAnnotationView(transportStop: TransportStop) -> UIImage? {
+        guard let tramways = transportStop.tramways, tramways.isEmpty else { return #imageLiteral(resourceName: "ic_stop_tram") }
+        guard let trolleybuses = transportStop.trolleybuses, trolleybuses.isEmpty else { return #imageLiteral(resourceName: "ic_stop_trolleybus") }
         return #imageLiteral(resourceName: "ic_stop_bus")
     }
 }

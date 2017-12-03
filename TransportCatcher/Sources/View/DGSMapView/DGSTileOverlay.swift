@@ -26,7 +26,7 @@ internal class DGSTileOverlay: MKTileOverlay {
 
 	internal init(isRetina: Bool = true) {
 		self.isRetina = isRetina
-        self.tileStorage = DGSTileStorage()
+        self.tileStorage = DGSTileStorage(context: TransportCatcherPersistenseContainer.shared.newBackgroundContext())
 		super.init(urlTemplate: nil)
         self.tileSize = isRetina ? CGSize(width: 512, height: 512) : CGSize(width: 256, height: 256)
 		self.canReplaceMapContent = true
@@ -42,7 +42,7 @@ internal class DGSTileOverlay: MKTileOverlay {
             return
         }
         
-        if let data = tileStorage.find(key: nsURL.absoluteString!, context: tileStorage.backgroundContext)?.data {
+        if let data = tileStorage.find(key: nsURL.absoluteString!)?.data {
             cache.setObject(data as NSData, forKey: url as NSURL)
             result(data, nil)
             return

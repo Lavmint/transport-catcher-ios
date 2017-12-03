@@ -6,14 +6,13 @@
 //  Copyright © 2017 Alexey Averkin. All rights reserved.
 //
 
-import ToSMR
 import MapKit
 
 final class StopAnnotation: NSObject, MKAnnotation {
     
-    let stop: ToSMR.TransportStop
+    let stop: TransportStop
     
-    init(stop: ToSMR.TransportStop) {
+    init(stop: TransportStop) {
         self.stop = stop
     }
     
@@ -22,7 +21,7 @@ final class StopAnnotation: NSObject, MKAnnotation {
     }
     
     public var subtitle: String? {
-        return [stop.adjacentStreet, stop.direction].joined(separator: " ")
+        return [stop.adjacentStreet ?? "", stop.direction ?? ""].joined(separator: " ")
     }
     
     public var coordinate: CLLocationCoordinate2D {

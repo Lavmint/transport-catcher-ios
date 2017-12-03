@@ -10,22 +10,26 @@ import ToSMR
 
 class TrackingInteractor {
     
-    private(set) var stops: [ToSMR.TransportStop]
+    private(set) var stops: [TransportStop]
+    private let classifierFetcher: ClassifierFetcher
+    private let transportStopStorage: TransportStopStorage
     
     init() {
         stops = []
+        classifierFetcher = ClassifierFetcher()
+        self.transportStopStorage = TransportStopStorage(context: ClassifierPersistenseContainer.shared.viewContext)
     }
     
     func fetchStops(completion: @escaping (() throws -> Void) -> Void) {
-        Service.shared.stops { [weak self] (box) in
+        classifierFetcher.fetchStops(completion: { [weak self] (throwError) in
             guard let wself = self else { return }
-            switch box.result {
-            case .succeed(let stops):
-                wself.stops = stops ?? []
+            do {
+                try throwError()
+                wself.stops = wself.transportStopStorage.all
                 completion { return }
-            case .error(let error):
+            } catch {
                 completion { throw error }
             }
-        }
+        })
     }
 }

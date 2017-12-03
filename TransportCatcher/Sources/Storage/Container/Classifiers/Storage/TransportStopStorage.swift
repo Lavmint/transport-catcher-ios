@@ -10,15 +10,12 @@ import CoreData
 
 class TransportStopStorage: Storage {
 
-    typealias PrimaryKey = Int
+    typealias PrimaryKey = Int32
     typealias Object = TransportStop
-    var primaryKeyName: String {
-        return "id"
-    }
     
-    let viewContext: NSManagedObjectContext
+    let context: NSManagedObjectContext
     
-    init() {
-        viewContext = ClassifierPersistenseContainer.shared.viewContext
+    init(context: NSManagedObjectContext) {
+        self.context = context
     }
 }
