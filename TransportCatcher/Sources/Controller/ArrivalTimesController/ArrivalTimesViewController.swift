@@ -26,8 +26,10 @@ class ArrivalTimesViewController: UIViewController, GenericView {
     }
     
     func reload(withStopId stopId: Int) {
+        showIndicator(withText: "kokoko")
         intercator.fetchArrivals(toStopId: stopId) { [weak self] (throwError) in
             guard let wself = self else { return }
+            wself.hideIndicator()
             do {
                 try throwError()
                 wself.presenter.configure(controller: wself.emptyViewController, on: wself.genericView, with: nil)

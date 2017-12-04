@@ -59,6 +59,7 @@
 		C7B00E511F3F59B60022D6F2 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E501F3F59B60022D6F2 /* Parsable.swift */; };
 		C7B00E591F3F62980022D6F2 /* getFirstArrivalToStop.json in Resources */ = {isa = PBXBuildFile; fileRef = C7B00E581F3F62980022D6F2 /* getFirstArrivalToStop.json */; };
 		C7B00E5C1F3F63390022D6F2 /* JSONSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */; };
+		C7B6A4761FD562B1001BC12B /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6A4751FD562B1001BC12B /* NibLoadableView.swift */; };
 		C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C3690E1F6DB6240032F49E /* DGSMapView.swift */; };
 		C7C99CE01F3B30040089ECD6 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CDF1F3B30040089ECD6 /* Arrival.swift */; };
 		C7C99CE41F3B36B20089ECD6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99CE31F3B36B20089ECD6 /* Transport.swift */; };
@@ -79,6 +80,10 @@
 		C7EC4F571F4F7071009A020A /* XMLSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F561F4F7071009A020A /* XMLSerializer.swift */; };
 		C7EC4F591F4F719F009A020A /* XMLSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */; };
 		C7EC4F5D1F4F7931009A020A /* XMLParserDictionaryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */; };
+		C7F75F021FD562F2002F8312 /* BottomIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7F75F011FD562F2002F8312 /* BottomIndicatorView.xib */; };
+		C7F75F041FD56304002F8312 /* BottomIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F75F031FD56304002F8312 /* BottomIndicatorView.swift */; };
+		C7F75F081FD572B3002F8312 /* BottomIndicatorViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F75F071FD572B3002F8312 /* BottomIndicatorViewPresenter.swift */; };
+		C7F75F0A1FD5767C002F8312 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F75F091FD5767C002F8312 /* UIViewController.swift */; };
 		FA29B55D1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA29B55B1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld */; };
 		FA29B5601FCCAAAE000D7713 /* DGSTileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29B55F1FCCAAAE000D7713 /* DGSTileStorage.swift */; };
 		FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */; };
@@ -215,6 +220,7 @@
 		C7B00E501F3F59B60022D6F2 /* Parsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
 		C7B00E581F3F62980022D6F2 /* getFirstArrivalToStop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getFirstArrivalToStop.json; sourceTree = "<group>"; };
 		C7B00E5B1F3F63390022D6F2 /* JSONSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializerTest.swift; sourceTree = "<group>"; };
+		C7B6A4751FD562B1001BC12B /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		C7C3690E1F6DB6240032F49E /* DGSMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGSMapView.swift; sourceTree = "<group>"; };
 		C7C99CDF1F3B30040089ECD6 /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		C7C99CE31F3B36B20089ECD6 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
@@ -235,6 +241,10 @@
 		C7EC4F561F4F7071009A020A /* XMLSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializer.swift; sourceTree = "<group>"; };
 		C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializerTest.swift; sourceTree = "<group>"; };
 		C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserDictionaryAdapter.swift; sourceTree = "<group>"; };
+		C7F75F011FD562F2002F8312 /* BottomIndicatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomIndicatorView.xib; sourceTree = "<group>"; };
+		C7F75F031FD56304002F8312 /* BottomIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomIndicatorView.swift; sourceTree = "<group>"; };
+		C7F75F071FD572B3002F8312 /* BottomIndicatorViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomIndicatorViewPresenter.swift; sourceTree = "<group>"; };
+		C7F75F091FD5767C002F8312 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA29B55C1FCCAA32000D7713 /* TransportCatcher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransportCatcher.xcdatamodel; sourceTree = "<group>"; };
 		FA29B55F1FCCAAAE000D7713 /* DGSTileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSTileStorage.swift; sourceTree = "<group>"; };
@@ -299,6 +309,8 @@
 		C70CA1AA1F6DCC9000A30DC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C7B6A4741FD5629B001BC12B /* Protocol */,
+				C7F75F001FD562D5002F8312 /* BottomIndicatorView */,
 				FA39CAD71FD4210D00D6E22F /* Annotation */,
 				C762C2221FCEFF57001822CC /* DGSMapView */,
 				C7D4A04C1FCD9F260032A7B1 /* UserTrackingButton.swift */,
@@ -502,6 +514,7 @@
 				FAAB5EB61FC8704000778334 /* UIColor.swift */,
 				FACAC03E1FD413910081385B /* Date.swift */,
 				C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */,
+				C7F75F091FD5767C002F8312 /* UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -600,6 +613,14 @@
 			path = Serialization;
 			sourceTree = "<group>";
 		};
+		C7B6A4741FD5629B001BC12B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C7B6A4751FD562B1001BC12B /* NibLoadableView.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		C7C99CDE1F3B2F9F0089ECD6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +665,16 @@
 				C7E73BB21F4F39D6005ED5B6 /* stopsFullDB.xml */,
 			);
 			path = Classifier;
+			sourceTree = "<group>";
+		};
+		C7F75F001FD562D5002F8312 /* BottomIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				C7F75F011FD562F2002F8312 /* BottomIndicatorView.xib */,
+				C7F75F031FD56304002F8312 /* BottomIndicatorView.swift */,
+				C7F75F071FD572B3002F8312 /* BottomIndicatorViewPresenter.swift */,
+			);
+			path = BottomIndicatorView;
 			sourceTree = "<group>";
 		};
 		E57536A87FA63AE1C3273E8F /* Pods */ = {
@@ -995,6 +1026,7 @@
 				C762C2161FCEF0E3001822CC /* ArrivalTimesView.xib in Resources */,
 				C74685301EFFA9E700D6021E /* Assets.xcassets in Resources */,
 				C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */,
+				C7F75F021FD562F2002F8312 /* BottomIndicatorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,9 +1144,12 @@
 				FAF2651C1FD0138300E735A7 /* ClassfiersPersistenseContainer.swift in Sources */,
 				FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */,
 				C73DD4FD1FD546AE00073908 /* EmptyViewController.swift in Sources */,
+				C7F75F041FD56304002F8312 /* BottomIndicatorView.swift in Sources */,
+				C7B6A4761FD562B1001BC12B /* NibLoadableView.swift in Sources */,
 				FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */,
 				FAE2C0911FCFF723009B6BBA /* TrackingPresenter.swift in Sources */,
 				FAF265121FD0069600E735A7 /* TransportStopStorage.swift in Sources */,
+				C7F75F0A1FD5767C002F8312 /* UIViewController.swift in Sources */,
 				C7E0EE171FCF0606004DEC13 /* TrackingView.swift in Sources */,
 				FAE2C08D1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift in Sources */,
 				FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */,
@@ -1132,6 +1167,7 @@
 				FACAC03C1FD412810081385B /* ClassifierFetcher.swift in Sources */,
 				C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */,
 				C7E0EE1C1FCF068E004DEC13 /* TrackingViewDelegate.swift in Sources */,
+				C7F75F081FD572B3002F8312 /* BottomIndicatorViewPresenter.swift in Sources */,
 				C79885BB1FD5450200217E64 /* EmptyView.swift in Sources */,
 				FACAC0421FD41D2C0081385B /* GlobalHelper.swift in Sources */,
 				C762C21F1FCEFD73001822CC /* GenericView.swift in Sources */,

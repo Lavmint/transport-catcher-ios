@@ -13,5 +13,5 @@ class TrackingView: UIView {
     @IBOutlet var mapView: DGSMapView!
     @IBOutlet var userTrackingButton: UserTrackingButton!
     
-    var delegate: TrackingViewDelegate?
+    weak var delegate: TrackingViewDelegate?
 }
