@@ -11,8 +11,22 @@ import UIKit
 class ArrivalTimesView: UIView {
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var emptyViewContainer: UIView!
     
     func configure() {
         tableView.register(UINib.init(nibName: ArrivalTableViewCell.stringClass, bundle: nil), forCellReuseIdentifier: ArrivalTableViewCell.stringClass)
+    }
+    
+    func setEmptyView(view: UIView) {
+        view.translatesAutoresizingMaskIntoConstraints = false
+        emptyViewContainer.subviews.forEach { (view) in
+            view.removeFromSuperview()
+        }
+        NSLayoutConstraint.dock(view: view, in: emptyViewContainer)
+    }
+    
+    func setEmptyViewHidden(isHidden: Bool) {
+        tableView.isHidden = !isHidden
+        emptyViewContainer.isHidden = isHidden
     }
 }

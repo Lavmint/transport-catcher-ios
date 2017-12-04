@@ -32,6 +32,10 @@ enum LocalizedString {
         static var invalidFriendly: String {
             return "Доступен для людей с ограниченными возможностями"
         }
+        
+        static var emptyList: String {
+            return "По данным сервиса, прибытие транспорта на остановку в ближайшее время не ожидается."
+        }
     }
     
     enum Alert {

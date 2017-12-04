@@ -11,6 +11,8 @@
 		C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
 		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
+		C73DD4FD1FD546AE00073908 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DD4FC1FD546AE00073908 /* EmptyViewController.swift */; };
+		C73DD4FF1FD547DC00073908 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */; };
 		C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74685281EFFA9E700D6021E /* AppDelegate.swift */; };
 		C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C746852C1EFFA9E700D6021E /* Main.storyboard */; };
 		C74685301EFFA9E700D6021E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C746852F1EFFA9E700D6021E /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		C79709B91F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */; };
 		C79709BB1F3A2F1600824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
 		C79709C21F3A2FF700824E7E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79709C11F3A2FF700824E7E /* Service.swift */; };
+		C79885B81FD5420000217E64 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79885B71FD5420000217E64 /* EmptyView.xib */; };
+		C79885BB1FD5450200217E64 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79885BA1FD5450200217E64 /* EmptyView.swift */; };
 		C79F55681F3E1BB000BC13C5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F55671F3E1BB000BC13C5 /* Request.swift */; };
 		C7B00E2D1F3F07990022D6F2 /* ServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */; };
 		C7B00E2F1F3F11F60022D6F2 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */; };
@@ -159,6 +163,8 @@
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStopsFullDBTest.swift; sourceTree = "<group>"; };
+		C73DD4FC1FD546AE00073908 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
 		C74685251EFFA9E700D6021E /* TransportCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74685281EFFA9E700D6021E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C746852D1EFFA9E700D6021E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -196,6 +202,8 @@
 		C79709B81F3A2F1600824E7E /* GetFirstArrivalToStopTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFirstArrivalToStopTest.swift; sourceTree = "<group>"; };
 		C79709BA1F3A2F1600824E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C79709C11F3A2FF700824E7E /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C79885B71FD5420000217E64 /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
+		C79885BA1FD5450200217E64 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		C79F55671F3E1BB000BC13C5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceMock.swift; sourceTree = "<group>"; };
 		C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
@@ -301,6 +309,7 @@
 		C70CA1AB1F6DCC9400A30DC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C79885B91FD544F000217E64 /* EmptyViewController */,
 				C77B41031FCF035900810EE0 /* TrackingViewController */,
 				C762C20E1FCEF09C001822CC /* ArrivalTimesController */,
 				C7794F6A1FCC4578002BEFB3 /* ArrivalTrackingViewController */,
@@ -492,6 +501,7 @@
 				FACAC0371FD40C730081385B /* Bundle.swift */,
 				FAAB5EB61FC8704000778334 /* UIColor.swift */,
 				FACAC03E1FD413910081385B /* Date.swift */,
+				C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -541,6 +551,16 @@
 				C79709BA1F3A2F1600824E7E /* Info.plist */,
 			);
 			path = ToSMRIntegrationTests;
+			sourceTree = "<group>";
+		};
+		C79885B91FD544F000217E64 /* EmptyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C79885B71FD5420000217E64 /* EmptyView.xib */,
+				C79885BA1FD5450200217E64 /* EmptyView.swift */,
+				C73DD4FC1FD546AE00073908 /* EmptyViewController.swift */,
+			);
+			path = EmptyViewController;
 			sourceTree = "<group>";
 		};
 		C7B00E341F3F32410022D6F2 /* Serialization */ = {
@@ -969,6 +989,7 @@
 				C746855E1EFFD84D00D6021E /* .gitignore in Resources */,
 				C79123201F6DCAC60014AC4C /* TransportCatcher-Info.plist in Resources */,
 				C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */,
+				C79885B81FD5420000217E64 /* EmptyView.xib in Resources */,
 				C77B41071FCF039500810EE0 /* TrackingView.xib in Resources */,
 				C74685331EFFA9E700D6021E /* LaunchScreen.storyboard in Resources */,
 				C762C2161FCEF0E3001822CC /* ArrivalTimesView.xib in Resources */,
@@ -1090,6 +1111,7 @@
 				C762C2151FCEF0E3001822CC /* ArrivalTimesViewController.swift in Sources */,
 				FAF2651C1FD0138300E735A7 /* ClassfiersPersistenseContainer.swift in Sources */,
 				FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */,
+				C73DD4FD1FD546AE00073908 /* EmptyViewController.swift in Sources */,
 				FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */,
 				FAE2C0911FCFF723009B6BBA /* TrackingPresenter.swift in Sources */,
 				FAF265121FD0069600E735A7 /* TransportStopStorage.swift in Sources */,
@@ -1110,11 +1132,13 @@
 				FACAC03C1FD412810081385B /* ClassifierFetcher.swift in Sources */,
 				C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */,
 				C7E0EE1C1FCF068E004DEC13 /* TrackingViewDelegate.swift in Sources */,
+				C79885BB1FD5450200217E64 /* EmptyView.swift in Sources */,
 				FACAC0421FD41D2C0081385B /* GlobalHelper.swift in Sources */,
 				C762C21F1FCEFD73001822CC /* GenericView.swift in Sources */,
 				C77B41061FCF039500810EE0 /* TrackingViewController.swift in Sources */,
 				FA29B55D1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld in Sources */,
 				FA39CAD91FD4210D00D6E22F /* TransportStopAnnotationView.swift in Sources */,
+				C73DD4FF1FD547DC00073908 /* NSLayoutConstraint.swift in Sources */,
 				C7794F6C1FCC4614002BEFB3 /* ArrivalTrackingViewController.swift in Sources */,
 				C7D4A04D1FCD9F260032A7B1 /* UserTrackingButton.swift in Sources */,
 			);

@@ -13,11 +13,14 @@ class ArrivalTimesViewController: UIViewController, GenericView {
     typealias View = ArrivalTimesView
     private(set) var intercator: ArrivalTimesInteractor!
     private(set) var presenter: ArrivalTimesPresenter!
+    private(set) var emptyViewController: EmptyViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.intercator = ArrivalTimesInteractor()
         self.presenter = ArrivalTimesPresenter(interactor: intercator)
+        self.emptyViewController = EmptyViewController()
+        genericView.setEmptyView(view: emptyViewController.view)
         self.genericView.configure()
         self.genericView.tableView.dataSource = self
     }
@@ -27,7 +30,9 @@ class ArrivalTimesViewController: UIViewController, GenericView {
             guard let wself = self else { return }
             do {
                 try throwError()
+                wself.presenter.configure(controller: wself.emptyViewController, on: wself.genericView, with: nil)
             } catch {
+                wself.presenter.configure(controller: wself.emptyViewController, on: wself.genericView, with: error)
                 AlertHelper.presentInfoAlert(.OK, message: error.localizedDescription, on: wself)
                 return
             }
