@@ -40,8 +40,8 @@ class ArrivalTimesView: UIView {
     }
     
     func reload() {
-        tableView.reloadData()
-        tableView.layoutIfNeeded()
         tableView.contentOffset = CGPoint.zero
+        tableView.layoutIfNeeded()
+        tableView.reloadData()
     }
 }

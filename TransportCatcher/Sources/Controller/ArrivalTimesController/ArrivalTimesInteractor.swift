@@ -21,14 +21,22 @@ class ArrivalTimesInteractor {
         selectedStop = stopId
         Service.shared.approximateArrivals(toStop: stopId) { [weak self] (box) in
             guard let wself = self else { return }
-            guard stopId == wself.selectedStop else { completion { return }; return }
+            var callbackError: Error? = nil
+            defer {
+                completion({
+                    if let error = callbackError {
+                        throw error
+                    }
+                    return
+                })
+            }
+            guard stopId == wself.selectedStop else { return }
             switch box.result {
             case .succeed(let arrivals):
                 wself.arrivals = arrivals ?? []
-                completion { return }
             case .error(let error):
                 dprint(error.localizedDescription)
-                completion { throw error }
+                callbackError = error
             }
         }
     }

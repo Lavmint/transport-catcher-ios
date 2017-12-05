@@ -7,7 +7,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -137,7 +136,7 @@ Cg
                     <constraint firstAttribute="bottom" secondItem="T1n-62-cEM" secondAttribute="bottom" id="lHH-eC-9EV"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" name="BackgroundColor"/>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.94901960784313721" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="invalidInfoLabel" destination="OWN-IC-oyB" id="uN2-fq-Ni2"/>
@@ -149,9 +148,4 @@ Cg
             <point key="canvasLocation" x="-316" y="-179.5"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <namedColor name="BackgroundColor">
-            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>

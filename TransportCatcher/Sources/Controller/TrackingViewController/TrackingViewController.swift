@@ -32,6 +32,7 @@ class TrackingViewController: UIViewController, GenericView {
         presenter = TrackingPresenter(interactor: interactor)
         locationManager = CLLocationManager()
         locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
         locationManager.requestWhenInUseAuthorization()
         genericView.mapView.delegate = self
         genericView.mapView.loadDGSLayer()

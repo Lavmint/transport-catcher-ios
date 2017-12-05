@@ -56,6 +56,7 @@ extension ArrivalTimesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ArrivalTableViewCell.stringClass, for: indexPath) as! ArrivalTableViewCell
+        guard indexPath.row < intercator.arrivals.count else { return cell }
         let arrival = intercator.arrivals[indexPath.row]
         cell.timeLabel.attributedText = presenter.timeAttributedString(for: arrival)
         cell.timeLabel.backgroundColor = presenter.timeBackgroundColor(for: arrival)
