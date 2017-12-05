@@ -16,8 +16,6 @@ class ArrivalTrackingViewController: UIViewController {
     
     private(set) var isBusy: Bool = false {
         didSet {
-            trackingViewController.view.isUserInteractionEnabled = !isBusy
-            arrivalTimesViewController.view.isUserInteractionEnabled = !isBusy
             isBusy ? progressView.wait() : progressView.signal()
         }
     }

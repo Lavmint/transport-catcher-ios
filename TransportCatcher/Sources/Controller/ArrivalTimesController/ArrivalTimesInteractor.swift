@@ -11,14 +11,17 @@ import ToSMR
 class ArrivalTimesInteractor {
     
     private(set) var arrivals: [Arrival]
+    private(set) var selectedStop: Int?
     
     init() {
         arrivals = []
     }
     
     func fetchArrivals(toStopId stopId: Int, completion: @escaping (() throws -> Void) -> Void) {
+        selectedStop = stopId
         Service.shared.approximateArrivals(toStop: stopId) { [weak self] (box) in
-            guard let wself = self, stopId == stopId else { return }
+            guard let wself = self else { return }
+            guard stopId == wself.selectedStop else { completion { return }; return }
             switch box.result {
             case .succeed(let arrivals):
                 wself.arrivals = arrivals ?? []
