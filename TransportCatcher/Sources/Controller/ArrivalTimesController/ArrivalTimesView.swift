@@ -13,6 +13,15 @@ class ArrivalTimesView: UIView {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var emptyViewContainer: UIView!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initialize()
+    }
+    
+    private func initialize() {
+        backgroundColor = UIColor.Application.background
+    }
+    
     func configure() {
         tableView.register(UINib.init(nibName: ArrivalTableViewCell.stringClass, bundle: nil), forCellReuseIdentifier: ArrivalTableViewCell.stringClass)
     }

@@ -8,12 +8,18 @@
 
 import UIKit
 
+protocol ArrivalTimesViewControllerDelegate: class {
+    func willFetchArrivals(arrivalTimesViewController: ArrivalTimesViewController, for stopId: Int)
+    func didFetchArrivals(arrivalTimesViewController: ArrivalTimesViewController, for stopId: Int)
+}
+
 class ArrivalTimesViewController: UIViewController, GenericView {
 
     typealias View = ArrivalTimesView
     private(set) var intercator: ArrivalTimesInteractor!
     private(set) var presenter: ArrivalTimesPresenter!
     private(set) var emptyViewController: EmptyViewController!
+    weak var delegate: ArrivalTimesViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +27,18 @@ class ArrivalTimesViewController: UIViewController, GenericView {
         self.presenter = ArrivalTimesPresenter(interactor: intercator)
         self.emptyViewController = EmptyViewController()
         genericView.setEmptyView(view: emptyViewController.view)
+        presenter.configure(controller: emptyViewController, on: genericView, with: nil, isInitial: true)
         self.genericView.configure()
         self.genericView.tableView.dataSource = self
     }
     
     func reload(withStopId stopId: Int) {
-        showIndicator(withText: "kokoko")
+        delegate?.willFetchArrivals(arrivalTimesViewController: self, for: stopId)
         intercator.fetchArrivals(toStopId: stopId) { [weak self] (throwError) in
             guard let wself = self else { return }
-            wself.hideIndicator()
+            defer {
+                wself.delegate?.didFetchArrivals(arrivalTimesViewController: wself, for: stopId)
+            }
             do {
                 try throwError()
                 wself.presenter.configure(controller: wself.emptyViewController, on: wself.genericView, with: nil)

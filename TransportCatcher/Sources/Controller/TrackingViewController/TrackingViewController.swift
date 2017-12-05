@@ -10,12 +10,20 @@ import UIKit
 import MapKit
 import CoreLocation
 
+protocol TrackingViewControllerDelegate: class {
+    func willFetchStops(trackingViewController: TrackingViewController)
+    func didFetchStops(trackingViewController: TrackingViewController)
+    func willRequestLocation(trackingViewController: TrackingViewController)
+    func didReceiveLocation(trackingViewController: TrackingViewController)
+}
+
 class TrackingViewController: UIViewController, GenericView {
 
     typealias View = TrackingView
     private(set) var locationManager: CLLocationManager!
     private(set) var presenter: TrackingPresenter!
     private(set) var interactor: TrackingInteractor!
+    weak var delegate: TrackingViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +39,12 @@ class TrackingViewController: UIViewController, GenericView {
     }
     
     func reload() {
+        delegate?.willFetchStops(trackingViewController: self)
         interactor.fetchStops { [weak self] (throwError) in
             guard let wself = self else { return }
+            defer {
+                wself.delegate?.didFetchStops(trackingViewController: wself)
+            }
             do {
                 try throwError()
             } catch {
@@ -44,6 +56,7 @@ class TrackingViewController: UIViewController, GenericView {
     }
     
     @IBAction func onRequestLocationTapped(_ sender: UIButton) {
+        delegate?.willRequestLocation(trackingViewController: self)
         locationManager.requestLocation()
     }
 
@@ -52,6 +65,9 @@ class TrackingViewController: UIViewController, GenericView {
 extension TrackingViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        defer {
+            delegate?.didReceiveLocation(trackingViewController: self)
+        }
         guard let location = locations.first?.coordinate else { return }
         genericView.mapView.setAdjustedRegion(center: location)
     }

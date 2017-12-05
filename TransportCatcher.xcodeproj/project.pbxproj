@@ -80,17 +80,14 @@
 		C7EC4F571F4F7071009A020A /* XMLSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F561F4F7071009A020A /* XMLSerializer.swift */; };
 		C7EC4F591F4F719F009A020A /* XMLSerializerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */; };
 		C7EC4F5D1F4F7931009A020A /* XMLParserDictionaryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */; };
-		C7F75F021FD562F2002F8312 /* BottomIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7F75F011FD562F2002F8312 /* BottomIndicatorView.xib */; };
-		C7F75F041FD56304002F8312 /* BottomIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F75F031FD56304002F8312 /* BottomIndicatorView.swift */; };
-		C7F75F081FD572B3002F8312 /* BottomIndicatorViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F75F071FD572B3002F8312 /* BottomIndicatorViewPresenter.swift */; };
-		C7F75F0A1FD5767C002F8312 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F75F091FD5767C002F8312 /* UIViewController.swift */; };
+		C7F8B4A51FD6B27D00753AAC /* GradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8B4A41FD6B27D00753AAC /* GradientProgressView.swift */; };
+		C7F8B4A91FD6B89700753AAC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8B4A81FD6B89700753AAC /* UIColor.swift */; };
 		FA29B55D1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA29B55B1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld */; };
 		FA29B5601FCCAAAE000D7713 /* DGSTileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29B55F1FCCAAAE000D7713 /* DGSTileStorage.swift */; };
 		FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29B5611FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift */; };
 		FA39CAD61FD420F400D6E22F /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39CAD51FD420F400D6E22F /* NSObject.swift */; };
 		FA39CAD91FD4210D00D6E22F /* TransportStopAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39CAD81FD4210D00D6E22F /* TransportStopAnnotationView.swift */; };
 		FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB41FC86E3500778334 /* LocalizedString.swift */; };
-		FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB5EB61FC8704000778334 /* UIColor.swift */; };
 		FACAC0381FD40C730081385B /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC0371FD40C730081385B /* Bundle.swift */; };
 		FACAC03A1FD4105D0081385B /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC0391FD4105D0081385B /* UserStorage.swift */; };
 		FACAC03C1FD412810081385B /* ClassifierFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC03B1FD412810081385B /* ClassifierFetcher.swift */; };
@@ -241,10 +238,8 @@
 		C7EC4F561F4F7071009A020A /* XMLSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializer.swift; sourceTree = "<group>"; };
 		C7EC4F581F4F719F009A020A /* XMLSerializerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializerTest.swift; sourceTree = "<group>"; };
 		C7EC4F5C1F4F7931009A020A /* XMLParserDictionaryAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserDictionaryAdapter.swift; sourceTree = "<group>"; };
-		C7F75F011FD562F2002F8312 /* BottomIndicatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomIndicatorView.xib; sourceTree = "<group>"; };
-		C7F75F031FD56304002F8312 /* BottomIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomIndicatorView.swift; sourceTree = "<group>"; };
-		C7F75F071FD572B3002F8312 /* BottomIndicatorViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomIndicatorViewPresenter.swift; sourceTree = "<group>"; };
-		C7F75F091FD5767C002F8312 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C7F8B4A41FD6B27D00753AAC /* GradientProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientProgressView.swift; sourceTree = "<group>"; };
+		C7F8B4A81FD6B89700753AAC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E18BB7D5A7FD4434205F1C09 /* Pods_GeoSMRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA29B55C1FCCAA32000D7713 /* TransportCatcher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransportCatcher.xcdatamodel; sourceTree = "<group>"; };
 		FA29B55F1FCCAAAE000D7713 /* DGSTileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGSTileStorage.swift; sourceTree = "<group>"; };
@@ -252,7 +247,6 @@
 		FA39CAD51FD420F400D6E22F /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		FA39CAD81FD4210D00D6E22F /* TransportStopAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportStopAnnotationView.swift; sourceTree = "<group>"; };
 		FAAB5EB41FC86E3500778334 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
-		FAAB5EB61FC8704000778334 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		FACAC0371FD40C730081385B /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		FACAC0391FD4105D0081385B /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		FACAC03B1FD412810081385B /* ClassifierFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierFetcher.swift; sourceTree = "<group>"; };
@@ -310,7 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				C7B6A4741FD5629B001BC12B /* Protocol */,
-				C7F75F001FD562D5002F8312 /* BottomIndicatorView */,
+				C7F8B4A11FD6983300753AAC /* GradientProgressView */,
 				FA39CAD71FD4210D00D6E22F /* Annotation */,
 				C762C2221FCEFF57001822CC /* DGSMapView */,
 				C7D4A04C1FCD9F260032A7B1 /* UserTrackingButton.swift */,
@@ -509,12 +503,11 @@
 		C79123181F6DC9AE0014AC4C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C7F8B4A81FD6B89700753AAC /* UIColor.swift */,
 				FA39CAD51FD420F400D6E22F /* NSObject.swift */,
 				FACAC0371FD40C730081385B /* Bundle.swift */,
-				FAAB5EB61FC8704000778334 /* UIColor.swift */,
 				FACAC03E1FD413910081385B /* Date.swift */,
 				C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */,
-				C7F75F091FD5767C002F8312 /* UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -667,14 +660,12 @@
 			path = Classifier;
 			sourceTree = "<group>";
 		};
-		C7F75F001FD562D5002F8312 /* BottomIndicatorView */ = {
+		C7F8B4A11FD6983300753AAC /* GradientProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				C7F75F011FD562F2002F8312 /* BottomIndicatorView.xib */,
-				C7F75F031FD56304002F8312 /* BottomIndicatorView.swift */,
-				C7F75F071FD572B3002F8312 /* BottomIndicatorViewPresenter.swift */,
+				C7F8B4A41FD6B27D00753AAC /* GradientProgressView.swift */,
 			);
-			path = BottomIndicatorView;
+			path = GradientProgressView;
 			sourceTree = "<group>";
 		};
 		E57536A87FA63AE1C3273E8F /* Pods */ = {
@@ -1026,7 +1017,6 @@
 				C762C2161FCEF0E3001822CC /* ArrivalTimesView.xib in Resources */,
 				C74685301EFFA9E700D6021E /* Assets.xcassets in Resources */,
 				C746852E1EFFA9E700D6021E /* Main.storyboard in Resources */,
-				C7F75F021FD562F2002F8312 /* BottomIndicatorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1144,12 +1134,10 @@
 				FAF2651C1FD0138300E735A7 /* ClassfiersPersistenseContainer.swift in Sources */,
 				FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */,
 				C73DD4FD1FD546AE00073908 /* EmptyViewController.swift in Sources */,
-				C7F75F041FD56304002F8312 /* BottomIndicatorView.swift in Sources */,
 				C7B6A4761FD562B1001BC12B /* NibLoadableView.swift in Sources */,
-				FAAB5EB71FC8704000778334 /* UIColor.swift in Sources */,
 				FAE2C0911FCFF723009B6BBA /* TrackingPresenter.swift in Sources */,
 				FAF265121FD0069600E735A7 /* TransportStopStorage.swift in Sources */,
-				C7F75F0A1FD5767C002F8312 /* UIViewController.swift in Sources */,
+				C7F8B4A51FD6B27D00753AAC /* GradientProgressView.swift in Sources */,
 				C7E0EE171FCF0606004DEC13 /* TrackingView.swift in Sources */,
 				FAE2C08D1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift in Sources */,
 				FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */,
@@ -1166,8 +1154,8 @@
 				FACAC03A1FD4105D0081385B /* UserStorage.swift in Sources */,
 				FACAC03C1FD412810081385B /* ClassifierFetcher.swift in Sources */,
 				C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */,
+				C7F8B4A91FD6B89700753AAC /* UIColor.swift in Sources */,
 				C7E0EE1C1FCF068E004DEC13 /* TrackingViewDelegate.swift in Sources */,
-				C7F75F081FD572B3002F8312 /* BottomIndicatorViewPresenter.swift in Sources */,
 				C79885BB1FD5450200217E64 /* EmptyView.swift in Sources */,
 				FACAC0421FD41D2C0081385B /* GlobalHelper.swift in Sources */,
 				C762C21F1FCEFD73001822CC /* GenericView.swift in Sources */,

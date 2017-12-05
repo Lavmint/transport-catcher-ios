@@ -11,4 +11,9 @@ import UIKit
 class EmptyView: UIView {
     
     @IBOutlet var infoLabel: UILabel!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        backgroundColor = UIColor.Application.background
+    }
 }

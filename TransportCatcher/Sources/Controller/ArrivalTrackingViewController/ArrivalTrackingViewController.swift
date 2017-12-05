@@ -10,12 +10,23 @@ import UIKit
 
 class ArrivalTrackingViewController: UIViewController {
     
+    @IBOutlet var progressView: GradientProgressView!
     private(set) var trackingViewController: TrackingViewController!
     private(set) var arrivalTimesViewController: ArrivalTimesViewController!
+    
+    private(set) var isBusy: Bool = false {
+        didSet {
+            trackingViewController.view.isUserInteractionEnabled = !isBusy
+            arrivalTimesViewController.view.isUserInteractionEnabled = !isBusy
+            isBusy ? progressView.wait() : progressView.signal()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         trackingViewController.genericView.delegate = self
+        trackingViewController.delegate = self
+        arrivalTimesViewController.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,3 +48,34 @@ extension ArrivalTrackingViewController: TrackingViewDelegate {
     }
 }
 
+extension ArrivalTrackingViewController: ArrivalTimesViewControllerDelegate {
+    
+    func willFetchArrivals(arrivalTimesViewController: ArrivalTimesViewController, for stopId: Int) {
+        isBusy = true
+    }
+    
+    func didFetchArrivals(arrivalTimesViewController: ArrivalTimesViewController, for stopId: Int) {
+        isBusy = false
+    }
+    
+}
+
+extension ArrivalTrackingViewController: TrackingViewControllerDelegate{
+    
+    func willFetchStops(trackingViewController: TrackingViewController) {
+        isBusy = true
+    }
+    
+    func didFetchStops(trackingViewController: TrackingViewController) {
+        isBusy = false
+    }
+    
+    func willRequestLocation(trackingViewController: TrackingViewController) {
+        isBusy = true
+    }
+    
+    func didReceiveLocation(trackingViewController: TrackingViewController) {
+        isBusy = false
+    }
+    
+}

@@ -36,6 +36,10 @@ enum LocalizedString {
         static var emptyList: String {
             return "По данным сервиса, прибытие транспорта на остановку в ближайшее время не ожидается."
         }
+        
+        static var selectStop: String {
+            return "Выберите на карте остановку чтобы отобразить прибытие транспорта."
+        }
     }
     
     enum Alert {

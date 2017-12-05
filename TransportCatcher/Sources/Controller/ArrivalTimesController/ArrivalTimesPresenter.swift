@@ -72,7 +72,13 @@ class ArrivalTimesPresenter {
         return arrival.isInvalidFriendly ? LocalizedString.Arrival.invalidFriendly : nil
     }
     
-    func configure(controller: EmptyViewController, on view: ArrivalTimesView, with error: Error?) {
+    func configure(controller: EmptyViewController, on view: ArrivalTimesView, with error: Error?, isInitial: Bool = false) {
+        
+        if isInitial {
+            view.setEmptyViewHidden(isHidden: false)
+            controller.genericView.infoLabel.text = LocalizedString.Arrival.selectStop
+            return
+        }
         
         if let err = error {
             view.setEmptyViewHidden(isHidden: false)
