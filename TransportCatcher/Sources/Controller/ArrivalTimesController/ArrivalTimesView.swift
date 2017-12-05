@@ -38,4 +38,10 @@ class ArrivalTimesView: UIView {
         tableView.isHidden = !isHidden
         emptyViewContainer.isHidden = isHidden
     }
+    
+    func reload() {
+        tableView.reloadData()
+        tableView.layoutIfNeeded()
+        tableView.contentOffset = CGPoint.zero
+    }
 }

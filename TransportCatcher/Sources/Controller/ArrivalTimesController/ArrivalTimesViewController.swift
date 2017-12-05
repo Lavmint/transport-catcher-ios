@@ -47,7 +47,7 @@ class ArrivalTimesViewController: UIViewController, GenericView {
                 AlertHelper.presentInfoAlert(.OK, message: error.localizedDescription, on: wself)
                 return
             }
-            wself.genericView.tableView.reloadData()
+            wself.genericView.reload()
         }
     }
 }
