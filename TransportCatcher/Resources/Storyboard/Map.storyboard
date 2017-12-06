@@ -13,7 +13,7 @@
         <scene sceneID="SRt-io-3O8">
             <objects>
                 <navigationController navigationBarHidden="YES" id="eEj-rh-Tra" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Карта" image="ic_map" id="DYq-fS-Rgy"/>
+                    <tabBarItem key="tabBarItem" title="Карта" image="ic_map" id="imq-ah-8kj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ja9-Q4-6qL">
                         <autoresizingMask key="autoresizingMask"/>

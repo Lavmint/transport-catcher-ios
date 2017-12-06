@@ -10,19 +10,23 @@ enum LocalizedString {
     
     enum Arrival {
         
-        static func minutes(minutes: Int) -> String {
-            let lastDigit = minutes % 10
-            switch lastDigit {
-            case 1:
-                return "минута"
-            case 2...4:
-                return "минуты"
-            case 0, 5...9:
-                return "минут"
-            default:
-                assertionFailure()
-                return ""
-            }
+//        static func minutes(minutes: Int) -> String {
+//            let lastDigit = minutes % 10
+//            switch lastDigit {
+//            case 1:
+//                return "минута"
+//            case 2...4:
+//                return "минуты"
+//            case 0, 5...9:
+//                return "минут"
+//            default:
+//                assertionFailure()
+//                return ""
+//            }
+//        }
+        
+        static var minutesShort: String {
+            return "мин."
         }
         
         static var metersLeftToStop: String {

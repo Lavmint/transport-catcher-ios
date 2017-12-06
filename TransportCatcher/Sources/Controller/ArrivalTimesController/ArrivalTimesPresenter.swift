@@ -32,7 +32,7 @@ class ArrivalTimesPresenter {
         )
         
         let minutesAS = NSAttributedString(
-            string: LocalizedString.Arrival.minutes(minutes: time),
+            string: LocalizedString.Arrival.minutesShort,
             attributes: [
                 NSAttributedStringKey.foregroundColor: UIColor.white,
                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20)
@@ -61,7 +61,7 @@ class ArrivalTimesPresenter {
     }
     
     func vehicleInfo(for arrival: Arrival) -> String {
-        return [arrival.type.rawValue, arrival.model ?? ""].joined(separator: " ")
+        return [arrival.type.rawValue, arrival.model ?? "", arrival.stateNumber].joined(separator: " ")
     }
     
     func remainingLength(for arrival: Arrival) -> String {

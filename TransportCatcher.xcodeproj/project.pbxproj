@@ -36,6 +36,7 @@
 		C7794F701FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7794F6E1FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib */; };
 		C77B41061FCF039500810EE0 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77B41041FCF039500810EE0 /* TrackingViewController.swift */; };
 		C77B41071FCF039500810EE0 /* TrackingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77B41051FCF039500810EE0 /* TrackingView.xib */; };
+		C78075B51FD7EAA2000CBFE7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78075B41FD7EAA2000CBFE7 /* Settings.storyboard */; };
 		C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */; };
 		C79123201F6DCAC60014AC4C /* TransportCatcher-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C791231F1F6DCAC60014AC4C /* TransportCatcher-Info.plist */; };
 		C797099E1F3A2EE400824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
@@ -192,6 +193,7 @@
 		C7794F6E1FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrivalTableViewCell.xib; sourceTree = "<group>"; };
 		C77B41041FCF039500810EE0 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		C77B41051FCF039500810EE0 /* TrackingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackingView.xib; sourceTree = "<group>"; };
+		C78075B41FD7EAA2000CBFE7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToSMRService.swift; sourceTree = "<group>"; };
 		C791231F1F6DCAC60014AC4C /* TransportCatcher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TransportCatcher-Info.plist"; sourceTree = "<group>"; };
 		C79709951F3A2EE400824E7E /* ToSMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToSMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -768,6 +770,7 @@
 				C74685311EFFA9E700D6021E /* LaunchScreen.storyboard */,
 				C746852C1EFFA9E700D6021E /* Main.storyboard */,
 				C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */,
+				C78075B41FD7EAA2000CBFE7 /* Settings.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -1009,6 +1012,7 @@
 			files = (
 				C7794F701FCC4D0F002BEFB3 /* ArrivalTableViewCell.xib in Resources */,
 				C746855E1EFFD84D00D6021E /* .gitignore in Resources */,
+				C78075B51FD7EAA2000CBFE7 /* Settings.storyboard in Resources */,
 				C79123201F6DCAC60014AC4C /* TransportCatcher-Info.plist in Resources */,
 				C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */,
 				C79885B81FD5420000217E64 /* EmptyView.xib in Resources */,
