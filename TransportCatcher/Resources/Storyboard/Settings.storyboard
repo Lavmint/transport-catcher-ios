@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="1j4-WQ-kM6">
-                            <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="44" width="375" height="1"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -59,65 +59,140 @@
             </objects>
             <point key="canvasLocation" x="551" y="131"/>
         </scene>
-        <!--View Controller-->
+        <!--About Application View Controller-->
         <scene sceneID="9uw-tj-gJK">
             <objects>
-                <viewController id="b9f-nm-NFl" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SAE-KY-eUp">
+                <viewController id="b9f-nm-NFl" customClass="AboutApplicationViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U01-gI-bJy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GR0-vs-QBY">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wy-SQ-3Mg">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rwK-AX-mUZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="127.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sLe-oY-wnB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="307.5"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73k-DH-JkV">
-                                                <rect key="frame" x="8" y="8" width="375" height="111.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me0-tb-FYh">
+                                                <rect key="frame" x="8" y="8" width="359" height="223.5"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment>
-                                                        <string key="content">Приложение использует:
-1. сервис аналитики Транспортного Оператора Самары
-2. сервис 2GIS для карты
-3. сервис icons8 для иконок </string>
+                                                    <fragment content="Что умеет приложение?">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">
+Приложение Транспорт Самара позволяет отслеживать прибывание транспорта на выбранную остановку.
+
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="На каких устройствах доступно приложение?">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">
+На устройствах с iOS11 и выше, включая iPhone и iPad.
+
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Какие сервисы использует приложение?">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                            </textView>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lVb-QN-wE7">
+                                                <rect key="frame" x="8" y="239.5" width="359" height="60"/>
+                                                <subviews>
+                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_tosmr" translatesAutoresizingMaskIntoConstraints="NO" id="BNS-2O-Oga">
+                                                        <rect key="frame" x="0.0" y="0.0" width="109" height="60"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="XR8-rg-Q6U" appends="YES" id="9rj-RP-gUV"/>
+                                                        </connections>
+                                                    </imageView>
+                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_2gis" translatesAutoresizingMaskIntoConstraints="NO" id="IGo-Fx-vsU">
+                                                        <rect key="frame" x="125" y="0.0" width="109" height="60"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="VQz-vB-R4k" appends="YES" id="BMS-t1-FIS"/>
+                                                        </connections>
+                                                    </imageView>
+                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_icons8" translatesAutoresizingMaskIntoConstraints="NO" id="fsZ-iL-P5O">
+                                                        <rect key="frame" x="250" y="0.0" width="109" height="60"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="z12-Ky-6t6" appends="YES" id="UEh-OZ-1gD"/>
+                                                        </connections>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="gzr-R3-ibj"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="rwK-AX-mUZ" secondAttribute="bottom" id="AiW-Ie-vs5"/>
-                                    <constraint firstItem="rwK-AX-mUZ" firstAttribute="leading" secondItem="GR0-vs-QBY" secondAttribute="leading" id="Ceo-o9-jeq"/>
-                                    <constraint firstAttribute="trailing" secondItem="rwK-AX-mUZ" secondAttribute="trailing" id="KsW-x0-XNM"/>
-                                    <constraint firstItem="rwK-AX-mUZ" firstAttribute="top" secondItem="GR0-vs-QBY" secondAttribute="top" id="oB7-bS-65g"/>
+                                    <constraint firstAttribute="trailing" secondItem="sLe-oY-wnB" secondAttribute="trailing" id="CvP-gC-OIU"/>
+                                    <constraint firstItem="sLe-oY-wnB" firstAttribute="leading" secondItem="5Wy-SQ-3Mg" secondAttribute="leading" id="Nup-WC-3zL"/>
+                                    <constraint firstAttribute="bottom" secondItem="sLe-oY-wnB" secondAttribute="bottom" id="OY5-qB-zMK"/>
+                                    <constraint firstItem="sLe-oY-wnB" firstAttribute="top" secondItem="5Wy-SQ-3Mg" secondAttribute="top" id="aRs-DV-8US"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="GR0-vs-QBY" firstAttribute="top" secondItem="Hte-An-Feb" secondAttribute="top" id="Ufa-s7-OJ0"/>
-                            <constraint firstItem="Hte-An-Feb" firstAttribute="trailing" secondItem="GR0-vs-QBY" secondAttribute="trailing" id="bBM-y9-osK"/>
-                            <constraint firstItem="Hte-An-Feb" firstAttribute="bottom" secondItem="GR0-vs-QBY" secondAttribute="bottom" id="dfO-dR-b5l"/>
-                            <constraint firstItem="rwK-AX-mUZ" firstAttribute="width" secondItem="SAE-KY-eUp" secondAttribute="width" id="sx3-jS-6En"/>
-                            <constraint firstItem="GR0-vs-QBY" firstAttribute="leading" secondItem="Hte-An-Feb" secondAttribute="leading" id="wrc-Cb-Am4"/>
+                            <constraint firstItem="5Wy-SQ-3Mg" firstAttribute="leading" secondItem="EhQ-XC-rwd" secondAttribute="leading" id="Rlm-vk-8Nr"/>
+                            <constraint firstItem="5Wy-SQ-3Mg" firstAttribute="top" secondItem="EhQ-XC-rwd" secondAttribute="top" id="SsX-Of-qMx"/>
+                            <constraint firstItem="EhQ-XC-rwd" firstAttribute="trailing" secondItem="5Wy-SQ-3Mg" secondAttribute="trailing" id="ix0-a2-uNi"/>
+                            <constraint firstItem="EhQ-XC-rwd" firstAttribute="bottom" secondItem="5Wy-SQ-3Mg" secondAttribute="bottom" id="mJy-CS-1Hx"/>
+                            <constraint firstItem="sLe-oY-wnB" firstAttribute="width" secondItem="U01-gI-bJy" secondAttribute="width" id="psQ-gt-FIL"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Hte-An-Feb"/>
+                        <viewLayoutGuide key="safeArea" id="EhQ-XC-rwd"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="me0-tb-FYh" id="27H-wV-bi5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xB-lT-9Ap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="z12-Ky-6t6" userLabel="Icons 8 Gesture">
+                    <connections>
+                        <action selector="onIcons8Tapped:" destination="b9f-nm-NFl" id="oeX-uU-rZ4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VQz-vB-R4k" userLabel="2GIS Gesture">
+                    <connections>
+                        <action selector="on2GISTapped:" destination="b9f-nm-NFl" id="OJb-eb-1Ce"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XR8-rg-Q6U" userLabel="ToSMR Gesture">
+                    <connections>
+                        <action selector="onToSamaraTapped:" destination="b9f-nm-NFl" id="Hyb-lv-Dkg"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1498" y="131"/>
+            <point key="canvasLocation" x="1496.8" y="130.88455772113943"/>
         </scene>
         <!--Настройки-->
         <scene sceneID="BGo-ns-bkY">
@@ -139,6 +214,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_2gis" width="400" height="164"/>
         <image name="ic_gears" width="25" height="25"/>
+        <image name="ic_icons8" width="200" height="100"/>
+        <image name="ic_tosmr" width="94" height="23"/>
     </resources>
 </document>

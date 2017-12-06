@@ -37,6 +37,7 @@
 		C77B41061FCF039500810EE0 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77B41041FCF039500810EE0 /* TrackingViewController.swift */; };
 		C77B41071FCF039500810EE0 /* TrackingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77B41051FCF039500810EE0 /* TrackingView.xib */; };
 		C78075B51FD7EAA2000CBFE7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78075B41FD7EAA2000CBFE7 /* Settings.storyboard */; };
+		C78075B91FD7F5FA000CBFE7 /* AboutApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78075B71FD7F5FA000CBFE7 /* AboutApplicationViewController.swift */; };
 		C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */; };
 		C79123201F6DCAC60014AC4C /* TransportCatcher-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C791231F1F6DCAC60014AC4C /* TransportCatcher-Info.plist */; };
 		C797099E1F3A2EE400824E7E /* ToSMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79709951F3A2EE400824E7E /* ToSMR.framework */; };
@@ -194,6 +195,7 @@
 		C77B41041FCF039500810EE0 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		C77B41051FCF039500810EE0 /* TrackingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackingView.xib; sourceTree = "<group>"; };
 		C78075B41FD7EAA2000CBFE7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		C78075B71FD7F5FA000CBFE7 /* AboutApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutApplicationViewController.swift; sourceTree = "<group>"; };
 		C791231D1F6DCA6F0014AC4C /* ToSMRService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToSMRService.swift; sourceTree = "<group>"; };
 		C791231F1F6DCAC60014AC4C /* TransportCatcher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TransportCatcher-Info.plist"; sourceTree = "<group>"; };
 		C79709951F3A2EE400824E7E /* ToSMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToSMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,6 +319,7 @@
 		C70CA1AB1F6DCC9400A30DC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C78075B61FD7F597000CBFE7 /* AboutApplicationController */,
 				C79885B91FD544F000217E64 /* EmptyViewController */,
 				C77B41031FCF035900810EE0 /* TrackingViewController */,
 				C762C20E1FCEF09C001822CC /* ArrivalTimesController */,
@@ -500,6 +503,14 @@
 				FAE2C08E1FCFF6BF009B6BBA /* TrackingInteractor.swift */,
 			);
 			path = TrackingViewController;
+			sourceTree = "<group>";
+		};
+		C78075B61FD7F597000CBFE7 /* AboutApplicationController */ = {
+			isa = PBXGroup;
+			children = (
+				C78075B71FD7F5FA000CBFE7 /* AboutApplicationViewController.swift */,
+			);
+			path = AboutApplicationController;
 			sourceTree = "<group>";
 		};
 		C79123181F6DC9AE0014AC4C /* Extension */ = {
@@ -1130,6 +1141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA29B5601FCCAAAE000D7713 /* DGSTileStorage.swift in Sources */,
+				C78075B91FD7F5FA000CBFE7 /* AboutApplicationViewController.swift in Sources */,
 				FAF265151FD00A3300E735A7 /* Storage.swift in Sources */,
 				FAE2C08F1FCFF6BF009B6BBA /* TrackingInteractor.swift in Sources */,
 				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
