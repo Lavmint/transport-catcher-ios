@@ -14,7 +14,7 @@ var isDebug: Bool {
     #endif
 }
 
-func dprint(_ items: Any...) {
+func dprint(_ item: @autoclosure () -> Any, separator: String = " ", terminator: String = "\n") {
     guard isDebug else { return }
-    print(items)
+    Swift.print(item(), separator:separator, terminator: terminator)
 }

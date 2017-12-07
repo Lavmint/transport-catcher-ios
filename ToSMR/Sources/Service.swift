@@ -68,6 +68,7 @@ public final class Service {
     public let secret: String
     public let serializer: Serializer
     public let baseURL: String
+    public var timeoutInterval: TimeInterval = 10
     
     private let xmlSerializer: XMLSerializer
     
@@ -91,7 +92,7 @@ public final class Service {
             Parameter(key: "COUNT", value: count, isSignatureComponent: true)
         ]
         
-        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getFirstArrivalToStop", parameters: parameters, clientId: clientId, secret: secret) else {
+        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getFirstArrivalToStop", parameters: parameters, clientId: clientId, secret: secret, timeoutInterval: timeoutInterval) else {
             return
         }
         
@@ -117,7 +118,7 @@ public final class Service {
             Parameter(key: "KS_ID", value: ksId, isSignatureComponent: true)
         ]
         
-        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getRouteArrivalToStop", parameters: parameters, clientId: clientId, secret: secret) else {
+        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getRouteArrivalToStop", parameters: parameters, clientId: clientId, secret: secret, timeoutInterval: timeoutInterval) else {
             return
         }
         
@@ -147,7 +148,7 @@ public final class Service {
             Parameter(key: "COUNT", value: count, isSignatureComponent: true)
         ]
         
-        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getSurroundingTransports", parameters: parameters, clientId: clientId, secret: secret) else {
+        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getSurroundingTransports", parameters: parameters, clientId: clientId, secret: secret, timeoutInterval: timeoutInterval) else {
             return
         }
         
@@ -173,7 +174,7 @@ public final class Service {
             Parameter(key: "COUNT", value: count, isSignatureComponent: true)
         ]
         
-        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getTransportsOnRoute", parameters: parameters, clientId: clientId, secret: secret) else {
+        guard let request = URLRequest.toSamaraJSONRequest(baseURL: baseURL, method: "getTransportsOnRoute", parameters: parameters, clientId: clientId, secret: secret, timeoutInterval: timeoutInterval) else {
             return
         }
         

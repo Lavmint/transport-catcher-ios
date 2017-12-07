@@ -15,7 +15,7 @@ class ClassifierFetcher {
         
         let userStorage = UserStorage(context: TransportCatcherPersistenseContainer.shared.newBackgroundContext())
         let transportStopStorage = TransportStopStorage(context: ClassifierPersistenseContainer.shared.newBackgroundContext())
-        let user = userStorage.standard
+        let user: User! = userStorage.standard
         let storedStops = transportStopStorage.all
         let timeNow = Date()
         guard storedStops.isEmpty

@@ -12,19 +12,19 @@ class UserStorage: Storage {
     typealias PrimaryKey = Int
     typealias Object = User
     let context: NSManagedObjectContext
-    
-    var standard: User {
-        if let user = find(key: 0) {
-            return user
-        } else {
-            let user = User(context: context)
-            user.id = 0
-            save()
-            return user
-        }
-    }
+    private(set) var standard: User!
     
     init(context: NSManagedObjectContext) {
         self.context = context
+        self.standard = {
+            if let user = find(key: 0) {
+                return user
+            } else {
+                let user = User(context: context)
+                user.id = 0
+                save()
+                return user
+            }
+        }()
     }
 }

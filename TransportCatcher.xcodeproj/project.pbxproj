@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		098CBE74E9ED5C6C8C181470 /* Pods_TransportCatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2587CAFEA5179E53EC91B720 /* Pods_TransportCatcher.framework */; };
+		C70ACB571FD95EBB00B74D25 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70ACB551FD95EBB00B74D25 /* SettingsViewController.swift */; };
+		C70ACB5A1FD95ECD00B74D25 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70ACB591FD95ECD00B74D25 /* SettingsView.swift */; };
+		C70ACB5C1FD963E300B74D25 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70ACB5B1FD963E300B74D25 /* SettingsPresenter.swift */; };
+		C70ACB5E1FD975D200B74D25 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70ACB5D1FD975D200B74D25 /* SettingsInteractor.swift */; };
+		C70ACB601FD98E3400B74D25 /* PlainPickerWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70ACB5F1FD98E3400B74D25 /* PlainPickerWrapperView.swift */; };
 		C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
 		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
@@ -163,6 +168,11 @@
 		87B14CCE3F9BD47BBA6132E0 /* Pods-GeoSMRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMRTests/Pods-GeoSMRTests.debug.xcconfig"; sourceTree = "<group>"; };
 		89F656FC773CA31F95E053EE /* Pods-GeoSMRIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSMRIntegrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoSMRIntegrationTests/Pods-GeoSMRIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C69AD72325117D3B6E6750AB /* Pods_GeoSMRIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoSMRIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70ACB551FD95EBB00B74D25 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C70ACB591FD95ECD00B74D25 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C70ACB5B1FD963E300B74D25 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		C70ACB5D1FD975D200B74D25 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		C70ACB5F1FD98E3400B74D25 /* PlainPickerWrapperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainPickerWrapperView.swift; sourceTree = "<group>"; };
 		C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -304,6 +314,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70ACB541FD95E9A00B74D25 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C70ACB591FD95ECD00B74D25 /* SettingsView.swift */,
+				C70ACB551FD95EBB00B74D25 /* SettingsViewController.swift */,
+				C70ACB5B1FD963E300B74D25 /* SettingsPresenter.swift */,
+				C70ACB5D1FD975D200B74D25 /* SettingsInteractor.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
 		C70CA1AA1F6DCC9000A30DC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +333,7 @@
 				FA39CAD71FD4210D00D6E22F /* Annotation */,
 				C762C2221FCEFF57001822CC /* DGSMapView */,
 				C7D4A04C1FCD9F260032A7B1 /* UserTrackingButton.swift */,
+				C70ACB5F1FD98E3400B74D25 /* PlainPickerWrapperView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,6 +341,7 @@
 		C70CA1AB1F6DCC9400A30DC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C70ACB541FD95E9A00B74D25 /* SettingsViewController */,
 				C78075B61FD7F597000CBFE7 /* AboutApplicationController */,
 				C79885B91FD544F000217E64 /* EmptyViewController */,
 				C77B41031FCF035900810EE0 /* TrackingViewController */,
@@ -1147,11 +1170,14 @@
 				C7E81B521F51EF4700EFCDC0 /* DGSTileOverlay.swift in Sources */,
 				FACAC0381FD40C730081385B /* Bundle.swift in Sources */,
 				C762C2151FCEF0E3001822CC /* ArrivalTimesViewController.swift in Sources */,
+				C70ACB5C1FD963E300B74D25 /* SettingsPresenter.swift in Sources */,
+				C70ACB5E1FD975D200B74D25 /* SettingsInteractor.swift in Sources */,
 				FAF2651C1FD0138300E735A7 /* ClassfiersPersistenseContainer.swift in Sources */,
 				FA29B5621FCCABDB000D7713 /* TransportCatcherPersistenseContainer.swift in Sources */,
 				C73DD4FD1FD546AE00073908 /* EmptyViewController.swift in Sources */,
 				C7B6A4761FD562B1001BC12B /* NibLoadableView.swift in Sources */,
 				FAE2C0911FCFF723009B6BBA /* TrackingPresenter.swift in Sources */,
+				C70ACB5A1FD95ECD00B74D25 /* SettingsView.swift in Sources */,
 				FAF265121FD0069600E735A7 /* TransportStopStorage.swift in Sources */,
 				C7F8B4A51FD6B27D00753AAC /* GradientProgressView.swift in Sources */,
 				C7E0EE171FCF0606004DEC13 /* TrackingView.swift in Sources */,
@@ -1163,6 +1189,7 @@
 				C760F64E1FCF08B800F81C8B /* StopAnnotation.swift in Sources */,
 				FACAC03F1FD413910081385B /* Date.swift in Sources */,
 				C7794F6F1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift in Sources */,
+				C70ACB571FD95EBB00B74D25 /* SettingsViewController.swift in Sources */,
 				FAF2650E1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift in Sources */,
 				C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,
@@ -1181,6 +1208,7 @@
 				C73DD4FF1FD547DC00073908 /* NSLayoutConstraint.swift in Sources */,
 				C7794F6C1FCC4614002BEFB3 /* ArrivalTrackingViewController.swift in Sources */,
 				C7D4A04D1FCD9F260032A7B1 /* UserTrackingButton.swift in Sources */,
+				C70ACB601FD98E3400B74D25 /* PlainPickerWrapperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

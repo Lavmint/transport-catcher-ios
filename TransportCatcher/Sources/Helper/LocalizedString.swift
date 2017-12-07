@@ -50,5 +50,23 @@ enum LocalizedString {
         static var OK: String {
             return "OK"
         }
+        
+        static var Cancel: String {
+            return "Отменить"
+        }
+    }
+    
+    enum Settings {
+        
+        static var setTimeoutInterval: String {
+            return "Введите время ожидания ответа от сервиса в секундах"
+        }
+    }
+    
+    enum Common {
+        
+        static var value: String {
+            return "значение"
+        }
     }
 }
