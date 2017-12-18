@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "icons8-tram-filled-50-paint.png",
+      "filename" : "tram@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icons8-tram-filled-100-paint.png",
+      "filename" : "tram@3x.png",
       "scale" : "3x"
     }
   ],
