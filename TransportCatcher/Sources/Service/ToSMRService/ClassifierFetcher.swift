@@ -42,6 +42,7 @@ class ClassifierFetcher {
                     let lstop = transportStopStorage.findOrCreate(key: id)
                     lstop.id = Int32(rstop.id)
                     lstop.adjacentStreet = rstop.adjacentStreet
+                    lstop.adjacentStreetEn = rstop.adjacentStreetEn
                     lstop.angle = angel ?? 0
                     lstop.busesCommercial = rstop.busesCommercial
                     lstop.busesMunicipal = rstop.busesMunicipal
@@ -50,10 +51,12 @@ class ClassifierFetcher {
                     lstop.busesSpecial = rstop.busesSpecial
                     lstop.cluster = rstop.cluster
                     lstop.direction = rstop.direction
+                    lstop.directionEn = rstop.directionEn
                     lstop.latitude = rstop.latitude
                     lstop.longitude = rstop.longitude
                     lstop.metros = rstop.metros
                     lstop.name = rstop.name
+                    lstop.nameEn = rstop.nameEn
                     lstop.tramways = rstop.tramways
                     lstop.trolleybuses = rstop.trolleybuses
                     updatedOrCreatedStops.append(id)

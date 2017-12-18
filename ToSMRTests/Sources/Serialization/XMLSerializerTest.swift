@@ -30,10 +30,7 @@ class XMLSerializerTest: XCTestCase {
             return
         }
         
-        guard stops.count == 1395 else {
-            XCTFail()
-            return
-        }
+        XCTAssertEqual(stops.count, 1419)
         
         guard let stop1185 = stops.filter({ $0.id == 1185 }).first else {
             XCTFail()
@@ -42,8 +39,11 @@ class XMLSerializerTest: XCTestCase {
         
         XCTAssertEqual(stop1185.id, 1185)
         XCTAssertEqual(stop1185.name, "Проходная ОАО \"Моторостроитель\"")
+        XCTAssertEqual(stop1185.nameEn, "Prohodnaya OAO \"Motorostroitel'\"")
         XCTAssertEqual(stop1185.adjacentStreet, "на пр. Кирова")
+        XCTAssertEqual(stop1185.adjacentStreetEn, "on Prospekt Kirova street")
         XCTAssertEqual(stop1185.direction, "в сторону пл. Кирова")
+        XCTAssertEqual(stop1185.directionEn, "towards Ploshchad Kirova")
         XCTAssertEqual(stop1185.cluster, "")
         XCTAssertEqual(stop1185.busesMunicipal, "")
         XCTAssertEqual(stop1185.busesCommercial, "")

@@ -17,11 +17,11 @@ final class StopAnnotation: NSObject, MKAnnotation {
     }
     
     public var title: String? {
-        return stop.name
+        return stop.localizedName
     }
     
     public var subtitle: String? {
-        return [stop.adjacentStreet ?? "", stop.direction ?? ""].joined(separator: " ")
+        return [stop.localizedAdjacentStreet ?? "", stop.localizedDirection ?? ""].joined(separator: " ")
     }
     
     public var coordinate: CLLocationCoordinate2D {

@@ -16,6 +16,8 @@
 		C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
 		C72AD3831FE7A7B9009295A4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3821FE7A7B8009295A4 /* UIViewController.swift */; };
+		C72AD3871FE7FF34009295A4 /* TransportStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3861FE7FF34009295A4 /* TransportStop.swift */; };
+		C72AD3891FE7FF87009295A4 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3881FE7FF87009295A4 /* Locale.swift */; };
 		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
 		C73DD4FD1FD546AE00073908 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DD4FC1FD546AE00073908 /* EmptyViewController.swift */; };
 		C73DD4FF1FD547DC00073908 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */; };
@@ -177,6 +179,9 @@
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C72AD3821FE7A7B8009295A4 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C72AD3861FE7FF34009295A4 /* TransportStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStop.swift; sourceTree = "<group>"; };
+		C72AD3881FE7FF87009295A4 /* Locale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
+		C72AD38A1FE80163009295A4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStopsFullDBTest.swift; sourceTree = "<group>"; };
 		C73DD4FC1FD546AE00073908 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
@@ -358,6 +363,14 @@
 				FAAB5EAE1FC868BF00778334 /* Foundation */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C72AD3851FE7FF21009295A4 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				C72AD3861FE7FF34009295A4 /* TransportStop.swift */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 		C746851C1EFFA9E700D6021E = {
@@ -545,6 +558,7 @@
 				FACAC03E1FD413910081385B /* Date.swift */,
 				C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */,
 				C72AD3821FE7A7B8009295A4 /* UIViewController.swift */,
+				C72AD3881FE7FF87009295A4 /* Locale.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -748,6 +762,7 @@
 		FA39CADC1FD4267200D6E22F /* Classifiers */ = {
 			isa = PBXGroup;
 			children = (
+				C72AD3851FE7FF21009295A4 /* Object */,
 				FA39CADD1FD4268200D6E22F /* Storage */,
 				FAF2651B1FD0138200E735A7 /* ClassfiersPersistenseContainer.swift */,
 			);
@@ -1186,10 +1201,12 @@
 				C762C21A1FCEF10A001822CC /* ArrivalTimesView.swift in Sources */,
 				FAF2651A1FD012EF00E735A7 /* Classifier.xcdatamodeld in Sources */,
 				C760F64E1FCF08B800F81C8B /* StopAnnotation.swift in Sources */,
+				C72AD3891FE7FF87009295A4 /* Locale.swift in Sources */,
 				FACAC03F1FD413910081385B /* Date.swift in Sources */,
 				C7794F6F1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift in Sources */,
 				C70ACB571FD95EBB00B74D25 /* SettingsViewController.swift in Sources */,
 				FAF2650E1FCFFD3F00E735A7 /* ArrivalTimesPresenter.swift in Sources */,
+				C72AD3871FE7FF34009295A4 /* TransportStop.swift in Sources */,
 				C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,
 				FA39CAD61FD420F400D6E22F /* NSObject.swift in Sources */,
@@ -1298,6 +1315,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C74685321EFFA9E700D6021E /* Base */,
+				C72AD38A1FE80163009295A4 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			path = .;
@@ -1310,6 +1328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1368,6 +1387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

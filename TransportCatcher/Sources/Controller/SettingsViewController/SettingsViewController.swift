@@ -24,6 +24,7 @@ class SettingsViewController: UITableViewController, GenericView {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         guard let cell = tableView.cellForRow(at: indexPath) else { return }
         switch cell {
         case genericView.timeoutCell: onTimeoutCellTapped()

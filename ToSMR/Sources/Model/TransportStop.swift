@@ -9,8 +9,11 @@
 public struct TransportStop {
     public let id: Int
     public let name: String
+    public let nameEn: String
     public let adjacentStreet: String
+    public let adjacentStreetEn: String
     public let direction: String
+    public let directionEn: String
     public let cluster: String
     public let busesMunicipal: String
     public let busesCommercial: String

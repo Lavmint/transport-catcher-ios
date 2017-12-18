@@ -29,7 +29,7 @@ internal final class XMLSerializer: Serializer {
             data: data,
             entityName: "stop",
             entityElements: [
-                "KS_ID", "title", "adjacentStreet", "direction", "cluster",
+                "KS_ID", "title", "titleEn", "adjacentStreet", "adjacentStreetEn", "direction", "directionEn", "cluster",
                 "busesMunicipal", "busesCommercial", "busesPrigorod", "busesSeason", "busesSpecial",
                 "trams", "trolleybuses", "metros", "infotabloExists", "latitude", "longitude", "angle"
             ]
@@ -41,8 +41,11 @@ internal final class XMLSerializer: Serializer {
             let stop = TransportStop(
                 id: try rawStop.parsable(required: "KS_ID"),
                 name: try rawStop.castable(required: "title"),
+                nameEn: try rawStop.castable(required: "titleEn"),
                 adjacentStreet: try rawStop.castable(required: "adjacentStreet"),
+                adjacentStreetEn: try rawStop.castable(required: "adjacentStreetEn"),
                 direction: try rawStop.castable(required: "direction"),
+                directionEn: try rawStop.castable(required: "directionEn"),
                 cluster: try rawStop.castable(required: "cluster"),
                 busesMunicipal: try rawStop.castable(required: "busesMunicipal"),
                 busesCommercial: try rawStop.castable(required: "busesCommercial"),
