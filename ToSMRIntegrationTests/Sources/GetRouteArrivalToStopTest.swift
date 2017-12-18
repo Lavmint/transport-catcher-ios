@@ -19,9 +19,9 @@ class GetRouteArrivalToStopTest: XCTestCase {
         ServiceMock.shared?.approximateArrivals(ofRoute: 193, toStop: 9) { (box) in
             
             switch box.result {
-            case .succeed(let arrivals):
+            case .success(let arrivals):
                 XCTAssertNotNil(arrivals)
-            case .error(let error):
+            case .failure(let error):
                 XCTFail(error.localizedDescription)
             }
             expectedCase.fulfill()
@@ -37,7 +37,7 @@ class GetRouteArrivalToStopTest: XCTestCase {
         service.approximateArrivals(ofRoute: 193, toStop: 9) { (box) in
             
             switch box.result {
-            case .succeed(_):
+            case .success(_):
                 XCTFail()
             default:
                 break

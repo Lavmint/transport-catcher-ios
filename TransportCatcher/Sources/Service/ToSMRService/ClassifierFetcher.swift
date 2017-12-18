@@ -11,7 +11,7 @@ import ToSMR
 
 class ClassifierFetcher {
     
-    func fetchStops(completion: @escaping (() throws -> Void) -> Void) {
+    func fetchStops(completion: @escaping (Error?) -> Void) {
         
         let userStorage = UserStorage(context: TransportCatcherPersistenseContainer.shared.newBackgroundContext())
         let transportStopStorage = TransportStopStorage(context: ClassifierPersistenseContainer.shared.newBackgroundContext())
@@ -20,13 +20,19 @@ class ClassifierFetcher {
         let timeNow = Date()
         guard storedStops.isEmpty
             || !user.transportStopTimestamp.isBetween(i1: Date.dateAWeekAgo.timeIntervalSince1970, i2: timeNow.timeIntervalSince1970) else {
-            completion { return }
+            completion(nil)
             return
         }
         
         Service.shared.stops { (box) in
+            
+            var callbackError: Error? = nil
+            defer {
+                completion(callbackError)
+            }
+            
             switch box.result {
-            case .succeed(let result):
+            case .success(let result):
                 let remoteStops = result ?? []
                 var localStops: [TransportStop] = []
                 var updatedOrCreatedStops: [Int32] = []
@@ -57,9 +63,8 @@ class ClassifierFetcher {
                 transportStopStorage.save()
                 user.transportStopTimestamp = timeNow.timeIntervalSince1970
                 userStorage.save()
-                completion { return }
-            case .error(let error):
-                completion { throw error }
+            case .failure(let error):
+                callbackError = error
             }
         }
     }

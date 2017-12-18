@@ -41,18 +41,10 @@ class TrackingViewController: UIViewController, GenericView {
     
     func reload() {
         delegate?.willFetchStops(trackingViewController: self)
-        interactor.fetchStops { [weak self] (throwError) in
-            guard let wself = self else { return }
-            defer {
-                wself.delegate?.didFetchStops(trackingViewController: wself)
-            }
-            do {
-                try throwError()
-            } catch {
-                AlertHelper.presentInfoAlert(.OK, message: error.localizedDescription, on: wself)
-                return
-            }
-            wself.genericView.mapView.addAnnotations(wself.presenter.stopAnnotations)
+        interactor.fetchStops { (error) in
+            self.present(error: error)
+            self.genericView.mapView.addAnnotations(self.presenter.stopAnnotations)
+            self.delegate?.didFetchStops(trackingViewController: self)
         }
     }
     
@@ -74,7 +66,7 @@ extension TrackingViewController: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        AlertHelper.presentInfoAlert(.OK, message: error.localizedDescription, on: self)
+        self.present(error: error)
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -120,6 +112,6 @@ extension TrackingViewController: MKMapViewDelegate {
     }
     
     func mapViewDidFailLoadingMap(_ mapView: MKMapView, withError error: Error) {
-        AlertHelper.presentInfoAlert(.OK, message: error.localizedDescription, on: self)
+        self.present(error: error)
     }
 }

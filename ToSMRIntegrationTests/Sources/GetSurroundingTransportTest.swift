@@ -19,9 +19,9 @@ class GetSurroundingTransportTest: XCTestCase {
         ServiceMock.shared?.transports(inRadius: 1000, atLongitude: 50.1, atLatitude: 53.1, limitation: 100) { (box) in
             
             switch box.result {
-            case .succeed(let transports):
+            case .success(let transports):
                 XCTAssertNotNil(transports)
-            case .error(let error):
+            case .failure(let error):
                 XCTFail(error.localizedDescription)
             }
             expectedCase.fulfill()
@@ -37,7 +37,7 @@ class GetSurroundingTransportTest: XCTestCase {
         service.transports(inRadius: 1000, atLongitude: 50.1, atLatitude: 53.1, limitation: 100) { (box) in
             
             switch box.result {
-            case .succeed(_):
+            case .success(_):
                 XCTFail()
             default:
                 break

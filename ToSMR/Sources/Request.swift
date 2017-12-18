@@ -10,7 +10,7 @@ import Foundation
 
 internal extension URLRequest {
  
-    internal static func toSamaraJSONRequest(baseURL: String, method: String, parameters: [Service.Parameter], clientId: String, secret: String, timeoutInterval: TimeInterval) -> URLRequest? {
+    internal static func toSamaraJSONRequest(baseURL: String, method: String, parameters: [Service.Parameter], clientId: String, secret: String, timeoutInterval: TimeInterval = 20) -> URLRequest? {
         
         func makeURL(query: String) -> URL? {
             var rawUrl = baseURL + "/json"

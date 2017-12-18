@@ -9,8 +9,8 @@
 import Foundation
 
 public enum Result<T> {
-    case succeed(T?)
-    case error(Error)
+    case success(T?)
+    case failure(Error)
     
     public enum Error: Swift.Error, LocalizedError {
         case client(error: Swift.Error)
@@ -42,16 +42,16 @@ public struct CompletionBox<T> {
         self.response = response as? HTTPURLResponse
         
         guard self.response?.statusCode != 200 else {
-            result = Result.succeed(data)
+            result = Result.success(data)
             return
         }
         
         if let error = self.response?.error {
-            result = Result.error(Result.Error.server(error: (error.code, error.message)))
+            result = Result.failure(Result.Error.server(error: (error.code, error.message)))
         } else if let error = foundationError {
-            result = Result.error(Result.Error.client(error: error))
+            result = Result.failure(Result.Error.client(error: error))
         } else {
-            result = Result.error(Result.Error.unexpected)
+            result = Result.failure(Result.Error.unexpected)
         }
     }
 }
@@ -85,7 +85,7 @@ public final class Service {
     /// - Parameters:
     ///   - ksId: классификаторный номер остановки
     ///   - count: количество ближайших прибывающих маршрутов (необязательный параметр)
-    public func approximateArrivals(toStop ksId: Int, limitation count: Int? = nil, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
+    public func approximateArrivals(toStop ksId: Int, limitation count: Int? = nil, queue: OperationQueue = OperationQueue.main, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
         
         let parameters: [Parameter] = [
             Parameter(key: "KS_ID", value: ksId, isSignatureComponent: true),
@@ -96,9 +96,9 @@ public final class Service {
             return
         }
         
-        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
-            let object: [Arrival]? = self?.serializer.object(from: data)
-            DispatchQueue.main.async {
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            let object: [Arrival]? = self.serializer.object(from: data)
+            queue.addOperation {
                 let box = CompletionBox<[Arrival]>(request: request, data: object, response: response, error: error)
                 completion(box)
             }
@@ -111,7 +111,7 @@ public final class Service {
     /// - Parameters:
     ///   - krId: классификаторный номер маршрута.
     ///   - ksId: классификаторный номер остановки;
-    public func approximateArrivals(ofRoute krId: Int, toStop ksId: Int, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
+    public func approximateArrivals(ofRoute krId: Int, toStop ksId: Int, queue: OperationQueue = OperationQueue.main, completion: @escaping (CompletionBox<[Arrival]>) -> Void) {
         
         let parameters: [Parameter] = [
             Parameter(key: "KR_ID", value: krId, isSignatureComponent: true),
@@ -122,9 +122,9 @@ public final class Service {
             return
         }
         
-        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
-            let object: [Arrival]? = self?.serializer.object(from: data)
-            DispatchQueue.main.async {
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            let object: [Arrival]? = self.serializer.object(from: data)
+            queue.addOperation {
                 let box = CompletionBox<[Arrival]>(request: request, data: object, response: response, error: error)
                 completion(box)
             }
@@ -139,7 +139,7 @@ public final class Service {
     ///   - longitude: координата пользователя в WGS 84;
     ///   - latitude: координата пользователя в WGS 84;
     ///   - count: максимальное количество возвращаемых результатов.
-    public func transports(inRadius radius: Double, atLongitude longitude: Double, atLatitude latitude: Double, limitation count: Int, completion: @escaping (CompletionBox<[Transport]>) -> Void) {
+    public func transports(inRadius radius: Double, atLongitude longitude: Double, atLatitude latitude: Double, limitation count: Int, queue: OperationQueue = OperationQueue.main, completion: @escaping (CompletionBox<[Transport]>) -> Void) {
         
         let parameters: [Parameter] = [
             Parameter(key: "LATITUDE", value: latitude, isSignatureComponent: true),
@@ -152,9 +152,9 @@ public final class Service {
             return
         }
         
-        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
-            let object: [Transport]? = self?.serializer.object(from: data)
-            DispatchQueue.main.async {
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            let object: [Transport]? = self.serializer.object(from: data)
+            queue.addOperation {
                 let box = CompletionBox<[Transport]>(request: request, data: object, response: response, error: error)
                 completion(box)
             }
@@ -167,7 +167,7 @@ public final class Service {
     /// - Parameters:
     ///   - routes: классификаторный номер маршрута (возможно, несколько);
     ///   - count: максимальное количество возвращаемых результатов.
-    public func transports(onRoutes routes: [Int], limitation count: Int, completion: @escaping (CompletionBox<[Transport]>) -> Void) {
+    public func transports(onRoutes routes: [Int], limitation count: Int, queue: OperationQueue = OperationQueue.main, completion: @escaping (CompletionBox<[Transport]>) -> Void) {
         
         let parameters: [Parameter] = [
             Parameter(key: "KR_ID", value: routes.map({ String($0)}).joined(separator: ","), isSignatureComponent: true),
@@ -178,9 +178,9 @@ public final class Service {
             return
         }
         
-        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
-            let object: [Transport]? = self?.serializer.object(from: data)
-            DispatchQueue.main.async {
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            let object: [Transport]? = self.serializer.object(from: data)
+            queue.addOperation {
                 let box = CompletionBox<[Transport]>(request: request, data: object, response: response, error: error)
                 completion(box)
             }
@@ -192,12 +192,12 @@ public final class Service {
      Классификатор остановок с координатами
      Расширенная версия классификатора остановок, включающая географические координаты и перечисления проходящих маршрутов. Именно она используется в «Прибывалках». Хранится в документе формата XML по адресу tosamara.ru/api/classifiers/stopsFullDB.xml и имеет следующую структуру:
      */
-    public func stops(completion: @escaping (CompletionBox<[TransportStop]>) -> Void) {
+    public func stops(queue: OperationQueue = OperationQueue.main, completion: @escaping (CompletionBox<[TransportStop]>) -> Void) {
         guard let url = URL(string: baseURL + "/classifiers/stopsFullDB.xml") else { return }
         let request = URLRequest(url: url)
-        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
-            let object: [TransportStop]? = self?.xmlSerializer.object(from: data)
-            DispatchQueue.main.async {
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            let object: [TransportStop]? = self.xmlSerializer.object(from: data)
+            queue.addOperation {
                 let box = CompletionBox<[TransportStop]>(request: request, data: object, response: response, error: error)
                 completion(box)
             }

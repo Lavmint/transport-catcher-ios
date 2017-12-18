@@ -15,6 +15,7 @@
 		C70ACB601FD98E3400B74D25 /* PlainPickerWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70ACB5F1FD98E3400B74D25 /* PlainPickerWrapperView.swift */; };
 		C70CA1BA1F6DDA7000A30DC8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */; };
 		C723B9061F3A5FE200949C76 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C723B9051F3A5FE200949C76 /* String.swift */; };
+		C72AD3831FE7A7B9009295A4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72AD3821FE7A7B8009295A4 /* UIViewController.swift */; };
 		C73AEB2F1F50BE5200463045 /* GetStopsFullDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */; };
 		C73DD4FD1FD546AE00073908 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DD4FC1FD546AE00073908 /* EmptyViewController.swift */; };
 		C73DD4FF1FD547DC00073908 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */; };
@@ -100,7 +101,6 @@
 		FACAC03C1FD412810081385B /* ClassifierFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC03B1FD412810081385B /* ClassifierFetcher.swift */; };
 		FACAC03F1FD413910081385B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC03E1FD413910081385B /* Date.swift */; };
 		FACAC0421FD41D2C0081385B /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC0401FD41D2C0081385B /* GlobalHelper.swift */; };
-		FACAC0431FD41D2C0081385B /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAC0411FD41D2C0081385B /* AlertHelper.swift */; };
 		FAE2C08D1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C08C1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift */; };
 		FAE2C08F1FCFF6BF009B6BBA /* TrackingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C08E1FCFF6BF009B6BBA /* TrackingInteractor.swift */; };
 		FAE2C0911FCFF723009B6BBA /* TrackingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2C0901FCFF723009B6BBA /* TrackingPresenter.swift */; };
@@ -176,6 +176,7 @@
 		C70CA1B91F6DDA7000A30DC8 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		C723B9001F3A5CC100949C76 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ToSMR/CommonCrypto/module.modulemap; sourceTree = "<group>"; };
 		C723B9051F3A5FE200949C76 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C72AD3821FE7A7B8009295A4 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C73AEB2E1F50BE5200463045 /* GetStopsFullDBTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStopsFullDBTest.swift; sourceTree = "<group>"; };
 		C73DD4FC1FD546AE00073908 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
@@ -266,7 +267,6 @@
 		FACAC03B1FD412810081385B /* ClassifierFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierFetcher.swift; sourceTree = "<group>"; };
 		FACAC03E1FD413910081385B /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		FACAC0401FD41D2C0081385B /* GlobalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
-		FACAC0411FD41D2C0081385B /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		FAE2C08C1FCFEF44009B6BBA /* ArrivalTimesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimesInteractor.swift; sourceTree = "<group>"; };
 		FAE2C08E1FCFF6BF009B6BBA /* TrackingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteractor.swift; sourceTree = "<group>"; };
 		FAE2C0901FCFF723009B6BBA /* TrackingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingPresenter.swift; sourceTree = "<group>"; };
@@ -544,6 +544,7 @@
 				FACAC0371FD40C730081385B /* Bundle.swift */,
 				FACAC03E1FD413910081385B /* Date.swift */,
 				C73DD4FE1FD547DC00073908 /* NSLayoutConstraint.swift */,
+				C72AD3821FE7A7B8009295A4 /* UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -559,7 +560,6 @@
 		C791231B1F6DCA150014AC4C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				FACAC0411FD41D2C0081385B /* AlertHelper.swift */,
 				FACAC0401FD41D2C0081385B /* GlobalHelper.swift */,
 				FAAB5EB41FC86E3500778334 /* LocalizedString.swift */,
 			);
@@ -1185,7 +1185,6 @@
 				FAAB5EB51FC86E3500778334 /* LocalizedString.swift in Sources */,
 				C762C21A1FCEF10A001822CC /* ArrivalTimesView.swift in Sources */,
 				FAF2651A1FD012EF00E735A7 /* Classifier.xcdatamodeld in Sources */,
-				FACAC0431FD41D2C0081385B /* AlertHelper.swift in Sources */,
 				C760F64E1FCF08B800F81C8B /* StopAnnotation.swift in Sources */,
 				FACAC03F1FD413910081385B /* Date.swift in Sources */,
 				C7794F6F1FCC4D0F002BEFB3 /* ArrivalTableViewCell.swift in Sources */,
@@ -1194,6 +1193,7 @@
 				C791231E1F6DCA6F0014AC4C /* ToSMRService.swift in Sources */,
 				C74685291EFFA9E700D6021E /* AppDelegate.swift in Sources */,
 				FA39CAD61FD420F400D6E22F /* NSObject.swift in Sources */,
+				C72AD3831FE7A7B9009295A4 /* UIViewController.swift in Sources */,
 				FACAC03A1FD4105D0081385B /* UserStorage.swift in Sources */,
 				FACAC03C1FD412810081385B /* ClassifierFetcher.swift in Sources */,
 				C7C3690F1F6DB6240032F49E /* DGSMapView.swift in Sources */,

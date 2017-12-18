@@ -20,16 +20,10 @@ class TrackingInteractor {
         self.transportStopStorage = TransportStopStorage(context: ClassifierPersistenseContainer.shared.viewContext)
     }
     
-    func fetchStops(completion: @escaping (() throws -> Void) -> Void) {
-        classifierFetcher.fetchStops(completion: { [weak self] (throwError) in
-            guard let wself = self else { return }
-            do {
-                try throwError()
-                wself.stops = wself.transportStopStorage.all
-                completion { return }
-            } catch {
-                completion { throw error }
-            }
+    func fetchStops(completion: @escaping (Error?) -> Void) {
+        classifierFetcher.fetchStops(completion: { (error) in
+            self.stops = self.transportStopStorage.all
+            completion(error)
         })
     }
 }

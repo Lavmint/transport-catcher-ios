@@ -34,20 +34,11 @@ class ArrivalTimesViewController: UIViewController, GenericView {
     
     func reload(withStopId stopId: Int) {
         delegate?.willFetchArrivals(arrivalTimesViewController: self, for: stopId)
-        intercator.fetchArrivals(toStopId: stopId) { [weak self] (throwError) in
-            guard let wself = self else { return }
-            defer {
-                wself.delegate?.didFetchArrivals(arrivalTimesViewController: wself, for: stopId)
-            }
-            do {
-                try throwError()
-                wself.presenter.configure(controller: wself.emptyViewController, on: wself.genericView, with: nil)
-            } catch {
-                wself.presenter.configure(controller: wself.emptyViewController, on: wself.genericView, with: error)
-                AlertHelper.presentInfoAlert(.OK, message: error.localizedDescription, on: wself)
-                return
-            }
-            wself.genericView.reload()
+        intercator.fetchArrivals(toStopId: stopId) { (error) in
+            self.present(error: error)
+            self.presenter.configure(controller: self.emptyViewController, on: self.genericView, with: error)
+            self.genericView.reload()
+            self.delegate?.didFetchArrivals(arrivalTimesViewController: self, for: stopId)
         }
     }
 }

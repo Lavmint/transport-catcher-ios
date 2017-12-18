@@ -19,9 +19,9 @@ class GetStopsFullDBTest: XCTestCase {
         ServiceMock.shared?.stops { (box) in
             
             switch box.result {
-            case .succeed(let stops):
+            case .success(let stops):
                 XCTAssertNotNil(stops)
-            case .error(let error):
+            case .failure(let error):
                 XCTFail(error.localizedDescription)
             }
             expectedCase.fulfill()

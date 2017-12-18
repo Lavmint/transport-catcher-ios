@@ -19,9 +19,9 @@ class GetTransportsOnRouteTest: XCTestCase {
         ServiceMock.shared?.transports(onRoutes: [13, 23, 434], limitation: 100) { (box) in
             
             switch box.result {
-            case .succeed(let transports):
+            case .success(let transports):
                 XCTAssertNotNil(transports)
-            case .error(let error):
+            case .failure(let error):
                 XCTFail(error.localizedDescription)
             }
             expectedCase.fulfill()
@@ -37,7 +37,7 @@ class GetTransportsOnRouteTest: XCTestCase {
         service.transports(onRoutes: [13, 23, 434], limitation: 100) { (box) in
             
             switch box.result {
-            case .succeed(_):
+            case .success(_):
                 XCTFail()
             default:
                 break
