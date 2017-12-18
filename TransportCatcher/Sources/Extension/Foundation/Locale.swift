@@ -16,12 +16,8 @@ extension Locale {
     }
     
     var identifierType: IdentifierType {
-        switch self.identifier {
-        case "ru_US":
-            return .ru
-        default:
-            return .en
-        }
+        if self.identifier.contains("ru") { return .ru }
+        return .en
     }
     
 }

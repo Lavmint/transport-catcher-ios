@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Карта-->
+        <!--Map-->
         <scene sceneID="SRt-io-3O8">
             <objects>
                 <navigationController navigationBarHidden="YES" id="eEj-rh-Tra" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Карта" image="ic_map" id="imq-ah-8kj"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="ic_map" id="imq-ah-8kj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ja9-Q4-6qL">
                         <autoresizingMask key="autoresizingMask"/>

@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  TransportCatcher
+
+  Created by Alexey Averkin on 18/12/2017.
+  Copyright © 2017 Alexey Averkin. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Транспорт Самара";
+"NSHumanReadableCopyright" = "2017 разработано Алексеем Аверкиным под издательством Сергея Елизарова. Все права защищены.";

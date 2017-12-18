@@ -1,0 +1,34 @@
+/* 
+  Localized.strings
+  TransportCatcher
+
+  Created by Alexey Averkin on 18/12/2017.
+  Copyright © 2017 Alexey Averkin. All rights reserved.
+*/
+
+//MARK: Arrival
+
+"arrival_minutesShort" = "мин.";
+"arrival_metersLeftToStop" = "м. до остановки";
+"arrival_invalidFriendly" = "Доступен для людей с ограниченными возможностями";
+"arrival_emptyList" = "По данным сервиса, прибытие транспорта на остановку в ближайшее время не ожидается.";
+"arrival_selectStop" = "Выберите на карте остановку чтобы отобразить прибытие транспорта.";
+
+// MARK: Alert
+
+"alert_ok" = "OK";
+"alert_cancel" = "Отменить";
+
+// MARK: Settings
+
+"settings_setTimeoutInterval" = "Введите время ожидания ответа от сервиса в секундах";
+
+// MARK: Common
+
+"common_value" = "значение";
+
+// MARK: Transport
+
+"transport_tramway" = "трамвай";
+"transport_trolleybus" = "троллейбус";
+"transport_bus" = "автобус";

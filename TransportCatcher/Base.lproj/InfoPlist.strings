@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  TransportCatcher
+
+  Created by Alexey Averkin on 18/12/2017.
+  Copyright © 2017 Alexey Averkin. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Transport Samara";
+"NSHumanReadableCopyright" = "2017 developed by Aleksey Averkin destributed by Sergey Elizarov. All rights reserved.";

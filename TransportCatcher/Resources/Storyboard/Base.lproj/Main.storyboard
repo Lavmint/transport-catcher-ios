@@ -31,7 +31,7 @@
         <scene sceneID="NNg-1x-BBA">
             <objects>
                 <viewControllerPlaceholder storyboardName="Map" id="DFz-IH-Izf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Карта" image="ic_map" id="mRO-xL-rwK"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="ic_map" id="mRO-xL-rwK"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PnB-YW-HZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +41,7 @@
         <scene sceneID="jvn-wL-Kel">
             <objects>
                 <viewControllerPlaceholder storyboardName="Settings" id="AtY-XM-4v2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Настройки" image="ic_gears" id="H1z-WA-EXu"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="ic_gears" id="H1z-WA-EXu"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cl-qp-um5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

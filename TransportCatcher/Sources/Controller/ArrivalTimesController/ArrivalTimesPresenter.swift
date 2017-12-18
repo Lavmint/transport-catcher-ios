@@ -61,7 +61,7 @@ class ArrivalTimesPresenter {
     }
     
     func vehicleInfo(for arrival: Arrival) -> String {
-        return [arrival.type.rawValue, arrival.model ?? "", arrival.stateNumber].joined(separator: " ")
+        return [arrival.localizedType.firstCapitalized, arrival.model ?? "", arrival.stateNumber].joined(separator: " ")
     }
     
     func remainingLength(for arrival: Arrival) -> String {
