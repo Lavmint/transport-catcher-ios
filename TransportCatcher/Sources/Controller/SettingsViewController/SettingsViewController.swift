@@ -19,7 +19,8 @@ class SettingsViewController: UITableViewController, GenericView {
         // Do any additional setup after loading the view.
         interactor = SettingsInteractor()
         presenter = SettingsPresenter(interactor: interactor)
-        genericView.timeoutCell.detailTextLabel?.text = presenter.timeoutInterval
+        presenter.delegate = self
+        genericView.timeoutSecondsLabel.text = presenter.timeoutInterval
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -31,12 +32,14 @@ class SettingsViewController: UITableViewController, GenericView {
     }
     
     private func onTimeoutCellTapped() {
-        let timeoutIntervalAlert = presenter.createTimeoutIntervalAlert(timeoutIntervalChangedHandler: (self, #selector(onTimeoutChanged(_:))))
+        let timeoutIntervalAlert = presenter.createTimeoutIntervalAlert()
         self.present(timeoutIntervalAlert, animated: true, completion: nil)
     }
+}
+
+extension SettingsViewController: SettingsPresenterDelegate {
     
-    @objc private func onTimeoutChanged(_ timeoutValueTextField: UITextField) {
-        genericView.timeoutSecondsLabel.text = timeoutValueTextField.text
-        presenter.timeoutInterval = timeoutValueTextField.text
+    func didChangeTimeout(presenter: SettingsPresenter) {
+        genericView.timeoutSecondsLabel.text = presenter.timeoutInterval
     }
 }

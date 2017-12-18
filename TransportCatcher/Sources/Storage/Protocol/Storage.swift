@@ -79,8 +79,10 @@ extension Storage {
     }
     
     func save() {
+        guard context.hasChanges else { return }
         do {
             try context.save()
+            dprint("Saving: \(self)")
         } catch {
             dprint(error)
             assertionFailure()
