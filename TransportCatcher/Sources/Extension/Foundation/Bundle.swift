@@ -14,4 +14,16 @@ extension Bundle {
         let dict = NSDictionary(contentsOfFile: Bundle.main.path(forResource: "TransportCatcher-Info", ofType: "plist")!) as? [String: Any]
         return dict
     }
+    
+    var releaseVersionNumber: String? {
+        return infoDictionary?["CFBundleShortVersionString"] as? String
+    }
+    
+    var buildVersionNumber: String? {
+        return infoDictionary?["CFBundleVersion"] as? String
+    }
+    
+    var copyright: String? {
+        return localizedInfoDictionary?["NSHumanReadableCopyright"] as? String
+    }
 }

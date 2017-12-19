@@ -55,6 +55,10 @@ enum LocalizedString {
         static var value: String {
             return NSLocalizedString("common_value", comment: "")
         }
+        
+        static var version: String {
+            return NSLocalizedString("common_version", comment: "")
+        }
     }
     
     enum Transport {
@@ -69,6 +73,29 @@ enum LocalizedString {
         
         static var bus: String {
             return NSLocalizedString("transport_bus", comment: "")
+        }
+    }
+    
+    enum About {
+        
+        static var purpose: String {
+            return NSLocalizedString("about_whatFor", comment: "")
+        }
+        
+        static var purposeDescription: String {
+            return NSLocalizedString("about_whatForDescription", comment: "")
+        }
+        
+        static var compatibility: String {
+            return NSLocalizedString("about_compatibility", comment: "")
+        }
+        
+        static var compatibilityDescription: String {
+            return NSLocalizedString("about_compatibilityDescription", comment: "")
+        }
+        
+        static var usedServices: String {
+            return NSLocalizedString("about_services", comment: "")
         }
     }
 }

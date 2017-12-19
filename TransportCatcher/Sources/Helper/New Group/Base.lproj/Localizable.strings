@@ -26,9 +26,19 @@
 // MARK: Common
 
 "common_value" = "value";
+"common_version" = "version";
 
 // MARK: Transport
 
 "transport_tramway" = "tramway";
 "transport_trolleybus" = "trolleybus";
 "transport_bus" = "bus";
+
+// MARK: About
+
+"about_whatFor" = "What can this app do?";
+"about_whatForDescription" = "Transport Samara App gives you ability yo tracking arrival times of transport to the selected stop.";
+"about_compatibility" = "Which devices compatible with this application?";
+"about_compatibilityDescription" = "Devices that supports iOS 11.0 and grater, both iPhone and iPad.";
+"about_services" = "Which services does this app uses?";
+

@@ -6,7 +6,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -101,135 +100,8 @@
         <!--About Application View Controller-->
         <scene sceneID="9uw-tj-gJK">
             <objects>
-                <viewController id="b9f-nm-NFl" customClass="AboutApplicationViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="U01-gI-bJy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wy-SQ-3Mg">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sLe-oY-wnB">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="307.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me0-tb-FYh">
-                                                <rect key="frame" x="8" y="8" width="359" height="223.5"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Что умеет приложение?">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment>
-                                                        <string key="content">
-Приложение Транспорт Самара позволяет отслеживать прибывание транспорта на выбранную остановку.
-
-</string>
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="На каких устройствах доступно приложение?">
-                                                        <attributes>
-                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment>
-                                                        <string key="content">
-На устройствах с iOS11 и выше, включая iPhone и iPad.
-
-</string>
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="Какие сервисы использует приложение?">
-                                                        <attributes>
-                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lVb-QN-wE7">
-                                                <rect key="frame" x="8" y="239.5" width="359" height="60"/>
-                                                <subviews>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_tosmr" translatesAutoresizingMaskIntoConstraints="NO" id="BNS-2O-Oga">
-                                                        <rect key="frame" x="0.0" y="0.0" width="109" height="60"/>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="XR8-rg-Q6U" appends="YES" id="9rj-RP-gUV"/>
-                                                        </connections>
-                                                    </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_2gis" translatesAutoresizingMaskIntoConstraints="NO" id="IGo-Fx-vsU">
-                                                        <rect key="frame" x="125" y="0.0" width="109" height="60"/>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="VQz-vB-R4k" appends="YES" id="BMS-t1-FIS"/>
-                                                        </connections>
-                                                    </imageView>
-                                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_icons8" translatesAutoresizingMaskIntoConstraints="NO" id="fsZ-iL-P5O">
-                                                        <rect key="frame" x="250" y="0.0" width="109" height="60"/>
-                                                        <connections>
-                                                            <outletCollection property="gestureRecognizers" destination="z12-Ky-6t6" appends="YES" id="UEh-OZ-1gD"/>
-                                                        </connections>
-                                                    </imageView>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="gzr-R3-ibj"/>
-                                                </constraints>
-                                            </stackView>
-                                        </subviews>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="sLe-oY-wnB" secondAttribute="trailing" id="CvP-gC-OIU"/>
-                                    <constraint firstItem="sLe-oY-wnB" firstAttribute="leading" secondItem="5Wy-SQ-3Mg" secondAttribute="leading" id="Nup-WC-3zL"/>
-                                    <constraint firstAttribute="bottom" secondItem="sLe-oY-wnB" secondAttribute="bottom" id="OY5-qB-zMK"/>
-                                    <constraint firstItem="sLe-oY-wnB" firstAttribute="top" secondItem="5Wy-SQ-3Mg" secondAttribute="top" id="aRs-DV-8US"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="5Wy-SQ-3Mg" firstAttribute="leading" secondItem="EhQ-XC-rwd" secondAttribute="leading" id="Rlm-vk-8Nr"/>
-                            <constraint firstItem="5Wy-SQ-3Mg" firstAttribute="top" secondItem="EhQ-XC-rwd" secondAttribute="top" id="SsX-Of-qMx"/>
-                            <constraint firstItem="EhQ-XC-rwd" firstAttribute="trailing" secondItem="5Wy-SQ-3Mg" secondAttribute="trailing" id="ix0-a2-uNi"/>
-                            <constraint firstItem="EhQ-XC-rwd" firstAttribute="bottom" secondItem="5Wy-SQ-3Mg" secondAttribute="bottom" id="mJy-CS-1Hx"/>
-                            <constraint firstItem="sLe-oY-wnB" firstAttribute="width" secondItem="U01-gI-bJy" secondAttribute="width" id="psQ-gt-FIL"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="EhQ-XC-rwd"/>
-                    </view>
-                    <connections>
-                        <outlet property="descriptionLabel" destination="me0-tb-FYh" id="27H-wV-bi5"/>
-                    </connections>
-                </viewController>
+                <viewController id="b9f-nm-NFl" customClass="AboutApplicationViewController" customModule="TransportCatcher" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xB-lT-9Ap" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="z12-Ky-6t6" userLabel="Icons 8 Gesture">
-                    <connections>
-                        <action selector="onIcons8Tapped:" destination="b9f-nm-NFl" id="oeX-uU-rZ4"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="VQz-vB-R4k" userLabel="2GIS Gesture">
-                    <connections>
-                        <action selector="on2GISTapped:" destination="b9f-nm-NFl" id="OJb-eb-1Ce"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="XR8-rg-Q6U" userLabel="ToSMR Gesture">
-                    <connections>
-                        <action selector="onToSamaraTapped:" destination="b9f-nm-NFl" id="Hyb-lv-Dkg"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1496.8" y="130.88455772113943"/>
         </scene>
@@ -253,9 +125,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_2gis" width="400" height="164"/>
         <image name="ic_gears" width="25" height="25"/>
-        <image name="ic_icons8" width="200" height="100"/>
-        <image name="ic_tosmr" width="94" height="23"/>
     </resources>
 </document>

@@ -26,9 +26,18 @@
 // MARK: Common
 
 "common_value" = "значение";
+"common_version" = "версия";
 
 // MARK: Transport
 
 "transport_tramway" = "трамвай";
 "transport_trolleybus" = "троллейбус";
 "transport_bus" = "автобус";
+
+// MARK: About
+
+"about_whatFor" = "Что умеет приложение?";
+"about_whatForDescription" = "Приложение Транспорт Самара позволяет отслеживать прибывание транспорта на выбранную остановку.";
+"about_compatibility" = "На каких устройствах доступно приложение?";
+"about_compatibilityDescription" = "На устройствах под управлением iOS 11.0 и выше, включая iPhone и iPad.";
+"about_services" = "Какие сервисы использует приложение?";
