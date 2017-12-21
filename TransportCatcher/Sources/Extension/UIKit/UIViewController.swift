@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController {
     
-    func present(error err: Error?) {
+    func presentErrorAlertIfNeeded(error err: Error?) {
         guard let error = err  else { return }
         let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
         let action = UIAlertAction(title: LocalizedString.Alert.OK, style: UIAlertActionStyle.default) { (_) in

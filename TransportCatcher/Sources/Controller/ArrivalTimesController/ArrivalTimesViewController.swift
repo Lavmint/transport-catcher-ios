@@ -18,16 +18,13 @@ class ArrivalTimesViewController: UIViewController, GenericView {
     typealias View = ArrivalTimesView
     private(set) var intercator: ArrivalTimesInteractor!
     private(set) var presenter: ArrivalTimesPresenter!
-    private(set) var emptyViewController: EmptyViewController!
     weak var delegate: ArrivalTimesViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.intercator = ArrivalTimesInteractor()
         self.presenter = ArrivalTimesPresenter(interactor: intercator)
-        self.emptyViewController = EmptyViewController()
-        genericView.setEmptyView(view: emptyViewController.view)
-        presenter.configure(controller: emptyViewController, on: genericView, with: nil, isInitial: true)
+        self.presenter.presentEmptyViewIfNeeded(on: genericView, with: nil, isInitial: true)
         self.genericView.configure()
         self.genericView.tableView.dataSource = self
     }
@@ -35,8 +32,8 @@ class ArrivalTimesViewController: UIViewController, GenericView {
     func reload(withStopId stopId: Int) {
         delegate?.willFetchArrivals(arrivalTimesViewController: self, for: stopId)
         intercator.fetchArrivals(toStopId: stopId) { (error) in
-            self.present(error: error)
-            self.presenter.configure(controller: self.emptyViewController, on: self.genericView, with: error)
+            self.presentErrorAlertIfNeeded(error: error)
+            self.presenter.presentEmptyViewIfNeeded(on: self.genericView, with: error)
             self.genericView.reload()
             self.delegate?.didFetchArrivals(arrivalTimesViewController: self, for: stopId)
         }
@@ -49,12 +46,7 @@ extension ArrivalTimesViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: ArrivalTableViewCell.stringClass, for: indexPath) as! ArrivalTableViewCell
         guard indexPath.row < intercator.arrivals.count else { return cell }
         let arrival = intercator.arrivals[indexPath.row]
-        cell.timeLabel.attributedText = presenter.timeAttributedString(for: arrival)
-        cell.timeLabel.backgroundColor = presenter.timeBackgroundColor(for: arrival)
-        cell.routeLabel.text = presenter.route(for: arrival)
-        cell.vehicleInfoLabel.text = presenter.vehicleInfo(for: arrival)
-        cell.trackingLabel.text = presenter.remainingLength(for: arrival)
-        cell.invalidInfoLabel.text = presenter.invalidInfo(for: arrival)
+        presenter.configure(arrivalCell: cell, for: arrival)
         return cell
     }
     

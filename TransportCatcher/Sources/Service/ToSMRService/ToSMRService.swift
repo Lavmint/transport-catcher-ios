@@ -16,7 +16,7 @@ extension Service {
         guard let secret = Bundle.main.appInfoDictionary?["TC_TOSMR_SECRET"] as? String else { return nil }
         let userStorage = UserStorage(context: TransportCatcherPersistenseContainer.shared.viewContext)
         let service: Service = Service(clientId: client, secret: secret)
-        service.timeoutInterval = userStorage.standard.timeoutInteraval
+        userStorage.standard.timeoutInteraval = service.timeoutInterval
         return service
     }()
 }

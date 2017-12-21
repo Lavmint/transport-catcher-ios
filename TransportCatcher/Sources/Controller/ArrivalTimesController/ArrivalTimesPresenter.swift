@@ -12,6 +12,7 @@ import ToSMR
 class ArrivalTimesPresenter {
     
     private(set) var interactor: ArrivalTimesInteractor
+    private(set) var emptyView: EmptyView?
     
     init(interactor: ArrivalTimesInteractor) {
         self.interactor = interactor
@@ -72,26 +73,38 @@ class ArrivalTimesPresenter {
         return arrival.isInvalidFriendly ? LocalizedString.Arrival.invalidFriendly : nil
     }
     
-    func configure(controller: EmptyViewController, on view: ArrivalTimesView, with error: Error?, isInitial: Bool = false) {
+    func configure(arrivalCell: ArrivalTableViewCell, for arrival: Arrival) {
+        arrivalCell.timeLabel.attributedText = timeAttributedString(for: arrival)
+        arrivalCell.timeLabel.backgroundColor = timeBackgroundColor(for: arrival)
+        arrivalCell.routeLabel.text = route(for: arrival)
+        arrivalCell.vehicleInfoLabel.text = vehicleInfo(for: arrival)
+        arrivalCell.trackingLabel.text = remainingLength(for: arrival)
+        arrivalCell.invalidInfoLabel.text = invalidInfo(for: arrival)
+    }
+    
+    func presentEmptyViewIfNeeded(on view: ArrivalTimesView, with error: Error?, isInitial: Bool = false) {
         
-        if isInitial {
-            view.setEmptyViewHidden(isHidden: false)
-            controller.genericView.infoLabel.text = LocalizedString.Arrival.selectStop
-            return
-        }
-        
-        if let err = error {
-            view.setEmptyViewHidden(isHidden: false)
-            controller.genericView.infoLabel.text = err.localizedDescription
-            return
-        }
-        
-        if interactor.arrivals.isEmpty {
-            view.setEmptyViewHidden(isHidden: false)
-            controller.genericView.infoLabel.text = LocalizedString.Arrival.emptyList
-            return
-        }
-        
-        view.setEmptyViewHidden(isHidden: true)
+        _ = EmptyView.create(configure: { (emptyView) in
+            
+            if isInitial {
+                emptyView.infoLabel.text = LocalizedString.Arrival.selectStop
+                view.presentOverlayView(view: emptyView)
+                return
+            }
+            
+            if let err = error {
+                emptyView.infoLabel.text = err.localizedDescription
+                view.presentOverlayView(view: emptyView)
+                return
+            }
+            
+            if interactor.arrivals.isEmpty {
+                emptyView.infoLabel.text = LocalizedString.Arrival.emptyList
+                view.presentOverlayView(view: emptyView)
+                return
+            }
+            
+            view.presentOverlayView(view: nil)
+        })
     }
 }
