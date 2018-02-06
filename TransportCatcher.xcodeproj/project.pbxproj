@@ -242,6 +242,9 @@
 		C79709C11F3A2FF700824E7E /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C79885BA1FD5450200217E64 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		C79F55671F3E1BB000BC13C5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		C7A1870A2029F5B6003506AD /* resize.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = resize.sh; sourceTree = "<group>"; };
+		C7A1870B2029F5B6003506AD /* ios_icon_template.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ios_icon_template.svg; sourceTree = "<group>"; };
+		C7A1870E2029F5F2003506AD /* ios_icon.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ios_icon.svg; sourceTree = "<group>"; };
 		C7B00E2C1F3F07990022D6F2 /* ServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceMock.swift; sourceTree = "<group>"; };
 		C7B00E2E1F3F11F60022D6F2 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
 		C7B00E301F3F18FF0022D6F2 /* ServiceStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceStub.swift; sourceTree = "<group>"; };
@@ -688,6 +691,25 @@
 			path = EmptyView;
 			sourceTree = "<group>";
 		};
+		C7A187072029F569003506AD /* xcdatamodeld */ = {
+			isa = PBXGroup;
+			children = (
+				FA29B55B1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld */,
+				FAF265181FD012EF00E735A7 /* Classifier.xcdatamodeld */,
+			);
+			path = xcdatamodeld;
+			sourceTree = "<group>";
+		};
+		C7A187092029F58A003506AD /* svg */ = {
+			isa = PBXGroup;
+			children = (
+				C7A1870E2029F5F2003506AD /* ios_icon.svg */,
+				C7A1870B2029F5B6003506AD /* ios_icon_template.svg */,
+				C7A1870A2029F5B6003506AD /* resize.sh */,
+			);
+			path = svg;
+			sourceTree = "<group>";
+		};
 		C7B00E341F3F32410022D6F2 /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
@@ -860,8 +882,8 @@
 			children = (
 				C746852F1EFFA9E700D6021E /* Assets.xcassets */,
 				FAAB5E9F1FC866B200778334 /* Storyboard */,
-				FA29B55B1FCCAA32000D7713 /* TransportCatcher.xcdatamodeld */,
-				FAF265181FD012EF00E735A7 /* Classifier.xcdatamodeld */,
+				C7A187072029F569003506AD /* xcdatamodeld */,
+				C7A187092029F58A003506AD /* svg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
