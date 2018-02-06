@@ -75,9 +75,13 @@ class AboutApplicationViewController: UIViewController {
     
     @IBAction func onContactDeveloperTapped(_ sender: UIButton) {
         var mailto: String = "mailto:lavmint@gmail.com?cc=elizarov1988@gmail.com&subject=Transport:Samara:iOS"
-        let appInfo: String = "Версия приложения:" + (destributionLabel.text ?? "")
-        let deviceInfo = "Устройство: \(UIDevice.current.localizedModel) \(UIDevice.current.systemVersion)"
-        mailto += "&body=\n\(appInfo)\n\(deviceInfo)"
+        let mailingComponents: [String] = [
+            "\(LocalizedString.About.mailingAppVersion): \(Bundle.main.releaseVersionNumber ?? LocalizedString.About.mailingAppVersionUnidentified)",
+            "\(LocalizedString.About.mailingiOSVersion): \(UIDevice.current.systemVersion)",
+            "\(LocalizedString.About.mailingDevice): \(UIDevice.current.localizedModel)"
+        ]
+        let deviceInfo = mailingComponents.joined(separator: "\n")
+        mailto += "&body=\n\n\(deviceInfo)"
         guard let rawURL = mailto.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) else { return }
         guard let url = URL.init(string: rawURL) else { return }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)

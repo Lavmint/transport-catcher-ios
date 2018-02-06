@@ -41,4 +41,8 @@
 "about_compatibility" = "Which devices compatible with this application?";
 "about_compatibilityDescription" = "Devices that supports iOS 11.0 and grater, both iPhone and iPad.";
 "about_services" = "Which services does this app uses?";
+"about_mailingAppVersion" = "Application version";
+"about_mailingAppVersionUnidentified" = "not defined";
+"about_mailingiOSVersion" = "iOS version";
+"about_mailingDevice" = "Device";
 

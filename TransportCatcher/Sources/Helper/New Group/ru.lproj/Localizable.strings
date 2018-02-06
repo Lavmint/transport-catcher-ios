@@ -41,3 +41,7 @@
 "about_compatibility" = "На каких устройствах доступно приложение?";
 "about_compatibilityDescription" = "На устройствах под управлением iOS 11.0 и выше, включая iPhone и iPad.";
 "about_services" = "Какие сервисы использует приложение?";
+"about_mailingAppVersion" = "Версия приложения";
+"about_mailingAppVersionUnidentified" = "не определена";
+"about_mailingiOSVersion" = "Версия iOS";
+"about_mailingDevice" = "Устройство";

@@ -97,5 +97,21 @@ enum LocalizedString {
         static var usedServices: String {
             return NSLocalizedString("about_services", comment: "")
         }
+        
+        static var mailingAppVersion: String  {
+            return NSLocalizedString("about_mailingAppVersion", comment: "")
+        }
+        
+        static var mailingAppVersionUnidentified: String  {
+            return NSLocalizedString("about_mailingAppVersionUnidentified", comment: "")
+        }
+        
+        static var mailingiOSVersion: String  {
+            return NSLocalizedString("about_mailingiOSVersion", comment: "")
+        }
+        
+        static var mailingDevice: String  {
+            return NSLocalizedString("about_mailingDevice", comment: "")
+        }
     }
 }
