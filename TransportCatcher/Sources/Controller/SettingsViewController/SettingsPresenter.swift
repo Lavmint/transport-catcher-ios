@@ -57,7 +57,7 @@ class SettingsPresenter {
         
         alert.addTextField { (timeoutValueTextField) in
             let items: [Int] = [5, 10, 15, 20, 40, 60, 80, 120, 200]
-            let wrapper = PlainPickerWrapperView(items: items.flatMap({ String($0) }))
+            let wrapper = PlainPickerWrapperView(items: items.compactMap({ String($0) }))
             self.timeoutPickerWrapper = wrapper
             self.timeoutPickerWrapper.select(item: self.timeoutInterval)
             self.timeoutPickerWrapper.addTarget(self, action: #selector(self.onTimeoutChanged), for: .valueChanged)

@@ -15,7 +15,7 @@ extension UIView {
         if let emptyView = view {
             emptyView.accessibilityIdentifier = emptyViewIdentifier
             NSLayoutConstraint.dock(view: emptyView, in: self)
-            self.bringSubview(toFront: emptyView)
+            self.bringSubviewToFront(emptyView)
         } else {
             subviews.filter({ $0.accessibilityIdentifier == emptyViewIdentifier }).forEach({ $0.removeFromSuperview() })
         }

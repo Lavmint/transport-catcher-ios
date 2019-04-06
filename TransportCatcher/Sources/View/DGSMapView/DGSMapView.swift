@@ -25,14 +25,14 @@ internal class DGSMapView: MKMapView {
     }
     
     func loadDGSLayer() {
-        self.insert(mapViewOverlay, at: 0, level: .aboveLabels)
+        self.insertOverlay(mapViewOverlay, at: 0, level: .aboveLabels)
         //Samara
         let center = CLLocationCoordinate2D(latitude: 53.220841596277012, longitude: 50.170634245448952)
         setAdjustedRegion(center: center)
     }
     
     func setAdjustedRegion(center: CLLocationCoordinate2D) {
-        let region = MKCoordinateRegionMakeWithDistance(center, 1000, 1000)
+        let region = MKCoordinateRegion.init(center: center, latitudinalMeters: 1000, longitudinalMeters: 1000)
         let adjustedRegion = self.regionThatFits(region)
         self.setRegion(adjustedRegion, animated: true)
     }

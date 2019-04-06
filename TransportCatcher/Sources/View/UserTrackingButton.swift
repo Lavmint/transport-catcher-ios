@@ -16,7 +16,7 @@ class UserTrackingButton: UIButton {
         }
     }
     
-    func onStateChanged(state: UIControlState) {
+    func onStateChanged(state: UIControl.State) {
         switch state {
         case .highlighted:
             self.setImage(#imageLiteral(resourceName: "ic_location_pointer_highlighted"), for: .highlighted)

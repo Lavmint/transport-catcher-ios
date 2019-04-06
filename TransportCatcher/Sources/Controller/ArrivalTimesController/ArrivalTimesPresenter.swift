@@ -27,16 +27,16 @@ class ArrivalTimesPresenter {
         let timeAS = NSAttributedString(
             string: String(time) + "\n",
             attributes: [
-                NSAttributedStringKey.foregroundColor: UIColor.white,
-                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28)
+                NSAttributedString.Key.foregroundColor: UIColor.white,
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 28)
             ]
         )
         
         let minutesAS = NSAttributedString(
             string: LocalizedString.Arrival.minutesShort,
             attributes: [
-                NSAttributedStringKey.foregroundColor: UIColor.white,
-                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20)
+                NSAttributedString.Key.foregroundColor: UIColor.white,
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)
             ]
         )
         

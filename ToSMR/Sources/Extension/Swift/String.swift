@@ -10,7 +10,7 @@ import CommonCrypto
 
 internal extension String {
     
-    internal var sha1: String {
+    var sha1: String {
         let data = self.data(using: String.Encoding.utf8)!
         var digest = [UInt8](repeating: 0, count:Int(CC_SHA1_DIGEST_LENGTH))
         data.withUnsafeBytes {
@@ -20,7 +20,7 @@ internal extension String {
         return hexBytes.joined()
     }
     
-    internal var isNullOrEmpty: Bool {
+    var isNullOrEmpty: Bool {
         let nullifiers = ["null", "nil"]
         return self.isEmpty || nullifiers.contains(self.lowercased())
     }

@@ -20,7 +20,7 @@ public final class JSONSerializer: Serializer {
 // MARK: Deserialization
 public extension JSONSerializer {
  
-    public func object<T>(from data: Data?) -> T? {
+    func object<T>(from data: Data?) -> T? {
         
         guard let data = data else { return nil }
 

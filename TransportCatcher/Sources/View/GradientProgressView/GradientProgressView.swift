@@ -95,7 +95,7 @@ public class GradientProgressView: UIView, CAAnimationDelegate {
         animation.toValue = shiftedColors
         animation.duration = 0.03
         animation.isRemovedOnCompletion = true
-        animation.fillMode = kCAFillModeForwards
+        animation.fillMode = CAMediaTimingFillMode.forwards
         animation.delegate = self
         layer.add(animation, forKey: "animateGradient")
     }

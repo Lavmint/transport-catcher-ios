@@ -39,7 +39,7 @@ class PlainPickerWrapperView: UIControl, UIPickerViewDataSource, UIPickerViewDel
     }
     
     func select(item: String?) {
-        guard let i = item, let idx = items.index(of: i) else {
+        guard let i = item, let idx = items.firstIndex(of: i) else {
             return
         }
         self.picker.selectRow(idx, inComponent: 0, animated: false)

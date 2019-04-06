@@ -16,23 +16,23 @@ class AboutApplicationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let versionComponents: [String?] = [LocalizedString.Common.version.firstCapitalized, Bundle.main.releaseVersionNumber]
-        let version = versionComponents.flatMap({ $0 }).joined(separator: " ")
+        let version = versionComponents.compactMap({ $0 }).joined(separator: " ")
         let components: [String?] = [Bundle.main.copyright, version]
-        destributionLabel.text = components.flatMap({ $0 }).joined(separator: "\n")
+        destributionLabel.text = components.compactMap({ $0 }).joined(separator: "\n")
         destributionLabel.numberOfLines = 0
         descriptionLabel.attributedText = getAboutAttributedText()
     }
     
     private func getAboutAttributedText() -> NSAttributedString? {
     
-        let titleAttrs: [NSAttributedStringKey: Any] = [
-            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17),
-            NSAttributedStringKey.foregroundColor: UIColor.black
+        let titleAttrs: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17),
+            NSAttributedString.Key.foregroundColor: UIColor.black
         ]
         
-        let paragraphAttrs: [NSAttributedStringKey: Any] = [
-            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17),
-            NSAttributedStringKey.foregroundColor: #colorLiteral(red: 0.4117647059, green: 0.4117647059, blue: 0.4117647059, alpha: 1)
+        let paragraphAttrs: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17),
+            NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.4117647059, green: 0.4117647059, blue: 0.4117647059, alpha: 1)
         ]
 
         let titles: [String] = [
@@ -60,17 +60,17 @@ class AboutApplicationViewController: UIViewController {
     
     @IBAction func onToSamaraTapped(_ sender: UITapGestureRecognizer) {
         guard let url = URL.init(string: "http://tosamara.ru") else { return }
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
     }
     
     @IBAction func on2GISTapped(_ sender: UITapGestureRecognizer) {
         guard let url = URL.init(string: "https://info.2gis.ru") else { return }
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
     }
     
     @IBAction func onIcons8Tapped(_ sender: UITapGestureRecognizer) {
         guard let url = URL.init(string: "https://icons8.ru") else { return }
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
     }
     
     @IBAction func onContactDeveloperTapped(_ sender: UIButton) {
@@ -84,6 +84,11 @@ class AboutApplicationViewController: UIViewController {
         mailto += "&body=\n\n\(deviceInfo)"
         guard let rawURL = mailto.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) else { return }
         guard let url = URL.init(string: rawURL) else { return }
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

@@ -10,7 +10,7 @@ import Foundation
 
 internal extension HTTPURLResponse {
     
-    internal var error: (code: Int, message: String)? {
+    var error: (code: Int, message: String)? {
         let code = self.statusCode
         let message = HTTPURLResponse.localizedString(forStatusCode: self.statusCode)
         return (code, message)

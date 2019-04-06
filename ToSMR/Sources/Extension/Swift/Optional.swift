@@ -14,7 +14,7 @@ internal enum OptionalError: Error {
 
 internal extension Optional {
     
-    internal func required() throws -> Wrapped {
+    func required() throws -> Wrapped {
         guard let val = self else {
             throw OptionalError.valueRequired
         }
