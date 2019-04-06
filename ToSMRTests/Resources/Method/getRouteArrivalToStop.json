@@ -1,0 +1,69 @@
+{
+  "arrival": [
+    {
+      "number": "247",
+      "KR_ID": "193",
+      "modelTitle": "HYUNDAI HD (LWB)",
+      "hullNo": "950213",
+      "nextStopId": "8",
+      "timeInSeconds": "44.900000000000006",
+      "stateNumber": "Р971УК 163",
+      "forInvalid": "false",
+      "nextStopName": "ул. Революционная",
+      "requestedStopId": "9",
+      "time": "0",
+      "type": "Автобус",
+      "spanLength": "549.5",
+      "remainingLength": "532.6"
+    },
+    {
+      "number": "247",
+      "KR_ID": "193",
+      "modelTitle": "HYUNDAI County",
+      "hullNo": "950263",
+      "nextStopId": "100",
+      "timeInSeconds": "1100.44",
+      "stateNumber": "С144УК 163",
+      "forInvalid": "false",
+      "nextStopName": "Машиностроительный колледж",
+      "requestedStopId": "9",
+      "time": "18",
+      "type": "Автобус",
+      "spanLength": "584.6",
+      "remainingLength": "125.9"
+    },
+    {
+      "number": "247",
+      "KR_ID": "193",
+      "modelTitle": "HYUNDAI County",
+      "hullNo": "950170",
+      "nextStopId": "36",
+      "timeInSeconds": "2166.99",
+      "stateNumber": "С759АС 163",
+      "forInvalid": "false",
+      "nextStopName": "Площадь им. Кирова",
+      "requestedStopId": "9",
+      "time": "36",
+      "type": "Автобус",
+      "spanLength": "245.6",
+      "remainingLength": "36.0"
+    },
+    {
+      "number": "247",
+      "KR_ID": "193",
+      "modelTitle": "222709",
+      "hullNo": "949986",
+      "nextStopId": "28",
+      "timeInSeconds": "2236.22",
+      "stateNumber": "С748СУ 163",
+      "forInvalid": "false",
+      "nextStopName": "Площадь им. Кирова",
+      "requestedStopId": "9",
+      "time": "37",
+      "type": "Автобус",
+      "spanLength": "1210.1",
+      "remainingLength": "71.6"
+    }
+  ],
+  "messages": []
+}

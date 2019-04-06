@@ -18,5 +18,9 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>clientId</key>
+	<string>AlAverkin</string>
+	<key>secret</key>
+	<string>Fp3E81</string>
 </dict>
 </plist>

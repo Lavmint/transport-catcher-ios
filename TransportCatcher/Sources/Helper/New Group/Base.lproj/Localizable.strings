@@ -1,0 +1,48 @@
+/* 
+  Localized.strings
+  TransportCatcher
+
+  Created by Alexey Averkin on 18/12/2017.
+  Copyright © 2017 Alexey Averkin. All rights reserved.
+*/
+
+//MARK: Arrival
+
+"arrival_minutesShort" = "min.";
+"arrival_metersLeftToStop" = "m. left to stop";
+"arrival_invalidFriendly" = "Invalid friendly";
+"arrival_emptyList" = "According to the service, the arrival of transport to the stop is not expected in the near future.";
+"arrival_selectStop" = "Select stop on the map to see arrival times";
+
+// MARK: Alert
+
+"alert_ok" = "OK";
+"alert_cancel" = "Cancel";
+
+// MARK: Settings
+
+"settings_setTimeoutInterval" = "Pick timeout interval in seconds";
+
+// MARK: Common
+
+"common_value" = "value";
+"common_version" = "version";
+
+// MARK: Transport
+
+"transport_tramway" = "tramway";
+"transport_trolleybus" = "trolleybus";
+"transport_bus" = "bus";
+
+// MARK: About
+
+"about_whatFor" = "What can this app do?";
+"about_whatForDescription" = "Transport Samara App gives you ability yo tracking arrival times of transport to the selected stop.";
+"about_compatibility" = "Which devices compatible with this application?";
+"about_compatibilityDescription" = "Devices that supports iOS 11.0 and grater, both iPhone and iPad.";
+"about_services" = "Which services does this app uses?";
+"about_mailingAppVersion" = "Application version";
+"about_mailingAppVersionUnidentified" = "not defined";
+"about_mailingiOSVersion" = "iOS version";
+"about_mailingDevice" = "Device";
+

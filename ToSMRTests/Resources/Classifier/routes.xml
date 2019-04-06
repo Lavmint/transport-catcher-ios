@@ -1,0 +1,4273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+	<route>
+		<KR_ID>1</KR_ID>
+		<number>1</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>2</KR_ID>
+		<number>1</number>
+		<direction>Красная Глинка</direction>
+		<directionEn>Krasnaya Glinka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>3</KR_ID>
+		<number>12</number>
+		<direction>15-й микрорайон</direction>
+		<directionEn>15th mikrodisctrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>4</KR_ID>
+		<number>12</number>
+		<direction>Авиационный завод</direction>
+		<directionEn>Aviacionnyj zavod</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>7</KR_ID>
+		<number>17</number>
+		<direction>пос. 113-й км</direction>
+		<directionEn>113th km</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>8</KR_ID>
+		<number>17</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>11</KR_ID>
+		<number>2</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>12</KR_ID>
+		<number>2</number>
+		<direction>ул. Высоцкого</direction>
+		<directionEn>Vysockogo st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>13</KR_ID>
+		<number>21</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>14</KR_ID>
+		<number>21</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>15</KR_ID>
+		<number>22</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>16</KR_ID>
+		<number>22</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>17</KR_ID>
+		<number>24</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>18</KR_ID>
+		<number>24</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>19</KR_ID>
+		<number>26</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>20</KR_ID>
+		<number>26</number>
+		<direction>пос. Сухая Самарка</direction>
+		<directionEn>p.g.t. Suhaya Samarka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>22</KR_ID>
+		<number>27</number>
+		<direction>Станция метро &quot;Безымянка&quot; - Кинотеатр &quot;Луч&quot; - ул. Транзитная - Станция метро &quot;Безымянка&quot;</direction>
+		<directionEn>Underground Station &quot;Bezymyanka&quot; - Kinoteatr &quot;Luch&quot; - Tranzitnaya st. - Underground Station &quot;Bezymyanka&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>23</KR_ID>
+		<number>29</number>
+		<direction>Приволжский микрорайон</direction>
+		<directionEn>Privolzhskij microdistrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>24</KR_ID>
+		<number>29</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>25</KR_ID>
+		<number>3</number>
+		<direction>пос. Шмидта</direction>
+		<directionEn>p.g.t. Shmidta</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>26</KR_ID>
+		<number>3</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>27</KR_ID>
+		<number>30</number>
+		<direction>Дом Печати</direction>
+		<directionEn>Dom Pechati</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>28</KR_ID>
+		<number>30</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>29</KR_ID>
+		<number>32</number>
+		<direction>совхоз &quot;Кряж&quot;</direction>
+		<directionEn>Sovhoz &quot;Kryazh&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>30</KR_ID>
+		<number>32</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>31</KR_ID>
+		<number>34</number>
+		<direction>завод &quot;Металлург&quot;</direction>
+		<directionEn>Zavod &quot;Metallurg&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>32</KR_ID>
+		<number>34</number>
+		<direction>площадь Революции</direction>
+		<directionEn>Revolyutcii square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>33</KR_ID>
+		<number>35</number>
+		<direction>Дом Молодёжи</direction>
+		<directionEn>Dom Molodezhi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>35</KR_ID>
+		<number>36</number>
+		<direction>совхоз &quot;Рубежное&quot;</direction>
+		<directionEn>Sovhoz &quot;Rubezhny &quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>36</KR_ID>
+		<number>36</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>37</KR_ID>
+		<number>37</number>
+		<direction>14-й микрорайон</direction>
+		<directionEn>14th mikrodisctrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>38</KR_ID>
+		<number>37</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>39</KR_ID>
+		<number>38</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>40</KR_ID>
+		<number>38</number>
+		<direction>9-й микрорайон</direction>
+		<directionEn>9th mikrodisctrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>41</KR_ID>
+		<number>39</number>
+		<direction>Клуб &quot;Знамя&quot;</direction>
+		<directionEn>Club &quot; Banner&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>42</KR_ID>
+		<number>39</number>
+		<direction>Автовокзал &quot;Центральный&quot;</direction>
+		<directionEn>Coach Terminal &quot;Central\'nyj&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>43</KR_ID>
+		<number>41</number>
+		<direction>15-й &quot;А&quot; микрорайон</direction>
+		<directionEn>15А mikrodisctrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>44</KR_ID>
+		<number>41</number>
+		<direction>универмаг &quot;Юность&quot;</direction>
+		<directionEn>Univermag &quot;Yunost\'&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>45</KR_ID>
+		<number>45</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>46</KR_ID>
+		<number>45</number>
+		<direction>Красная Глинка</direction>
+		<directionEn>Krasnaya Glinka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>49</KR_ID>
+		<number>47</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>50</KR_ID>
+		<number>47</number>
+		<direction>Станция метро &quot;Кировская&quot;</direction>
+		<directionEn>Underground Station &quot;Kirovskaya&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>51</KR_ID>
+		<number>50</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>52</KR_ID>
+		<number>50</number>
+		<direction>Красная Глинка</direction>
+		<directionEn>Krasnaya Glinka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>53</KR_ID>
+		<number>51</number>
+		<direction>Станция метро &quot;Кировская&quot;</direction>
+		<directionEn>Underground Station &quot;Kirovskaya&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>54</KR_ID>
+		<number>51</number>
+		<direction>Красная Глинка</direction>
+		<directionEn>Krasnaya Glinka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>55</KR_ID>
+		<number>52</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>56</KR_ID>
+		<number>52</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>57</KR_ID>
+		<number>55</number>
+		<direction>9-й микрорайон</direction>
+		<directionEn>9th mikrodisctrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>58</KR_ID>
+		<number>55</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>60</KR_ID>
+		<number>59</number>
+		<direction>ТЦ &quot;Колизей&quot; - Кинотеатр &quot;Луч&quot; - Пост ГИБДД - ТЦ &quot;Колизей&quot;</direction>
+		<directionEn>TC &quot;Kolizej&quot; - Kinoteatr &quot;Luch&quot; - Post GIBDD - TC &quot;Kolizej&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>62</KR_ID>
+		<number>59a</number>
+		<direction>ТЦ &quot;Колизей&quot; - Пост ГИБДД - Кинотеатр &quot;Луч&quot; - ТЦ &quot;Колизей&quot;</direction>
+		<directionEn>TC &quot;Kolizej&quot; - Post GIBDD - Kinoteatr &quot;Luch&quot; - TC &quot;Kolizej&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>63</KR_ID>
+		<number>5д</number>
+		<direction>Губернский рынок</direction>
+		<directionEn>Gubernskij market</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>64</KR_ID>
+		<number>5д</number>
+		<direction>пос. Сухая Самарка</direction>
+		<directionEn>p.g.t. Suhaya Samarka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>65</KR_ID>
+		<number>6</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>66</KR_ID>
+		<number>6</number>
+		<direction>санаторий &quot;Самарский&quot;</direction>
+		<directionEn>Sanatorij &quot;Samarskij&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>67</KR_ID>
+		<number>61</number>
+		<direction>ТЦ &quot;Колизей&quot;</direction>
+		<directionEn>The shopping center &quot;Coliseum&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>68</KR_ID>
+		<number>61</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>69</KR_ID>
+		<number>63</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>70</KR_ID>
+		<number>63</number>
+		<direction>совхоз &quot;Рубежное&quot;</direction>
+		<directionEn>Sovhoz &quot;Rubezhny &quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>71</KR_ID>
+		<number>66</number>
+		<direction>ул. Грозненская</direction>
+		<directionEn>Groznenskaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>72</KR_ID>
+		<number>66</number>
+		<direction>Автовокзал &quot;Центральный&quot;</direction>
+		<directionEn>Coach Terminal &quot;Central\'nyj&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>74</KR_ID>
+		<number>7</number>
+		<direction>Безымянский рынок - ул. Транзитная - Кинотеатр &quot;Луч&quot; - Безымянский рынок</direction>
+		<directionEn>Bezymyanskij Market - Tranzitnaya st. - Kinoteatr &quot;Luch&quot; - Bezymyanskij Market</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>77</KR_ID>
+		<number>8</number>
+		<direction>Безымянский рынок</direction>
+		<directionEn>Bezymyanskij Market</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>78</KR_ID>
+		<number>8</number>
+		<direction>пос. Падовка</direction>
+		<directionEn>p.g.t. Padovka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>79</KR_ID>
+		<number>9</number>
+		<direction>завод &quot;Металлург&quot;</direction>
+		<directionEn>Zavod &quot;Metallurg&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>80</KR_ID>
+		<number>9</number>
+		<direction>пос. Мясокомбинат</direction>
+		<directionEn>p.g.t. Myasokombinat</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>81</KR_ID>
+		<number>1</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>82</KR_ID>
+		<number>1</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>83</KR_ID>
+		<number>10</number>
+		<direction>Костромской переулок</direction>
+		<directionEn>Kostromskoj sidestreet</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>84</KR_ID>
+		<number>10</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>85</KR_ID>
+		<number>13</number>
+		<direction>Костромской переулок</direction>
+		<directionEn>Kostromskoj sidestreet</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>86</KR_ID>
+		<number>13</number>
+		<direction>Постников овраг</direction>
+		<directionEn>Postnikov ovrag</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>87</KR_ID>
+		<number>15</number>
+		<direction>ул. Тухачевского</direction>
+		<directionEn>Tuhachevskogo st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>88</KR_ID>
+		<number>15</number>
+		<direction>ул. Чапаевская</direction>
+		<directionEn>Chapaevskaya st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>89</KR_ID>
+		<number>16</number>
+		<direction>ул. Тухачевского</direction>
+		<directionEn>Tuhachevskogo st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>90</KR_ID>
+		<number>16</number>
+		<direction>ул. Чапаевская</direction>
+		<directionEn>Chapaevskaya st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>93</KR_ID>
+		<number>18</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>94</KR_ID>
+		<number>18</number>
+		<direction>Постников овраг</direction>
+		<directionEn>Postnikov ovrag</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>95</KR_ID>
+		<number>19</number>
+		<direction>ул. Фадеева</direction>
+		<directionEn>Fadeeva st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>96</KR_ID>
+		<number>19</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>97</KR_ID>
+		<number>2</number>
+		<direction>Постников овраг</direction>
+		<directionEn>Postnikov ovrag</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>98</KR_ID>
+		<number>2</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>99</KR_ID>
+		<number>20</number>
+		<direction>ул. Фадеева</direction>
+		<directionEn>Fadeeva st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>100</KR_ID>
+		<number>20</number>
+		<direction>ул. Чапаевская</direction>
+		<directionEn>Chapaevskaya st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>101</KR_ID>
+		<number>20к</number>
+		<direction>ул. Красноармейская</direction>
+		<directionEn>Krasnoarmejskaya st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>102</KR_ID>
+		<number>20к</number>
+		<direction>ул. Фадеева</direction>
+		<directionEn>Fadeeva st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>103</KR_ID>
+		<number>21</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>104</KR_ID>
+		<number>21</number>
+		<direction>ул. Кабельная</direction>
+		<directionEn>Kabel\'naya st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>105</KR_ID>
+		<number>22</number>
+		<direction>15-й &quot;А&quot; микрорайон</direction>
+		<directionEn>15А mikrodisctrict</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>106</KR_ID>
+		<number>22</number>
+		<direction>ул. Красноармейская</direction>
+		<directionEn>Krasnoarmejskaya st.</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>107</KR_ID>
+		<number>23</number>
+		<direction>внутреннее кольцо</direction>
+		<directionEn>inner ring</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>108</KR_ID>
+		<number>24</number>
+		<direction>Завод им. Тарасова</direction>
+		<directionEn>zavod im.Tarasova</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>109</KR_ID>
+		<number>24</number>
+		<direction>Костромской переулок</direction>
+		<directionEn>Kostromskoj sidestreet</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>110</KR_ID>
+		<number>24к</number>
+		<direction>15-й микрорайон</direction>
+		<directionEn>15th mikrodisctrict</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>111</KR_ID>
+		<number>24к</number>
+		<direction>Костромской переулок</direction>
+		<directionEn>Kostromskoj sidestreet</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>112</KR_ID>
+		<number>25</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>113</KR_ID>
+		<number>25</number>
+		<direction>Безымянская ТЭЦ</direction>
+		<directionEn>Bezymyanskaya TPP</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>114</KR_ID>
+		<number>3</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>115</KR_ID>
+		<number>3</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>116</KR_ID>
+		<number>4</number>
+		<direction>внешнее кольцо</direction>
+		<directionEn>outer ring</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>117</KR_ID>
+		<number>5</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>118</KR_ID>
+		<number>5</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>119</KR_ID>
+		<number>7</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>120</KR_ID>
+		<number>7</number>
+		<direction>Станция метро Победа</direction>
+		<directionEn>Underground Station &quot;Pobeda&quot;</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>121</KR_ID>
+		<number>8</number>
+		<direction>Безымянская ТЭЦ</direction>
+		<directionEn>Bezymyanskaya TPP</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>122</KR_ID>
+		<number>8</number>
+		<direction>Металлург</direction>
+		<directionEn>Metallurg</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>123</KR_ID>
+		<number>9</number>
+		<direction>Костромской переулок</direction>
+		<directionEn>Kostromskoj sidestreet</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>124</KR_ID>
+		<number>9</number>
+		<direction>Металлург</direction>
+		<directionEn>Metallurg</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>125</KR_ID>
+		<number>10</number>
+		<direction>Клуб &quot;Мир&quot;</direction>
+		<directionEn>club &quot;Peace&quot;</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>126</KR_ID>
+		<number>10</number>
+		<direction>ул. Кабельная</direction>
+		<directionEn>Kabel\'naya st.</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>127</KR_ID>
+		<number>12</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>128</KR_ID>
+		<number>12</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>129</KR_ID>
+		<number>13</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>130</KR_ID>
+		<number>13</number>
+		<direction>кинотеатр &quot;Шипка&quot;</direction>
+		<directionEn>Kinoteatr &quot;Shipka&quot;</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>131</KR_ID>
+		<number>15</number>
+		<direction>завод &quot;Металлург&quot;</direction>
+		<directionEn>Zavod &quot;Metallurg&quot;</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>132</KR_ID>
+		<number>15</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>133</KR_ID>
+		<number>16</number>
+		<direction>Речной вокзал</direction>
+		<directionEn>Riverside station</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>134</KR_ID>
+		<number>16</number>
+		<direction>Губернский рынок</direction>
+		<directionEn>Gubernskij market</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>135</KR_ID>
+		<number>17</number>
+		<direction>15-й микрорайон</direction>
+		<directionEn>15th mikrodisctrict</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>136</KR_ID>
+		<number>17</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>137</KR_ID>
+		<number>18</number>
+		<direction>15-й микрорайон</direction>
+		<directionEn>15th mikrodisctrict</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>138</KR_ID>
+		<number>18</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>139</KR_ID>
+		<number>19</number>
+		<direction>15-й &quot;А&quot; микрорайон</direction>
+		<directionEn>15А mikrodisctrict</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>140</KR_ID>
+		<number>19</number>
+		<direction>ул. Ново-Садовая</direction>
+		<directionEn>Novo-sadovaya st.</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>143</KR_ID>
+		<number>4</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>144</KR_ID>
+		<number>4</number>
+		<direction>завод &quot;Металлург&quot;</direction>
+		<directionEn>Zavod &quot;Metallurg&quot;</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>145</KR_ID>
+		<number>4к</number>
+		<direction>ул. Антонова-Овсеенко</direction>
+		<directionEn>Antonova-Ovseenko st.</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>146</KR_ID>
+		<number>4к</number>
+		<direction>завод &quot;Металлург&quot;</direction>
+		<directionEn>Zavod &quot;Metallurg&quot;</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>147</KR_ID>
+		<number>6</number>
+		<direction>Губернский рынок</direction>
+		<directionEn>Gubernskij market</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>148</KR_ID>
+		<number>6</number>
+		<direction>ул. Грозненская</direction>
+		<directionEn>Groznenskaya st.</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>149</KR_ID>
+		<number>7</number>
+		<direction>завод &quot;Металлург&quot;</direction>
+		<directionEn>Zavod &quot;Metallurg&quot;</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>150</KR_ID>
+		<number>7</number>
+		<direction>Троллейбусное депо №2</direction>
+		<directionEn>Trolleybus depo #2</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>151</KR_ID>
+		<number>8</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>152</KR_ID>
+		<number>8</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>156</KR_ID>
+		<number>1к</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>157</KR_ID>
+		<number>1к</number>
+		<direction>пос. Управленческий</direction>
+		<directionEn>p.g.t. Upravlencheskij</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>158</KR_ID>
+		<number>203</number>
+		<direction>Станция метро &quot;Кировская&quot;</direction>
+		<directionEn>Underground Station &quot;Kirovskaya&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>159</KR_ID>
+		<number>203</number>
+		<direction>санаторий &quot;Самарский&quot;</direction>
+		<directionEn>Sanatorij &quot;Samarskij&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>160</KR_ID>
+		<number>205</number>
+		<direction>6-й причал</direction>
+		<directionEn>6th wharf</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>161</KR_ID>
+		<number>205</number>
+		<direction>ТЦ &quot;МЕГА&quot;</direction>
+		<directionEn>TC &quot;Mega&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>162</KR_ID>
+		<number>206</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>163</KR_ID>
+		<number>206</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>164</KR_ID>
+		<number>207</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>165</KR_ID>
+		<number>207</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>166</KR_ID>
+		<number>210</number>
+		<direction>пос. Управленческий</direction>
+		<directionEn>p.g.t. Upravlencheskij</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>167</KR_ID>
+		<number>210</number>
+		<direction>ЦУМ &quot;Самара&quot;</direction>
+		<directionEn>CUM &quot;Samara&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>168</KR_ID>
+		<number>213</number>
+		<direction>По часовой стрелке</direction>
+		<directionEn>clockwise</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>169</KR_ID>
+		<number>213</number>
+		<direction>Против часовой стрелки</direction>
+		<directionEn>anticlockwise</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>170</KR_ID>
+		<number>215</number>
+		<direction>Автовокзал &quot;Центральный&quot;</direction>
+		<directionEn>Coach Terminal &quot;Central\'nyj&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>171</KR_ID>
+		<number>215</number>
+		<direction>113 км</direction>
+		<directionEn>113th km</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>172</KR_ID>
+		<number>217</number>
+		<direction>ул. Транзитная</direction>
+		<directionEn>Tranzitnaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>173</KR_ID>
+		<number>217</number>
+		<direction>Троицкий рынок</direction>
+		<directionEn>Troickij market</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>174</KR_ID>
+		<number>221</number>
+		<direction>Станция метро &quot;Кировская&quot;</direction>
+		<directionEn>Underground Station &quot;Kirovskaya&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>175</KR_ID>
+		<number>221</number>
+		<direction>Красная Глинка</direction>
+		<directionEn>Krasnaya Glinka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>176</KR_ID>
+		<number>226</number>
+		<direction>ул. Солнечная</direction>
+		<directionEn>Solnechnaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>177</KR_ID>
+		<number>226</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>178</KR_ID>
+		<number>229</number>
+		<direction>Автовокзал &quot;Центральный&quot;</direction>
+		<directionEn>Coach Terminal &quot;Central\'nyj&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>179</KR_ID>
+		<number>229</number>
+		<direction>ул. Транзитная</direction>
+		<directionEn>Tranzitnaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>180</KR_ID>
+		<number>23</number>
+		<direction>15-й микрорайон</direction>
+		<directionEn>15th mikrodisctrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>181</KR_ID>
+		<number>23</number>
+		<direction>универмаг &quot;Юность&quot;</direction>
+		<directionEn>Univermag &quot;Yunost\'&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>186</KR_ID>
+		<number>240</number>
+		<direction>площадь Революции</direction>
+		<directionEn>Revolyutcii square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>187</KR_ID>
+		<number>240</number>
+		<direction>кинотеатр &quot;Луч&quot;</direction>
+		<directionEn>Kinoteatr &quot;Luch&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>190</KR_ID>
+		<number>246</number>
+		<direction>Клиники Медуниверситета</direction>
+		<directionEn>Kliniki Meduniversiteta</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>191</KR_ID>
+		<number>246</number>
+		<direction>пос. НФС</direction>
+		<directionEn>p.g.t. NFS</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>192</KR_ID>
+		<number>247</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>193</KR_ID>
+		<number>247</number>
+		<direction>6-й причал</direction>
+		<directionEn>6th wharf</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>194</KR_ID>
+		<number>253</number>
+		<direction>кинотеатр &quot;Луч&quot;</direction>
+		<directionEn>Kinoteatr &quot;Luch&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>195</KR_ID>
+		<number>253</number>
+		<direction>Заводское шоссе</direction>
+		<directionEn>Factory highway </directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>200</KR_ID>
+		<number>261</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>201</KR_ID>
+		<number>261</number>
+		<direction>площадь Революции</direction>
+		<directionEn>Revolyutcii square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>204</KR_ID>
+		<number>266</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>205</KR_ID>
+		<number>266</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>206</KR_ID>
+		<number>272</number>
+		<direction>санаторий &quot;Волга&quot;</direction>
+		<directionEn>Sanatorij &quot;Volga&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>207</KR_ID>
+		<number>272</number>
+		<direction>с.м. &quot;Безымянка&quot;</direction>
+		<directionEn>Underground Station &quot;Bezymyanka&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>212</KR_ID>
+		<number>283</number>
+		<direction>ул. Грозненская</direction>
+		<directionEn>Groznenskaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>213</KR_ID>
+		<number>283</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>214</KR_ID>
+		<number>4</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>215</KR_ID>
+		<number>4</number>
+		<direction>ул. Олимпийская</direction>
+		<directionEn>Olimpijskaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>225</KR_ID>
+		<number>89</number>
+		<direction>пос. НФС</direction>
+		<directionEn>p.g.t. NFS</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>226</KR_ID>
+		<number>89</number>
+		<direction>ул. Дзержинского</direction>
+		<directionEn>Dzerzhinskogo st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>229</KR_ID>
+		<number>92</number>
+		<direction>площадь Героев 21-й Армии</direction>
+		<directionEn>Hero XXI Army square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>230</KR_ID>
+		<number>92</number>
+		<direction>ул. Калининградская</direction>
+		<directionEn>Kaliningradskaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>233</KR_ID>
+		<number>96</number>
+		<direction>ТЦ &quot;МЕГА&quot;</direction>
+		<directionEn>TC &quot;Mega&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>234</KR_ID>
+		<number>96</number>
+		<direction>ул. Тухачевского</direction>
+		<directionEn>Tuhachevskogo st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>237</KR_ID>
+		<number>99</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>238</KR_ID>
+		<number>99</number>
+		<direction>ул. Олимпийская</direction>
+		<directionEn>Olimpijskaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>240</KR_ID>
+		<number>101Д</number>
+		<direction>СНТ &quot;Василёк&quot;</direction>
+		<directionEn>SNT &quot;Vasilyok&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>241</KR_ID>
+		<number>101Д</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>242</KR_ID>
+		<number>113</number>
+		<direction>пос. Мирный</direction>
+		<directionEn>p.g.t. Mirniy</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>243</KR_ID>
+		<number>113</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>244</KR_ID>
+		<number>126а</number>
+		<direction>Алексеевские дачи</direction>
+		<directionEn>Alekseyevskye dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>245</KR_ID>
+		<number>126а</number>
+		<direction>Автостанция &quot;Вольская&quot;</direction>
+		<directionEn>Bus station &quot;Vol\'skaya&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>246</KR_ID>
+		<number>131</number>
+		<direction>пос. Алексеевка</direction>
+		<directionEn>p.g.t. Alekseyevka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>247</KR_ID>
+		<number>131</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>248</KR_ID>
+		<number>132</number>
+		<direction>СДТ &quot;Сосновый Бор&quot;</direction>
+		<directionEn>SDT &quot;Sosnovy bor&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>249</KR_ID>
+		<number>132</number>
+		<direction>Приволжский микрорайон</direction>
+		<directionEn>Privolzhskij microdistrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>252</KR_ID>
+		<number>78</number>
+		<direction>пос. Берёза</direction>
+		<directionEn>poselok Beryoza</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>253</KR_ID>
+		<number>78</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>254</KR_ID>
+		<number>79</number>
+		<direction>пос. Прибрежный</direction>
+		<directionEn>p.g.t. Pribrezhnyj</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>255</KR_ID>
+		<number>79</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>256</KR_ID>
+		<number>77</number>
+		<direction>пос. Стромилово</direction>
+		<directionEn>p.g.t. Stromilovo</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>257</KR_ID>
+		<number>77</number>
+		<direction>Пригородный автовокзал</direction>
+		<directionEn>Prigorodnyj Coach Terminal</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>258</KR_ID>
+		<number>77д</number>
+		<direction>Стромилово</direction>
+		<directionEn>Stromilovo</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>259</KR_ID>
+		<number>77д</number>
+		<direction>Пригородный автовокзал</direction>
+		<directionEn>Prigorodnyj Coach Terminal</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>260</KR_ID>
+		<number>76</number>
+		<direction>пос. 113-й км</direction>
+		<directionEn>113th km</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>261</KR_ID>
+		<number>76</number>
+		<direction>Военный городок</direction>
+		<directionEn>Voennyj gorodok</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>262</KR_ID>
+		<number>75</number>
+		<direction>Аэропорт-2</direction>
+		<directionEn>Airport-2</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>263</KR_ID>
+		<number>75</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>264</KR_ID>
+		<number>70</number>
+		<direction>Дом Молодёжи</direction>
+		<directionEn>Dom Molodezhi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>265</KR_ID>
+		<number>70</number>
+		<direction>Приволжский микрорайон</direction>
+		<directionEn>Privolzhskij microdistrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>266</KR_ID>
+		<number>65</number>
+		<direction>ул. Кабельная</direction>
+		<directionEn>Kabel\'naya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>267</KR_ID>
+		<number>65</number>
+		<direction>Автовокзал &quot;Центральный&quot;</direction>
+		<directionEn>Coach Terminal &quot;Central\'nyj&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>268</KR_ID>
+		<number>68</number>
+		<direction>Станция метро Победа</direction>
+		<directionEn>Underground Station &quot;Pobeda&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>269</KR_ID>
+		<number>68</number>
+		<direction>Красная Глинка</direction>
+		<directionEn>Krasnaya Glinka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>274</KR_ID>
+		<number>144</number>
+		<direction>Сокские дачи</direction>
+		<directionEn>Soksky dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>275</KR_ID>
+		<number>144</number>
+		<direction>Дом Печати</direction>
+		<directionEn>Dom Pechati</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>276</KR_ID>
+		<number>145</number>
+		<direction>Красноярские дачи</direction>
+		<directionEn>Krasnoyarskie dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>277</KR_ID>
+		<number>145</number>
+		<direction>ул. Георгия Димитрова</direction>
+		<directionEn>Georgiya Dimitrova st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>278</KR_ID>
+		<number>146</number>
+		<direction>СДМ &quot;Зелёная Роща&quot;</direction>
+		<directionEn>SDM &quot;Zelenaya Rosha&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>279</KR_ID>
+		<number>146</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>280</KR_ID>
+		<number>147</number>
+		<direction>Тургеневские дачи</direction>
+		<directionEn>Turgenevsky dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>281</KR_ID>
+		<number>147</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>282</KR_ID>
+		<number>150</number>
+		<direction>Чубовские дачи</direction>
+		<directionEn>Chubovsky</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>283</KR_ID>
+		<number>150</number>
+		<direction>ул. Георгия Димитрова</direction>
+		<directionEn>Georgiya Dimitrova st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>284</KR_ID>
+		<number>153</number>
+		<direction>Грачёвские дачи</direction>
+		<directionEn>Grachevskie dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>285</KR_ID>
+		<number>153</number>
+		<direction>ул. Георгия Димитрова</direction>
+		<directionEn>Georgiya Dimitrova st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>286</KR_ID>
+		<number>154</number>
+		<direction>Водинские дачи</direction>
+		<directionEn>Vodinskie dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>287</KR_ID>
+		<number>154</number>
+		<direction>ул. Георгия Димитрова</direction>
+		<directionEn>Georgiya Dimitrova st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>288</KR_ID>
+		<number>154к</number>
+		<direction>Водинские дачи</direction>
+		<directionEn>Vodinskie dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>289</KR_ID>
+		<number>154к</number>
+		<direction>Мехзавод</direction>
+		<directionEn>p.g.t. Mehzavod</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>290</KR_ID>
+		<number>156</number>
+		<direction>Старосемейкинские дачи</direction>
+		<directionEn>Starosemeykinsky dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>291</KR_ID>
+		<number>156</number>
+		<direction>Дом Печати</direction>
+		<directionEn>Dom Pechati</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>292</KR_ID>
+		<number>157</number>
+		<direction>Чёрновские дачи</direction>
+		<directionEn>Chernovsky dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>293</KR_ID>
+		<number>157</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>294</KR_ID>
+		<number>158</number>
+		<direction>внутреннее кольцо</direction>
+		<directionEn>inner ring</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>295</KR_ID>
+		<number>159</number>
+		<direction>СДМ &quot;Новая Деревня&quot;</direction>
+		<directionEn>SDM &quot;Novaya Derevnya&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>296</KR_ID>
+		<number>159</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>297</KR_ID>
+		<number>11</number>
+		<direction>Октябрьская набережная</direction>
+		<directionEn>Oktyabr\'skaya naberezhnaya</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>298</KR_ID>
+		<number>11</number>
+		<direction>Губернский рынок</direction>
+		<directionEn>Gubernskij market</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>299</KR_ID>
+		<number>126б</number>
+		<direction>СДМ &quot;Советы&quot;</direction>
+		<directionEn>SDM &quot;Sovety&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>300</KR_ID>
+		<number>126б</number>
+		<direction>завод &quot;Металлург&quot;</direction>
+		<directionEn>Zavod &quot;Metallurg&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>301</KR_ID>
+		<number>165</number>
+		<direction>Стромиловские дачи</direction>
+		<directionEn>Stromilovsky dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>302</KR_ID>
+		<number>165</number>
+		<direction>ул. Бакинская</direction>
+		<directionEn>Bakinskaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>303</KR_ID>
+		<number>170</number>
+		<direction>СДМ &quot;Старая Бинарадка&quot;</direction>
+		<directionEn>SDM &quot;Staraya Bindarka&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>304</KR_ID>
+		<number>170</number>
+		<direction>проспект Ленина</direction>
+		<directionEn>Lenina avenue</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>305</KR_ID>
+		<number>171</number>
+		<direction>СДТ &quot;Белозёрки&quot;</direction>
+		<directionEn>SDT &quot;Belozyorky&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>306</KR_ID>
+		<number>171</number>
+		<direction>ул. Георгия Димитрова</direction>
+		<directionEn>Georgiya Dimitrova st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>307</KR_ID>
+		<number>172</number>
+		<direction>Октябрьские дачи</direction>
+		<directionEn>Oktyabr\'skie dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>308</KR_ID>
+		<number>172</number>
+		<direction>Пригородный автовокзал</direction>
+		<directionEn>Prigorodnyj Coach Terminal</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>309</KR_ID>
+		<number>173</number>
+		<direction>Берёзовские дачи</direction>
+		<directionEn>Beryozovskie dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>310</KR_ID>
+		<number>173</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>311</KR_ID>
+		<number>174</number>
+		<direction>Аглосские дачи</direction>
+		<directionEn>Aglosskye dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>312</KR_ID>
+		<number>174</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>313</KR_ID>
+		<number>175к</number>
+		<direction>Водинские дачи</direction>
+		<directionEn>Vodinskie dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>314</KR_ID>
+		<number>175к</number>
+		<direction>пос. Управленческий</direction>
+		<directionEn>p.g.t. Upravlencheskij</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>317</KR_ID>
+		<number>179</number>
+		<direction>СДМ &quot;Конезавод&quot;</direction>
+		<directionEn>SDM &quot;Konezavod&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>318</KR_ID>
+		<number>179</number>
+		<direction>ул. Георгия Димитрова</direction>
+		<directionEn>Georgiya Dimitrova st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>319</KR_ID>
+		<number>180</number>
+		<direction>СДМ &quot;Новая Орловка&quot;</direction>
+		<directionEn>SDM &quot;Novaya Orlovka&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>320</KR_ID>
+		<number>180</number>
+		<direction>ул. Георгия Димитрова</direction>
+		<directionEn>Georgiya Dimitrova st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>321</KR_ID>
+		<number>181</number>
+		<direction>СДТ &quot;Водинка&quot;</direction>
+		<directionEn>SDT &quot;Vodynka&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>322</KR_ID>
+		<number>181</number>
+		<direction>ул. Георгия Димитрова</direction>
+		<directionEn>Georgiya Dimitrova st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>323</KR_ID>
+		<number>182</number>
+		<direction>СДМ &quot;Гвардейцы&quot;</direction>
+		<directionEn>SDM &quot;Gvardeytzy&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>324</KR_ID>
+		<number>182</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>325</KR_ID>
+		<number>197</number>
+		<direction>СДМ &quot;Алакаевский&quot;</direction>
+		<directionEn>SDM &quot;Alakayevsky&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>326</KR_ID>
+		<number>197</number>
+		<direction>ул. Георгия Димитрова</direction>
+		<directionEn>Georgiya Dimitrova st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>327</KR_ID>
+		<number>198</number>
+		<direction>СДМ &quot;Юбилейный&quot;</direction>
+		<directionEn>SDM &quot;Yubileyny&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>328</KR_ID>
+		<number>198</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>329</KR_ID>
+		<number>56</number>
+		<direction>Автовокзал &quot;Центральный&quot;</direction>
+		<directionEn>Coach Terminal &quot;Central\'nyj&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>330</KR_ID>
+		<number>56</number>
+		<direction>микрорайон «Крутые ключи»</direction>
+		<directionEn>district «Krutye kluchi»</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>340</KR_ID>
+		<number>Первая линия</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>2</transportTypeID>
+		<transportType>Метро</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>341</KR_ID>
+		<number>Первая линия</number>
+		<direction>Станция метро Алабинская</direction>
+		<directionEn>Underground Station &quot;Alabinskaya&quot;</directionEn>
+		<transportTypeID>2</transportTypeID>
+		<transportType>Метро</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>343</KR_ID>
+		<number>20</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>344</KR_ID>
+		<number>20</number>
+		<direction>Безымянский рынок</direction>
+		<directionEn>Bezymyanskij Market</directionEn>
+		<transportTypeID>4</transportTypeID>
+		<transportType>Троллейбус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>358</KR_ID>
+		<number>1</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>359</KR_ID>
+		<number>1</number>
+		<direction>Красная Глинка</direction>
+		<directionEn>Krasnaya Glinka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>366</KR_ID>
+		<number>30</number>
+		<direction>Дом Печати</direction>
+		<directionEn>Dom Pechati</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>367</KR_ID>
+		<number>30</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>368</KR_ID>
+		<number>37</number>
+		<direction>Приволжский микрорайон</direction>
+		<directionEn>Privolzhskij microdistrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>369</KR_ID>
+		<number>37</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>370</KR_ID>
+		<number>38</number>
+		<direction>Станция метро &quot;Кировская&quot;</direction>
+		<directionEn>Underground Station &quot;Kirovskaya&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>371</KR_ID>
+		<number>38</number>
+		<direction>9-й микрорайон</direction>
+		<directionEn>9th mikrodisctrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>374</KR_ID>
+		<number>47</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>375</KR_ID>
+		<number>47</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>376</KR_ID>
+		<number>50</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>377</KR_ID>
+		<number>50</number>
+		<direction>Красная Глинка</direction>
+		<directionEn>Krasnaya Glinka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>382</KR_ID>
+		<number>6</number>
+		<direction>Безымянский рынок</direction>
+		<directionEn>Bezymyanskij Market</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>383</KR_ID>
+		<number>6</number>
+		<direction>санаторий &quot;Самарский&quot;</direction>
+		<directionEn>Sanatorij &quot;Samarskij&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>384</KR_ID>
+		<number>63</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>385</KR_ID>
+		<number>63</number>
+		<direction>совхоз &quot;Рубежное&quot;</direction>
+		<directionEn>Sovhoz &quot;Rubezhny &quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>386</KR_ID>
+		<number>66</number>
+		<direction>пос. Сухая Самарка</direction>
+		<directionEn>p.g.t. Suhaya Samarka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>387</KR_ID>
+		<number>66</number>
+		<direction>Автовокзал &quot;Центральный&quot;</direction>
+		<directionEn>Coach Terminal &quot;Central\'nyj&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>393</KR_ID>
+		<number>21м</number>
+		<direction>ТЦ &quot;МегаМебель&quot;</direction>
+		<directionEn>TC &quot;MegaMebel&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>394</KR_ID>
+		<number>21м</number>
+		<direction>Приволжский микрорайон</direction>
+		<directionEn>Privolzhskij microdistrict</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>395</KR_ID>
+		<number>27к</number>
+		<direction>кинотеатр &quot;Луч&quot;</direction>
+		<directionEn>Kinoteatr &quot;Luch&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>396</KR_ID>
+		<number>27к</number>
+		<direction>Станция метро &quot;Кировская&quot;</direction>
+		<directionEn>Underground Station &quot;Kirovskaya&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>397</KR_ID>
+		<number>32д</number>
+		<direction>совхоз &quot;Кряж&quot;</direction>
+		<directionEn>Sovhoz &quot;Kryazh&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>398</KR_ID>
+		<number>32д</number>
+		<direction>Троицкий рынок</direction>
+		<directionEn>Troickij market</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>399</KR_ID>
+		<number>48д</number>
+		<direction>ул. Грозненская</direction>
+		<directionEn>Groznenskaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>400</KR_ID>
+		<number>48д</number>
+		<direction>Пригородный автовокзал</direction>
+		<directionEn>Prigorodnyj Coach Terminal</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>401</KR_ID>
+		<number>48к</number>
+		<direction>ул. Грозненская</direction>
+		<directionEn>Groznenskaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>402</KR_ID>
+		<number>48к</number>
+		<direction>площадь Революции</direction>
+		<directionEn>Revolyutcii square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>403</KR_ID>
+		<number>61д</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>404</KR_ID>
+		<number>61д</number>
+		<direction>ТЦ &quot;Колизей&quot;</direction>
+		<directionEn>TC &quot;Kolizej&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>405</KR_ID>
+		<number>295</number>
+		<direction>Речной вокзал</direction>
+		<directionEn>Riverside station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>406</KR_ID>
+		<number>295</number>
+		<direction>ТЦ &quot;МЕГА&quot;</direction>
+		<directionEn>TC &quot;Mega&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>407</KR_ID>
+		<number>296</number>
+		<direction>ул. Дзержинского</direction>
+		<directionEn>Dzerzhinskogo st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>408</KR_ID>
+		<number>296</number>
+		<direction>ТРК &quot;Московский&quot;</direction>
+		<directionEn>TRК&quot;Moskovskij&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>409</KR_ID>
+		<number>297</number>
+		<direction>6-й причал</direction>
+		<directionEn>6th wharf</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>410</KR_ID>
+		<number>297</number>
+		<direction>завод &quot;Экран&quot;</direction>
+		<directionEn>Zavod &quot;Ekran&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>413</KR_ID>
+		<number>392</number>
+		<direction>пос. Берёза</direction>
+		<directionEn>poselok Beryoza</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>414</KR_ID>
+		<number>392</number>
+		<direction>совхоз &quot;Молодая Гвардия&quot;</direction>
+		<directionEn>Sovhoz &quot;Molodaya Gvardiya&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>415</KR_ID>
+		<number>46</number>
+		<direction>площадь Революции</direction>
+		<directionEn>Revolyutcii square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>416</KR_ID>
+		<number>46</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>417</KR_ID>
+		<number>447</number>
+		<direction>пос. Прибрежный</direction>
+		<directionEn>p.g.t. Pribrezhnyj</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>418</KR_ID>
+		<number>447</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>419</KR_ID>
+		<number>101а</number>
+		<direction>с. Лопатино</direction>
+		<directionEn>Lopatino</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>420</KR_ID>
+		<number>101а</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>421</KR_ID>
+		<number>103к</number>
+		<direction>совхозы &quot;Юбилейный&quot; и &quot;Чёрновский&quot;</direction>
+		<directionEn>Sovhoz &quot;Yubileyny&quot; and &quot;Chernovsky&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>422</KR_ID>
+		<number>103к</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>423</KR_ID>
+		<number>104к</number>
+		<direction>совхоз &quot;Чёрновский&quot;</direction>
+		<directionEn>Sovhoz &quot;Chernovsky&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>424</KR_ID>
+		<number>104к</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>425</KR_ID>
+		<number>105</number>
+		<direction>с. Яблоновый Овраг</direction>
+		<directionEn>Yablonovy Ovrag</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>426</KR_ID>
+		<number>105</number>
+		<direction>Пригородный автовокзал</direction>
+		<directionEn>Prigorodnyj Coach Terminal</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>428</KR_ID>
+		<number>106</number>
+		<direction>совхозы &quot;Октябрьский&quot; и &quot;Первомайский&quot;</direction>
+		<directionEn>Sovhoz &quot;Oktyabr\'sky&quot; and &quot;Pervomajsky&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>429</KR_ID>
+		<number>106</number>
+		<direction>Пригородный автовокзал</direction>
+		<directionEn>Prigorodnyj Coach Terminal</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>430</KR_ID>
+		<number>108</number>
+		<direction>с. Дубовый Умёт</direction>
+		<directionEn>Duboviy Umyot</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>431</KR_ID>
+		<number>108</number>
+		<direction>Пригородный автовокзал</direction>
+		<directionEn>Prigorodnyj Coach Terminal</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>432</KR_ID>
+		<number>110</number>
+		<direction>с. Красный Яр</direction>
+		<directionEn>Krasny Yar</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>433</KR_ID>
+		<number>110</number>
+		<direction>г. Самара</direction>
+		<directionEn>Samara</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>434</KR_ID>
+		<number>112</number>
+		<direction>с. Новый Сарбай</direction>
+		<directionEn>Novy Sarbay</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>435</KR_ID>
+		<number>112</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>436</KR_ID>
+		<number>114</number>
+		<direction>с. Красноармейское</direction>
+		<directionEn>Krasnoarmeyskoye</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>437</KR_ID>
+		<number>114</number>
+		<direction>Пригородный автовокзал</direction>
+		<directionEn>Prigorodnyj Coach Terminal</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>438</KR_ID>
+		<number>118</number>
+		<direction>с. Сухая Вязовка</direction>
+		<directionEn>Sukhaya Vyazovka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>439</KR_ID>
+		<number>118</number>
+		<direction>Пригородный автовокзал</direction>
+		<directionEn>Prigorodnyj Coach Terminal</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>440</KR_ID>
+		<number>123</number>
+		<direction>пос. Петра-Дубрава</direction>
+		<directionEn>p.g.t. Petra-Dubrava</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>441</KR_ID>
+		<number>123</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>442</KR_ID>
+		<number>124к</number>
+		<direction>пос. Смышляевка</direction>
+		<directionEn>p.g.t. Smyshlyaevka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>443</KR_ID>
+		<number>124к</number>
+		<direction>рынок &quot;Норд&quot;</direction>
+		<directionEn>Market &quot;Nord&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>444</KR_ID>
+		<number>126к</number>
+		<direction>г. Кинель (юг)</direction>
+		<directionEn>Kinel\' (south)</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>445</KR_ID>
+		<number>126к</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>446</KR_ID>
+		<number>126с</number>
+		<direction>г. Кинель</direction>
+		<directionEn>Kinel\'</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>447</KR_ID>
+		<number>126с</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>448</KR_ID>
+		<number>126ю</number>
+		<direction>г. Кинель (юг)</direction>
+		<directionEn>Kinel\' (south)</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>449</KR_ID>
+		<number>126ю</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>450</KR_ID>
+		<number>127</number>
+		<direction>г. Новокуйбышевск</direction>
+		<directionEn>Novokuybyshevsk</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>451</KR_ID>
+		<number>127</number>
+		<direction>г. Самара</direction>
+		<directionEn>Samara</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>452</KR_ID>
+		<number>128</number>
+		<direction>г. Новокуйбышевск</direction>
+		<directionEn>Novokuybyshevsk</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>453</KR_ID>
+		<number>128</number>
+		<direction>г. Самара</direction>
+		<directionEn>Samara</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>454</KR_ID>
+		<number>128/72</number>
+		<direction>г. Новокуйбышевск</direction>
+		<directionEn>Novokuybyshevsk</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>455</KR_ID>
+		<number>128/72</number>
+		<direction>г. Самара</direction>
+		<directionEn>Samara</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>456</KR_ID>
+		<number>129</number>
+		<direction>г. Новокуйбышевск</direction>
+		<directionEn>Novokuybyshevsk</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>457</KR_ID>
+		<number>129</number>
+		<direction>Автовокзал &quot;Центральный&quot;</direction>
+		<directionEn>Coach Terminal &quot;Central\'nyj&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>458</KR_ID>
+		<number>139а</number>
+		<direction>пос. Рощинский</direction>
+		<directionEn>p.g.t. Roshinskiy</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>459</KR_ID>
+		<number>139а</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>460</KR_ID>
+		<number>140</number>
+		<direction>г. Чапаевск</direction>
+		<directionEn>Chapayevsk</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>461</KR_ID>
+		<number>140</number>
+		<direction>г. Самара</direction>
+		<directionEn>Samara</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>462</KR_ID>
+		<number>140а</number>
+		<direction>г. Чапаевск</direction>
+		<directionEn>Chapayevsk</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>463</KR_ID>
+		<number>140а</number>
+		<direction>г. Самара</direction>
+		<directionEn>Samara</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>464</KR_ID>
+		<number>389</number>
+		<direction>пос. Курумоч</direction>
+		<directionEn>p.g.t. Kurumoch</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>465</KR_ID>
+		<number>389</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>466</KR_ID>
+		<number>406</number>
+		<direction>с. Новый Буян</direction>
+		<directionEn>Novy Buyan</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>467</KR_ID>
+		<number>406</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>468</KR_ID>
+		<number>410а</number>
+		<direction>пос. Новосемейкино</direction>
+		<directionEn>p.g.t. Novosemeykino</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>469</KR_ID>
+		<number>410а</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>470</KR_ID>
+		<number>429</number>
+		<direction>г. Новокуйбышевск</direction>
+		<directionEn>Novokuybyshevsk</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>471</KR_ID>
+		<number>429</number>
+		<direction>г. Самара</direction>
+		<directionEn>Samara</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>472</KR_ID>
+		<number>474 (74м)</number>
+		<direction>пос. Алексеевка</direction>
+		<directionEn>p.g.t. Alekseyevka</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>473</KR_ID>
+		<number>474 (74м)</number>
+		<direction>Станция метро Победа</direction>
+		<directionEn>Underground Station &quot;Pobeda&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>474</KR_ID>
+		<number>480</number>
+		<direction>пос. Петра-Дубрава</direction>
+		<directionEn>p.g.t. Petra-Dubrava</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>475</KR_ID>
+		<number>480</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>476</KR_ID>
+		<number>492</number>
+		<direction>г. Новокуйбышевск</direction>
+		<directionEn>Novokuybyshevsk</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>477</KR_ID>
+		<number>492</number>
+		<direction>г. Самара</direction>
+		<directionEn>Samara</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>478</KR_ID>
+		<number>4к</number>
+		<direction>кладбище &quot;Лесное&quot;</direction>
+		<directionEn>Lesnoe cemetry</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>479</KR_ID>
+		<number>4к</number>
+		<direction>пос. Управленческий</direction>
+		<directionEn>p.g.t. Upravlencheskij</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>480</KR_ID>
+		<number>27к</number>
+		<direction>кладбище &quot;Зубчаниновка&quot;</direction>
+		<directionEn>Zubchaninovkoe cemetery</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>481</KR_ID>
+		<number>27к</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>482</KR_ID>
+		<number>36д</number>
+		<direction>кладбище &quot;Рубёжное&quot;</direction>
+		<directionEn>Rubezhnoe cemetery</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>483</KR_ID>
+		<number>36д</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>484</KR_ID>
+		<number>36ю</number>
+		<direction>кладбище &quot;Рубёжное&quot;</direction>
+		<directionEn>Rubezhnoe cemetery</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>485</KR_ID>
+		<number>36ю</number>
+		<direction>кладбище &quot;Южное&quot;</direction>
+		<directionEn>Yuzhnoe cemetry</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>486</KR_ID>
+		<number>63э</number>
+		<direction>кладбище &quot;Рубёжное&quot;</direction>
+		<directionEn>Rubezhnoe cemetery</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>487</KR_ID>
+		<number>63э</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>488</KR_ID>
+		<number>67к</number>
+		<direction>кладбище &quot;Лесное&quot;</direction>
+		<directionEn>Lesnoe cemetry</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>489</KR_ID>
+		<number>67к</number>
+		<direction>Мехзавод</direction>
+		<directionEn>p.g.t. Mehzavod</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>490</KR_ID>
+		<number>77д</number>
+		<direction>кладбище &quot;Южное&quot;</direction>
+		<directionEn>Yuzhnoe cemetry</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>491</KR_ID>
+		<number>77д</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>492</KR_ID>
+		<number>129э</number>
+		<direction>кладбище &quot;Южное&quot;</direction>
+		<directionEn>Yuzhnoe cemetry</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>493</KR_ID>
+		<number>129э</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>495</KR_ID>
+		<number>168</number>
+		<direction>СДМ &quot;Журавли&quot;</direction>
+		<directionEn>SDM &quot;Zhuravli&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>498</KR_ID>
+		<number>168</number>
+		<direction>Пригородный автовокзал</direction>
+		<directionEn>Prigorodnyj Coach Terminal</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>499</KR_ID>
+		<number>167</number>
+		<direction>Стромиловские дачи</direction>
+		<directionEn>Stromilovsky dachi</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>500</KR_ID>
+		<number>167</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>501</KR_ID>
+		<number>169</number>
+		<direction>СДМ &quot;Журавли&quot;</direction>
+		<directionEn>SDM &quot;Zhuravli&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>502</KR_ID>
+		<number>169</number>
+		<direction>Хлебная площадь</direction>
+		<directionEn>Hlebnaya Square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>503</KR_ID>
+		<number>178</number>
+		<direction>СДМ &quot;Журавли&quot;</direction>
+		<directionEn>SDM &quot;Zhuravli&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>504</KR_ID>
+		<number>178</number>
+		<direction>ул. Бакинская</direction>
+		<directionEn>Bakinskaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>505</KR_ID>
+		<number>185к</number>
+		<direction>СДМ &quot;Крестьянский&quot;</direction>
+		<directionEn>SDM &quot;Krest\'yansky&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>506</KR_ID>
+		<number>185к</number>
+		<direction>площадь им. Кирова</direction>
+		<directionEn>Kirova square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>4</affiliationID>
+		<affiliation>Сезонный (дачный) маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>521</KR_ID>
+		<number>392а</number>
+		<direction>Жилгородок (пос. Волжский)</direction>
+		<directionEn>ZHilgorodok (p.g.t.Volzhskij)</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>522</KR_ID>
+		<number>392а</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>3</affiliationID>
+		<affiliation>Пригородный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>582</KR_ID>
+		<number>Городская электричка</number>
+		<direction>Станция Самара</direction>
+		<directionEn>Samara station</directionEn>
+		<transportTypeID>5</transportTypeID>
+		<transportType>Железная дорога</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>583</KR_ID>
+		<number>Городская электричка</number>
+		<direction>Новокуйбышевск</direction>
+		<directionEn>Novokuybishevsk</directionEn>
+		<transportTypeID>5</transportTypeID>
+		<transportType>Железная дорога</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>584</KR_ID>
+		<number>Переправа 1</number>
+		<direction>Речной вокзал</direction>
+		<directionEn>Riverside station</directionEn>
+		<transportTypeID>6</transportTypeID>
+		<transportType>Речной флот</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>585</KR_ID>
+		<number>Переправа 1</number>
+		<direction>РЭБ Нефтефлота</direction>
+		<directionEn>REB Nefteflota</directionEn>
+		<transportTypeID>6</transportTypeID>
+		<transportType>Речной флот</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>590</KR_ID>
+		<number>Переправа 2</number>
+		<direction>ул. Мельничная</direction>
+		<directionEn>Melnichnaya st.</directionEn>
+		<transportTypeID>6</transportTypeID>
+		<transportType>Речной флот</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>591</KR_ID>
+		<number>Переправа 2</number>
+		<direction>Малярный пер.</direction>
+		<directionEn>Mal\'arny alley</directionEn>
+		<transportTypeID>6</transportTypeID>
+		<transportType>Речной флот</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>595</KR_ID>
+		<number>Переправа 3</number>
+		<direction>Малярный пер.</direction>
+		<directionEn>Mal\'arny alley</directionEn>
+		<transportTypeID>6</transportTypeID>
+		<transportType>Речной флот</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>596</KR_ID>
+		<number>Переправа 3</number>
+		<direction>ул. Халиловская</direction>
+		<directionEn>Khalilovskya st.</directionEn>
+		<transportTypeID>6</transportTypeID>
+		<transportType>Речной флот</transportType>
+		<affiliationID>5</affiliationID>
+		<affiliation>Специальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>612</KR_ID>
+		<number>12</number>
+		<direction>Юнгородок</direction>
+		<directionEn>Yungorodok</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>613</KR_ID>
+		<number>12</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>614</KR_ID>
+		<number>11</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>615</KR_ID>
+		<number>11</number>
+		<direction>Барбошина Поляна</direction>
+		<directionEn>Barboshina Polyana</directionEn>
+		<transportTypeID>3</transportTypeID>
+		<transportType>Трамвай</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>617</KR_ID>
+		<number>35</number>
+		<direction>пос. НФС</direction>
+		<directionEn>p.g.t. NFS</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>620</KR_ID>
+		<number>264</number>
+		<direction>ул. Олимпийская</direction>
+		<directionEn>Olimpijskaya st.</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>621</KR_ID>
+		<number>264</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>624</KR_ID>
+		<number>67</number>
+		<direction>микрорайон «Крутые ключи»</direction>
+		<directionEn>district «Krutye kluchi»</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>625</KR_ID>
+		<number>67</number>
+		<direction>Железнодорожный вокзал</direction>
+		<directionEn>Railway Station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>626</KR_ID>
+		<number>13</number>
+		<direction>пос. Шмидта</direction>
+		<directionEn>p.g.t. Shmidta</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>627</KR_ID>
+		<number>13</number>
+		<direction>Губернский рынок</direction>
+		<directionEn>Gubernskij market</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>628</KR_ID>
+		<number>53</number>
+		<direction>площадь Революции</direction>
+		<directionEn>Revolyutcii square</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>629</KR_ID>
+		<number>53</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>631</KR_ID>
+		<number>268</number>
+		<direction>микрорайон «Крутые ключи»</direction>
+		<directionEn>district «Krutye kluchi»</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>632</KR_ID>
+		<number>268</number>
+		<direction>Станция метро Победа</direction>
+		<directionEn>Underground Station &quot;Pobeda&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>2</affiliationID>
+		<affiliation>Городской коммерческий маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>639</KR_ID>
+		<number>66А</number>
+		<direction>Автостанция &quot;Аврора&quot;</direction>
+		<directionEn>Avrora bus station</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+	<route>
+		<KR_ID>640</KR_ID>
+		<number>66А</number>
+		<direction>Автовокзал &quot;Центральный&quot;</direction>
+		<directionEn>Coach Terminal &quot;Central\'nyj&quot;</directionEn>
+		<transportTypeID>1</transportTypeID>
+		<transportType>Автобус</transportType>
+		<affiliationID>1</affiliationID>
+		<affiliation>Городской муниципальный маршрут</affiliation>
+	</route>
+</routes>

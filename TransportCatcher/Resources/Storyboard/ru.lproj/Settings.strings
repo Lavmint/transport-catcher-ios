@@ -1,0 +1,24 @@
+
+/* Class = "UITableViewSection"; headerTitle = "Приложение"; ObjectID = "A8W-v9-DIJ"; */
+"A8W-v9-DIJ.headerTitle" = "Приложение";
+
+/* Class = "UILabel"; text = "Ожидать ответ от сервиса"; ObjectID = "Ajd-Zd-IXJ"; */
+"Ajd-Zd-IXJ.text" = "Ожидать ответ от сервиса";
+
+/* Class = "UILabel"; text = "20 сек."; ObjectID = "Lxh-I2-jRb"; */
+"Lxh-I2-jRb.text" = "20 сек.";
+
+/* Class = "UITabBarItem"; title = "Настройки"; ObjectID = "WOO-qY-0ui"; */
+"WOO-qY-0ui.title" = "Настройки";
+
+/* Class = "UINavigationItem"; title = "Настройки"; ObjectID = "bJe-w9-Dyh"; */
+"bJe-w9-Dyh.title" = "Настройки";
+
+/* Class = "UILabel"; text = "О приложении"; ObjectID = "nNo-kq-hia"; */
+"nNo-kq-hia.text" = "О приложении";
+
+/* Class = "UITableViewController"; title = "Настройки"; ObjectID = "qFa-l0-aFF"; */
+"qFa-l0-aFF.title" = "Настройки";
+
+/* Class = "UITableViewSection"; headerTitle = "Сервис"; ObjectID = "vhP-T2-f5g"; */
+"vhP-T2-f5g.headerTitle" = "Сервис";

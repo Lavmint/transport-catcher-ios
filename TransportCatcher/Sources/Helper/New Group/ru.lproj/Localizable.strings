@@ -1,0 +1,47 @@
+/* 
+  Localized.strings
+  TransportCatcher
+
+  Created by Alexey Averkin on 18/12/2017.
+  Copyright © 2017 Alexey Averkin. All rights reserved.
+*/
+
+//MARK: Arrival
+
+"arrival_minutesShort" = "мин.";
+"arrival_metersLeftToStop" = "м. до остановки";
+"arrival_invalidFriendly" = "Доступен для людей с ограниченными возможностями";
+"arrival_emptyList" = "По данным сервиса, прибытие транспорта на остановку в ближайшее время не ожидается.";
+"arrival_selectStop" = "Выберите на карте остановку чтобы отобразить прибытие транспорта.";
+
+// MARK: Alert
+
+"alert_ok" = "OK";
+"alert_cancel" = "Отменить";
+
+// MARK: Settings
+
+"settings_setTimeoutInterval" = "Введите время ожидания ответа от сервиса в секундах";
+
+// MARK: Common
+
+"common_value" = "значение";
+"common_version" = "версия";
+
+// MARK: Transport
+
+"transport_tramway" = "трамвай";
+"transport_trolleybus" = "троллейбус";
+"transport_bus" = "автобус";
+
+// MARK: About
+
+"about_whatFor" = "Что умеет приложение?";
+"about_whatForDescription" = "Приложение Транспорт Самара позволяет отслеживать прибывание транспорта на выбранную остановку.";
+"about_compatibility" = "На каких устройствах доступно приложение?";
+"about_compatibilityDescription" = "На устройствах под управлением iOS 11.0 и выше, включая iPhone и iPad.";
+"about_services" = "Какие сервисы использует приложение?";
+"about_mailingAppVersion" = "Версия приложения";
+"about_mailingAppVersionUnidentified" = "не определена";
+"about_mailingiOSVersion" = "Версия iOS";
+"about_mailingDevice" = "Устройство";
